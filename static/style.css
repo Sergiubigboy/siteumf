@@ -1,0 +1,24 @@
+/* Stiluri generale */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    margin-bottom: 20px;
+  }
+  .custom-nav {
+    background-color: #00548F; /* Schimbă cu orice culoare vrei */
+    padding: 10px 0;
+  }
+  
+  .navbar-brand img {
+    height: 80px; /* Ajustează dimensiunea siglei */
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+
+  
