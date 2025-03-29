@@ -33,7 +33,7 @@ body {
     transform: translateX(-50%); /* Centrează imaginea pe orizontală */
     width: 100%; /* Imaginea ocupă întreaga lățime */
     height: 150px; /* Înălțimea imaginii */
-    background: url("../static/images/UMFST-tg-mures-panoramica.png") no-repeat center bottom;
+    background: url("/static/images/UMFST-tg-mures-panoramica.png") no-repeat center bottom;
     background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
     opacity: 0.8; /* Adaugă un efect de transparență */
   }
@@ -81,7 +81,7 @@ body {
   height: 300px; /* Înălțimea secțiunii Hero */
   background: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgb(0, 0, 0) 100%),
-    url("../static/images/UMFST-tg-mures-panoramica.png") no-repeat center center;
+    url("/static/images/UMFST-tg-mures-panoramica.png") no-repeat center bottom;
   background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
   margin-top: 0; /* Elimină orice spațiu de sus */
 }
@@ -125,30 +125,7 @@ body {
   margin: 0; /* Elimină marginile implicite */
 }
 
-/* Conținutul paginii */
-main {
-  position: relative;
-  z-index: 1; /* Conținutul rămâne deasupra imaginii */
-  padding-top: 300px; /* Adaugă spațiu pentru a evita suprapunerea cu secțiunea Hero */
-}
 
-/* Stiluri generale pentru secțiuni */
-.section-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #002c58; /* Albastru închis */
-}
-
-.section-text {
-  font-size: 1.2rem;
-  color: #555;
-  line-height: 1.8;
-}
-
-.img-fluid {
-  max-height: 300px;
-  object-fit: cover;
-}
 
 
 
