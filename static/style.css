@@ -1,3 +1,10 @@
+/* Reset general pentru margin și padding */
+body {
+  margin: 0;
+  padding: 0;
+  height: 5000px;
+}
+
 /* Stiluri generale */
 body {
     background-color: #f4f4f4;
@@ -9,10 +16,26 @@ body {
     margin-bottom: 20px;
   }
   .custom-nav {
-    background-color: transparent;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #001f3f; /* Albastru închis */
     width: 100%;
-    z-index: 10;
+    z-index: 1000; /* Navbar-ul rămâne deasupra imaginii */
+    transition: top 0.3s ease; /* Tranziție lină pentru ascundere/apariție */
+  }
+  
+  /* Imaginea din navbar */
+  .navbar-image {
+    position: absolute;
+    bottom: 0; /* Poziționează imaginea către partea de jos */
+    left: 50%;
+    transform: translateX(-50%); /* Centrează imaginea pe orizontală */
+    width: 100%; /* Imaginea ocupă întreaga lățime */
+    height: 150px; /* Înălțimea imaginii */
+    background: url("../static/images/UMFST-tg-mures-panoramica.png") no-repeat center bottom;
+    background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
+    opacity: 0.8; /* Adaugă un efect de transparență */
   }
   
   .navbar-brand img {
@@ -22,15 +45,46 @@ body {
     align-items: center;
   }
 
-/* Stil pentru secțiunea Hero */
-.hero-section {
-  position: relative;
-  flex: content;
-  height: 300px;
-  background: url("../static/images/UMFST-tg-mures-panoramica.png") no-repeat center center;
-  background-size: cover;
+.navbar-nav .nav-item {
+  margin-left: 15px; /* Spațiu între linkuri */
+  border-left: 2px solid #004080; /* Linie albastră închisă între linkuri */
+  padding-left: 15px; /* Spațiu interior după linie */
+
 }
 
+.navbar-nav .nav-item:first-child {
+  border-left: none; /* Elimină linia pentru primul link */
+}
+
+.navbar-nav .nav-link {
+  color: white; /* Text alb */
+  font-size: 1rem; /* Dimensiune text */
+  font-weight: bold; /* Text bold */
+  transition: color 0.3s ease; /* Efect de tranziție */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00bfff; /* Schimbă culoarea la hover */
+}
+
+/* Stil pentru link-ul activ din navbar */
+.navbar-nav .nav-link.active {
+  color: #00bfff; /* Albastru deschis */
+  font-weight: bold; /* Text bold */
+  border-bottom: 2px solid #00bfff; /* Linie sub link */
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 300px; /* Înălțimea secțiunii Hero */
+  background: url("../static/images/UMFST-tg-mures-panoramica.png") no-repeat center center;
+  background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
+  background-attachment: fixed; /* Imaginea rămâne fixă */
+  margin-top: 0; /* Elimină orice spațiu de sus */
+}
+
+/* Overlay pentru secțiunea Hero */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -40,13 +94,40 @@ body {
   background-color: rgba(0, 0, 139, 0.5); /* Albastru cu opacitate */
 }
 
-.hero-text {
+/* Container pentru text */
+.hero-container {
+  position: absolute;
+  top: 50%; /* Centrează pe verticală */
+  left: 50%; /* Centrează pe orizontală */
+  transform: translate(-50%, -50%); /* Ajustează poziția pentru a fi exact în centru */
   text-align: center;
-  font-size: 2.5rem; /* Dimensiune mare pentru text */
-  font-weight: bold; /* Text bold */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbră pentru dreptunghi */
-  color: white;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  border: 4px solid white; /* Border alb mai gros */
+  opacity: 0.8; /* Opacitate pentru fundal */
+  padding: 30px 60px; /* Spațiu interior mai mare */
+  width: 80%; /* Dimensiune fixă pentru titlu */
+  max-width: 600px; /* Dimensiune maximă pentru titlu */
+  min-width: 300px; /* Dimensiune minimă pentru titlu */
+  border-radius: 15px; /* Colțuri rotunjite */
+  box-sizing: border-box; /* Include padding-ul în dimensiuni */
 }
+
+/* Stil pentru titlu */
+.hero-title {
+  font-family: "Playfair Display", serif; /* Font classy */
+  font-size: 4.5rem; /* Dimensiune mai mare pentru text */
+  font-weight: bold; /* Text bold */
+  color: white; /* Text alb */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Umbră pentru text */
+  margin: 0; /* Elimină marginile implicite */
+}
+
+/* Conținutul paginii */
+main {
+  position: relative;
+  z-index: 1; /* Conținutul rămâne deasupra imaginii */
+  padding-top: 300px; /* Adaugă spațiu pentru a evita suprapunerea cu secțiunea Hero */
+}
+
+
 
 
