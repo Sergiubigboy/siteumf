@@ -1,0 +1,24 @@
+/* Conținutul paginii */
+main {
+    position: relative;
+    z-index: 1; /* Conținutul rămâne deasupra imaginii */
+    padding-top: 300px; /* Adaugă spațiu pentru a evita suprapunerea cu secțiunea Hero */
+  }
+  
+  /* Stiluri generale pentru secțiuni */
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #002c58; /* Albastru închis */
+  }
+  
+  .section-text {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .img-fluid {
+    max-height: 300px;
+    object-fit: cover;
+  }

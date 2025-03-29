@@ -1,1 +1,4 @@
-{% extends "layout.html" %} {%block content %} {%endblock%}
+{% extends "layout.html" %} {% block extra_css %}<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/elevi.css') }}"
+/>{% endblock %} {%block content %} {%endblock%}
