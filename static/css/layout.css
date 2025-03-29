@@ -93,44 +93,102 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(5, 61, 134, 0.527); /* Albastru cu opacitate */
+  background-color: rgba(5, 61, 134, 0.527); /* Semi-transparent blue */
+  z-index: 10; /* Lower than the hero-container */
 }
 
 /* Container pentru text */
 .hero-container {
   position: absolute;
-  top: 55%; /* Centrează pe verticală */
-  left: 50%; /* Centrează pe orizontală */
-  transform: translate(-50%, -50%); /* Ajustează poziția pentru a fi exact în centru */
+  top: 55%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to center */
   text-align: center;
-  border-left: 5px solid white; /* Border alb pe partea stângă */
-  border-right: 5px solid white; /* Border alb pe partea dreaptă */
-  opacity: 0.8; /* Opacitate pentru fundal */
-  padding: 30px 60px; /* Spațiu interior mai mare */
-  width: 80%; /* Dimensiune fixă pentru titlu */
-  max-width: 600px; /* Dimensiune maximă pentru titlu */
-  min-width: 300px; /* Dimensiune minimă pentru titlu */
-  border-radius: 0px; /* Colțuri rotunjite */
-  box-sizing: border-box; /* Include padding-ul în dimensiuni */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0); /* Umbră pentru border */
+  border-left: 5px solid white; /* White border on the left */
+  border-right: 5px solid white;
+  /*border-top: 5px solid white;*/ /* White border on the top */
+  /*border-bottom: 5px solid white;*/ /* White border on the right */
+  opacity: 0.8; /* Background opacity */
+  padding: 30px 60px; /* Inner spacing */
+  width: 80%; /* Fixed width for the title */
+  max-width: 600px; /* Maximum width for the title */
+  min-width: 300px; /* Minimum width for the title */
+  border-radius: 0px; /* No rounded corners */
+  box-sizing: border-box; /* Include padding in dimensions */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0); /* Shadow for the border */
+  z-index: 20; /* Ensure it is above the overlay */
 }
 
 /* Stil pentru titlu */
 .hero-title {
   font-family: 'Times New Roman', Times, serif;
-  font-size: clamp(2.5rem, 3.5vw, 3.5rem); /* Minimum 1.5rem, preferred 3.5vw, maximum 3rem */
-  font-weight: bold; /* Text bold */
-  color: rgb(255, 255, 255); /* Text alb */
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Umbră pentru text */
-  margin: 0; /* Elimină marginile implicite */
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem); /* Responsive font size */
+  font-weight: bold; /* Bold text */
+  color: rgb(255, 255, 255); /* White text */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Text shadow */
+  margin: 0; /* Remove default margins */
+  z-index: 30; /* Ensure the title is above everything */
+  position: relative; /* Ensure it respects the stacking context */
 }
 
+/* Conținutul paginii */
+main {
+  position: relative;
+  z-index: 1; /* Conținutul rămâne deasupra imaginii */
+  padding-top: 300px; /* Adaugă spațiu pentru a evita suprapunerea cu secțiunea Hero */
+}
+.hero-logo {
+  position: absolute;
+  top: 60%; /* Align vertically with the hero section */
+  left: 10px; /* Adjust the left margin to bring the logo closer */
+  transform: translateY(-50%); /* Center the logo vertically */
+  max-width: 150px; /* Increase the maximum width for the logo */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 20; /* Ensure the logo is above the overlay */
+  opacity: 1; /* Ensure the logo is fully visible */
+}
 
+.hero-logo-left,
+.hero-logo-right {
+  position: absolute;
+  top: 60%; /* Align vertically with the hero section */
+  transform: translateY(-50%); /* Center the logo vertically */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 20; /* Ensure the logo is above the overlay */
+  opacity: 1; /* Ensure the logo is fully visible */
+}
 
+/* Default sizes for larger screens */
+.hero-logo-left {
+  left: 10px; /* Adjust the left margin to position the logo */
+  max-width: 200px; /* Set the size for the left logo */
+}
 
+.hero-logo-right {
+  right: 35px; /* Adjust the right margin to position the logo */
+  max-width: 150px; /* Set the size for the right logo */
+}
 
+/* Medium screens: Reduce logo size */
+@media (max-width: 1024px) {
+  .hero-logo-left,
+  .hero-logo-right {
+    max-width: 100px; /* Reduce the size for medium screens */
+  }
+}
 
+/* Small screens: Further reduce logo size */
+@media (max-width: 768px) {
+  .hero-logo-left,
+  .hero-logo-right {
+    max-width: 80px; /* Reduce the size for small screens */
+  }
+}
 
-
-
-
+/* Minimum screen size: Hide logos */
+@media (max-width: 768px) {
+  .hero-logo-left,
+  .hero-logo-right {
+    display: none; /* Hide both logos on very small screens */
+  }
+}
