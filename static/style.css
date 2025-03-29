@@ -19,10 +19,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #001f3f; /* Albastru închis */
+    background-color: #002c58; /* Albastru închis */
     width: 100%;
     z-index: 1000; /* Navbar-ul rămâne deasupra imaginii */
-    transition: top 0.3s ease; /* Tranziție lină pentru ascundere/apariție */
+    transition: top 0.5s ease; /* Tranziție lină pentru ascundere/apariție */
   }
   
   /* Imaginea din navbar */
@@ -47,8 +47,9 @@ body {
 
 .navbar-nav .nav-item {
   margin-left: 15px; /* Spațiu între linkuri */
-  border-left: 2px solid #004080; /* Linie albastră închisă între linkuri */
+  border-left: 2px solid #ffffff; /* Linie albastră închisă între linkuri */
   padding-left: 15px; /* Spațiu interior după linie */
+  border-radius: 1px;
 
 }
 
@@ -69,18 +70,19 @@ body {
 
 /* Stil pentru link-ul activ din navbar */
 .navbar-nav .nav-link.active {
-  color: #00bfff; /* Albastru deschis */
+  color: #00a6ff; /* Albastru deschis */
   font-weight: bold; /* Text bold */
-  border-bottom: 2px solid #00bfff; /* Linie sub link */
+  border-bottom: 2px solid #940000; /* Linie sub link */
 }
 
 /* Hero Section */
 .hero-section {
   position: relative;
   height: 300px; /* Înălțimea secțiunii Hero */
-  background: url("../static/images/UMFST-tg-mures-panoramica.png") no-repeat center center;
+  background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgb(0, 0, 0) 100%),
+    url("../static/images/UMFST-tg-mures-panoramica.png") no-repeat center center;
   background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
-  background-attachment: fixed; /* Imaginea rămâne fixă */
   margin-top: 0; /* Elimină orice spațiu de sus */
 }
 
@@ -91,32 +93,34 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 139, 0.5); /* Albastru cu opacitate */
+  background-color: rgba(5, 61, 134, 0.527); /* Albastru cu opacitate */
 }
 
 /* Container pentru text */
 .hero-container {
   position: absolute;
-  top: 50%; /* Centrează pe verticală */
+  top: 55%; /* Centrează pe verticală */
   left: 50%; /* Centrează pe orizontală */
   transform: translate(-50%, -50%); /* Ajustează poziția pentru a fi exact în centru */
   text-align: center;
-  border: 4px solid white; /* Border alb mai gros */
+  border-left: 5px solid white; /* Border alb pe partea stângă */
+  border-right: 5px solid white; /* Border alb pe partea dreaptă */
   opacity: 0.8; /* Opacitate pentru fundal */
   padding: 30px 60px; /* Spațiu interior mai mare */
   width: 80%; /* Dimensiune fixă pentru titlu */
   max-width: 600px; /* Dimensiune maximă pentru titlu */
   min-width: 300px; /* Dimensiune minimă pentru titlu */
-  border-radius: 15px; /* Colțuri rotunjite */
+  border-radius: 0px; /* Colțuri rotunjite */
   box-sizing: border-box; /* Include padding-ul în dimensiuni */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0); /* Umbră pentru border */
 }
 
 /* Stil pentru titlu */
 .hero-title {
-  font-family: "Playfair Display", serif; /* Font classy */
-  font-size: 4.5rem; /* Dimensiune mai mare pentru text */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem); /* Minimum 1.5rem, preferred 3.5vw, maximum 3rem */
   font-weight: bold; /* Text bold */
-  color: white; /* Text alb */
+  color: rgb(255, 255, 255); /* Text alb */
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Umbră pentru text */
   margin: 0; /* Elimină marginile implicite */
 }
@@ -126,6 +130,87 @@ main {
   position: relative;
   z-index: 1; /* Conținutul rămâne deasupra imaginii */
   padding-top: 300px; /* Adaugă spațiu pentru a evita suprapunerea cu secțiunea Hero */
+}
+
+/* Stiluri generale pentru secțiuni */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #002c58; /* Albastru închis */
+}
+
+.section-text {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.img-fluid {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Secțiunea cu fundal albastru */
+.blue-section {
+  background-color: #002c58; /* Fundal albastru solid */
+  color: white; /* Text alb */
+  padding: 60px 20px; /* Spațiu interior */
+  width: 100%; /* Ocupă întreaga lățime */
+}
+
+.blue-section h1 {
+  font-size: 3rem; /* Dimensiune mare pentru titlu */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.blue-section p {
+  font-size: 1.5rem; /* Dimensiune mai mare pentru text */
+  line-height: 1.8;
+}
+
+/* Secțiunea cu fundal albastru și gradient */
+.blue-gradient-section {
+  background: linear-gradient(to bottom, white, #002c58); /* Gradient din alb în albastru */
+  color: white; /* Text alb */
+  padding: 60px 20px; /* Spațiu interior */
+  width: 100%; /* Ocupă întreaga lățime */
+}
+
+.blue-gradient-section h1 {
+  font-size: 3rem; /* Dimensiune mare pentru titlu */
+  font-weight: bold;
+}
+
+.blue-gradient-section p {
+  font-size: 1.5rem; /* Dimensiune mai mare pentru text */
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* Carduri albastre */
+.blue-card {
+  background-color: #002c58; /* Albastru închis */
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blue-card .card-img-top {
+  height: 200px; /* Înălțime fixă pentru imagini */
+  object-fit: cover; /* Ajustează imaginea să se potrivească */
+}
+
+.blue-card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00a6ff; /* Albastru deschis */
+}
+
+.blue-card .card-text {
+  font-size: 1rem;
+  color: #ffffff; /* Text alb */
+  line-height: 1.6;
 }
 
 
