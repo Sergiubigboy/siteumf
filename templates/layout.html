@@ -89,15 +89,25 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section outside the block -->
     <div class="hero-section text-center">
-      <div class="hero-overlay">
-        <div class="hero-container">
-          <h1 class="hero-title">{{ title }}</h1>
-        </div>
+      <div class="hero-overlay"></div>
+      <img
+        src="{{ url_for('static', filename='images/liceuSigla.png') }}"
+        alt="Logo Left"
+        class="hero-logo-left"
+      />
+      <img
+        src="{{ url_for('static', filename='images/logoUMFST.png') }}"
+        alt="Logo Right"
+        class="hero-logo-right"
+      />
+      <div class="hero-container">
+        <h1 class="hero-title">{{ title }}</h1>
       </div>
     </div>
 
+    <!-- Content block -->
     <div class="container mt-4">{% block content %}{% endblock %}</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
