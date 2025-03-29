@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" />
 
-    <title>Liceul Umfst{% block title %}{% endblock %}</title>
+    <title>Liceul Umfst - {{subtitlu}}</title>
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,12 +24,6 @@
     <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
-          <img
-            src="{{ url_for('static', filename='images/liceuSigla.png') }}"
-            alt="Logo"
-            height="40"
-            class="mr-2"
-          />
           Liceul UMFST
         </a>
         <button
@@ -33,17 +31,55 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="/despre">About</a>
+              <a
+                class="nav-link {% if request.path == '/' %}active{% endif %}"
+                href="/"
+                >Acasă</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
+              <a
+                class="nav-link {% if request.path == '/despre' %}active{% endif %}"
+                href="/despre"
+                >Despre</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.path == '/elevi' %}active{% endif %}"
+                href="/elevi"
+                >Elevi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.path == '/profesori' %}active{% endif %}"
+                href="/profesori"
+                >Profesori</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.path == '/echohub' %}active{% endif %}"
+                href="/echohub"
+                >EchoHub</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.path == '/premii' %}active{% endif %}"
+                href="/premii"
+                >Premii</a
+              >
             </li>
           </ul>
         </div>
@@ -53,10 +89,8 @@
     <!-- Hero Section -->
     <div class="hero-section text-center">
       <div class="hero-overlay">
-        <div
-          class="hero-text bg-white text-dark py-3 px-5 rounded position-absolute top-50 start-50 translate-middle"
-        >
-          <h1 class="display-4 fw-bold">{{ title }}</h1>
+        <div class="hero-container">
+          <h1 class="hero-title">{{ title }}</h1>
         </div>
       </div>
     </div>
@@ -66,5 +100,24 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.querySelector(".custom-nav");
+
+      window.addEventListener("scroll", function () {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          // Scroll în jos - ascunde navbar-ul
+          navbar.style.top = "-80px"; // Ascunde navbar-ul (ajustează în funcție de înălțimea navbar-ului)
+        } else {
+          // Scroll în sus - arată navbar-ul
+          navbar.style.top = "0";
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Previne valori negative
+      });
+    </script>
   </body>
 </html>
