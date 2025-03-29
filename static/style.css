@@ -150,68 +150,9 @@ main {
   object-fit: cover;
 }
 
-/* Secțiunea cu fundal albastru */
-.blue-section {
-  background-color: #002c58; /* Fundal albastru solid */
-  color: white; /* Text alb */
-  padding: 60px 20px; /* Spațiu interior */
-  width: 100%; /* Ocupă întreaga lățime */
-}
 
-.blue-section h1 {
-  font-size: 3rem; /* Dimensiune mare pentru titlu */
-  font-weight: bold;
-  margin-bottom: 20px;
-}
 
-.blue-section p {
-  font-size: 1.5rem; /* Dimensiune mai mare pentru text */
-  line-height: 1.8;
-}
 
-/* Secțiunea cu fundal albastru și gradient */
-.blue-gradient-section {
-  background: linear-gradient(to bottom, white, #002c58); /* Gradient din alb în albastru */
-  color: white; /* Text alb */
-  padding: 60px 20px; /* Spațiu interior */
-  width: 100%; /* Ocupă întreaga lățime */
-}
-
-.blue-gradient-section h1 {
-  font-size: 3rem; /* Dimensiune mare pentru titlu */
-  font-weight: bold;
-}
-
-.blue-gradient-section p {
-  font-size: 1.5rem; /* Dimensiune mai mare pentru text */
-  line-height: 1.8;
-  margin-top: 20px;
-}
-
-/* Carduri albastre */
-.blue-card {
-  background-color: #002c58; /* Albastru închis */
-  border: none;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.blue-card .card-img-top {
-  height: 200px; /* Înălțime fixă pentru imagini */
-  object-fit: cover; /* Ajustează imaginea să se potrivească */
-}
-
-.blue-card .card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #00a6ff; /* Albastru deschis */
-}
-
-.blue-card .card-text {
-  font-size: 1rem;
-  color: #ffffff; /* Text alb */
-  line-height: 1.6;
-}
 
 
 
