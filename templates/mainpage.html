@@ -1,3 +1,90 @@
-{% extends "layout.html" %} {%block content %}
-<button>Hello</button>
+{% extends "layout.html" %} {% block content %}
+<div class="container my-5">
+  <!-- Secțiunea 1 -->
+  <div class="row g-4 align-items-center">
+    <div class="col-md-6">
+      <div class="text-container shadow">
+        <h2 class="section-title">Despre Liceul UMFST</h2>
+        <p class="section-text">
+          Liceul UMFST este locul unde educația întâlnește excelența. Cu o
+          tradiție de peste 50 de ani, oferim elevilor noștri oportunități unice
+          de dezvoltare personală și profesională. Profesorii noștri dedicați și
+          resursele moderne creează un mediu educațional de excepție.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img
+        src="{{ url_for('static', filename='images/liceu1.jpg') }}"
+        class="img-fluid rounded shadow"
+        alt="Liceul UMFST"
+      />
+    </div>
+  </div>
+
+  <!-- Secțiunea 2 -->
+  <div class="row g-4 align-items-center my-5">
+    <div class="col-md-6 order-md-2">
+      <div class="text-container shadow">
+        <h2 class="section-title">Misiunea Noastră</h2>
+        <p class="section-text">
+          Ne propunem să formăm liderii de mâine printr-o educație modernă,
+          bazată pe inovație și valori morale. Elevii noștri sunt încurajați să
+          își dezvolte abilitățile și să își urmeze pasiunile într-un mediu
+          sigur și prietenos.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 order-md-1">
+      <img
+        src="{{ url_for('static', filename='images/liceu2.jpg') }}"
+        class="img-fluid rounded shadow"
+        alt="Misiunea Liceului UMFST"
+      />
+    </div>
+  </div>
+
+  <!-- Secțiunea 3 -->
+  <div class="row g-4 align-items-center my-5">
+    <div class="col-md-6">
+      <div class="text-container shadow">
+        <h2 class="section-title">Oportunități pentru Elevi</h2>
+        <p class="section-text">
+          Liceul UMFST oferă o gamă largă de activități extracurriculare, de la
+          cluburi de robotică și programare, până la competiții sportive și
+          artistice. Elevii noștri au acces la laboratoare moderne, biblioteci
+          bine echipate și parteneriate internaționale.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img
+        src="{{ url_for('static', filename='images/liceu3.jpg') }}"
+        class="img-fluid rounded shadow"
+        alt="Oportunități pentru Elevi"
+      />
+    </div>
+  </div>
+
+  <!-- Secțiunea 4 -->
+  <div class="row g-4 align-items-center my-5">
+    <div class="col-md-6 order-md-2">
+      <div class="text-container shadow">
+        <h2 class="section-title">De ce să alegi Liceul UMFST?</h2>
+        <p class="section-text">
+          Pentru că oferim un mediu educațional de excepție, cu profesori
+          dedicați, resurse moderne și oportunități unice de dezvoltare
+          personală și profesională.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 order-md-1">
+      <img
+        src="{{ url_for('static', filename='images/liceu4.jpg') }}"
+        class="img-fluid rounded shadow"
+        alt="De ce să alegi Liceul UMFST?"
+      />
+    </div>
+  </div>
+</div>
 {% endblock %}
