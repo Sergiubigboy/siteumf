@@ -30,7 +30,7 @@ main {
 }
 
 .img-fluid:hover {
-  transform: scale(1.05); /* Mărește imaginea la hover */
+  transform: scale(1.01); /* Mărește imaginea la hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată la hover */
 }
 
