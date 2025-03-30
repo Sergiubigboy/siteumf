@@ -20,8 +20,8 @@ main {
 
 /* Imagini */
 .img-fluid {
-  width: 100%; /* Imaginea ocupă întreaga lățime a containerului */
-  height: 100%; /* Imaginea ocupă întreaga înălțime a containerului */
+  max-width: 100%; /* Imaginea ocupă întreaga lățime a containerului */
+  height: auto; /* Păstrează proporțiile imaginii */
   object-fit: cover; /* Ajustează imaginea să se potrivească fără a fi distorsionată */
   border-radius: 15px; /* Colțuri rotunjite pentru imagini */
   border: 5px solid #002c58; /* Border albastru închis */
@@ -36,25 +36,33 @@ main {
 
 /* Div-urile care conțin imaginile */
 .col-md-6 {
-  height: 100%; /* Asigură că div-urile au aceeași înălțime */
   display: flex;
-  align-items: stretch; /* Întinde conținutul pe întreaga înălțime */
+  align-items: center; /* Centrează vertical conținutul */
+  justify-content: center; /* Centrează orizontal conținutul */
+  margin-bottom: 30px; /* Spațiu între imagine și card */
 }
 
-/* Container pentru text */
+/* Dimensiuni personalizate pentru carduri */
+.card-large {
+  min-height: 400px; /* Card mare */
+}
+
+.card-medium {
+  min-height: 300px; /* Card mediu */
+}
+
+.card-small {
+  min-height: 200px; /* Card mic */
+}
+
+/* Stiluri generale pentru carduri */
 .text-container {
+  margin-top: 20px; /* Spațiu suplimentar între carduri și alte elemente */
   background-color: #ffffff; /* Fundal alb */
-  padding: 30px; /* Spațiu interior */
-  border-radius: 15px; /* Colțuri rotunjite */
+  border-radius: 10px; /* Colțuri rotunjite */
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
-  border-top: 5px solid #002c58; /* Linie decorativă în partea de sus */
-  color: #333; /* Text gri închis */
-  min-height: 300px; /* Înălțime minimă pentru carduri */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centrează textul pe verticală */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
-  margin-bottom: 50px;
 }
 
 .text-container:hover {
@@ -73,4 +81,11 @@ main {
   font-size: 1rem;
   line-height: 1.6;
   color: #555; /* Gri deschis */
+}
+
+/* Aliniere la mijloc pentru rândurile cu imagini și carduri */
+.row.align-items-center {
+  display: flex; /* Activează Flexbox */
+  align-items: center; /* Centrează vertical */
+  justify-content: center; /* Centrează orizontal */
 }

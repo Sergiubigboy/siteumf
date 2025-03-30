@@ -19,6 +19,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    opacity: 0.8;
     background-color: #002c58; /* Albastru închis */
     width: 100%;
     z-index: 1000; /* Navbar-ul rămâne deasupra imaginii */
