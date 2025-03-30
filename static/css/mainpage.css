@@ -1,24 +1,76 @@
 /* Conținutul paginii */
 main {
-    position: relative;
-    z-index: 1; /* Conținutul rămâne deasupra imaginii */
-    padding-top: 300px; /* Adaugă spațiu pentru a evita suprapunerea cu secțiunea Hero */
-  }
-  
-  /* Stiluri generale pentru secțiuni */
-  .section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #002c58; /* Albastru închis */
-  }
-  
-  .section-text {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.8;
-  }
-  
-  .img-fluid {
-    max-height: 300px;
-    object-fit: cover;
-  }
+  position: relative;
+  z-index: 1; /* Conținutul rămâne deasupra imaginii */
+  padding-top: 300px; /* Adaugă spațiu pentru a evita suprapunerea cu secțiunea Hero */
+}
+
+/* Stiluri generale pentru secțiuni */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #002c58; /* Albastru închis */
+}
+
+.section-text {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Imagini */
+.img-fluid {
+  width: 100%; /* Imaginea ocupă întreaga lățime a containerului */
+  height: 100%; /* Imaginea ocupă întreaga înălțime a containerului */
+  object-fit: cover; /* Ajustează imaginea să se potrivească fără a fi distorsionată */
+  border-radius: 15px; /* Colțuri rotunjite pentru imagini */
+  border: 5px solid #002c58; /* Border albastru închis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă pentru imagini */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+}
+
+.img-fluid:hover {
+  transform: scale(1.05); /* Mărește imaginea la hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată la hover */
+}
+
+/* Div-urile care conțin imaginile */
+.col-md-6 {
+  height: 100%; /* Asigură că div-urile au aceeași înălțime */
+  display: flex;
+  align-items: stretch; /* Întinde conținutul pe întreaga înălțime */
+}
+
+/* Container pentru text */
+.text-container {
+  background-color: #ffffff; /* Fundal alb */
+  padding: 30px; /* Spațiu interior */
+  border-radius: 15px; /* Colțuri rotunjite */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+  border-top: 5px solid #002c58; /* Linie decorativă în partea de sus */
+  color: #333; /* Text gri închis */
+  min-height: 300px; /* Înălțime minimă pentru carduri */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrează textul pe verticală */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+  margin-bottom: 50px;
+}
+
+.text-container:hover {
+  transform: translateY(-5px); /* Ridică cardul la hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată la hover */
+}
+
+.text-container .section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #002c58; /* Albastru închis */
+}
+
+.text-container .section-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555; /* Gri deschis */
+}

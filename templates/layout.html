@@ -21,6 +21,7 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/layout.css') }}"
     />
+    {% block extra_css %}{% endblock %}
   </head>
   <body>
     <!-- Navbar -->
@@ -90,7 +91,7 @@
     </nav>
 
     <!-- Hero Section outside the block -->
-    <div class="hero-section text-center">
+    <div class="hero-section">
       <div class="hero-overlay"></div>
       <img
         src="{{ url_for('static', filename='images/liceuSigla.png') }}"
@@ -131,6 +132,34 @@
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Previne valori negative
       });
+    </script>
+    <script>
+      // Funcție pentru a verifica dacă un element este vizibil în viewport cu un offset
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        const offset = 80; // Offset de 20px
+        return (
+          rect.top <=
+            (window.innerHeight || document.documentElement.clientHeight) -
+              offset && rect.bottom >= offset
+        );
+      }
+
+      // Activează clasa "show" pentru elementele vizibile
+      function handleScroll() {
+        const fadeElements = document.querySelectorAll(".fade-in");
+        fadeElements.forEach((el) => {
+          if (isInViewport(el)) {
+            el.classList.add("show");
+          }
+        });
+      }
+
+      // Ascultă evenimentul de scroll
+      window.addEventListener("scroll", handleScroll);
+
+      // Rulează funcția la încărcarea paginii
+      document.addEventListener("DOMContentLoaded", handleScroll);
     </script>
   </body>
 </html>
