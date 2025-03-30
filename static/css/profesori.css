@@ -1,0 +1,44 @@
+.subject-box {
+  background-color: #002c58; /* Fundal deschis */
+  border-radius: 8px; /* Colțuri rotunjite */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+  padding: 20px; /* Spațiere interioară */
+  margin-bottom: 20px; /* Adds vertical spacing */
+  border: 2px solid #ffffff; /* Adds a red border */
+}
+
+.subject-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff; /* Albastru închis */
+  margin-bottom: 10px;
+}
+
+.professor-name {
+  font-size: 1rem;
+  color: #ffffff; /* Gri deschis */
+  margin: 0;
+}
+
+.page-title {
+  font-size: 2.5rem; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Center the text */
+  margin-bottom: 30px; /* Add spacing below the title */
+  text-transform: uppercase; /* Make the text uppercase */
+  text-shadow: 
+    -2px -2px 0 #002c58, /* Top-left shadow */
+    2px -2px 0 #002c58,  /* Top-right shadow */
+    -2px 2px 0 #002c58,  /* Bottom-left shadow */
+    2px 2px 0 #002c58;   /* Bottom-right shadow */
+}
+
+.big-box {
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  margin-bottom: 30px; /* Space below the box */
+  border: 2px solid #002c58; /* Dark blue border */
+}
