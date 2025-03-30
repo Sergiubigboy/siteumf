@@ -1,4 +1,153 @@
-{% extends "layout.html" %} {% block extra_css %}<link
-  rel="stylesheet"
-  href="{{ url_for('static', filename='css/profesori.css') }}"
-/>{% endblock %} {%block content %} {%endblock%}
+{% extends "layout.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/profesori.css') }}" />
+{% endblock %}
+
+{% block content %}
+<!-- Big box for all professors -->
+<div class="big-box shadow p-4 mb-5">
+  <div class="row g-4">
+      <!-- Limba și literatura română -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3 mb-4">
+          <h3 class="professor-name text-center">Bogdan Rațiu</h3>
+          <p class="subject-title text-center">Limba și literatura română</p>
+        </div>
+      </div>
+
+      <!-- Matematică -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3 mb-4">
+          <h3 class="professor-name text-center">Nicola Oprea</h3>
+          <p class="subject-title text-center">Matematică</p>
+        </div>
+      </div>
+
+      <!-- Limba engleză -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Bianca Han</h3>
+          <p class="subject-title text-center">Limba engleză</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Kutasi Réka</h3>
+          <p class="subject-title text-center">Limba engleză</p>
+        </div>
+      </div>
+
+      <!-- Limba franceză -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Corina Bozedean</h3>
+          <p class="subject-title text-center">Limba franceză</p>
+        </div>
+      </div>
+
+      <!-- Limba germană -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Andreea-Romana Ban</h3>
+          <p class="subject-title text-center">Limba germană</p>
+        </div>
+      </div>
+
+      <!-- Fizică -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Ioan Tușnea</h3>
+          <p class="subject-title text-center">Fizică</p>
+        </div>
+      </div>
+
+      <!-- Chimie -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Mihai Babotă</h3>
+          <p class="subject-title text-center">Chimie</p>
+        </div>
+      </div>
+
+      <!-- Biologie -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Corneliu Tanase</h3>
+          <p class="subject-title text-center">Biologie</p>
+        </div>
+      </div>
+
+      <!-- Istorie -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Georgeta Fodor</h3>
+          <p class="subject-title text-center">Istorie</p>
+        </div>
+      </div>
+
+      <!-- Geografie -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Crina Chirilă</h3>
+          <p class="subject-title text-center">Geografie</p>
+        </div>
+      </div>
+
+      <!-- Logică -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Nora Dumbravă</h3>
+          <p class="subject-title text-center">Logică</p>
+        </div>
+      </div>
+
+      <!-- Religie -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Barsan</h3>
+          <p class="subject-title text-center">Religie</p>
+        </div>
+      </div>
+
+      <!-- Educație vizuală -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Bogdan Bucur</h3>
+          <p class="subject-title text-center">Educație vizuală</p>
+        </div>
+      </div>
+
+      <!-- Educație fizică -->
+      <div class="col-md-4">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Răzvan Alexandrescu</h3>
+          <p class="subject-title text-center">Educație fizică</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Big box for class teachers -->
+<div class="big-box shadow p-4">
+  <div class="row g-4 mt-4">
+      <!-- Clasa a IX-a A -->
+      <div class="col-md-6">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Bianca Han</h3>
+          <p class="subject-title text-center">Clasa a IX-a A</p>
+          <p class="subject-title text-center">Matematică – informatică, bilingv engleză</p>
+        </div>
+      </div>
+
+      <!-- Clasa a IX-a B -->
+      <div class="col-md-6">
+        <div class="subject-box shadow p-3">
+          <h3 class="professor-name text-center">Bogdan Rațiu</h3>
+          <p class="subject-title text-center">Clasa a IX-a B</p>
+          <p class="subject-title text-center">Științe ale naturii, bilingv engleză</p>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %}
