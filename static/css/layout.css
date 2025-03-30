@@ -45,34 +45,49 @@ body {
     align-items: center;
   }
 
-.navbar-nav .nav-item {
-  margin-left: 15px; /* Spațiu între linkuri */
-  border-left: 2px solid #ffffff; /* Linie albastră închisă între linkuri */
-  padding-left: 15px; /* Spațiu interior după linie */
-  border-radius: 1px;
-
+.navbar-nav {
+  display: flex; /* Activează Flexbox */
+  justify-content: space-between; /* Distribuie elementele uniform */
+  width: 100%; /* Ocupă întreaga lățime a navbar-ului */
+  padding: 0; /* Elimină padding-ul implicit */
+  margin: 0; /* Elimină marginile implicite */
+  list-style: none; /* Elimină stilul de listă */
 }
 
-.navbar-nav .nav-item:first-child {
-  border-left: none; /* Elimină linia pentru primul link */
+.navbar-nav .nav-item {
+  flex: 1; /* Fiecare element ocupă spațiu egal */
+  text-align: center; /* Centrează textul în fiecare element */
+  position: relative; /* Necesită pentru linia dintre elemente */
+}
+
+.navbar-nav .nav-item:not(:last-child)::after {
+  content: ""; /* Adaugă o linie între elemente */
+  position: absolute;
+  top: 50%; /* Centrează linia pe verticală */
+  right: 0; /* Poziționează linia la marginea dreaptă */
+  transform: translateY(-50%); /* Ajustează poziția verticală */
+  width: 1px; /* Grosimea liniei */
+  height: 50%; /* Înălțimea liniei */
+  background-color: white; /* Culoarea liniei */
+  opacity: 0.5; /* Transparență pentru un efect subtil */
 }
 
 .navbar-nav .nav-link {
   color: white; /* Text alb */
   font-size: 1rem; /* Dimensiune text */
   font-weight: bold; /* Text bold */
+  padding: 10px 0; /* Spațiu interior pentru linkuri */
   transition: color 0.3s ease; /* Efect de tranziție */
+  text-decoration: none; /* Elimină sublinierea */
 }
 
 .navbar-nav .nav-link:hover {
   color: #00bfff; /* Schimbă culoarea la hover */
 }
 
-/* Stil pentru link-ul activ din navbar */
 .navbar-nav .nav-link.active {
   color: #00a6ff; /* Albastru deschis */
-  font-weight: bold; /* Text bold */
-  border-bottom: 2px solid #940000; /* Linie sub link */
+  border-bottom: 2px solid #940000; /* Linie sub linkul activ */
 }
 
 /* Hero Section */
@@ -80,10 +95,20 @@ body {
   position: relative;
   height: 300px; /* Înălțimea secțiunii Hero */
   background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgb(0, 0, 0) 100%),
-    url("/static/images/UMFST-tg-mures-panoramica.png") no-repeat center bottom;
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("/static/images/UMFST-tg-mures-panoramica.png") no-repeat center center;
   background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
   margin-top: 0; /* Elimină orice spațiu de sus */
+  cursor: pointer; /* Adaugă un cursor pointer pentru hover */
+}
+
+/* Efect de hover pentru hero-section */
+.hero-section:hover .hero-title {
+  transform: scale(1.1); /* Mărește titlul cu 10% */
+}
+
+.hero-section:hover .hero-container {
+  padding: 20px 20px;
 }
 
 /* Overlay pentru secțiunea Hero */
@@ -100,35 +125,34 @@ body {
 /* Container pentru text */
 .hero-container {
   position: absolute;
-  top: 55%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust position to center */
+  top: 55%; /* Centrează pe verticală */
+  left: 50%; /* Centrează pe orizontală */
+  transform: translate(-50%, -50%); /* Ajustează poziția pentru a fi exact în centru */
   text-align: center;
-  border-left: 5px solid white; /* White border on the left */
-  border-right: 5px solid white;
-  /*border-top: 5px solid white;*/ /* White border on the top */
-  /*border-bottom: 5px solid white;*/ /* White border on the right */
-  opacity: 0.8; /* Background opacity */
-  padding: 30px 60px; /* Inner spacing */
-  width: 80%; /* Fixed width for the title */
-  max-width: 600px; /* Maximum width for the title */
-  min-width: 300px; /* Minimum width for the title */
-  border-radius: 0px; /* No rounded corners */
-  box-sizing: border-box; /* Include padding in dimensions */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0); /* Shadow for the border */
-  z-index: 20; /* Ensure it is above the overlay */
+  border-left: 7px solid white; /* Barele mai subțiri */
+  border-right: 7px solid white; /* Barele mai subțiri */
+  opacity: 0.8; /* Fundal semi-transparent */
+  padding: 30px 60px; /* Spațiu interior */
+  width: 80%; /* Dimensiune fixă pentru titlu */
+  max-width: 600px; /* Dimensiune maximă pentru titlu */
+  min-width: 300px; /* Dimensiune minimă pentru titlu */
+  border-radius: 0px; /* Fără colțuri rotunjite */
+  box-sizing: border-box; /* Include padding-ul în dimensiuni */
+  z-index: 20; /* Asigură că este deasupra overlay-ului */
+  transition: padding 0.3 ease; /* Tranziție lină */
 }
 
 /* Stil pentru titlu */
 .hero-title {
   font-family: 'Times New Roman', Times, serif;
-  font-size: clamp(2.5rem, 3.5vw, 3.5rem); /* Responsive font size */
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem); /* Dimensiune responsive */
   font-weight: bold; /* Bold text */
-  color: rgb(255, 255, 255); /* White text */
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Text shadow */
-  margin: 0; /* Remove default margins */
-  z-index: 30; /* Ensure the title is above everything */
-  position: relative; /* Ensure it respects the stacking context */
+  color: rgb(255, 255, 255); /* Text alb */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Umbră pentru text */
+  margin: 0; /* Elimină marginile implicite */
+  z-index: 30; /* Asigură că titlul este deasupra */
+  position: relative; /* Respectă contextul de stacking */
+  transition: transform 0.3s ease-in-out; /* Tranziție lină pentru scalare */
 }
 
 /* Conținutul paginii */
@@ -191,4 +215,16 @@ main {
   .hero-logo-right {
     display: none; /* Hide both logos on very small screens */
   }
+}
+
+/* Stiluri pentru efectul de fade-in */
+.fade-in {
+  opacity: 0; /* Elementul este invizibil inițial */
+  transform: translateY(20px); /* Poziționează elementul mai jos */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Tranziție lină */
+}
+
+.fade-in.show {
+  opacity: 1; /* Elementul devine vizibil */
+  transform: translateY(0); /* Revine la poziția inițială */
 }
