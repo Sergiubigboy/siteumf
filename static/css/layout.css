@@ -1,14 +1,28 @@
-/* Reset general pentru margin și padding */
-body {
-  margin: 0;
-  padding: 0;
-  height: 5000px;
-}
 
 /* Stiluri generale */
 body {
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
+  }
+  
+  /* Stilizare scrollbar */
+  body::-webkit-scrollbar {
+    width: 8px; /* Lățimea scrollbar-ului */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #ffffff; /* Fundalul track-ului scrollbar-ului */
+    border-radius: 5px; /* Colțuri rotunjite */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #002c58; /* Culoarea thumb-ului (partea care se mișcă) */
+    border-radius: 10px; /* Colțuri rotunjite */
+    border: 2px solid #f4f4f4; /* Adaugă un spațiu între thumb și track */
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Culoarea thumb-ului la hover */
   }
   
   /* Navbar styling */
@@ -34,7 +48,7 @@ body {
     transform: translateX(-50%); /* Centrează imaginea pe orizontală */
     width: 100%; /* Imaginea ocupă întreaga lățime */
     height: 150px; /* Înălțimea imaginii */
-    background: url("/static/images/UMFST-tg-mures-panoramica.png") no-repeat center bottom;
+    /*background: url("/static/images/UMFST-tg-mures-panoramica.png") no-repeat center bottom;*/
     background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
     opacity: 0.8; /* Adaugă un efect de transparență */
   }
@@ -82,12 +96,9 @@ body {
   text-decoration: none; /* Elimină sublinierea */
 }
 
-.navbar-nav .nav-link:hover {
-  color: #00bfff; /* Schimbă culoarea la hover */
-}
-
 .navbar-nav .nav-link.active {
-  color: #00a6ff; /* Albastru deschis */
+  width: fit-content; /* Bordura se ajustează la dimensiunea textului */
+  margin: 0 auto; /* Centrează bordura sub text */
   border-bottom: 2px solid #940000; /* Linie sub linkul activ */
 }
 
@@ -95,9 +106,7 @@ body {
 .hero-section {
   position: relative;
   height: 300px; /* Înălțimea secțiunii Hero */
-  background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("/static/images/UMFST-tg-mures-panoramica.png") no-repeat center center;
+  
   background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
   margin-top: 0; /* Elimină orice spațiu de sus */
   cursor: pointer; /* Adaugă un cursor pointer pentru hover */
@@ -106,10 +115,6 @@ body {
 /* Efect de hover pentru hero-section */
 .hero-section:hover .hero-title {
   transform: scale(1.1); /* Mărește titlul cu 10% */
-}
-
-.hero-section:hover .hero-container {
-  padding: 20px 20px;
 }
 
 /* Overlay pentru secțiunea Hero */
@@ -180,7 +185,7 @@ main {
   transform: translateY(-50%); /* Center the logo vertically */
   height: auto; /* Maintain aspect ratio */
   z-index: 20; /* Ensure the logo is above the overlay */
-  opacity: 1; /* Ensure the logo is fully visible */
+  opacity: 0.9; /* Ensure the logo is fully visible */
 }
 
 /* Default sizes for larger screens */

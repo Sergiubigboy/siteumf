@@ -89,20 +89,15 @@
     </nav>
 
     <!-- Hero Section outside the block -->
-    <div class="hero-section">
+    <div
+      class="hero-section"
+      style="background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url('static/images/{{background}}') no-repeat center center; background-size: cover;"
+    >
       <div class="hero-overlay"></div>
-      <img
-        src="{{ url_for('static', filename='images/liceuSigla.png') }}"
-        alt="Logo Left"
-        class="hero-logo-left"
-      />
-      <img
-        src="{{ url_for('static', filename='images/logoUMFST.png') }}"
-        alt="Logo Right"
-        class="hero-logo-right"
-      />
       <div class="hero-container">
-        <h1 class="hero-title">{{ title }}</h1>
+        <h1 class="hero-title">{{title}}</h1>
       </div>
     </div>
 
