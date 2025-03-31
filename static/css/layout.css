@@ -1,236 +1,240 @@
 
 /* Stiluri generale */
 body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Stilizare scrollbar */
-  body::-webkit-scrollbar {
-    width: 8px; /* Lățimea scrollbar-ului */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #ffffff; /* Fundalul track-ului scrollbar-ului */
-    border-radius: 5px; /* Colțuri rotunjite */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: #002c58; /* Culoarea thumb-ului (partea care se mișcă) */
-    border-radius: 10px; /* Colțuri rotunjite */
-    border: 2px solid #f4f4f4; /* Adaugă un spațiu între thumb și track */
-  }
-  
-  body::-webkit-scrollbar-thumb:hover {
-    background: #0056b3; /* Culoarea thumb-ului la hover */
-  }
-  
-  /* Navbar styling */
-  .navbar {
-    margin-bottom: 20px;
-  }
-  .custom-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0.9;
-    background-color: #002c58; /* Albastru închis */
-    width: 100%;
-    z-index: 1000; /* Navbar-ul rămâne deasupra imaginii */
-    transition: top 0.5s ease; /* Tranziție lină pentru ascundere/apariție */
-  }
-  
-  /* Imaginea din navbar */
-  .navbar-image {
-    position: absolute;
-    bottom: 0; /* Poziționează imaginea către partea de jos */
-    left: 50%;
-    transform: translateX(-50%); /* Centrează imaginea pe orizontală */
-    width: 100%; /* Imaginea ocupă întreaga lățime */
-    height: 150px; /* Înălțimea imaginii */
-    /*background: url("/static/images/UMFST-tg-mures-panoramica.png") no-repeat center bottom;*/
-    background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
-    opacity: 0.8; /* Adaugă un efect de transparență */
-  }
-  
-  .navbar-brand img {
-    height: 80px; /* Ajustează dimensiunea siglei */
-    width: auto;
-    display: flex;
-    align-items: center;
-  }
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  position: relative;
+  overflow-x: hidden
+}
+
+/* Stilizare scrollbar */
+body::-webkit-scrollbar {
+  width: 8px; /* Lățimea scrollbar-ului */
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff; /* Fundalul track-ului scrollbar-ului */
+  border-radius: 5px; /* Colțuri rotunjite */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #002c58; /* Culoarea thumb-ului (partea care se mișcă) */
+  border-radius: 10px; /* Colțuri rotunjite */
+  border: 2px solid #f4f4f4; /* Adaugă un spațiu între thumb și track */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Culoarea thumb-ului la hover */
+}
+
+/* Navbar styling */
+.navbar {
+  margin-bottom: 20px;
+}
+.custom-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  background-color: #002c58; /* Albastru închis */
+  width: 100%;
+  z-index: 1000; /* Navbar-ul rămâne deasupra imaginii */
+  transition: top 0.5s ease; /* Tranziție lină pentru ascundere/apariție */
+}
+
+/* Imaginea din navbar */
+.navbar-image {
+  position: absolute;
+  bottom: 0; /* Poziționează imaginea către partea de jos */
+  left: 50%;
+  transform: translateX(-50%); /* Centrează imaginea pe orizontală */
+  width: 100%; /* Imaginea ocupă întreaga lățime */
+  height: 150px; /* Înălțimea imaginii */
+  /*background: url("/static/images/UMFST-tg-mures-panoramica.png") no-repeat center bottom;*/
+  background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
+  opacity: 0.8; /* Adaugă un efect de transparență */
+}
+
+.navbar-brand img {
+  height: 80px; /* Ajustează dimensiunea siglei */
+  width: auto;
+  display: flex;
+  align-items: center;
+}
 
 .navbar-nav {
-  display: flex; /* Activează Flexbox */
-  justify-content: space-between; /* Distribuie elementele uniform */
-  width: 100%; /* Ocupă întreaga lățime a navbar-ului */
-  padding: 0; /* Elimină padding-ul implicit */
-  margin: 0; /* Elimină marginile implicite */
-  list-style: none; /* Elimină stilul de listă */
+display: flex; /* Activează Flexbox */
+justify-content: space-between; /* Distribuie elementele uniform */
+width: 100%; /* Ocupă întreaga lățime a navbar-ului */
+padding: 0; /* Elimină padding-ul implicit */
+margin: 0; /* Elimină marginile implicite */
+list-style: none; /* Elimină stilul de listă */
 }
 
 .navbar-nav .nav-item {
-  flex: 1; /* Fiecare element ocupă spațiu egal */
-  text-align: center; /* Centrează textul în fiecare element */
-  position: relative; /* Necesită pentru linia dintre elemente */
+flex: 1; /* Fiecare element ocupă spațiu egal */
+text-align: center; /* Centrează textul în fiecare element */
+position: relative; /* Necesită pentru linia dintre elemente */
 }
 
 .navbar-nav .nav-item:not(:last-child)::after {
-  content: ""; /* Adaugă o linie între elemente */
-  position: absolute;
-  top: 50%; /* Centrează linia pe verticală */
-  right: 0; /* Poziționează linia la marginea dreaptă */
-  transform: translateY(-50%); /* Ajustează poziția verticală */
-  width: 1px; /* Grosimea liniei */
-  height: 50%; /* Înălțimea liniei */
-  background-color: white; /* Culoarea liniei */
-  opacity: 0.5; /* Transparență pentru un efect subtil */
+content: ""; /* Adaugă o linie între elemente */
+position: absolute;
+top: 50%; /* Centrează linia pe verticală */
+right: 0; /* Poziționează linia la marginea dreaptă */
+transform: translateY(-50%); /* Ajustează poziția verticală */
+width: 1px; /* Grosimea liniei */
+height: 50%; /* Înălțimea liniei */
+background-color: white; /* Culoarea liniei */
+opacity: 0.5; /* Transparență pentru un efect subtil */
 }
 
 .navbar-nav .nav-link {
-  color: white; /* Text alb */
-  font-size: 1rem; /* Dimensiune text */
-  font-weight: bold; /* Text bold */
-  padding: 10px 0; /* Spațiu interior pentru linkuri */
-  transition: color 0.3s ease; /* Efect de tranziție */
-  text-decoration: none; /* Elimină sublinierea */
+color: white; /* Text alb */
+font-size: 1rem; /* Dimensiune text */
+font-weight: bold; /* Text bold */
+padding: 10px 0; /* Spațiu interior pentru linkuri */
+transition: color 0.3s ease; /* Efect de tranziție */
+text-decoration: none; /* Elimină sublinierea */
 }
 
 .navbar-nav .nav-link.active {
-  width: fit-content; /* Bordura se ajustează la dimensiunea textului */
-  margin: 0 auto; /* Centrează bordura sub text */
-  border-bottom: 2px solid #940000; /* Linie sub linkul activ */
+width: fit-content; /* Bordura se ajustează la dimensiunea textului */
+margin: 0 auto; /* Centrează bordura sub text */
+border-bottom: 2px solid #940000; /* Linie sub linkul activ */
 }
 
 /* Hero Section */
 .hero-section {
-  position: relative;
-  height: 300px; /* Înălțimea secțiunii Hero */
-  
-  background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
-  margin-top: 0; /* Elimină orice spațiu de sus */
-  cursor: pointer; /* Adaugă un cursor pointer pentru hover */
+position: relative;
+height: 300px; /* Înălțimea secțiunii Hero */
+
+background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
+margin-top: 0; /* Elimină orice spațiu de sus */
+cursor: pointer; /* Adaugă un cursor pointer pentru hover */
 }
 
 /* Efect de hover pentru hero-section */
 .hero-section:hover .hero-title {
-  transform: scale(1.1); /* Mărește titlul cu 10% */
+transform: scale(1.1); /* Mărește titlul cu 10% */
 }
 
 /* Overlay pentru secțiunea Hero */
 .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(5, 61, 134, 0.527); /* Semi-transparent blue */
-  z-index: 10; /* Lower than the hero-container */
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(5, 61, 134, 0.527); /* Semi-transparent blue */
+z-index: 10; /* Lower than the hero-container */
 }
 
 /* Container pentru text */
 .hero-container {
-  position: absolute;
-  top: 55%; /* Centrează pe verticală */
-  left: 50%; /* Centrează pe orizontală */
-  transform: translate(-50%, -50%); /* Ajustează poziția pentru a fi exact în centru */
-  text-align: center;
-  border-left: 7px solid white; /* Barele mai subțiri */
-  border-right: 7px solid white; /* Barele mai subțiri */
-  opacity: 0.8; /* Fundal semi-transparent */
-  padding: 30px 60px; /* Spațiu interior */
-  width: 80%; /* Dimensiune fixă pentru titlu */
-  max-width: 600px; /* Dimensiune maximă pentru titlu */
-  min-width: 300px; /* Dimensiune minimă pentru titlu */
-  border-radius: 0px; /* Fără colțuri rotunjite */
-  box-sizing: border-box; /* Include padding-ul în dimensiuni */
-  z-index: 20; /* Asigură că este deasupra overlay-ului */
-  transition: padding 0.3 ease; /* Tranziție lină */
+position: absolute;
+top: 55%; /* Centrează pe verticală */
+left: 50%; /* Centrează pe orizontală */
+transform: translate(-50%, -50%); /* Ajustează poziția pentru a fi exact în centru */
+text-align: center;
+border-left: 7px solid white; /* Barele mai subțiri */
+border-right: 7px solid white; /* Barele mai subțiri */
+opacity: 0.8; /* Fundal semi-transparent */
+padding: 30px 60px; /* Spațiu interior */
+width: 80%; /* Dimensiune fixă pentru titlu */
+max-width: 600px; /* Dimensiune maximă pentru titlu */
+min-width: 300px; /* Dimensiune minimă pentru titlu */
+border-radius: 0px; /* Fără colțuri rotunjite */
+box-sizing: border-box; /* Include padding-ul în dimensiuni */
+z-index: 20; /* Asigură că este deasupra overlay-ului */
+transition: padding 0.3 ease; /* Tranziție lină */
 }
 
 /* Stil pentru titlu */
 .hero-title {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: clamp(2.5rem, 3.5vw, 3.5rem); /* Dimensiune responsive */
-  font-weight: bold; /* Bold text */
-  color: rgb(255, 255, 255); /* Text alb */
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Umbră pentru text */
-  margin: 0; /* Elimină marginile implicite */
-  z-index: 30; /* Asigură că titlul este deasupra */
-  position: relative; /* Respectă contextul de stacking */
-  transition: transform 0.3s ease-in-out; /* Tranziție lină pentru scalare */
+font-family: 'Times New Roman', Times, serif;
+font-size: clamp(2.5rem, 3.5vw, 3.5rem); /* Dimensiune responsive */
+font-weight: bold; /* Bold text */
+color: rgb(255, 255, 255); /* Text alb */
+text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Umbră pentru text */
+margin: 0; /* Elimină marginile implicite */
+z-index: 30; /* Asigură că titlul este deasupra */
+position: relative; /* Respectă contextul de stacking */
+transition: transform 0.3s ease-in-out; /* Tranziție lină pentru scalare */
 }
 
 /* Conținutul paginii */
 main {
-  position: relative;
-  z-index: 1; /* Conținutul rămâne deasupra imaginii */
-  padding-top: 300px; /* Adaugă spațiu pentru a evita suprapunerea cu secțiunea Hero */
+position: relative;
+z-index: 1; /* Conținutul rămâne deasupra imaginii */
+padding-top: 300px; /* Adaugă spațiu pentru a evita suprapunerea cu secțiunea Hero */
 }
 .hero-logo {
-  position: absolute;
-  top: 60%; /* Align vertically with the hero section */
-  left: 10px; /* Adjust the left margin to bring the logo closer */
-  transform: translateY(-50%); /* Center the logo vertically */
-  max-width: 150px; /* Increase the maximum width for the logo */
-  height: auto; /* Maintain aspect ratio */
-  z-index: 20; /* Ensure the logo is above the overlay */
-  opacity: 1; /* Ensure the logo is fully visible */
+position: absolute;
+top: 60%; /* Align vertically with the hero section */
+left: 10px; /* Adjust the left margin to bring the logo closer */
+transform: translateY(-50%); /* Center the logo vertically */
+max-width: 150px; /* Increase the maximum width for the logo */
+height: auto; /* Maintain aspect ratio */
+z-index: 20; /* Ensure the logo is above the overlay */
+opacity: 1; /* Ensure the logo is fully visible */
 }
 
 .hero-logo-left,
 .hero-logo-right {
-  position: absolute;
-  top: 60%; /* Align vertically with the hero section */
-  transform: translateY(-50%); /* Center the logo vertically */
-  height: auto; /* Maintain aspect ratio */
-  z-index: 20; /* Ensure the logo is above the overlay */
-  opacity: 0.9; /* Ensure the logo is fully visible */
+position: absolute;
+top: 60%; /* Align vertically with the hero section */
+transform: translateY(-50%); /* Center the logo vertically */
+height: auto; /* Maintain aspect ratio */
+z-index: 20; /* Ensure the logo is above the overlay */
+opacity: 0.9; /* Ensure the logo is fully visible */
 }
 
 /* Default sizes for larger screens */
 .hero-logo-left {
-  left: 10px; /* Adjust the left margin to position the logo */
-  max-width: 200px; /* Set the size for the left logo */
+left: 10px; /* Adjust the left margin to position the logo */
+max-width: 200px; /* Set the size for the left logo */
 }
 
 .hero-logo-right {
-  right: 35px; /* Adjust the right margin to position the logo */
-  max-width: 150px; /* Set the size for the right logo */
+right: 35px; /* Adjust the right margin to position the logo */
+max-width: 150px; /* Set the size for the right logo */
 }
 
 /* Medium screens: Reduce logo size */
 @media (max-width: 1024px) {
-  .hero-logo-left,
-  .hero-logo-right {
-    max-width: 100px; /* Reduce the size for medium screens */
-  }
+.hero-logo-left,
+.hero-logo-right {
+  max-width: 100px; /* Reduce the size for medium screens */
+}
 }
 
 /* Small screens: Further reduce logo size */
 @media (max-width: 768px) {
-  .hero-logo-left,
-  .hero-logo-right {
-    max-width: 80px; /* Reduce the size for small screens */
-  }
+.hero-logo-left,
+.hero-logo-right {
+  max-width: 80px; /* Reduce the size for small screens */
+}
 }
 
 /* Minimum screen size: Hide logos */
 @media (max-width: 768px) {
-  .hero-logo-left,
-  .hero-logo-right {
-    display: none; /* Hide both logos on very small screens */
-  }
+.hero-logo-left,
+.hero-logo-right {
+  display: none; /* Hide both logos on very small screens */
+}
 }
 
 /* Stiluri pentru efectul de fade-in */
 .fade-in {
-  opacity: 0; /* Elementul este invizibil inițial */
-  transform: translateY(20px); /* Poziționează elementul mai jos */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Tranziție lină */
+opacity: 0; /* Elementul este invizibil inițial */
+transform: translateY(20px); /* Poziționează elementul mai jos */
+transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Tranziție lină */
 }
 
 .fade-in.show {
-  opacity: 1; /* Elementul devine vizibil */
-  transform: translateY(0); /* Revine la poziția inițială */
+opacity: 1; /* Elementul devine vizibil */
+transform: translateY(0); /* Revine la poziția inițială */
 }

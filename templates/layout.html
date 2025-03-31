@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -50,9 +50,9 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link {% if request.path == '/despre' %}active{% endif %}"
-                href="/despre"
-                >Despre</a
+                class="nav-link {% if request.path == '/corp-profesoral' %}active{% endif %}"
+                href="/corp-profesoral"
+                >Corp profesoral</a
               >
             </li>
             <li class="nav-item">
@@ -64,13 +64,6 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link {% if request.path == '/profesori' %}active{% endif %}"
-                href="/profesori"
-                >Profesori</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
                 class="nav-link {% if request.path == '/echohub' %}active{% endif %}"
                 href="/echohub"
                 >EchoHub</a
@@ -78,9 +71,16 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link {% if request.path == '/premii' %}active{% endif %}"
-                href="/premii"
-                >Premii</a
+                class="nav-link {% if request.path == '/podcast' %}active{% endif %}"
+                href="/podcast"
+                >Podcast</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.path == '/revista' %}active{% endif %}"
+                href="/revista"
+                >Revista</a
               >
             </li>
           </ul>

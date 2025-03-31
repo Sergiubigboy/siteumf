@@ -1,10 +1,9 @@
-{% extends "layout.html" %}
-
-{% block extra_css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/mainpage.css') }}" />
-{% endblock %}
-
-{% block content %}
+{% extends "layout.html" %} {% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/mainpage.css') }}"
+/>
+{% endblock %} {% block content %}
 <div class="container my-5">
   <!-- Section 1 -->
   <div class="row g-4 align-items-center fade-in">
@@ -34,7 +33,9 @@
       <div class="text-container shadow card-small">
         <h2 class="section-title">Oportunități pentru Elevi</h2>
         <p class="section-text">
-          Elevii noștri beneficiază de programe educaționale inovatoare, activități extracurriculare și parteneriate internaționale care le deschid noi orizonturi.
+          Elevii noștri beneficiază de programe educaționale inovatoare,
+          activități extracurriculare și parteneriate internaționale care le
+          deschid noi orizonturi.
         </p>
       </div>
     </div>
@@ -53,7 +54,8 @@
       <div class="text-container shadow card-small">
         <h2 class="section-title">Resurse Moderne</h2>
         <p class="section-text">
-          Liceul UMFST pune la dispoziția elevilor laboratoare moderne, biblioteci bine echipate și acces la tehnologie de ultimă generație.
+          Liceul UMFST pune la dispoziția elevilor laboratoare moderne,
+          biblioteci bine echipate și acces la tehnologie de ultimă generație.
         </p>
       </div>
     </div>
