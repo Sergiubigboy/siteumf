@@ -1,0 +1,18 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container mt-4">
+  <div class="text-center">
+    <h1>{{ profesor.nume }}</h1>
+    <p>{{ profesor.materie }}</p>
+    {% if profesor.imagine %}
+    <img
+      src="{{ url_for('static', filename=profesor.imagine) }}"
+      alt="{{ profesor.nume }}"
+      class="img-fluid"
+    />
+    {% else %}
+    <p>Imaginea nu este disponibilă.</p>
+    {% endif %}
+    <p>{{ profesor.descriere }}</p>
+  </div>
+</div>
+{% endblock %}
