@@ -52,7 +52,7 @@ profesori = [
         "nume": "Corneliu Tanase",
         "materie": "Biologie",
         "descriere": "",
-        "imagine": ""
+        "imagine": "images/Corneliu-Tanase.png"
     },
     {
         "nume": "Georgeta Fodor",
