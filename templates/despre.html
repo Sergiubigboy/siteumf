@@ -1,15 +1,10 @@
-{% extends "layout.html" %}
-{% block extra_css %}
+{% extends "layout.html" %} {% block extra_css %}
 <link
   rel="stylesheet"
   href="{{ url_for('static', filename='css/despre.css') }}"
 />
-<link
-  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@300;400;700&display=swap"
-  rel="stylesheet"
-/>
-{% endblock %}
-{% block content %}
+
+{% endblock %} {% block content %}
 <div class="container-fluid position-relative">
   <!-- Forme opace pe toată secțiunea -->
   <div class="background-shape shape-blue shape-1"></div>
@@ -20,23 +15,60 @@
     <div class="text-container shadow p-4">
       <h2 class="section-title">Despre Liceul UMFST</h2>
       <p class="section-text">
-        În cadrul Universității de Medicină, Farmacie, Științe și Tehnologie „G. E. Palade” Târgu Mureș funcționează, începând cu anul școlar 2024 – 2025, Liceul UMFST „George Emil Palade” cu două specializări, Matematică – informatică (bilingv limba engleză) și Științe ale naturii (bilingv limba engleză), cu un efectiv de 26 elevi pentru fiecare clasă.
+        În cadrul Universității de Medicină, Farmacie, Științe și Tehnologie „G.
+        E. Palade” Târgu Mureș funcționează, începând cu anul școlar 2024 –
+        2025, Liceul UMFST „George Emil Palade” cu două specializări, Matematică
+        – informatică (bilingv limba engleză) și Științe ale naturii (bilingv
+        limba engleză), cu un efectiv de 26 elevi pentru fiecare clasă.
       </p>
       <p class="section-text">
-        Pornind de la cadrul legislativ specific și de la contextul academic special în care va funcționa Liceul UMFST „George Emil Palade”, elevii noștri vor beneficia de o ofertă educaţională complexă, care le asigură un parcurs de formare consistent și coerent și o pregătire la standarde înalte de performanță.
+        Pornind de la cadrul legislativ specific și de la contextul academic
+        special în care va funcționa Liceul UMFST „George Emil Palade”, elevii
+        noștri vor beneficia de o ofertă educaţională complexă, care le asigură
+        un parcurs de formare consistent și coerent și o pregătire la standarde
+        înalte de performanță.
       </p>
       <p class="section-text">
         Atingerea unor niveluri înalte de standarde vizează următoarele aspecte:
       </p>
       <ul class="section-list">
-        <li>Punerea în practică a unei oferte educaționale care să permită pregătirea unitară și coerentă a elevilor pe un parcurs complet al nivelurilor de învățământ din sistemul educațional românesc;</li>
-        <li>Practici educaționale cu accent pe formarea competențelor cheie, a abilităților specifice autonomiei în învățare și adaptării la transformările imprevizibile ale societății actuale;</li>
-        <li>Crearea unui mediu de lucru prietenos și adecvat cerințelor educației centrate pe elev, pe nevoile de dezvoltare complexă și completă a personalității în formare;</li>
-        <li>Valorificarea resurselor de care dispune UMFST „G.E. Palade” din Târgu Mureș în asigurarea bazei didactico-materiale adecvate pentru desfășurarea activităților cu elevii;</li>
-        <li>Stabilirea de parteneriate și schimburi culturale în dezvoltarea unor programe extrașcolare și extracurriculare care să vină în completarea și aprofundarea activităților curriculare.</li>
+        <li>
+          Punerea în practică a unei oferte educaționale care să permită
+          pregătirea unitară și coerentă a elevilor pe un parcurs complet al
+          nivelurilor de învățământ din sistemul educațional românesc;
+        </li>
+        <li>
+          Practici educaționale cu accent pe formarea competențelor cheie, a
+          abilităților specifice autonomiei în învățare și adaptării la
+          transformările imprevizibile ale societății actuale;
+        </li>
+        <li>
+          Crearea unui mediu de lucru prietenos și adecvat cerințelor educației
+          centrate pe elev, pe nevoile de dezvoltare complexă și completă a
+          personalității în formare;
+        </li>
+        <li>
+          Valorificarea resurselor de care dispune UMFST „G.E. Palade” din Târgu
+          Mureș în asigurarea bazei didactico-materiale adecvate pentru
+          desfășurarea activităților cu elevii;
+        </li>
+        <li>
+          Stabilirea de parteneriate și schimburi culturale în dezvoltarea unor
+          programe extrașcolare și extracurriculare care să vină în completarea
+          și aprofundarea activităților curriculare.
+        </li>
       </ul>
       <p class="section-text">
-        Misiunea Liceului UMFST „George Emil Palade” se definește prin raportare la exigențele recentelor legi ale educației din România: Legea nr 198/2023 privind învățământul preuniversitar și Legea nr. 199/2023 privind învățământul superior, la standardele naționale și europene de educație, dar și la tradiția valoroasă a instituției fondatoare. Liceul nostru își propune colaborarea cu specialiști atât din învățământul preuniversitar, cât și din învățământul superior, o atmosferă creativă, de colaborare între cadrele didactice deschise activităților interdisciplinare, o relație eficientă cu familia elevilor, privită ca principalul partener educaţional.
+        Misiunea Liceului UMFST „George Emil Palade” se definește prin raportare
+        la exigențele recentelor legi ale educației din România: Legea nr
+        198/2023 privind învățământul preuniversitar și Legea nr. 199/2023
+        privind învățământul superior, la standardele naționale și europene de
+        educație, dar și la tradiția valoroasă a instituției fondatoare. Liceul
+        nostru își propune colaborarea cu specialiști atât din învățământul
+        preuniversitar, cât și din învățământul superior, o atmosferă creativă,
+        de colaborare între cadrele didactice deschise activităților
+        interdisciplinare, o relație eficientă cu familia elevilor, privită ca
+        principalul partener educaţional.
       </p>
       <p class="section-text text-center font-italic">
         <strong>AB JUVENTUTE AD SIDERA!</strong>
@@ -51,9 +83,15 @@
         Ne puteți contacta pentru orice întrebări sau informații suplimentare:
       </p>
       <ul class="contact-list list-unstyled text-center">
-        <li><strong>Adresă:</strong> Strada Gheorghe Marinescu nr. 38, Târgu Mureș, România</li>
+        <li>
+          <strong>Adresă:</strong> Strada Gheorghe Marinescu nr. 38, Târgu
+          Mureș, România
+        </li>
         <li><strong>Telefon:</strong> +40-265-215.551</li>
-        <li><strong>Email:</strong> <a href="mailto:liceul.umfst@umfst.ro">liceul.umfst@umfst.ro</a></li>
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:liceul.umfst@umfst.ro">liceul.umfst@umfst.ro</a>
+        </li>
         <li><strong>Fax:</strong> +40 987 654 321</li>
       </ul>
     </div>
