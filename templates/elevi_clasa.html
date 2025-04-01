@@ -1,0 +1,35 @@
+{% extends "layout.html" %} {% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/elevi_clasa.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="container mt-4">
+  <h1 class="text-center mb-4">Clasa {{ clasa }}</h1>
+  <h3 class="text-center mb-4">Profil: {{ profil }}</h3>
+
+  <!-- Tabel cu elevi -->
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nume</th>
+        <th>Profil</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for elev in elevi %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ elev.nume }}</td>
+        <td>{{ elev.profil }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <a href="{{ url_for('lista_clase') }}" class="btn btn-secondary mt-3"
+    >Înapoi la clase</a
+  >
+</div>
+{% endblock %}
