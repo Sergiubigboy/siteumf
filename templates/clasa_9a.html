@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/clasa_9a.css') }}"
+/>
+{% endblock %}
+{% block content %}
+<div class="container my-5">
+  <h1 class="text-center mb-4">Clasa a IX-a A</h1>
+  <div class="row g-3">
+    {% for elev in elevi %}
+    <div class="col-md-4">
+      <button class="elev-button btn btn-outline-primary w-100">
+        {{ elev }}
+      </button>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

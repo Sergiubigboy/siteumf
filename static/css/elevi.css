@@ -1,0 +1,90 @@
+/* Stiluri pentru containerul principal al paginii Elevi */
+.container {
+    margin-top: 50px; /* Adaugă spațiu între navbar și conținut */
+}
+
+/* Stiluri pentru chenare */
+.class-box {
+    background-color: #ffffff; /* Fundal alb */
+    border-radius: 12px; /* Colțuri rotunjite */
+    border: 2px solid #3498db; /* Contur albastru */
+    text-align: center; /* Text centrat */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animație la hover */
+    padding: 20px; /* Spațiere interioară */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}
+
+.class-box:hover {
+    transform: scale(1.05); /* Mărește ușor la hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată */
+    border-color: #0056b3; /* Schimbă culoarea conturului la hover */
+}
+
+.class-title {
+    font-size: 1.8rem; /* Dimensiune mai mare pentru titlu */
+    font-weight: bold;
+    color: #003366; /* Albastru închis */
+    margin-bottom: 10px;
+}
+
+.class-text {
+    font-size: 1.2rem; /* Dimensiune mai mare pentru text */
+    color: #555; /* Gri deschis */
+    margin-bottom: 5px;
+}
+
+.text-decoration-none {
+    text-decoration: none; /* Elimină sublinierea linkului */
+    color: inherit; /* Păstrează culoarea textului */
+}
+
+/* Fix pentru conflict cu navbarul */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0; /* Elimină marginile implicite care pot afecta layout-ul */
+    padding: 0; /* Elimină padding-ul implicit */
+}
+
+/* Stiluri pentru pagina Elevi */
+.elevi-page .class-box {
+    background-color: #ffffff; /* Fundal alb */
+    border-radius: 12px; /* Colțuri rotunjite */
+    border: 2px solid #3498db; /* Contur albastru */
+    text-align: center; /* Text centrat */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animație la hover */
+    padding: 20px; /* Spațiere interioară */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}
+
+.elevi-page .class-box:hover {
+    transform: scale(1.05); /* Mărește ușor la hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată */
+    border-color: #0056b3; /* Schimbă culoarea conturului la hover */
+}
+
+.elevi-page .class-title {
+    font-size: 1.8rem; /* Dimensiune mai mare pentru titlu */
+    font-weight: bold;
+    color: #003366; /* Albastru închis */
+    margin-bottom: 10px;
+}
+
+.elevi-page .class-text {
+    font-size: 1.2rem; /* Dimensiune mai mare pentru text */
+    color: #555; /* Gri deschis */
+    margin-bottom: 5px;
+}
+
+.elevi-page .text-decoration-none {
+    text-decoration: none; /* Elimină sublinierea linkului */
+    color: inherit; /* Păstrează culoarea textului */
+}
+
+/* Fix pentru conflict cu navbarul */
+.elevi-page {
+    margin-top: 50px; /* Adaugă spațiu între navbar și conținut */
+}
