@@ -1,57 +1,40 @@
+/* General styles for the page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light background */
+  color: #333; /* Default text color */
+}
 
 /* Conținutul paginii */
 
 
-/* Hero section */
-.hero-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #002c58; /* Dark blue background */
-  color: #ffffff; /* White text color */
-  border-radius: 8px; /* Rounded corners */
-  margin-bottom: 20px; /* Space below the hero section */
+/* Background styling for the mainpage */
+.mainpage-bg {
+  background: #ffffff; /* White background */
+  background-attachment: fixed; /* Fix the background in place */
+  background-size: cover; /* Ensure the background covers the entire viewport */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  min-height: 100vh; /* Ensure it covers the full height of the viewport */
+  width: 100%; /* Ensure it spans the full width of the page */
+  padding: 20px 0; /* Add some padding for spacing */
+  position: relative; /* Enable positioning for child elements */
+  z-index: 0; /* Default stacking context */
+  overflow: visible; /* Prevent circles from being clipped */
 }
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  color: #ffffff; /* White text color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a subtle shadow */
-}
-
-.hero-image {
-  max-height: 80px;
-  width: auto;
-}
-
-/* General container styles */
+/* Ensure content is above the circles */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Row and column layout */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -10px;
-}
-
-.col {
-  flex: 1;
-  padding: 10px;
+  position: relative; /* Ensure content is above the circles */
+  z-index: 1; /* Bring the content above the circles */
 }
 
 /* Stiluri generale pentru secțiuni */
 .section-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 20px;
-  color: #002c58; /* Dark blue */
+  color: #002c58; /* Albastru închis */
 }
 
 .section-text {
@@ -132,44 +115,59 @@
   justify-content: center; /* Centrează orizontal */
 }
 
-/* Circles for decoration */
-.circle {
+/* Decorative circles */
+.background-shape {
   position: absolute;
-  border-radius: 50%; /* Makes the element a circle */
-  background-color: rgba(5, 61, 134, 0.2); /* Semi-transparent blue */
-  z-index: 1; /* Ensure circles are behind the content */
-  pointer-events: none; /* Prevent circles from interfering with user interactions */
+  border-radius: 50%;
+  opacity: 0.1;
+  z-index: -1;
 }
 
-/* Small circle */
-.circle-small {
-  width: 50px;
-  height: 50px;
-  top: 20%; /* Adjust position */
-  left: 10%; /* Adjust position */
+.shape-blue {
+  background-color: #db343cbb;
 }
 
-/* Medium circle */
-.circle-medium {
-  width: 100px;
-  height: 100px;
-  top: 50%; /* Adjust position */
-  left: 30%; /* Adjust position */
+.shape-light-blue {
+  background-color: #85c1e9;
 }
 
-/* Large circle */
-.circle-large {
-  width: 200px;
-  height: 200px;
-  top: 70%; /* Adjust position */
-  left: 70%; /* Adjust position */
+.shape-1 {
+  width: 400px;
+  height: 400px;
+  top: -50px;
+  left: -100px;
 }
 
-/* Footer styles */
-.footer {
-  background-color: #002c58;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
+.shape-2 {
+  width: 500px;
+  height: 500px;
+  top: 200px;
+  right: -150px;
+}
+
+.shape-3 {
+  width: 300px;
+  height: 300px;
+  bottom: -100px;
+  left: 50px;
+}
+.shape-4 {
+  width: 600px;
+  height: 600px;
+  top: 50%;
+  left: -200px;
+}
+
+.shape-5 {
+  width: 250px;
+  height: 250px;
+  bottom: 50px;
+  right: 50px;
+}
+
+.shape-6 {
+  width: 350px;
+  height: 350px;
+  top: 10%;
+  right: 10%;
 }

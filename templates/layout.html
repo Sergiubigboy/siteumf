@@ -48,12 +48,22 @@
                 >Acasă</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a
-                class="nav-link {% if request.path == '/corp-profesoral' %}active{% endif %}"
-                href="/corp-profesoral"
-                >Corp profesoral</a
+                class="nav-link dropdown-toggle {% if request.path.startswith('/corp-profesoral') %}active{% endif %}"
+                href="#"
+                id="corpProfesoralDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
               >
+                Personal
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="corpProfesoralDropdown">
+                <li><a class="dropdown-item" href="/personal-conducere">Personal de Conducere</a></li>
+                <li><a class="dropdown-item" href="/corp-profesoral">Personal Didactic</a></li>
+                <li><a class="dropdown-item" href="/personal-nedidactic">Personal Nedidactic</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a
