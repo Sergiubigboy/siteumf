@@ -1,4 +1,43 @@
-{% extends "layout.html" %} {% block extra_css %}<link
+{% extends "layout.html" %} {% block extra_css %}
+<link
   rel="stylesheet"
   href="{{ url_for('static', filename='css/elevi.css') }}"
-/>{% endblock %} {%block content %} {%endblock%}
+/>
+{% endblock %} {% block content %}
+<div class="container mt-4">
+  <h1 class="text-center mb-4">Clase</h1>
+
+  <!-- Search Bar -->
+  <form method="GET" action="{{ url_for('lista_clase') }}" class="mb-4">
+    <div class="input-group">
+      <input
+        type="text"
+        name="search"
+        class="form-control"
+        placeholder="Caută o clasă (ex: 9A, 10B)..."
+        value="{{ request.args.get('search', '') }}"
+      />
+      <button class="btn btn-primary" type="submit">Caută</button>
+    </div>
+  </form>
+
+  <!-- Lista clase pe mai multe rânduri -->
+  <div class="class-list">
+    {% for clasa, litera, profil in clase %}
+    <div class="class-item">
+      <div class="class-info">
+        <h5>Clasa {{ clasa }}{{ litera }} - {{ profil }}</h5>
+      </div>
+      <div class="class-action">
+        <a
+          href="{{ url_for('elevi_clasa', clasa=clasa, litera=litera) }}"
+          class="btn btn-primary btn-sm"
+        >
+          Vezi elevii
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
