@@ -1,0 +1,45 @@
+/* Lista clase */
+.class-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 coloane */
+  gap: 15px; /* Spațiu între clase */
+  margin-top: 20px;
+}
+
+/* Fiecare clasă */
+.class-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-item:hover {
+  background-color: #e6f0ff; /* Albastru deschis la hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Informații despre clasă */
+.class-info h5 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* Buton pentru acțiune */
+.class-action .btn-primary {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+}
+
+.class-action .btn-primary:hover {
+  background-color: #003f7f;
+  border-color: #003f7f;
+}

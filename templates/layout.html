@@ -89,19 +89,29 @@
     </nav>
 
     <!-- Hero Section outside the block -->
+    {% if not no_hero %}
     <div class="hero-section">
       <!-- Left Logo -->
-      <img src="{{ url_for('static', filename='images/liceuSigla.png') }}" alt="Liceu Sigla" class="hero-logo-left">
+      <img
+        src="{{ url_for('static', filename='images/liceuSigla.png') }}"
+        alt="Liceu Sigla"
+        class="hero-logo-left"
+      />
 
       <!-- Hero Content -->
       <div class="hero-overlay"></div>
       <div class="hero-container">
-        <h1 class="hero-title">{{title}}</h1>
+        <h1 class="hero-title">{{ title }}</h1>
       </div>
 
       <!-- Right Logo -->
-      <img src="{{ url_for('static', filename='images/UMFST.png') }}" alt="UMFST Logo" class="hero-logo-right">
+      <img
+        src="{{ url_for('static', filename='images/UMFST.png') }}"
+        alt="UMFST Logo"
+        class="hero-logo-right"
+      />
     </div>
+    {% endif %}
 
     <!-- Content block -->
     <div class="container mt-4">{% block content %}{% endblock %}</div>
@@ -109,10 +119,17 @@
     <!-- Footer -->
     <footer class="footer bg-dark text-white py-3">
       <div class="container text-center">
-        <p class="mb-1">&copy; 2025 Liceul UMFST. Toate drepturile rezervate.</p>
+        <p class="mb-1">
+          &copy; 2025 Liceul UMFST. Toate drepturile rezervate.
+        </p>
         <p class="mb-0">
-          <a href="/despre#contact-info" class="text-white text-decoration-none">Contact</a> |
-          <a href="/privacy" class="text-white text-decoration-none">Politica de confidențialitate</a>
+          <a href="/despre#contact-info" class="text-white text-decoration-none"
+            >Contact</a
+          >
+          |
+          <a href="/privacy" class="text-white text-decoration-none"
+            >Politica de confidențialitate</a
+          >
         </p>
       </div>
     </footer>
