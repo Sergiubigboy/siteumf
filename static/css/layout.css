@@ -36,7 +36,21 @@ body::-webkit-scrollbar-thumb:hover {
 /* Navbar styling */
 .navbar {
   margin-bottom: 20px;
+  background-color: #002c58; /* Dark blue background */
+  opacity: 1; /* Ensure the navbar is fully opaque */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
+
+.navbar-collapse {
+  background-color: #002c58; /* Dark blue background for the expanded menu */
+  opacity: 1; /* Ensure the expanded menu is fully opaque */
+}
+
+.navbar-toggler {
+  background-color: #002c58; /* Dark blue background for the toggler button */
+  border: none; /* Remove border around the toggler button */
+}
+
 .custom-nav {
   position: fixed;
   top: 0;
@@ -256,6 +270,7 @@ transform: translateY(0); /* Revine la poziția inițială */
   padding: 16px 0 !important; /* Vertical padding */
   text-align: center !important; /* Center-align text */
   font-size: 0.9rem !important; /* Slightly smaller font size */
+  bottom: 0 !important; /* Stick to the bottom */
 }
 
 .footer a {
@@ -266,4 +281,61 @@ transform: translateY(0); /* Revine la poziția inițială */
 
 .footer a:hover {
   color: #940000 !important; /* Red color on hover */
+}
+/* General dropdown menu styling */
+/* General dropdown menu styling */
+.dropdown-menu {
+  background-color: #002c58; /* Dark blue background */
+  border: none; /* Remove the default border */
+  position: absolute; /* Position relative to the parent */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust position to be exactly in the center horizontally */
+  text-align: center; /* Center-align the text inside the dropdown */
+  padding: 10px 0; /* Add padding for better spacing */
+  width: auto; /* Allow the dropdown to adjust its width */
+  min-width: 150px; /* Set a minimum width for the dropdown */
+  z-index: 1050; /* Ensure it is above other elements */
+}
+
+/* Dropdown items styling */
+.dropdown-item {
+  color: #ffffff; /* White text */
+  text-align: center; /* Center-align the text */
+  display: block; /* Ensure the items take up the full width */
+  padding: 10px 20px; /* Add padding for better spacing */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.dropdown-item:hover {
+  background-color: #940000; /* Red background on hover */
+  color: #ffffff; /* White text */
+}
+
+/* Adjust dropdown for smaller screens */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: fixed; /* Position the dropdown relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to be exactly in the center */
+    width: 90%; /* Dropdown occupies 90% of the screen width */
+    background-color: #002c58; /* Dark blue background */
+    z-index: 1050; /* Ensure it is above other elements */
+    padding: 20px; /* Add inner spacing */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    text-align: center; /* Center-align the text inside */
+  }
+
+  .dropdown-item {
+    display: block; /* Each item takes up the full width */
+    padding: 10px 0; /* Space between items */
+    font-size: 1.2rem; /* Larger text size for better readability */
+    color: #ffffff; /* White text */
+    text-align: center; /* Center-align the text */
+  }
+
+  .dropdown-item:hover {
+    background-color: #940000; /* Red background on hover */
+    color: #ffffff; /* White text */
+  }
 }
