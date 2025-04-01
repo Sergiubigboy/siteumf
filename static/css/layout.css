@@ -1,16 +1,19 @@
-
 /* Stiluri generale */
 body {
   font-family: 'Merriweather', serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
   position: relative;
-  overflow-x: hidden
+  overflow-x: hidden;
+
+  /* Background with a 30-degree angled split */
+
 }
 
 /* Stilizare scrollbar */
-body::-webkit-scrollbar {
+body::-webkit-scrollbar { 
   width: 8px; /* Lățimea scrollbar-ului */
 }
 
@@ -29,6 +32,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: #0056b3; /* Culoarea thumb-ului la hover */
 }
 
+
 /* Navbar styling */
 .navbar {
   margin-bottom: 20px;
@@ -42,6 +46,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   z-index: 1000; /* Navbar-ul rămâne deasupra imaginii */
   transition: top 0.5s ease; /* Tranziție lină pentru ascundere/apariție */
+  height: 60px;
 }
 
 /* Imaginea din navbar */
@@ -108,12 +113,11 @@ border-bottom: 2px solid #940000; /* Linie sub linkul activ */
 
 /* Hero Section */
 .hero-section {
-position: relative;
-height: 300px; /* Înălțimea secțiunii Hero */
-
-background-size: cover; /* Ajustează imaginea să acopere întreaga secțiune */
-margin-top: 0; /* Elimină orice spațiu de sus */
-cursor: pointer; /* Adaugă un cursor pointer pentru hover */
+  position: relative;
+  height: 300px; /* Height of the hero section */
+  background: url('/static/images/bgmain.png') no-repeat center center;
+  background-size: cover; /* Ensure the background image covers the section */
+  margin-top: 0; /* Remove any margin above */
 }
 
 /* Efect de hover pentru hero-section */
@@ -199,8 +203,14 @@ max-width: 200px; /* Set the size for the left logo */
 }
 
 .hero-logo-right {
-right: 35px; /* Adjust the right margin to position the logo */
-max-width: 150px; /* Set the size for the right logo */
+position: absolute;
+top: 60%; /* Align vertically with the hero section */
+right: 40px; /* Adjust the right margin to position the logo */
+transform: translateY(-50%); /* Center the logo vertically */
+max-width: 150px; /* Set the maximum width for the logo */
+height: auto; /* Maintain aspect ratio */
+z-index: 20; /* Ensure the logo is above the overlay */
+opacity: 1; /* Ensure the logo is fully visible */
 }
 
 /* Medium screens: Reduce logo size */
@@ -237,4 +247,23 @@ transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Tranziție lină 
 .fade-in.show {
 opacity: 1; /* Elementul devine vizibil */
 transform: translateY(0); /* Revine la poziția inițială */
+}
+
+/* Footer styling */
+.footer {
+  background-color: #002c58c2 !important; /* Black background */
+  color: #ffffff !important; /* White text color */
+  padding: 16px 0 !important; /* Vertical padding */
+  text-align: center !important; /* Center-align text */
+  font-size: 0.9rem !important; /* Slightly smaller font size */
+}
+
+.footer a {
+  color: #ffffff !important; /* White text for links */
+  text-decoration: none !important; /* Remove underline */
+  transition: color 0.3s ease !important; /* Smooth hover effect */
+}
+
+.footer a:hover {
+  color: #940000 !important; /* Red color on hover */
 }
