@@ -1,0 +1,17 @@
+
+
+.elev-button {
+    font-size: 1.2rem; /* Dimensiune text */
+    font-weight: bold; /* Text îngroșat */
+    color: #0056b3; /* Albastru */
+    border: 2px solid #0056b3; /* Contur albastru */
+    border-radius: 8px; /* Colțuri rotunjite */
+    padding: 10px 20px; /* Spațiere interioară */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animație */
+}
+
+.elev-button:hover {
+    background-color: #0056b3; /* Fundal albastru la hover */
+    color: #ffffff; /* Text alb la hover */
+    transform: scale(1.05); /* Mărește ușor butonul */
+}
