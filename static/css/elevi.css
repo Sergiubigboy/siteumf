@@ -1,90 +1,45 @@
-/* Stiluri pentru containerul principal al paginii Elevi */
-.container {
-    margin-top: 50px; /* Adaugă spațiu între navbar și conținut */
+/* Lista clase */
+.class-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 coloane */
+  gap: 15px; /* Spațiu între clase */
+  margin-top: 20px;
 }
 
-/* Stiluri pentru chenare */
-.class-box {
-    background-color: #ffffff; /* Fundal alb */
-    border-radius: 12px; /* Colțuri rotunjite */
-    border: 2px solid #3498db; /* Contur albastru */
-    text-align: center; /* Text centrat */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animație la hover */
-    padding: 20px; /* Spațiere interioară */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+/* Fiecare clasă */
+.class-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.class-box:hover {
-    transform: scale(1.05); /* Mărește ușor la hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată */
-    border-color: #0056b3; /* Schimbă culoarea conturului la hover */
+.class-item:hover {
+  background-color: #e6f0ff; /* Albastru deschis la hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.class-title {
-    font-size: 1.8rem; /* Dimensiune mai mare pentru titlu */
-    font-weight: bold;
-    color: #003366; /* Albastru închis */
-    margin-bottom: 10px;
+/* Informații despre clasă */
+.class-info h5 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0056b3;
 }
 
-.class-text {
-    font-size: 1.2rem; /* Dimensiune mai mare pentru text */
-    color: #555; /* Gri deschis */
-    margin-bottom: 5px;
+/* Buton pentru acțiune */
+.class-action .btn-primary {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  font-size: 0.85rem;
+  padding: 5px 10px;
 }
 
-.text-decoration-none {
-    text-decoration: none; /* Elimină sublinierea linkului */
-    color: inherit; /* Păstrează culoarea textului */
-}
-
-/* Fix pentru conflict cu navbarul */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.row {
-    margin: 0; /* Elimină marginile implicite care pot afecta layout-ul */
-    padding: 0; /* Elimină padding-ul implicit */
-}
-
-/* Stiluri pentru pagina Elevi */
-.elevi-page .class-box {
-    background-color: #ffffff; /* Fundal alb */
-    border-radius: 12px; /* Colțuri rotunjite */
-    border: 2px solid #3498db; /* Contur albastru */
-    text-align: center; /* Text centrat */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animație la hover */
-    padding: 20px; /* Spațiere interioară */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
-}
-
-.elevi-page .class-box:hover {
-    transform: scale(1.05); /* Mărește ușor la hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată */
-    border-color: #0056b3; /* Schimbă culoarea conturului la hover */
-}
-
-.elevi-page .class-title {
-    font-size: 1.8rem; /* Dimensiune mai mare pentru titlu */
-    font-weight: bold;
-    color: #003366; /* Albastru închis */
-    margin-bottom: 10px;
-}
-
-.elevi-page .class-text {
-    font-size: 1.2rem; /* Dimensiune mai mare pentru text */
-    color: #555; /* Gri deschis */
-    margin-bottom: 5px;
-}
-
-.elevi-page .text-decoration-none {
-    text-decoration: none; /* Elimină sublinierea linkului */
-    color: inherit; /* Păstrează culoarea textului */
-}
-
-/* Fix pentru conflict cu navbarul */
-.elevi-page {
-    margin-top: 50px; /* Adaugă spațiu între navbar și conținut */
+.class-action .btn-primary:hover {
+  background-color: #003f7f;
+  border-color: #003f7f;
 }

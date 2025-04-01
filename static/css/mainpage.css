@@ -1,18 +1,6 @@
-/* General styles for the page */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa; /* Light background */
-  color: #333; /* Default text color */
-}
 
 /* Conținutul paginii */
-main {
-  position: relative;
-  z-index: 1; /* Conținutul rămâne deasupra imaginii */
-  padding-top: 300px; /* Adaugă spațiu pentru a evita suprapunerea cu secțiunea Hero */
-}
+
 
 /* Hero section */
 .hero-section {

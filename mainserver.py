@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request
-from date import CatalogPersonal, profesori
+from date import CatalogPersonal, profesori, elevi
 import unicodedata
 
 # Inițializează catalogul profesorilor
 Profesori = CatalogPersonal(profesori)
-
+Elevi = CatalogPersonal(elevi)
 def normalize_text(text):
     return ''.join(
         c for c in unicodedata.normalize('NFD', text)
@@ -22,34 +22,44 @@ def despre():
     return render_template('despre.html', subtitlu="Despre", title="Despre Noi", background="liceu2.jpeg")
 
 @app.route('/elevi')
-def elevi():
-    return render_template('elevi.html', subtitlu="Elevi", title="Elevi", background="bgmain.png")
+def lista_clase():
+    # Obține toate clasele distincte
+    clase = sorted(set((elev["clasa"], elev["litera"], elev["profil"]) for elev in elevi))
+    
+    # Obține termenul de căutare
+    search_query = request.args.get('search', '').lower()
+    if search_query:
+        clase = [
+            (clasa, litera, profil) for clasa, litera, profil in clase
+            if search_query in f"{clasa}{litera}{profil}".lower()
+        ]
 
-@app.route('/clasa_9a')
-def clasa_9a():
-    elevi = [
-        "Biris Sergiu", "Corondeanu Raul", "Cucuiet Andrei", "Curta Rares",
-        "David Aiana", "Ercean David", "Gherman Cezara", "Jovrea Stefan",
-        "Lazar Cristian", "Maier Alia", "Marian Ciprian", "Mitoseriu David",
-        "Muth Cristian", "Nagy Eliz", "Oanes Sofia", "Paca Raoul",
-        "Pantea Tudor", "Pastia Catinca", "Somesan Adrian", "Staicu Eric",
-        "Stinga David", "Stoica Andrei", "Suciu Iustina", "Trifan Raul",
-        "Turdean Cleo", "Ungur Filip", "Vasloban Maria"
-    ]
-    return render_template('clasa_9a.html', elevi=elevi)
+    return render_template(
+        'elevi.html',
+        clase=clase,
+        subtitlu="Elevi",
+        title="Elevi",
+        background="bgmain.png",
+        no_hero=True
+    )
 
-@app.route('/clasa_9b')
-def clasa_9b():
-    elevi = [
-        "Bumbac Ileana", "Bumbu Luca", "Colcer Sonia", "Cosarca Alexandru",
-        "Cotoi Iulius", "Cretu Daria", "Crisan Andrei", "Dumitru Radu",
-        "Florea Sara", "Florea Rares", "Gherman Eric", "Hanc Mihai",
-        "Harsa Sofia", "Lazar Larisa", "Loghin Ioana", "Lupsa Maria",
-        "Macarie Rares", "Orban David", "Onisor Rares", "Ormenisan Anastatia",
-        "Popa Cynthia", "Sabau Raul", "Sandru Octavian", "Serbu Raluca",
-        "Szasz Roberta", "Vasiliu Anca", "Vidican Andreea"
+@app.route('/elevi/<int:clasa>/<litera>')
+def elevi_clasa(clasa, litera):
+    # Filtrează elevii din clasa specificată
+    elevi_filtrati = [
+        elev for elev in elevi if elev["clasa"] == clasa and elev["litera"] == litera
     ]
-    return render_template('clasa_9b.html', elevi=elevi, hero_text="Clasa a IX-a B")
+    # Obține profilul clasei (toți elevii din aceeași clasă au același profil)
+    profil = elevi_filtrati[0]["profil"] if elevi_filtrati else "Necunoscut"
+    return render_template(
+        'elevi_clasa.html',
+        elevi=elevi_filtrati,
+        clasa=f"{clasa}{litera}",
+        profil=profil,
+        subtitlu=f"Clasa {clasa}{litera}",
+        title=f"Clasa {clasa}{litera}",
+        background="bgmain.png"
+    )
 
 @app.route('/corp-profesoral')
 def lista_profesori():

@@ -1,34 +1,43 @@
-{% extends "layout.html" %}
-{% block extra_css %}
+{% extends "layout.html" %} {% block extra_css %}
 <link
   rel="stylesheet"
   href="{{ url_for('static', filename='css/elevi.css') }}"
 />
-{% endblock %}
-{% block content %}
-<div class="elevi-page container my-5">
-  <div class="row g-4">
-    <!-- Clasa a IX-a A -->
-    <div class="col-md-6">
-      <a href="/clasa_9a" class="text-decoration-none">
-        <div class="class-box shadow p-4">
-          <h2 class="class-title">Clasa a IX-a A</h2>
-          <p class="class-text">Specializare: Matematică-informatică, profil bilingv</p>
-          <p class="class-text">Prof. diriginte: Bianca Han</p>
-        </div>
-      </a>
-    </div>
+{% endblock %} {% block content %}
+<div class="container mt-4">
+  <h1 class="text-center mb-4">Clase</h1>
 
-    <!-- Clasa a IX-a B -->
-    <div class="col-md-6">
-      <a href="/clasa_9b" class="text-decoration-none">
-        <div class="class-box shadow p-4">
-          <h2 class="class-title">Clasa a IX-a B</h2>
-          <p class="class-text">Specializare: Științe ale naturii, profil bilingv </p>
-          <p class="class-text">Prof. diriginte: Ratiu Bogdan</p>
-        </div>
-      </a>
+  <!-- Search Bar -->
+  <form method="GET" action="{{ url_for('lista_clase') }}" class="mb-4">
+    <div class="input-group">
+      <input
+        type="text"
+        name="search"
+        class="form-control"
+        placeholder="Caută o clasă (ex: 9A, 10B)..."
+        value="{{ request.args.get('search', '') }}"
+      />
+      <button class="btn btn-primary" type="submit">Caută</button>
     </div>
+  </form>
+
+  <!-- Lista clase pe mai multe rânduri -->
+  <div class="class-list">
+    {% for clasa, litera, profil in clase %}
+    <div class="class-item">
+      <div class="class-info">
+        <h5>Clasa {{ clasa }}{{ litera }} - {{ profil }}</h5>
+      </div>
+      <div class="class-action">
+        <a
+          href="{{ url_for('elevi_clasa', clasa=clasa, litera=litera) }}"
+          class="btn btn-primary btn-sm"
+        >
+          Vezi elevii
+        </a>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
 {% endblock %}
