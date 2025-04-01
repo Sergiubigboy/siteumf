@@ -1,4 +1,34 @@
-{% extends "layout.html" %} {% block extra_css %}<link
+{% extends "layout.html" %}
+{% block extra_css %}
+<link
   rel="stylesheet"
   href="{{ url_for('static', filename='css/elevi.css') }}"
-/>{% endblock %} {%block content %} {%endblock%}
+/>
+{% endblock %}
+{% block content %}
+<div class="elevi-page container my-5">
+  <div class="row g-4">
+    <!-- Clasa a IX-a A -->
+    <div class="col-md-6">
+      <a href="/clasa_9a" class="text-decoration-none">
+        <div class="class-box shadow p-4">
+          <h2 class="class-title">Clasa a IX-a A</h2>
+          <p class="class-text">Specializare: Matematică-informatică, profil bilingv</p>
+          <p class="class-text">Prof. diriginte: Bianca Han</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Clasa a IX-a B -->
+    <div class="col-md-6">
+      <a href="/clasa_9b" class="text-decoration-none">
+        <div class="class-box shadow p-4">
+          <h2 class="class-title">Clasa a IX-a B</h2>
+          <p class="class-text">Specializare: Științe ale naturii, profil bilingv </p>
+          <p class="class-text">Prof. diriginte: Ratiu Bogdan</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

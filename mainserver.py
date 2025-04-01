@@ -25,6 +25,32 @@ def despre():
 def elevi():
     return render_template('elevi.html', subtitlu="Elevi", title="Elevi", background="bgmain.png")
 
+@app.route('/clasa_9a')
+def clasa_9a():
+    elevi = [
+        "Biris Sergiu", "Corondeanu Raul", "Cucuiet Andrei", "Curta Rares",
+        "David Aiana", "Ercean David", "Gherman Cezara", "Jovrea Stefan",
+        "Lazar Cristian", "Maier Alia", "Marian Ciprian", "Mitoseriu David",
+        "Muth Cristian", "Nagy Eliz", "Oanes Sofia", "Paca Raoul",
+        "Pantea Tudor", "Pastia Catinca", "Somesan Adrian", "Staicu Eric",
+        "Stinga David", "Stoica Andrei", "Suciu Iustina", "Trifan Raul",
+        "Turdean Cleo", "Ungur Filip", "Vasloban Maria"
+    ]
+    return render_template('clasa_9a.html', elevi=elevi)
+
+@app.route('/clasa_9b')
+def clasa_9b():
+    elevi = [
+        "Bumbac Ileana", "Bumbu Luca", "Colcer Sonia", "Cosarca Alexandru",
+        "Cotoi Iulius", "Cretu Daria", "Crisan Andrei", "Dumitru Radu",
+        "Florea Sara", "Florea Rares", "Gherman Eric", "Hanc Mihai",
+        "Harsa Sofia", "Lazar Larisa", "Loghin Ioana", "Lupsa Maria",
+        "Macarie Rares", "Orban David", "Onisor Rares", "Ormenisan Anastatia",
+        "Popa Cynthia", "Sabau Raul", "Sandru Octavian", "Serbu Raluca",
+        "Szasz Roberta", "Vasiliu Anca", "Vidican Andreea"
+    ]
+    return render_template('clasa_9b.html', elevi=elevi, hero_text="Clasa a IX-a B")
+
 @app.route('/corp-profesoral')
 def lista_profesori():
     # Obține termenul de căutare din query string
