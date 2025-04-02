@@ -264,19 +264,18 @@ opacity: 0.9; /* Ensure the logo is fully visible */
 
 /* Default sizes for larger screens */
 .hero-logo-left {
-left: 10px; /* Adjust the left margin to position the logo */
-max-width: 200px; /* Set the size for the left logo */
+  left: 100px; /* Aproape de marginea stângă */
+  top: 50%; /* Urcă logo-ul mai sus */
+  max-width: 220px; /* Mărește dimensiunea logo-ului */
+  transform: scale(1.5);
+  transform: translateY(-50%); /* Centrează vertical */
 }
 
 .hero-logo-right {
-position: absolute;
-top: 60%; /* Align vertically with the hero section */
-right: 40px; /* Adjust the right margin to position the logo */
-transform: translateY(-50%); /* Center the logo vertically */
-max-width: 150px; /* Set the maximum width for the logo */
-height: auto; /* Maintain aspect ratio */
-z-index: 20; /* Ensure the logo is above the overlay */
-opacity: 1; /* Ensure the logo is fully visible */
+  right: 100px; /* Aproape de marginea dreaptă */
+  top: 50%; /* Urcă logo-ul mai sus */
+  max-width: 340px; /* Mărește dimensiunea logo-ului */
+  transform: translateY(-50%); /* Centrează vertical */
 }
 
 /* Medium screens: Reduce logo size */
