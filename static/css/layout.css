@@ -7,18 +7,42 @@ body {
   padding: 0;
   position: relative;
   overflow-x: hidden;
-
-
-  /* Background with a 30-degree angled split */
-
 }
+
+/* Background with a 30-degree angled split */
 .color-section {
   width: 100%; /* Ocupă toată lățimea */
-  height: 100px; /* Înălțime ajustabilă */
-  background: #002c58; /* Albastru spre cyan */
+  background: #00172d; /* Albastru închis */
+  background-image: url('/static/images/texture.png');
+  background-size: cover; /* Ajustează textura să acopere întreaga secțiune */
+  background-blend-mode: overlay; /* Suprapune textura peste culoare */
   position: relative;
-  margin-top: 200px;
+  margin-top: 20px;
   color: #ffffff;
+  padding: 200px 0; /* Ajustează înălțimea secțiunii */
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); /* Inversare înclinare sus și jos */
+}
+
+.color-section::before,
+.color-section::after {
+  content: '';
+  position: absolute;
+  width: 90%; /* Ajustează lățimea liniei */
+  height: 4px; /* Grosimea liniei */
+  background: #ffffff; /* Alb pentru contrast */
+  color: #ffffff;
+}
+
+.color-section::before {
+  top: 5%; /* Poziționează linia mai sus */
+  left: 5%; /* Ajustează poziția pe orizontală */
+  transform: rotate(-1deg); /* Ajustează înclinarea liniei */
+}
+
+.color-section::after {
+  bottom: 5%; /* Poziționează linia mai jos */
+  left: 5%; /* Ajustează poziția pe orizontală */
+  transform: rotate(1deg); /* Ajustează înclinarea liniei */
 }
 
 /* Stilizare scrollbar */
@@ -40,7 +64,6 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background: #0056b3; /* Culoarea thumb-ului la hover */
 }
-
 
 /* Navbar styling */
 .navbar {
@@ -176,7 +199,6 @@ border-bottom: 2px solid #940000; /* Linie sub linkul activ */
   color: #ffffff; /* White text */
 }
 
-
 /* Hero Section */
 .hero-section {
   position: relative;
@@ -303,16 +325,16 @@ opacity: 1; /* Ensure the logo is fully visible */
 }
 }
 
-
 /* Footer fix jos */
 .footer {
   background-color: #222; /* Culoare închisă */
   color: #fff; /* Text alb */
-  padding: 40px 0; /* Mai mare */
+  padding: 50px 0; /* Mai mare */
   font-size: 18px; /* Text mai mare */
   text-align: center;
   position: relative;
   bottom: 0;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -340,10 +362,8 @@ opacity: 1; /* Elementul devine vizibil */
 transform: translateY(0); /* Revine la poziția inițială */
 }
 
-
-
 /* Adjust dropdown for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .dropdown-menu {
     position: fixed; /* Position the dropdown relative to the viewport */
     top: 50%; /* Center vertically */
@@ -356,5 +376,4 @@ transform: translateY(0); /* Revine la poziția inițială */
     border-radius: 10px; /* Rounded corners for a modern look */
     text-align: center; /* Center-align the text inside */
   }
-
 }

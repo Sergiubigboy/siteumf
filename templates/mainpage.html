@@ -33,29 +33,33 @@
         />
       </div>
     </div>
-
-    <!-- Section 2 -->
-    <div class="row g-4 align-items-center fade-in my-5">
-      <div class="col-md-6 order-md-2">
-        <div class="text-container shadow card-small">
-          <h2 class="section-title">Oportunități pentru Elevi</h2>
-          <p class="section-text">
-            Elevii noștri beneficiază de programe educaționale inovatoare,
-            activități extracurriculare și parteneriate internaționale care le
-            deschid noi orizonturi.
-          </p>
+  </div>
+  <!-- Section 2 -->
+  <div class="color-section">
+    <div class="container my-5">
+      <div class="row g-4 align-items-center fade-in my-5">
+        <div class="col-md-6 order-md-2">
+          <div class="text-container shadow card-small">
+            <h2 class="section-title">Oportunități pentru Elevi</h2>
+            <p class="section-text">
+              Elevii noștri beneficiază de programe educaționale inovatoare,
+              activități extracurriculare și parteneriate internaționale care le
+              deschid noi orizonturi.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <img
+            src="{{ url_for('static', filename='images/liceu2.jpeg') }}"
+            class="img-fluid rounded shadow"
+            alt="Oportunități pentru Elevi"
+          />
         </div>
       </div>
-      <div class="col-md-6 order-md-1">
-        <img
-          src="{{ url_for('static', filename='images/liceu2.jpeg') }}"
-          class="img-fluid rounded shadow"
-          alt="Oportunități pentru Elevi"
-        />
-      </div>
     </div>
-
-    <!-- Section 3 -->
+  </div>
+  <!-- Section 3 -->
+  <div class="container my-5">
     <div class="row g-4 align-items-center fade-in my-5">
       <div class="col-md-6">
         <div class="text-container shadow card-small">
@@ -75,6 +79,6 @@
       </div>
     </div>
   </div>
-</div>
 
-{% endblock %}
+  {% endblock %}
+</div>
