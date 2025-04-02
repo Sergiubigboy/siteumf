@@ -8,8 +8,17 @@ body {
   position: relative;
   overflow-x: hidden;
 
+
   /* Background with a 30-degree angled split */
 
+}
+.color-section {
+  width: 100%; /* Ocupă toată lățimea */
+  height: 100px; /* Înălțime ajustabilă */
+  background: #002c58; /* Albastru spre cyan */
+  position: relative;
+  margin-top: 200px;
+  color: #ffffff;
 }
 
 /* Stilizare scrollbar */
@@ -125,10 +134,53 @@ margin: 0 auto; /* Centrează bordura sub text */
 border-bottom: 2px solid #940000; /* Linie sub linkul activ */
 }
 
+/* General dropdown menu styling */
+.dropdown-menu {
+  background-color: #002c58; /* Dark blue background */
+  border: none; /* Remove the default border */
+  position: absolute; /* Position relative to the parent */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust position to be exactly in the center horizontally */
+  text-align: center; /* Center-align the text inside the dropdown */
+  padding: 10px 0; /* Add padding for better spacing */
+  width: auto; /* Allow the dropdown to adjust its width */
+  min-width: 150px; /* Set a minimum width for the dropdown */
+  z-index: 1050; /* Ensure it is above other elements */
+}
+
+/* Dropdown items styling */
+.dropdown-item {
+  color: #ffffff; /* White text */
+  text-align: center; /* Center-align the text */
+  display: block; /* Ensure the items take up the full width */
+  padding: 10px 20px; /* Add padding for better spacing */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.dropdown-item:hover {
+  background-color: #940000; /* Red background on hover */
+  color: #ffffff; /* White text */
+}
+
+.dropdown-item {
+  display: block; /* Each item takes up the full width */
+  padding: 12px 0; /* Space between items */
+  font-size: 0.9rem; /* Larger text size for better readability */
+  color: #ffffff; /* White text */
+  text-align: center; /* Center-align the text */
+  opacity: 0.9; /* Slightly transparent */
+}
+
+.dropdown-item:hover {
+  background-color: #940000; /* Red background on hover */
+  color: #ffffff; /* White text */
+}
+
+
 /* Hero Section */
 .hero-section {
   position: relative;
-  height: 300px; /* Height of the hero section */
+  height: 800px; /* Height of the hero section */
   background: url('/static/images/bgmain.png') no-repeat center center;
   background-size: cover; /* Ensure the background image covers the section */
   margin-top: 0; /* Remove any margin above */
@@ -172,17 +224,17 @@ transition: padding 0.3 ease; /* Tranziție lină */
 
 /* Stil pentru titlu */
 .hero-title {
-font-family: 'Times New Roman', Times, serif;
-font-size: clamp(2.5rem, 3.5vw, 3.5rem); /* Dimensiune responsive */
-font-weight: bold; /* Bold text */
-color: rgb(255, 255, 255); /* Text alb */
-text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Umbră pentru text */
-margin: 0; /* Elimină marginile implicite */
-z-index: 30; /* Asigură că titlul este deasupra */
-position: relative; /* Respectă contextul de stacking */
-transition: transform 0.3s ease-in-out; /* Tranziție lină pentru scalare */
-}
-
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem); /* Dimensiune responsive */
+  font-weight: bold; /* Bold text */
+  color: rgb(255, 255, 255); /* Text alb */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Umbră pentru text */
+  margin: 0; /* Elimină marginile implicite */
+  z-index: 30; /* Asigură că titlul este deasupra */
+  position: relative; /* Respectă contextul de stacking */
+  transition: transform 0.3s ease-in-out; /* Tranziție lină pentru scalare */
+  }
+  
 /* Conținutul paginii */
 main {
 position: relative;
@@ -251,6 +303,31 @@ opacity: 1; /* Ensure the logo is fully visible */
 }
 }
 
+
+/* Footer fix jos */
+.footer {
+  background-color: #222; /* Culoare închisă */
+  color: #fff; /* Text alb */
+  padding: 40px 0; /* Mai mare */
+  font-size: 18px; /* Text mai mare */
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #bbb;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
 /* Stiluri pentru efectul de fade-in */
 .fade-in {
 opacity: 0; /* Elementul este invizibil inițial */
@@ -263,53 +340,7 @@ opacity: 1; /* Elementul devine vizibil */
 transform: translateY(0); /* Revine la poziția inițială */
 }
 
-/* Footer styling */
-.footer {
-  background-color: #002c58c2 !important; /* Black background */
-  color: #ffffff !important; /* White text color */
-  padding: 16px 0 !important; /* Vertical padding */
-  text-align: center !important; /* Center-align text */
-  font-size: 0.9rem !important; /* Slightly smaller font size */
-  bottom: 0 !important; /* Stick to the bottom */
-}
 
-.footer a {
-  color: #ffffff !important; /* White text for links */
-  text-decoration: none !important; /* Remove underline */
-  transition: color 0.3s ease !important; /* Smooth hover effect */
-}
-
-.footer a:hover {
-  color: #940000 !important; /* Red color on hover */
-}
-/* General dropdown menu styling */
-/* General dropdown menu styling */
-.dropdown-menu {
-  background-color: #002c58; /* Dark blue background */
-  border: none; /* Remove the default border */
-  position: absolute; /* Position relative to the parent */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust position to be exactly in the center horizontally */
-  text-align: center; /* Center-align the text inside the dropdown */
-  padding: 10px 0; /* Add padding for better spacing */
-  width: auto; /* Allow the dropdown to adjust its width */
-  min-width: 150px; /* Set a minimum width for the dropdown */
-  z-index: 1050; /* Ensure it is above other elements */
-}
-
-/* Dropdown items styling */
-.dropdown-item {
-  color: #ffffff; /* White text */
-  text-align: center; /* Center-align the text */
-  display: block; /* Ensure the items take up the full width */
-  padding: 10px 20px; /* Add padding for better spacing */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-}
-
-.dropdown-item:hover {
-  background-color: #940000; /* Red background on hover */
-  color: #ffffff; /* White text */
-}
 
 /* Adjust dropdown for smaller screens */
 @media (max-width: 768px) {
@@ -326,16 +357,4 @@ transform: translateY(0); /* Revine la poziția inițială */
     text-align: center; /* Center-align the text inside */
   }
 
-  .dropdown-item {
-    display: block; /* Each item takes up the full width */
-    padding: 10px 0; /* Space between items */
-    font-size: 1.2rem; /* Larger text size for better readability */
-    color: #ffffff; /* White text */
-    text-align: center; /* Center-align the text */
-  }
-
-  .dropdown-item:hover {
-    background-color: #940000; /* Red background on hover */
-    color: #ffffff; /* White text */
-  }
 }
