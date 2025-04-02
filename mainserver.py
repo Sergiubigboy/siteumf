@@ -40,7 +40,6 @@ def lista_clase():
         subtitlu="Elevi",
         title="Elevi",
         background="bgmain.png",
-        no_hero=True
     )
 
 @app.route('/elevi/<int:clasa>/<litera>')
@@ -95,13 +94,21 @@ def pagina_profesor(nume):
     else:
         return "Profesorul nu a fost găsit.", 404
 
-@app.route('/echohub')
+@app.route('/activitati')
 def echohub():
-    return render_template('echohub.html', subtitlu="Echohub", title="Echohub", background="bgmain.png")
+    return render_template('activitati.html', subtitlu="Activitati", title="Activitati", background="bgmain.png")
 
-@app.route('/podcast')
-def premii():
-    return "SOON!!!"
+@app.route('/admitere')
+def admitere():
+    return render_template('admitere.html', subtitlu="Admiteri", title="Admiteri", background="bgmain.png")
+
+@app.route('/transferuri')
+def transferuri():
+    return render_template('transferuri.html', subtitlu="Transferuri", title="Transferuri", background="bgmain.png")
+
+@app.route('/proceduri')
+def proceduri():
+    return render_template('proceduri.html', subtitlu="Proceduri", title="Proceduri", background="bgmain.png")
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
