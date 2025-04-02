@@ -9,6 +9,7 @@
     />
 
     <title>Liceul Umfst - {{subtitlu}}</title>
+
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
@@ -59,10 +60,25 @@
               >
                 Personal
               </a>
-              <ul class="dropdown-menu" aria-labelledby="corpProfesoralDropdown">
-                <li><a class="dropdown-item" href="/personal-conducere">Personal de Conducere</a></li>
-                <li><a class="dropdown-item" href="/corp-profesoral">Personal Didactic</a></li>
-                <li><a class="dropdown-item" href="/personal-nedidactic">Personal Nedidactic</a></li>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="corpProfesoralDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="/personal-conducere"
+                    >Personal de Conducere</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/corp-profesoral"
+                    >Personal Didactic</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/personal-nedidactic"
+                    >Personal Nedidactic</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -124,23 +140,17 @@
     {% endif %}
 
     <!-- Content block -->
-    <div class="container mt-4">{% block content %}{% endblock %}</div>
+
+    {% block content %}{% endblock %}
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white py-3">
-      <div class="container text-center">
-        <p class="mb-1">
-          &copy; 2025 Liceul UMFST. Toate drepturile rezervate.
-        </p>
-        <p class="mb-0">
-          <a href="/despre#contact-info" class="text-white text-decoration-none"
-            >Contact</a
-          >
-          |
-          <a href="/privacy" class="text-white text-decoration-none"
-            >Politica de confidențialitate</a
-          >
-        </p>
+    <footer class="footer mt-5">
+      <div class="container text-center py-4">
+        <p class="mb-2">© 2025 Liceul UMFST. Toate drepturile rezervate.</p>
+        <a href="/contact" class="footer-link">Contact</a> |
+        <a href="/politica-confidentialitate" class="footer-link"
+          >Politica de confidențialitate</a
+        >
       </div>
     </footer>
 
