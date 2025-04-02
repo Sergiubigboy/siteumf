@@ -19,7 +19,7 @@ def mainpage():
 
 @app.route('/revista')
 def despre():
-    return render_template('despre.html', subtitlu="Despre", title="Despre Noi", background="liceu2.jpeg")
+    return render_template('despre.html', subtitlu="Contact", title="Contact", background="liceu2.jpeg", no_hero=True)
 
 @app.route('/elevi')
 def lista_clase():

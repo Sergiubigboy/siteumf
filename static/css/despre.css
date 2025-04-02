@@ -80,7 +80,7 @@
 .contact-section .section-text {
     font-size: 1rem;
     color: #555; /* Gri deschis */
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .contact-box {
@@ -91,10 +91,11 @@
     z-index: 10; /* Aduce caseta în prim-plan */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adaugă o umbră pentru evidențiere */
     padding: 20px; /* Spațiere interioară */
+    margin-top: 10%;
 }
 
 .contact-box .section-title {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #002c58; /* Albastru închis */
     z-index:10; /* Asigură-te că titlul este deasupra formelor */
@@ -102,19 +103,20 @@
 }
 
 .contact-box .section-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #555; /* Gri deschis */
     margin-bottom: 20px;
 }
 
 .contact-list li {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
 }
 
 .contact-list li:hover {
-    text-decoration: underline; /* Subliniere la hover */
     cursor: pointer; /* Schimbă cursorul pentru interactivitate */
+    color:#940000;
 }
 
 .contact-list a {
