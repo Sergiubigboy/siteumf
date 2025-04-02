@@ -12,38 +12,16 @@ body {
 /* Background with a 30-degree angled split */
 .color-section {
   width: 100%; /* Ocupă toată lățimea */
-  background: #00172d; /* Albastru închis */
+  background-color: #00172d; /* Culoare de rezervă pentru browsere care nu suportă gradient */
   background-image: url('/static/images/texture.png');
   background-size: cover; /* Ajustează textura să acopere întreaga secțiune */
-  background-blend-mode: overlay; /* Suprapune textura peste culoare */
+  background-blend-mode: overlay; /* Suprapune textura peste gradient */
   position: relative;
   margin-top: 20px;
-  color: #ffffff;
   padding: 200px 0; /* Ajustează înălțimea secțiunii */
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); /* Inversare înclinare sus și jos */
 }
 
-.color-section::before,
-.color-section::after {
-  content: '';
-  position: absolute;
-  width: 90%; /* Ajustează lățimea liniei */
-  height: 4px; /* Grosimea liniei */
-  background: #ffffff; /* Alb pentru contrast */
-  color: #ffffff;
-}
-
-.color-section::before {
-  top: 5%; /* Poziționează linia mai sus */
-  left: 5%; /* Ajustează poziția pe orizontală */
-  transform: rotate(-1deg); /* Ajustează înclinarea liniei */
-}
-
-.color-section::after {
-  bottom: 5%; /* Poziționează linia mai jos */
-  left: 5%; /* Ajustează poziția pe orizontală */
-  transform: rotate(1deg); /* Ajustează înclinarea liniei */
-}
 
 /* Stilizare scrollbar */
 body::-webkit-scrollbar { 
