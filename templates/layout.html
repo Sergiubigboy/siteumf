@@ -90,24 +90,28 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link {% if request.path == '/echohub' %}active{% endif %}"
-                href="/echohub"
-                >EchoHub</a
+                class="nav-link {% if request.path == '/activitati' %}active{% endif %}"
+                href="/activitati"
+                >Activitati</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a
-                class="nav-link {% if request.path == '/podcast' %}active{% endif %}"
-                href="/podcast"
-                >Podcast</a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="diverseDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link {% if request.path == '/revista' %}active{% endif %}"
-                href="/revista"
-                >Revista</a
-              >
+                Diverse
+              </a>
+              <div class="dropdown-menu" aria-labelledby="diverseDropdown">
+                <a class="dropdown-item" href="/admitere">Admiteri</a>
+                <a class="dropdown-item" href="/transferuri">Transferuri</a>
+                <a class="dropdown-item" href="/proceduri">Proceduri</a>
+              </div>
             </li>
           </ul>
         </div>
