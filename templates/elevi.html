@@ -4,45 +4,73 @@
   href="{{ url_for('static', filename='css/elevi.css') }}"
 />
 {% endblock %} {% block content %}
-<div class="container mt-4">
-  <h1 class="text-center mb-4">Clase</h1>
 
-  <!-- Search Bar -->
-  <form method="GET" action="{{ url_for('lista_clase') }}" class="mb-4">
-    <div class="input-group">
-      <input
-        type="text"
-        name="search"
-        class="form-control"
-        placeholder="Caută o clasă (ex: 9A, 10B)..."
-        value="{{ request.args.get('search', '') }}"
-      />
-      <button class="btn btn-primary" type="submit">Caută</button>
-    </div>
-  </form>
+<div class="page-container">
+  <!-- Secțiunea claselor -->
+  <div class="container my-5">
+    <div class="class-section">
+      <!-- Search Bar -->
+      <form method="GET" action="{{ url_for('lista_clase') }}" class="mb-4">
+        <div class="input-group">
+          <input
+            type="text"
+            name="search"
+            class="form-control"
+            placeholder="Caută o clasă (ex: 9A, 10B)..."
+            value="{{ request.args.get('search', '') }}"
+          />
+          <button class="btn btn-primary" type="submit">Caută</button>
+        </div>
+      </form>
 
-  <!-- Lista clase pe mai multe rânduri -->
-  <div class="class-list">
-    {% for clasa, litera, profil in clase %}
-    <div class="class-item">
-      <div class="class-info">
-        <h5>Clasa {{ clasa }}{{ litera }} - {{ profil }}</h5>
-        {% if litera == 'A' and clasa == 9 %}
-      <p>prof. diriginte Bianca Han</p>
-      {% elif litera == 'B' and clasa == 9 %}
-      <p>prof. diriginte Ratiu Bogdan</p>
-      {% endif %}
+      <!-- Lista clase pe mai multe rânduri -->
+      <div class="class-list">
+        {% for clasa, litera, profil in clase %}
+        <div class="class-item">
+          <div class="class-info">
+            <h5>Clasa {{ clasa }}{{ litera }} - {{ profil }}</h5>
+            {% if litera == 'A' and clasa == 9 %}
+            <p>prof. diriginte Bianca Han</p>
+            {% elif litera == 'B' and clasa == 9 %}
+            <p>prof. diriginte Ratiu Bogdan</p>
+            {% endif %}
+          </div>
+          <div class="class-action">
+            <a
+              href="{{ url_for('elevi_clasa', clasa=clasa, litera=litera) }}"
+              class="btn btn-primary btn-sm"
+            >
+              Vezi elevii
+            </a>
+          </div>
+        </div>
+        {% endfor %}
       </div>
-      <div class="class-action">
-        <a
-          href="{{ url_for('elevi_clasa', clasa=clasa, litera=litera) }}"
-          class="btn btn-primary btn-sm"
-        >
-          Vezi elevii
-        </a>
+
+      <!-- Secțiunea statisticilor elevilor -->
+      <div class="student-stats my-5">
+        <h3 class="stats-title">Statistici Elevi</h3>
+        <div class="stats-cards">
+          <div class="stats-card">
+            <h4>Media Generală</h4>
+            <p>9.50</p>
+          </div>
+
+          <div class="stats-card">
+            <h4>Premii Olimpiade</h4>
+            <p>15</p>
+          </div>
+          <div class="stats-card">
+            <h4>Participări Concursuri</h4>
+            <p>23</p>
+          </div>
+          <div class="stats-card">
+            <h4>Elevi cu 10 pe linie</h4>
+            <p>5</p>
+          </div>
+        </div>
       </div>
     </div>
-    {% endfor %}
   </div>
 </div>
 {% endblock %}

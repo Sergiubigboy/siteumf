@@ -2,44 +2,117 @@
 .class-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 coloane */
-  gap: 15px; /* Spațiu între clase */
-  margin-top: 20px;
+  gap: 20px; /* Spațiu mai mare între clase */
+  margin-top: 30px;
 }
 
 /* Fiecare clasă */
 .class-item {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Aranjare pe verticală */
+  justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 20px; /* Padding mai mare */
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 12px; /* Colțuri mai rotunjite */
   background-color: #f9f9f9;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .class-item:hover {
   background-color: #e6f0ff; /* Albastru deschis la hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Umbra mai proeminentă */
+  transform: scale(1.05); /* Efect de mărire */
 }
 
 /* Informații despre clasă */
 .class-info h5 {
-  margin: 0;
-  font-size: 1.2rem;
+  margin: 10px 0; /* Spațiu mai mare sus și jos */
+  font-size: 1.4rem; /* Dimensiune mai mare */
   font-weight: bold;
   color: #0056b3;
+  text-align: center; /* Centrare text */
 }
 
 /* Buton pentru acțiune */
 .class-action .btn-primary {
   background-color: #0056b3;
   border-color: #0056b3;
-  font-size: 0.85rem;
-  padding: 5px 10px;
+  font-size: 1rem; /* Dimensiune mai mare */
+  padding: 10px 20px; /* Padding mai mare */
+  margin-top: 15px; /* Spațiu între buton și conținut */
 }
 
 .class-action .btn-primary:hover {
   background-color: #003f7f;
   border-color: #003f7f;
 }
+
+.input-group {
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+}
+
+.input-group .form-control {
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  font-size: 1rem; /* Dimensiune mai mare */
+}
+
+.input-group .btn-primary {
+  border-radius: 0 20px 20px 0;
+  background-color: #0056b3; /* Albastru pentru butonul de căutare */
+  border: none;
+  font-size: 1rem; /* Dimensiune mai mare */
+  padding: 7px 20px;
+}
+
+.input-group .btn-primary:hover {
+  background-color: #003f7f;
+}
+
+/* Secțiunea statisticilor elevilor */
+.student-stats {
+  text-align: center;
+}
+
+.stats-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0056b3;
+  margin-bottom: 30px;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stats-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stats-card h4 {
+  font-size: 1.2rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.stats-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
