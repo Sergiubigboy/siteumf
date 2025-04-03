@@ -1,4 +1,3 @@
-
 /* Background styling for the mainpage */
 .mainpage-bg {
   background: #ffffff; /* White background */
@@ -141,4 +140,39 @@
   left: 50px;
 }
 
+/* Stiluri pentru box-ul clickabil */
+.clickable-box {
+  background-color: #f8f9fa; /* Fundal deschis */
+  border: 2px solid #0056b3; /* Bordură albastră */
+  border-radius: 12px; /* Colțuri rotunjite */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animație la hover */
+  margin-left: 0;
+}
+
+.clickable-box:hover {
+  transform: scale(1.02); /* Mărește ușor box-ul la hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată */
+}
+
+.box-title {
+  font-size: 1.5rem; /* Dimensiune mai mare pentru titlu */
+  font-weight: bold;
+  color: #0056b3; /* Albastru */
+}
+
+.box-text {
+  font-size: 1rem; /* Dimensiune medie pentru text */
+  color: #333; /* Gri închis */
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #0056b3; /* Albastru */
+  border-color: #0056b3;
+}
+
+.btn-primary:hover {
+  background-color: #003d80; /* Albastru mai închis la hover */
+  border-color: #003d80;
+}
 
