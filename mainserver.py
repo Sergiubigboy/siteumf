@@ -17,9 +17,9 @@ app = Flask(__name__)
 def mainpage():
     return render_template('mainpage.html', subtitlu="Acasa", title="Bine ați venit!", background="bgmain.png")
 
-@app.route('/revista')
+@app.route('/contact')
 def despre():
-    return render_template('despre.html', subtitlu="Contact", title="Contact", background="liceu2.jpeg", no_hero=True)
+    return render_template('contact.html', subtitlu="Contact", title="Contact", background="liceu2.jpeg", no_hero=True)
 
 @app.route('/elevi')
 def lista_clase():
@@ -109,6 +109,9 @@ def transferuri():
 @app.route('/proceduri')
 def proceduri():
     return render_template('proceduri.html', subtitlu="Proceduri", title="Proceduri", background="bgmain.png")
+@app.route('/facilitati')
+def facilitati():
+    return render_template('facilitati.html', title="Resurse materiale", subtitlu="Facilități")
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
