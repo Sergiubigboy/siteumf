@@ -15,11 +15,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def mainpage():
-    return render_template('mainpage.html', subtitlu="Acasa", title="Bine ați venit!", background="bgmain.png")
+    return render_template('mainpage.html', subtitlu="Acasa", title="Bine ați venit!", background="static/images/bgmain.png")
 
 @app.route('/contact')
 def despre():
-    return render_template('contact.html', subtitlu="Contact", title="Contact", background="liceu2.jpeg", no_hero=True)
+    return render_template('contact.html', subtitlu="Contact", title="Contact", no_hero=True)
 
 @app.route('/elevi')
 def lista_clase():
