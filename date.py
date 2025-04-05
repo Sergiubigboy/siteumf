@@ -3,19 +3,22 @@ profesori = [
         "nume": "Bogdan Rațiu",
         "materie": "Limba și literatura română",
         "descriere": "",
-        "imagine": ""
+        "imagine": "",
+
     },
     {
         "nume": "Nicola Oprea",
         "materie": "Matematică",
         "descriere": "",
-        "imagine": ""
+        "imagine": "",
+
+
     },
     {
         "nume": "Bianca Han",
         "materie": "Limba engleză",
         "descriere": "",
-        "imagine": ""
+        "imagine": "static/images/Poza-UMFST/Profesori/Bianca-Han.png"
     },
     {
         "nume": "Kutasi Réka",
@@ -96,6 +99,37 @@ profesori = [
         "imagine": ""
     }
 ]
+conducere = [
+    {
+        "nume": "Andreea-Romana Ban",
+        "functie": "Director",
+        "descriere": "Coordonează activitatea școlii.",
+        "imagine": "Adreea-Romana-Ban.jpg",
+        "email": "andreea.ban@umfst.ro"
+    },
+    {
+        "nume": "Bogdan Rațiu",
+        "functie": "Director Adjunct",
+        "descriere": "Responsabil cu activitățile administrative.",
+        "imagine": "Bogdan-Ratiu.jpg",
+        "email": "bogdan.ratiu@umfst.ro"
+    },
+    {
+        "nume": "Bianca Han",
+        "functie": "Consilier educativ",
+        "descriere": "Gestionează documentele școlii.",
+        "imagine": "Bianca-Han.jpg",
+        "email": "bianca.han@umfst.ro"
+    },
+    {
+        "nume": "Claudia Vodă",
+        "functie": "Secretară",
+        "descriere": "Gestionează documentele școlii.",
+        "imagine": "Claudia-Voda.jpg",
+        "email": "claudia.voda@umfst.ro"
+    }
+]
+
 
 elevi = [
     # Clasa 9B
@@ -160,7 +194,9 @@ elevi = [
 class CatalogPersonal:
     def __init__(self, personal):
         self.personal = personal
-        
+        for pers in self.personal:
+            pers['imagine'] = pers['nume'].replace(" ", "-").lower() + ".jpg"
+
     def findbyname(self, nume):
         return next((prof for prof in self.personal if prof["nume"] == nume), None)
 
@@ -177,7 +213,3 @@ if __name__ == "__main__":
         print(f"Profesor găsit: {profesor}")
     else:
         print("Profesorul nu a fost găsit.")
-
-    # Testează funcția findbysubject
-    profesori_engleza = catalog.findbysubject("Limba engleză")
-    print(f"Profesori de Limba engleză: {profesori_engleza}")

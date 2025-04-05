@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def mainpage():
-    return render_template('mainpage.html', subtitlu="Acasa", title="Bine ați venit!", background="static/images/bgmain.png")
+    return render_template('mainpage.html', subtitlu="Acasa", title="Viziune", background="static/images/bgmain.png")
 
 @app.route('/contact')
 def despre():
@@ -109,9 +109,24 @@ def transferuri():
 @app.route('/proceduri')
 def proceduri():
     return render_template('proceduri.html', subtitlu="Proceduri", title="Proceduri", background="bgmain.png")
+
 @app.route('/facilitati')
 def facilitati():
     return render_template('facilitati.html', title="Resurse materiale", subtitlu="Facilități")
+@app.route('/personal-conducere')
+def personal_conducere():
+    # Filter only "Personal de Conducere" from Profesori
+    conducere = [
+        profesor for profesor in Profesori.personal if profesor.get("rol") == "Conducere"
+    ]
+    return render_template(
+        'personal_conducere.html',
+        conducere=conducere,
+        subtitlu="Personal de Conducere",
+        title="Personal de Conducere",
+        background="bgmain.png"
+    )
+
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
