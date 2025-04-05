@@ -181,7 +181,6 @@ border-bottom: 2px solid #940000; /* Linie sub linkul activ */
 .hero-section {
   position: relative;
   height: 800px; /* Height of the hero section */
-  background: url('/static/images/bgmain.png') no-repeat center center;
   background-size: cover; /* Ensure the background image covers the section */
   margin-top: 0; /* Remove any margin above */
 }
