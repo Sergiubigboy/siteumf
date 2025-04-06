@@ -65,7 +65,7 @@
   background-size: cover; /* Ensure the image covers the entire section */
   height: 300px; /* Adjust the height as needed */
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 50px; /* Add space below the hero section */
 }
 
 .hero-overlay {
@@ -87,7 +87,27 @@
   margin: 0;
 }
 
-.container {
-  padding-left: 30px; /* Add space on the left */
-  padding-right: 30px; /* Add space on the right */
+.rotated-background {
+  background: url('/static/images/texture.png') no-repeat center center;
+  background-size: 200px 200px; /* Mărește textura */
+  position: fixed; /* Fundal fix */
+  top: 0;
+  left: 0;
+  width: 1500px; /* Lărgește fundalul */
+  height: 100vh; /* Acoperă întreaga înălțime a paginii */
+  transform: rotate(90deg); /* Rotește imaginea cu 90 de grade */
+  z-index: -1; /* Trimite fundalul în spate */
+  filter: hue-rotate(200deg); /* Aplică o nuanță de albastru */
+}
+
+.color-section {
+  width: 100%; /* Lățime completă */
+  background-color: #00172d; /* Culoare de rezervă */
+  background-image: url('/static/images/texture.png'); /* Imaginea texturii */
+  background-size: cover; /* Asigură că textura acoperă întreaga secțiune */
+  background-blend-mode: overlay; /* Combină textura cu culoarea de fundal */
+  position: relative;
+  margin-top: 20px;
+  padding: 100px 0; /* Reduce înălțimea secțiunii */
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); /* Creează unghiuri la margini */
 }
