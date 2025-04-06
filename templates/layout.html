@@ -60,6 +60,7 @@
                   <li>
                     <a class="dropdown-item" href="/">Viziune</a>
                   </li>
+
                   <li>
                     <a class="dropdown-item" href="/facilitati">Resurse materiale</a>
                   </li>
@@ -95,12 +96,24 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
+            
+            <li class="nav-item dropdown">
               <a
-                class="nav-link {% if request.path == '/elevi' %}active{% endif %}"
-                href="/elevi"
-                >Elevi</a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="eleviDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Elevi
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="eleviDropdown">
+                <li><a class="dropdown-item" href="{{ url_for('lista_clase') }}">Clase</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('catalog') }}">Catalog</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('orar') }}">Orar</a></li>
+                <li><a class="dropdown-item" href="{{ url_for('performante') }}">Performanțe</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a
@@ -129,9 +142,11 @@
                 Diverse
               </a>
               <div class="dropdown-menu" aria-labelledby="diverseDropdown">
+                <a class="dropdown-item" href="/regulamente">Regulamente</a>
                 <a class="dropdown-item" href="/admitere">Admiteri</a>
                 <a class="dropdown-item" href="/transferuri">Transferuri</a>
                 <a class="dropdown-item" href="/proceduri">Proceduri</a>
+                
               </div>
             </li>
             
@@ -232,6 +247,14 @@
 
       // Rulează funcția la încărcarea paginii
       document.addEventListener("DOMContentLoaded", handleScroll);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var dropdowns = document.querySelectorAll('.dropdown-toggle');
+        dropdowns.forEach(function (dropdown) {
+          new bootstrap.Dropdown(dropdown);
+        });
+      });
     </script>
   </body>
 </html>

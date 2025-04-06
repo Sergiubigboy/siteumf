@@ -23,7 +23,7 @@ profesori = [
         "rol": "Conducere",
     },
     {
-        "nume": "Kutasi Réka",
+        "nume": "Kutasi Reka",
         "materie": "Limba engleză",
         "descriere": "",
         "imagine": ""
@@ -54,7 +54,7 @@ profesori = [
         "imagine": ""
     },
     {
-        "nume": "Corneliu Tanase",
+        "nume": "Corneliu Tănase",
         "materie": "Biologie",
         "descriere": "",
         "imagine": "images/Corneliu-Tanase.png"
@@ -78,7 +78,7 @@ profesori = [
         "imagine": ""
     },
     {
-        "nume": "Barsan",
+        "nume": "Bârsan Ovidiu",
         "materie": "Religie",
         "descriere": "",
         "imagine": ""
@@ -96,7 +96,7 @@ profesori = [
         "imagine": ""
     },
     {
-        "nume": "Jeddi Tunde",
+        "nume": "Jeddi Tünde",
         "materie": "Educație muzicală",
         "descriere": "",
         "imagine": ""
