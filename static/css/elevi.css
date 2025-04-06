@@ -1,8 +1,8 @@
 /* Lista clase */
 .class-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 coloane */
-  gap: 20px; /* Spațiu mai mare între clase */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Carduri mai mari și responsive */
+  gap: 20px; /* Spațiu între carduri */
   margin-top: 30px;
 }
 
@@ -12,35 +12,48 @@
   flex-direction: column; /* Aranjare pe verticală */
   justify-content: center;
   align-items: center;
-  padding: 20px; /* Padding mai mare */
+  padding: 20px; /* Mai mult padding */
   border: 1px solid #ddd;
-  border-radius: 12px; /* Colțuri mai rotunjite */
   background-color: #f9f9f9;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Previne depășirea conținutului */
 }
 
 .class-item:hover {
-  background-color: #e6f0ff; /* Albastru deschis la hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Umbra mai proeminentă */
-  transform: scale(1.05); /* Efect de mărire */
+  transform: scale(1.05); /* Mărește cardul la hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbra mai proeminentă */
+}
+
+/* Imaginea clasei */
+.class-image img {
+  width:500px; /* Imaginea ocupă întreaga lățime a containerului */
+  height: 310px; /* Înălțimea fixă a imaginii */
+  object-fit: cover; /* Ajustează imaginea să se potrivească în container */
+  object-position: top; /* Afișează partea de sus a imaginii */
+  margin-bottom: 15px; /* Spațiu între imagine și text */
+  transition: transform 0.3s ease; /* Efect de mărire la hover */
+}
+
+.class-item:hover .class-image img {
+  transform: scale(1.1); /* Mărește imaginea la hover */
 }
 
 /* Informații despre clasă */
 .class-info h5 {
-  margin: 10px 0; /* Spațiu mai mare sus și jos */
-  font-size: 1.4rem; /* Dimensiune mai mare */
+  margin: 15px 0;
+  font-size: 1.6rem; /* Dimensiune mai mare pentru titlu */
   font-weight: bold;
   color: #0056b3;
-  text-align: center; /* Centrare text */
+  text-align: center;
 }
 
 /* Buton pentru acțiune */
 .class-action .btn-primary {
   background-color: #0056b3;
   border-color: #0056b3;
-  font-size: 1rem; /* Dimensiune mai mare */
-  padding: 10px 20px; /* Padding mai mare */
-  margin-top: 15px; /* Spațiu între buton și conținut */
+  font-size: 1rem; /* Dimensiune mai mare pentru buton */
+  padding: 10px 20px; /* Mai mult padding */
+  margin-top: 15px;
 }
 
 .class-action .btn-primary:hover {

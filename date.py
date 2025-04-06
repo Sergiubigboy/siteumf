@@ -4,6 +4,7 @@ profesori = [
         "materie": "Limba și literatura română",
         "descriere": "",
         "imagine": "",
+        "rol": "Conducere",
 
     },
     {
@@ -18,7 +19,8 @@ profesori = [
         "nume": "Bianca Han",
         "materie": "Limba engleză",
         "descriere": "",
-        "imagine": "static/images/Poza-UMFST/Profesori/Bianca-Han.png"
+        "imagine": "",
+        "rol": "Conducere",
     },
     {
         "nume": "Kutasi Réka",
@@ -36,7 +38,8 @@ profesori = [
         "nume": "Andreea-Romana Ban",
         "materie": "Limba germană",
         "descriere": "",
-        "imagine": ""
+        "imagine": "",
+        "rol": "Conducere",
     },
     {
         "nume": "Ioan Tușnea",

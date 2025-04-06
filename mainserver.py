@@ -38,7 +38,7 @@ def lista_clase():
         clase=clase,
         subtitlu="Elevi",
         title="Elevi",
-        background=f"static/images/bgmain.png"
+        background=f"static/images/Poza-UMFST/grup9B/bgclasa9B.jpg"
     )
 @app.route('/elevi/<int:clasa>/<litera>')
 def elevi_clasa(clasa, litera):
@@ -55,7 +55,8 @@ def elevi_clasa(clasa, litera):
         profil=profil,
         subtitlu=f"Clasa {clasa}{litera}",
         title=f"Clasa {clasa}{litera}",
-        background=f"static/images/Poza-UMFST/grup{clasa}{litera}/bgelevi{clasa}{litera}.jpg"
+        background=f"static/images/Poza-UMFST/grup{clasa}{litera}/bgclasa{clasa}{litera}.jpg",
+        no_hero=True
     )
 
 @app.route('/corp-profesoral')
@@ -94,7 +95,7 @@ def pagina_profesor(nume):
 
 @app.route('/activitati')
 def echohub():
-    return render_template('activitati.html', subtitlu="Activitati", title="Activitati", background="bgmain.png")
+    return render_template('activitati.html', subtitlu="Activitati", title="Activitati", background="static/images/Poza-UMFST/grup9A/bgclasa9A.jpg")
 
 @app.route('/admitere')
 def admitere():

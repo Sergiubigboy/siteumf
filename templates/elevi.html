@@ -27,6 +27,13 @@
       <div class="class-list">
         {% for clasa, litera, profil in clase %}
         <div class="class-item">
+          <div class="class-image">
+            <img
+              src="/static/images/Poza-UMFST/grup{{ clasa }}{{ litera }}/bgclasa{{ clasa }}{{ litera }}.jpg"
+              alt="Clasa {{ clasa }}{{ litera }}"
+              class="img-fluid"
+            />
+          </div>
           <div class="class-info">
             <h5>Clasa {{ clasa }}{{ litera }} - {{ profil }}</h5>
             {% if litera == 'A' and clasa == 9 %}
