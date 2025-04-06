@@ -5,7 +5,7 @@
     <p>{{ profesor.materie }}</p>
     {% if profesor.imagine %}
     <img
-      src="{{ url_for('static', filename=profesor.imagine) }}"
+      src="{{ url_for('static', filename='images/Poza-UMFST/profesori/' + profesor.imagine) }}"
       alt="{{ profesor.nume }}"
       class="img-fluid"
     />

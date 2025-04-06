@@ -33,15 +33,13 @@ def lista_clase():
             (clasa, litera, profil) for clasa, litera, profil in clase
             if search_query in f"{clasa}{litera}{profil}".lower()
         ]
-
     return render_template(
         'elevi.html',
         clase=clase,
         subtitlu="Elevi",
         title="Elevi",
-        background="bgmain.png",
+        background=f"static/images/bgmain.png"
     )
-
 @app.route('/elevi/<int:clasa>/<litera>')
 def elevi_clasa(clasa, litera):
     # Filtrează elevii din clasa specificată
@@ -57,7 +55,7 @@ def elevi_clasa(clasa, litera):
         profil=profil,
         subtitlu=f"Clasa {clasa}{litera}",
         title=f"Clasa {clasa}{litera}",
-        background="bgmain.png"
+        background=f"static/images/Poza-UMFST/grup{clasa}{litera}/bgelevi{clasa}{litera}.jpg"
     )
 
 @app.route('/corp-profesoral')
