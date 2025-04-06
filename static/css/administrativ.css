@@ -1,0 +1,93 @@
+/* Stiluri pentru meniul de navigare */
+.nav-pills .nav-link {
+  color: #007bff;
+  font-weight: bold;
+  border: 1px solid #007bff;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Stiluri pentru cardurile persoanelor */
+.card {
+  border: 3px solid #0056b3;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a larger shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover effect */
+  padding: 10px; /* Reduce padding to make the content more compact */
+  min-height: 150px; /* Reduce the height to make the boxes thinner */
+  margin: 20px 10px; /* Add spacing between the boxes */
+  background-color: #ecebeb; /* Set a white background for the cards */
+  text-align: center; /* Center the text horizontally */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slightly lift the card on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Slightly reduce the title size */
+  font-weight: bold;
+  margin-bottom: 6px; /* Reduce spacing below the title */
+  margin-top: 20px;
+}
+
+.card-text {
+  font-size: 1.2rem; /* Slightly reduce the font size for better readability */
+  color: #555; /* Use a slightly darker color for text */
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-text a {
+  color: #0056b3;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card-text a:hover {
+  text-decoration: underline;
+}
+
+.hero-section {
+  background: url('/static/images/hero.jpg') no-repeat center center;
+  background-size: cover; /* Ensure the image covers the entire section */
+  height: 300px; /* Adjust the height as needed */
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+  display: flex;
+  align-items: center; /* Center the text vertically */
+  justify-content: center; /* Center the text horizontally */
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow to the text */
+  margin: 0;
+}
+
+.container {
+  padding-left: 30px; /* Add space on the left */
+  padding-right: 30px; /* Add space on the right */
+}

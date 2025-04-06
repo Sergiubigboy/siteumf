@@ -179,10 +179,11 @@ border-bottom: 2px solid #940000; /* Linie sub linkul activ */
 
 /* Hero Section */
 .hero-section {
+  background-position: bottom;
   position: relative;
-  height: 800px; /* Height of the hero section */
-  background-size: cover; /* Ensure the background image covers the section */
-  margin-top: 0; /* Remove any margin above */
+  height: 800px !important; /* Asigură-te că înălțimea este consistentă */
+  background-size: cover;
+  margin-top: 0;
 }
 
 /* Efect de hover pentru hero-section */
