@@ -1,10 +1,77 @@
 /* Carduri pentru clase */
+.table {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-  .table {
-    margin-top: 20px;
-  }
-  
-  .table th {
-    background-color: #0056b3;
-    color: #ffffff;
-  }
+.table th {
+  background-color: #0056b3;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+.table td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Secțiunea citat */
+.quote-section {
+  margin: 20px 0px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #0056b3;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.quote-section p {
+  margin: 0;
+  text-align: center;
+}
+
+
+/* Titluri specifice pentru pagina clasei */
+.class-title {
+  color: #0056b3;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem; /* Dimensiune mai mare pentru titlu */
+  font-weight: bold;
+}
+
+.class-subtitle {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5rem; /* Dimensiune mai mică pentru subtitlu */
+  font-style: italic;
+}
+
+/* Buton Înapoi */
+.btn-secondary {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #003f7f;
+  color: #ffffff;
+}

@@ -94,6 +94,14 @@
   font-size: 1rem;
   line-height: 1.6;
   color: #555; /* Gri deschis */
+  font-weight: bold;
+}
+
+.text-container .text-center p {
+  font-size: 1.3rem; /* Dimensiune mai mare pentru text */
+  font-weight: bold; /* Text cu bold */
+  line-height: 1.4; /* Spațiere între rânduri */
+  color: #555; /* Albastru închis */
 }
 
 /* Aliniere la mijloc pentru rândurile cu imagini și carduri */
@@ -175,4 +183,22 @@
   background-color: #003d80; /* Albastru mai închis la hover */
   border-color: #003d80;
 }
+/* Texture Overlay */
+/* Texture Overlay */
+.color-section {
+  width: 100%; /* Full width */
+  background-color: #00172d; /* Fallback color */
+  background-image: url('/static/images/texture.png'); /* Texture image */
+  background-size: cover; /* Ensure the texture covers the section */
+  background-blend-mode: overlay; /* Blend the texture with the background color */
+  position: relative;
+  margin-top: 20px;
+  padding: 200px 0; /* Adjust the height of the section */
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); /* Create an angled top and bottom */
+}
 
+/* Ensure the text container is above the texture */
+.text-container {
+  position: relative;
+  z-index: 1; /* Bring the text box above the texture */
+}
