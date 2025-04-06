@@ -8,6 +8,9 @@
   <h1 class="text-center mb-4">Clasa {{ clasa }}</h1>
   <h3 class="text-center mb-4">Profil: {{ profil }}</h3>
 
+  <a href="{{ url_for('lista_clase') }}" class="btn btn-secondary mt-3"
+    >Înapoi la clase</a
+  >
   <!-- Tabel cu elevi -->
   <table class="table table-striped">
     <thead>
@@ -27,9 +30,5 @@
       {% endfor %}
     </tbody>
   </table>
-
-  <a href="{{ url_for('lista_clase') }}" class="btn btn-secondary mt-3"
-    >Înapoi la clase</a
-  >
 </div>
 {% endblock %}
