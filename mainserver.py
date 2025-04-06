@@ -112,18 +112,13 @@ def proceduri():
 @app.route('/facilitati')
 def facilitati():
     return render_template('facilitati.html', title="Resurse materiale", subtitlu="Facilități")
-@app.route('/personal-conducere')
-def personal_conducere():
-    # Filter only "Personal de Conducere" from Profesori
-    conducere = [
-        profesor for profesor in Profesori.personal if profesor.get("rol") == "Conducere"
-    ]
+@app.route('/corp-administrativ')
+def corp_administrativ():
     return render_template(
-        'personal_conducere.html',
-        conducere=conducere,
-        subtitlu="Personal de Conducere",
-        title="Personal de Conducere",
-        background="bgmain.png"
+        'administrativ.html',
+        title="Corp Administrativ",
+        subtitlu="Echipa Administrativă",
+        background="static/images/Hero-principal.png"
     )
 
 

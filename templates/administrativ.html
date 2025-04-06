@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/administrativ.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+  <div class="row">
+    <!-- Box 1 -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Director</h5>
+          <p class="card-text"><strong></strong> Andreea-Romana Ban</p>
+          <p class="card-text"><strong>E-mail:</strong> <a href="mailto:andreea.ban@umfst.ro">andreea.ban@umfst.ro</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Director Adjunct</h5>
+          <p class="card-text"><strong></strong> Bogdan Rațiu</p>
+          <p class="card-text"><strong>E-mail:</strong> <a href="mailto:bogdan.ratiu@umfst.ro">bogdan.ratiu@umfst.ro</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Consilier educativ</h5>
+          <p class="card-text"><strong></strong> Bianca Han</p>
+          <p class="card-text"><strong>E-mail:</strong> <a href="mailto:bianca.han@umfst.ro">bianca.han@umfst.ro</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Secretară</h5>
+          <p class="card-text"><strong></strong> Claudia Vodă</p>
+          <p class="card-text"><strong>E-mail:</strong> <a href="mailto:claudia.voda@umfst.ro">claudia.voda@umfst.ro</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
