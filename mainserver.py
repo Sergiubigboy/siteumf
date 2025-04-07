@@ -1,27 +1,23 @@
 from flask import Flask, render_template, request
-from date import CatalogPersonal, profesori, elevi
-import unicodedata
+from date import CatalogPersonal, profesori, elevi, normalize_text
+
 
 # Inițializează catalogul profesorilor
 Profesori = CatalogPersonal(profesori)
 Elevi = CatalogPersonal(elevi)
-def normalize_text(text):
-    return ''.join(
-        c for c in unicodedata.normalize('NFD', text)
-        if unicodedata.category(c) != 'Mn'
-    ).lower()
+
 
 app = Flask(__name__)
 
 @app.route('/')
 def mainpage():
-    return render_template('mainpage.html', subtitlu="Acasa", title="Viziune", background="static/images/bgmain.png")
+    return render_template('mainpage.html', subtitlu="Acasa", title="Bine ati venit!", background="static/images/bgmain.png")
 
 @app.route('/contact')
 def despre():
     return render_template('contact.html', subtitlu="Contact", title="Contact", no_hero=True)
 
-@app.route('/elevi')
+@app.route('/clase')
 def lista_clase():
     # Obține toate clasele distincte
     clase = sorted(set((elev["clasa"], elev["litera"], elev["profil"]) for elev in elevi))
@@ -59,6 +55,17 @@ def elevi_clasa(clasa, litera):
         no_hero=True
     )
 
+@app.route('/catalog')
+def catalog():
+    return render_template('catalog.html', title="Catalog", subtitlu="Catalog")
+
+@app.route('/orar')
+def orar():
+    return render_template('orar.html', title="Orar", subtitlu="Orar")
+
+@app.route('/performante')
+def performante():
+    return render_template('performante.html', title="Performanțe", subtitlu="Performanțe")
 @app.route('/corp-profesoral')
 def lista_profesori():
     # Obține termenul de căutare din query string
@@ -89,13 +96,16 @@ def pagina_profesor(nume):
     # Găsește profesorul după nume
     profesor = Profesori.findbyname(nume)
     if profesor:
-        return render_template('pagina_profesor.html', profesor=profesor, subtitlu=profesor["nume"], title=profesor["nume"], background="bgmain.png")
+        return render_template('pagina_profesor.html', profesor=profesor, subtitlu=profesor["nume"], title=profesor["nume"], background="bgmain.png", no_hero=True)
     else:
         return "Profesorul nu a fost găsit.", 404
 
 @app.route('/activitati')
 def echohub():
-    return render_template('activitati.html', subtitlu="Activitati", title="Activitati", background="static/images/Poza-UMFST/grup9A/bgclasa9A.jpg")
+    return render_template('activitati.html', subtitlu="Activități", title="Activități", background="static/images/Poza-UMFST/grup9A/bgclasa9A.jpg")
+@app.route('/regulamente')
+def regulamente():
+    return render_template('regulamente.html', title="Regulamente", subtitlu="Regulamente")
 
 @app.route('/admitere')
 def admitere():
@@ -112,6 +122,11 @@ def proceduri():
 @app.route('/facilitati')
 def facilitati():
     return render_template('facilitati.html', title="Resurse materiale", subtitlu="Facilități")
+
+@app.route('/anunturi')
+def anunturi():
+    return render_template('anunturi.html', title="Anunțuri", subtitlu="Anunțuri")
+
 @app.route('/corp-administrativ')
 def corp_administrativ():
     return render_template(

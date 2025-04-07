@@ -19,26 +19,32 @@
       Înapoi la clase
     </a>
 
-</div>
-  <!-- Tabel cu elevi -->
-    <table class="table table-striped fade-in">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Nume</th>
-          <th>Profil</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for elev in elevi %}
-        <tr>
-          <td>{{ loop.index }}</td>
-          <td>{{ elev.nume }}</td>
-          <td>{{ elev.profil }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-   </div>
+    <!-- Antet unic pentru toate tabelele -->
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="table-header">
+        </div>
+      </div>
+    </div>
+
+  <!-- Grilă cu elevi -->
+  <div class="row mt-4">
+    {% for elev in elevi %}
+    {% if loop.index0 % 9 == 0 %}
+    <div class="col-md-4">
+      <table class="table table-striped">
+        <tbody>
+    {% endif %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ elev.nume }}</td>
+          </tr>
+    {% if loop.index0 % 9 == 8 or loop.last %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}

@@ -23,6 +23,7 @@
   border-bottom: none;
 }
 
+
 /* Secțiunea citat */
 .quote-section {
   margin: 20px 0px;
@@ -74,4 +75,41 @@
 .btn-secondary:hover {
   background-color: #003f7f;
   color: #ffffff;
+}
+
+/* Carduri pentru studenți */
+.student-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.student-card {
+  background-color: #f8f9fa; /* Fundal deschis */
+  border: 1px solid #ddd; /* Bordură subțire */
+  border-radius: 5px; /* Colțuri rotunjite */
+  padding: 10px; /* Spațiu interior */
+  margin-bottom: 10px; /* Spațiu între carduri */
+  width: 100%; /* Lățime completă în coloană */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}
+
+.student-index {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #0056b3; /* Albastru */
+}
+
+.student-name {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.student-profile {
+  font-size: 0.9rem;
+  color: #555; /* Gri */
+}
+
+.row.mt-4 {
+  margin-top: 0px !important; /* Reduce spațiul de deasupra tabelelor */
 }

@@ -1,18 +1,34 @@
-{% extends "layout.html" %} {% block content %}
-<div class="container mt-4">
-  <div class="text-center">
-    <h1>{{ profesor.nume }}</h1>
-    <p>{{ profesor.materie }}</p>
-    {% if profesor.imagine %}
-    <img
-      src="{{ url_for('static', filename='images/Poza-UMFST/profesori/' + profesor.imagine) }}"
-      alt="{{ profesor.nume }}"
-      class="img-fluid"
-    />
-    {% else %}
-    <p>Imaginea nu este disponibilă.</p>
-    {% endif %}
-    <p>{{ profesor.descriere }}</p>
+{% extends "layout.html" %} {% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/pagina_profesor.css') }}"
+/>
+{% endblock %} {% block content %}
+<div id="margin"></div>
+<div class="profesor-container mt-4">
+  <!-- Secțiunea citat -->
+  <div class="profesor-quote">
+    <p>"{{ profesor.citat }}"</p>
+  </div>
+
+  <!-- Secțiunea principală -->
+  <div class="profesor-content">
+    <div class="profesor-image-container">
+      {% if profesor.imagine %}
+      <img
+        src="{{ url_for('static', filename='images/Poza-UMFST/profesori/' + profesor.imagine) }}"
+        alt="{{ profesor.imagine }}"
+        class="profesor-image"
+      />
+      {% else %}
+      <p class="profesor-no-image">Imaginea nu este disponibilă.</p>
+      {% endif %}
+    </div>
+    <div class="profesor-details">
+      <h1 class="profesor-title">{{ profesor.nume }}</h1>
+      <p class="profesor-materie">{{ profesor.materie }}</p>
+      <p class="profesor-descriere">{{ profesor.descriere }}</p>
+    </div>
   </div>
 </div>
 {% endblock %}
