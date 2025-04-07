@@ -1,0 +1,86 @@
+#margin {
+    margin-top: 100px; /* Adaugă un spațiu de 100px deasupra pentru a evita suprapunerea */
+}
+
+/* Container specific pentru pagina profesorului */
+.profesor-container {
+  max-width: 900px;
+  margin: 100px auto 20px auto; /* Adaugă un spațiu de 100px deasupra pentru a evita suprapunerea */
+  padding: 20px;
+  background-color: #f9f9f9; /* Fundal deschis */
+  border: 1px solid #ddd; /* Bordură subtilă */
+  border-radius: 8px; /* Colțuri rotunjite */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbra containerului */
+}
+
+/* Secțiunea citat */
+.profesor-quote {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #0056b3; /* Fundal albastru */
+  color: #ffffff; /* Text alb */
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbra secțiunii */
+}
+
+/* Secțiunea principală */
+.profesor-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Imaginea profesorului */
+.profesor-image-container {
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  justify-content: center; /* Centrează imaginea pe orizontală */
+  margin-top: 20px; /* Adaugă spațiu deasupra imaginii */
+}
+
+.profesor-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Colțuri rotunjite */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbra imaginii */
+  margin-bottom: 20px; /* Adaugă spațiu sub imagine */
+}
+
+/* Detalii profesor */
+.profesor-details {
+  flex: 2;
+}
+
+.profesor-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0056b3; /* Albastru închis */
+  margin-bottom: 10px;
+}
+
+.profesor-materie {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.profesor-descriere {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+/* Mesaj pentru imagine indisponibilă */
+.profesor-no-image {
+  font-size: 1rem;
+  color: #940000; /* Roșu pentru mesaj de eroare */
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+}
