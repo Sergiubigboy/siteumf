@@ -1,8 +1,11 @@
+import unicodedata
+
 profesori = [
     {
         "nume": "Bogdan Rațiu",
         "materie": "Limba și literatura română",
-        "descriere": "",
+        "descriere": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam mollitia dolores libero ut harum molestiae, a eligendi dolorum reiciendis ex maiores illo nam, aut assumenda? Possimus quasi nobis laborum nihil.",
+        "citat": "Traim local, gandim global.",
         "imagine": "",
         "rol": "Conducere",
 
@@ -11,6 +14,7 @@ profesori = [
         "nume": "Nicola Oprea",
         "materie": "Matematică",
         "descriere": "",
+        "citat": "",
         "imagine": "",
 
 
@@ -19,25 +23,29 @@ profesori = [
         "nume": "Bianca Han",
         "materie": "Limba engleză",
         "descriere": "",
+        "citat": "Live. Love. Teach. Teaching hearts, shaping minds.",
         "imagine": "",
         "rol": "Conducere",
     },
     {
-        "nume": "Kutasi Réka",
+        "nume": "Kutasi Reka",
         "materie": "Limba engleză",
         "descriere": "",
+        "citat": "",
         "imagine": ""
     },
     {
         "nume": "Corina Bozedean",
         "materie": "Limba franceză",
         "descriere": "",
+        "citat": "",
         "imagine": ""
     },
     {
         "nume": "Andreea-Romana Ban",
         "materie": "Limba germană",
         "descriere": "",
+        "citat": "",
         "imagine": "",
         "rol": "Conducere",
     },
@@ -45,93 +53,88 @@ profesori = [
         "nume": "Ioan Tușnea",
         "materie": "Fizică",
         "descriere": "",
+        "citat": "",
         "imagine": ""
     },
     {
         "nume": "Mihai Babotă",
         "materie": "Chimie",
         "descriere": "",
+        "citat": "",
         "imagine": ""
     },
     {
-        "nume": "Corneliu Tanase",
+        "nume": "Corneliu Tănase",
         "materie": "Biologie",
         "descriere": "",
-        "imagine": "images/Corneliu-Tanase.png"
+        "citat": "",
+        "imagine": ""
     },
     {
         "nume": "Georgeta Fodor",
         "materie": "Istorie",
         "descriere": "",
+        "citat": "",
         "imagine": ""
     },
     {
         "nume": "Crina Chirilă",
         "materie": "Geografie",
         "descriere": "",
+        "citat": "",
         "imagine": ""
     },
     {
         "nume": "Nora Dumbravă",
         "materie": "Logică",
         "descriere": "",
+        "citat": "",
         "imagine": ""
     },
     {
-        "nume": "Barsan",
+        "nume": "Bârsan Ovidiu",
         "materie": "Religie",
         "descriere": "",
+        "citat": "",
         "imagine": ""
     },
     {
         "nume": "Bogdan Bucur",
         "materie": "Educație vizuală",
         "descriere": "",
+        "citat": "",
         "imagine": ""
     },
     {
         "nume": "Răzvan Alexandrescu",
         "materie": "Educație fizică",
         "descriere": "",
+        "citat": "",
         "imagine": ""
     },
     {
-        "nume": "Jeddi Tunde",
+        "nume": "Jeddi Tünde",
         "materie": "Educație muzicală",
         "descriere": "",
+        "citat": "",
+        "imagine": ""
+    },
+    {
+        "nume": "Roland Bolboacă",
+        "materie": "Informatică",
+        "descriere": "",
+        "citat": "",
+        "imagine": ""
+    },
+     {
+        "nume": " Feier Adrian",
+        "materie": "Informatică",
+        "descriere": "",
+        "citat": "",
         "imagine": ""
     }
 ]
-conducere = [
-    {
-        "nume": "Andreea-Romana Ban",
-        "functie": "Director",
-        "descriere": "Coordonează activitatea școlii.",
-        "imagine": "Adreea-Romana-Ban.jpg",
-        "email": "andreea.ban@umfst.ro"
-    },
-    {
-        "nume": "Bogdan Rațiu",
-        "functie": "Director Adjunct",
-        "descriere": "Responsabil cu activitățile administrative.",
-        "imagine": "Bogdan-Ratiu.jpg",
-        "email": "bogdan.ratiu@umfst.ro"
-    },
-    {
-        "nume": "Bianca Han",
-        "functie": "Consilier educativ",
-        "descriere": "Gestionează documentele școlii.",
-        "imagine": "Bianca-Han.jpg",
-        "email": "bianca.han@umfst.ro"
-    },
-    {
-        "nume": "Claudia Vodă",
-        "functie": "Secretară",
-        "descriere": "Gestionează documentele școlii.",
-        "imagine": "Claudia-Voda.jpg",
-        "email": "claudia.voda@umfst.ro"
-    }
-]
+
 
 
 elevi = [
@@ -194,11 +197,19 @@ elevi = [
     {"nume": "Vasloban Maria", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"}
 ]
 
+def normalize_text(text):
+    return ''.join(
+        c for c in unicodedata.normalize('NFD', text)
+        if unicodedata.category(c) != 'Mn'
+    ).lower()
+
 class CatalogPersonal:
     def __init__(self, personal):
         self.personal = personal
         for pers in self.personal:
-            pers['imagine'] = pers['nume'].replace(" ", "-").lower() + ".jpg"
+            pers['imagine'] = normalize_text(pers['nume'].replace(" ", "-").lower() + ".jpg")
+
+
 
     def findbyname(self, nume):
         return next((prof for prof in self.personal if prof["nume"] == nume), None)
