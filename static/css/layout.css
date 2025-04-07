@@ -198,7 +198,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: rgba(5, 61, 134, 0.527); /* Semi-transparent blue */
+background-color: rgba(5, 61, 134, 0.527) !important; /* Semi-transparent blue */
 z-index: 10; /* Lower than the hero-container */
 }
 
