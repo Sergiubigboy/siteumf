@@ -183,22 +183,239 @@
   background-color: #003d80; /* Albastru mai închis la hover */
   border-color: #003d80;
 }
-/* Texture Overlay */
-/* Texture Overlay */
-.color-section {
-  width: 100%; /* Full width */
-  background-color: #00172d; /* Fallback color */
-  background-image: url('/static/images/texture.png'); /* Texture image */
-  background-size: cover; /* Ensure the texture covers the section */
-  background-blend-mode: overlay; /* Blend the texture with the background color */
-  position: relative;
-  margin-top: 20px;
-  padding: 200px 0; /* Adjust the height of the section */
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); /* Create an angled top and bottom */
-}
 
 /* Ensure the text container is above the texture */
 .text-container {
   position: relative;
   z-index: 1; /* Bring the text box above the texture */
+}
+
+/* Secțiunea de anunțuri */
+.anunturi-section {
+  margin-top: 50px;
+  position: relative;
+}
+
+.anunturi-slider-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Ascunde cardurile care ies din container */
+  position: relative;
+}
+
+.anunturi-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Tranziție lină pentru slide */
+  gap: 20px; /* Spațiu între carduri */
+}
+
+.anunt-card {
+  flex: 0 0 calc(33.333% - 20px); /* 3 carduri pe rând */
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Săgeți pentru navigare */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.slider-arrow:hover {
+  background-color: #003d80;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* Secțiunea de anunțuri */
+.anunturi-section {
+  margin-top: 50px;
+  position: relative;
+}
+
+.anunturi-slider-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Ascunde cardurile care ies din container */
+  position: relative;
+}
+
+.anunturi-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Tranziție lină pentru slide */
+  gap: 20px; /* Spațiu între carduri */
+}
+
+.anunt-card {
+  flex: 0 0 calc(33.333% - 20px); /* 3 carduri pe rând */
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Săgeți pentru navigare */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.slider-arrow:hover {
+  background-color: #003d80;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+/* Stiluri generale pentru secțiuni */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #002c58; /* Albastru închis */
+}
+
+.section-text {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Imagini */
+.img-fluid {
+  width: 500px; /* Imaginea ocupă întreaga lățime a containerului */
+  height: 300px; /* Păstrează proporțiile imaginii */
+  object-fit: cover; /* Ajustează imaginea să se potrivească fără a fi distorsionată */
+  border-radius: 15px; /* Colțuri rotunjite pentru imagini */
+  border: 5px solid #002c58; /* Border albastru închis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă pentru imagini */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+}
+
+.img-fluid:hover {
+  transform: scale(1.01); /* Mărește imaginea la hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată la hover */
+}
+
+/* Div-urile care conțin imaginile */
+.col-md-6 {
+  display: flex;
+  align-items: center; /* Centrează vertical conținutul */
+  justify-content: center; /* Centrează orizontal conținutul */
+  margin-bottom: 30px; /* Spațiu între imagine și card */
+}
+
+/* Dimensiuni personalizate pentru carduri */
+.card-large {
+  min-height: 500px; /* Card mare */
+}
+
+.card-medium {
+  min-height: 400px; /* Card mediu */
+}
+
+.card-small {
+  min-height: 300px; /* Card mic */
+}
+
+/* Stiluri generale pentru carduri */
+.text-container {
+  margin-top: 20px; /* Spațiu suplimentar între carduri și alte elemente */
+  background-color: #ffffff; /* Fundal alb */
+  border-radius: 10px; /* Colțuri rotunjite */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+}
+
+.text-container:hover {
+  transform: translateY(-5px); /* Ridică cardul la hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată la hover */
+}
+
+.text-container .section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #002c58; /* Albastru închis */
+}
+
+.text-container .section-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555; /* Gri deschis */
+}
+
+/* Aliniere la mijloc pentru rândurile cu imagini și carduri */
+.row.align-items-center {
+  display: flex; /* Activează Flexbox */
+  align-items: center; /* Centrează vertical */
+  justify-content: center; /* Centrează orizontal */
 }
