@@ -107,7 +107,15 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="eleviDropdown">
                 <li><a class="dropdown-item" href="{{ url_for('lista_clase') }}">Clase</a></li>
-                <li><a class="dropdown-item" href="{{ url_for('catalog') }}">Catalog</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://catalog-liceu.umfst.ro/login-faculty"
+                    target="_blank"
+                  >
+                    Catalog
+                  </a>
+                </li>
                 <li><a class="dropdown-item" href="{{ url_for('performante') }}">Performanțe</a></li>
               </ul>
             </li>
@@ -184,16 +192,13 @@
     {% block content %}{% endblock %}
 
     <!-- Footer -->
-    <footer class="footer mt-5">
-      <div class="container text-center py-4">
-        <p class="mb-2">© 2025 Liceul UMFST. Toate drepturile rezervate.</p>
-        <a href="/contact" class="footer-link">Contact</a> |
-        <a href="/politica-confidentialitate" class="footer-link"
-          >Politica de confidențialitate</a
-        >
-      </div>
-    </footer>
-
+<footer class="footer mt-5">
+  <div class="text-center py-4">
+    <p class="mb-2">© 2025 Liceul UMFST. Toate drepturile rezervate.</p>
+    <a href="/contact" class="footer-link">Contact</a> |
+    <a href="/politica-confidentialitate" class="footer-link">Politica de confidențialitate</a> |
+  </div>
+</footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

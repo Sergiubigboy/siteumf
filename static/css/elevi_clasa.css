@@ -113,3 +113,27 @@
 .row.mt-4 {
   margin-top: 0px !important; /* Reduce spațiul de deasupra tabelelor */
 }
+
+.orar-img {
+  max-width: 75%; /* Reduce lățimea imaginii la 75% din container */
+  height: auto; /* Păstrează proporțiile imaginii */
+  margin: 0 auto; /* Centrează imaginea */
+  border: 3px solid #0056b3; /* Bordură albastră */
+  border-radius: 10px; /* Colțuri rotunjite */
+  padding: 5px; /* Spațiu interior între imagine și bordură */
+}
+
+.custom-container {
+  max-width: 1200px; /* Lățime mai mare pentru container */
+  padding: 20px; /* Adaugă spațiu interior */
+  margin: 0 auto; /* Centrează containerul pe pagină */
+}
+
+@media (max-width: 768px) {
+  .orar-img {
+    max-width: 95%; /* Lățime mai mare pe ecrane mici */
+    border: 3px solid #0056b3; /* Bordură albastră */
+    border-radius: 10px; /* Colțuri rotunjite */
+    padding: 5px; /* Spațiu interior între imagine și bordură */
+  }
+}

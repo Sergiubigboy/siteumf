@@ -4,7 +4,7 @@
   href="{{ url_for('static', filename='css/elevi_clasa.css') }}"
 />
 {% endblock %} {% block content %}
-  <div class="container mt-4">
+  <div class="container mt-4 custom-container">
     <!-- Secțiunea citat -->
     <div class="quote-section">
       <p>"Unitatea este cheia succesului nostru!"</p>
@@ -22,29 +22,35 @@
     <!-- Antet unic pentru toate tabelele -->
     <div class="row mt-4">
       <div class="col-12">
-        <div class="table-header">
-        </div>
+        <div class="table-header"></div>
       </div>
     </div>
 
-  <!-- Grilă cu elevi -->
-  <div class="row mt-4">
-    {% for elev in elevi %}
-    {% if loop.index0 % 9 == 0 %}
-    <div class="col-md-4">
-      <table class="table table-striped">
-        <tbody>
-    {% endif %}
-          <tr>
-            <td>{{ loop.index }}</td>
-            <td>{{ elev.nume }}</td>
-          </tr>
-    {% if loop.index0 % 9 == 8 or loop.last %}
-        </tbody>
-      </table>
+    <!-- Grilă cu elevi -->
+    <div class="row mt-4">
+      {% for elev in elevi %}
+      {% if loop.index0 % 9 == 0 %}
+      <div class="col-md-4">
+        <table class="table table-striped">
+          <tbody>
+      {% endif %}
+            <tr>
+              <td>{{ loop.index }}</td>
+              <td>{{ elev.nume }}</td>
+            </tr>
+      {% if loop.index0 % 9 == 8 or loop.last %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+      {% endfor %}
     </div>
-    {% endif %}
-    {% endfor %}
+
+    <!-- Orar -->
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <img src="{{ url_for('static', filename=orar) }}" alt="Orarul Clasei {{ clasa }}" class="img-fluid orar-img">
+      </div>
+    </div>
   </div>
-</div>
 {% endblock %}
