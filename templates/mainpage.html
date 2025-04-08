@@ -10,29 +10,38 @@
   <div class="background-shape shape-light-blue shape-2"></div>
   <div class="background-shape shape-blue shape-3"></div>
 
-  <div class="container my-5">
-    <!-- Secțiunea de anunțuri -->
-    <div class="anunturi-section">
-      <h2 class="section-title text-center">Anunțuri</h2>
-      <div class="anunturi-slider-container">
-        <button class="slider-arrow left-arrow" id="prevArrow">&#10094;</button>
-        <div class="anunturi-slider" id="anunturiSlider">
-          {% for anunt in anunturi %}
-          <div class="anunt-card">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">{{ anunt.titlu }}</h5>
-                <p class="card-text">{{ anunt.descriere }}</p>
-              </div>
-            </div>
+  <!-- Secțiunea de anunțuri -->
+  <div class="anunturi-section">
+    <h2 class="section-title text-center">Anunțuri</h2>
+    <div class="anunturi-slider-container">
+      <div class="anunturi-slider" id="anunturiSlider">
+        {% for anunt in anunturi %}
+        <div class="anunt-card">
+          <div class="anunt-image">
+            <img
+              src="{{ url_for('static', filename='images/' + anunt.imagine) }}"
+              alt="{{ anunt.titlu }}"
+              class="img-fluid"
+            />
           </div>
-          {% endfor %}
+          <div class="anunt-info">
+            <h5>{{ anunt.titlu }}</h5>
+            <p>{{ anunt.descriere }}</p>
+          </div>
+          <div class="anunt-action">
+            <a href="{{ anunt.link }}" class="btn btn-primary btn-sm"
+              >Citește mai mult</a
+            >
+          </div>
         </div>
-        <button class="slider-arrow right-arrow" id="nextArrow">
-          &#10095;
-        </button>
+        {% endfor %}
       </div>
+      <button class="slider-arrow left-arrow" id="prevArrow">&#10094;</button>
+      <button class="slider-arrow right-arrow" id="nextArrow">&#10095;</button>
     </div>
+  </div>
+
+  <div class="container my-5">
     <!-- Secțiunea 1 -->
     <div class="row g-4 align-items-center fade-in">
       <div class="col-md-6">
@@ -99,88 +108,93 @@
         />
       </div>
     </div>
-
-    <!-- Casetă unică -->
-    <div class="row g-4 align-items-center fade-in">
-      <div class="col-md-12">
-        <div class="text-container shadow card-large">
-          <h2 class="section-title text-center">
-            Viziunea Liceului UMFST „G. E. Palade”
-          </h2>
-          <p class="section-text">
-            În cadrul Universității de Medicină, Farmacie, Științe și Tehnologie
-            „G. E. Palade” Târgu Mureș funcționează, începând cu anul școlar
-            2024 – 2025, Liceul UMFST „George Emil Palade” cu două specializări,
-            Matematică – informatică (bilingv limba engleză) și Științe ale
-            naturii (bilingv limba engleză). Pornind de la cadrul legislativ
-            specific și de la contextul academic special în care va funcționa
-            Liceul UMFST „George Emil Palade”, elevii noștri vor beneficia de o
-            ofertă educaţională complexă, care le asigură un parcurs de formare
-            consistent și coerent și o pregătire la standarde înalte de
-            performanță. Atingerea unor niveluri înalte de standarde, vizează
-            următoarele aspecte:
-          </p>
-          <p class="section-text">
-            • punerea în practică a unei oferte educaționale care să permită
-            pregătirea unitară și coerentă a elevilor pe un parcurs complet al
-            nivelurilor de învățământ din sistemul educațional românesc; •
-            practici educaționale cu accent pe formarea competențelor-cheie, a
-            abilităților specifice autonomiei în învățare și adaptării la
-            transformările imprevizibile ale societății actuale; • crearea unui
-            mediu de lucru armonios și adecvat cerințelor educației centrate pe
-            elev, pe nevoile de dezvoltare complexă și completă a personalității
-            în formare; • valorificarea resurselor de care dispune UMFST „G.E.
-            Palade” din Târgu Mureș în asigurarea bazei didactico-materiale
-            adecvate pentru desfășurarea activităților cu elevii; • stabilirea
-            de parteneriate și schimburi culturale în dezvoltarea unor programe
-            extrașcolare și extracurriculare care să vină în completarea și
-            aprofundarea activităților curriculare.
-          </p>
-          <p class="section-text">
-            Misiunea Liceului UMFST „George Emil Palade” se definește prin
-            raportare la exigențele recentelor legi ale educației din România:
-            Legea nr 198/2023 privind învățământul preuniversitar și Legea nr.
-            199/2023 privind învățământul superior, la standardele naționale și
-            europene de educație, dar și la tradiția valoroasă a instituției
-            fondatoare. Liceul UMFST „George Emil Palade” își propune
-            colaborarea cu specialiști atât din învățământul preuniversitar, cât
-            și din învățământul superior, o atmosferă creativă, de colaborare
-            între cadrele didactice deschise activităților interdisciplinare, o
-            relație eficientă cu familiile elevilor, privită ca principalul
-            partener educaţional. Spațiile de învățământ pentru Liceul UMFST
-            „George Emil Palade” sunt dotate cu mobilier modern, adecvat
-            nevoilor tuturor activităților didactice teoretice și
-            practic-aplicative, logistica necesară (aparatură, echipamente
-            adecvate specificului activităților didactice teoretice și practic
-            aplicative din liceu), fond de carte corespunzător numărului de
-            elevi, clase cu soft-uri educaționale interactive care optimizează
-            actul didactic și, bineînțeles, o sală de sport bine întreţinută,
-            dotată cu materialul sportiv necesar desfășurării orelor de curs.
-          </p>
-          <p class="section-text">
-            Liceul UMFST „George Emil Palade” are în vedere concertarea
-            eforturilor pentru ca elevii să dobândească o pregătire generală
-            foarte bună, cunoștințe aprofundate în domeniile legate de viitoarea
-            carieră și competenţe necesare inserţiei sociale. Întreaga
-            activitate va fi organizată astfel încât să se creeze în liceu un
-            mediu educaţional profesionist, la standarde educaționale şi morale
-            înalte. Asigurarea succesului educațional are în vedere
-            valorificarea experiențelor pozitive, a resurselor umane și a bazei
-            didactico-materiale existente în cadrul universității, în realizarea
-            unei oferte educaționale complexe, echilibrate și adaptate nevoilor
-            și exigențelor beneficiarilor direcți și indirecți ai educației.
-            Liceul UMFST „George Emil Palade” din Târgu Mureș îşi propune să
-            devină un liceu deschis, un mediu prietenos şi creativ de dezvoltare
-            pentru fiecare, cu misiunea de a se defini prin raportare la
-            exigențele Legii Educației Naționale, la standardele naționale și
-            europene de educație, dar și la tradiția valoroasă a instituției.
-          </p>
-          <div class="text-center mt-5">
-            <p class="font-weight-bold">
-              Ab juventute ad sidera!<br />
-              Director,<br />
-              Lector univ. dr. Andreea-Romana Ban
+  </div>
+  <!-- Casetă unică -->
+  <div class="color-section">
+    <div class="container my-5">
+      <div class="row g-4 align-items-center fade-in">
+        <div class="col-md-12">
+          <div class="text-container shadow card-large">
+            <h2 class="section-title text-center">
+              Viziunea Liceului UMFST „G. E. Palade”
+            </h2>
+            <p class="section-text">
+              În cadrul Universității de Medicină, Farmacie, Științe și
+              Tehnologie „G. E. Palade” Târgu Mureș funcționează, începând cu
+              anul școlar 2024 – 2025, Liceul UMFST „George Emil Palade” cu două
+              specializări, Matematică – informatică (bilingv limba engleză) și
+              Științe ale naturii (bilingv limba engleză). Pornind de la cadrul
+              legislativ specific și de la contextul academic special în care va
+              funcționa Liceul UMFST „George Emil Palade”, elevii noștri vor
+              beneficia de o ofertă educaţională complexă, care le asigură un
+              parcurs de formare consistent și coerent și o pregătire la
+              standarde înalte de performanță. Atingerea unor niveluri înalte de
+              standarde, vizează următoarele aspecte:
             </p>
+            <p class="section-text">
+              • punerea în practică a unei oferte educaționale care să permită
+              pregătirea unitară și coerentă a elevilor pe un parcurs complet al
+              nivelurilor de învățământ din sistemul educațional românesc; •
+              practici educaționale cu accent pe formarea competențelor-cheie, a
+              abilităților specifice autonomiei în învățare și adaptării la
+              transformările imprevizibile ale societății actuale; • crearea
+              unui mediu de lucru armonios și adecvat cerințelor educației
+              centrate pe elev, pe nevoile de dezvoltare complexă și completă a
+              personalității în formare; • valorificarea resurselor de care
+              dispune UMFST „G.E. Palade” din Târgu Mureș în asigurarea bazei
+              didactico-materiale adecvate pentru desfășurarea activităților cu
+              elevii; • stabilirea de parteneriate și schimburi culturale în
+              dezvoltarea unor programe extrașcolare și extracurriculare care să
+              vină în completarea și aprofundarea activităților curriculare.
+            </p>
+            <p class="section-text">
+              Misiunea Liceului UMFST „George Emil Palade” se definește prin
+              raportare la exigențele recentelor legi ale educației din România:
+              Legea nr 198/2023 privind învățământul preuniversitar și Legea nr.
+              199/2023 privind învățământul superior, la standardele naționale
+              și europene de educație, dar și la tradiția valoroasă a
+              instituției fondatoare. Liceul UMFST „George Emil Palade” își
+              propune colaborarea cu specialiști atât din învățământul
+              preuniversitar, cât și din învățământul superior, o atmosferă
+              creativă, de colaborare între cadrele didactice deschise
+              activităților interdisciplinare, o relație eficientă cu familiile
+              elevilor, privită ca principalul partener educaţional. Spațiile de
+              învățământ pentru Liceul UMFST „George Emil Palade” sunt dotate cu
+              mobilier modern, adecvat nevoilor tuturor activităților didactice
+              teoretice și practic-aplicative, logistica necesară (aparatură,
+              echipamente adecvate specificului activităților didactice
+              teoretice și practic aplicative din liceu), fond de carte
+              corespunzător numărului de elevi, clase cu soft-uri educaționale
+              interactive care optimizează actul didactic și, bineînțeles, o
+              sală de sport bine întreţinută, dotată cu materialul sportiv
+              necesar desfășurării orelor de curs.
+            </p>
+            <p class="section-text">
+              Liceul UMFST „George Emil Palade” are în vedere concertarea
+              eforturilor pentru ca elevii să dobândească o pregătire generală
+              foarte bună, cunoștințe aprofundate în domeniile legate de
+              viitoarea carieră și competenţe necesare inserţiei sociale.
+              Întreaga activitate va fi organizată astfel încât să se creeze în
+              liceu un mediu educaţional profesionist, la standarde educaționale
+              şi morale înalte. Asigurarea succesului educațional are în vedere
+              valorificarea experiențelor pozitive, a resurselor umane și a
+              bazei didactico-materiale existente în cadrul universității, în
+              realizarea unei oferte educaționale complexe, echilibrate și
+              adaptate nevoilor și exigențelor beneficiarilor direcți și
+              indirecți ai educației. Liceul UMFST „George Emil Palade” din
+              Târgu Mureș îşi propune să devină un liceu deschis, un mediu
+              prietenos şi creativ de dezvoltare pentru fiecare, cu misiunea de
+              a se defini prin raportare la exigențele Legii Educației
+              Naționale, la standardele naționale și europene de educație, dar
+              și la tradiția valoroasă a instituției.
+            </p>
+            <div class="text-center mt-5">
+              <p class="font-weight-bold">
+                Ab juventute ad sidera!<br />
+                Director,<br />
+                Lector univ. dr. Andreea-Romana Ban
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -195,11 +209,9 @@
     const nextArrow = document.getElementById("nextArrow");
 
     let currentIndex = 0;
-    const cardWidth = slider.querySelector(".anunt-card").offsetWidth + 20; // Lățimea cardului + gap
-    const totalCards = slider.querySelectorAll(".anunt-card").length;
-    const visibleCards = 3; // Numărul de carduri vizibile
 
     const updateSliderPosition = () => {
+      const cardWidth = slider.querySelector(".anunt-card").offsetWidth + 20; // Lățimea cardului + gap
       slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
     };
 
@@ -211,11 +223,22 @@
     });
 
     nextArrow.addEventListener("click", () => {
+      const totalCards = slider.querySelectorAll(".anunt-card").length;
+      const visibleCards = Math.floor(
+        slider.offsetWidth /
+          (slider.querySelector(".anunt-card").offsetWidth + 10)
+      );
       if (currentIndex < totalCards - visibleCards) {
         currentIndex++;
         updateSliderPosition();
       }
     });
+
+    // Recalculează poziția slider-ului la redimensionarea ferestrei
+    window.addEventListener("resize", updateSliderPosition);
+
+    // Inițializează poziția slider-ului
+    updateSliderPosition();
   });
 </script>
 {% endblock %}
