@@ -44,6 +44,10 @@ def elevi_clasa(clasa, litera):
     ]
     # Obține profilul clasei (toți elevii din aceeași clasă au același profil)
     profil = elevi_filtrati[0]["profil"] if elevi_filtrati else "Necunoscut"
+
+    # Setează orarul în funcție de clasă
+    orar = f"images/orar{clasa}{litera}.PNG"
+
     return render_template(
         'elevi_clasa.html',
         elevi=elevi_filtrati,
@@ -52,12 +56,14 @@ def elevi_clasa(clasa, litera):
         subtitlu=f"Clasa {clasa}{litera}",
         title=f"Clasa {clasa}{litera}",
         background=f"static/images/Poza-UMFST/grup{clasa}{litera}/bgclasa{clasa}{litera}.jpg",
+        orar=orar,
         no_hero=True
     )
 
-@app.route('/catalog')
-def catalog():
-    return render_template('catalog.html', title="Catalog", subtitlu="Catalog")
+# Elimină această rută
+# @app.route('/catalog')
+# def catalog():
+#     return render_template('catalog.html', title="Catalog", subtitlu="Catalog")
 
 @app.route('/performante')
 def performante():

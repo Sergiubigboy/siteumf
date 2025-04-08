@@ -21,7 +21,7 @@
   padding: 10px; /* Reduce padding to make the content more compact */
   min-height: 150px; /* Reduce the height to make the boxes thinner */
   margin: 20px 10px; /* Add spacing between the boxes */
-  background-color: #ecebeb; /* Set a white background for the cards */
+  background-color: #f8f8f8; /* Set a white background for the cards */
   text-align: center; /* Center the text horizontally */
   display: flex; /* Enable Flexbox */
   flex-direction: column; /* Stack content vertically */

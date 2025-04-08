@@ -304,15 +304,14 @@ opacity: 0.9; /* Ensure the logo is fully visible */
 
 /* Footer fix jos */
 .footer {
-  background-color: #222; /* Culoare închisă */
+  background-color: #222; /* Fundal închis */
   color: #fff; /* Text alb */
-  padding: 50px 0; /* Mai mare */
-  font-size: 18px; /* Text mai mare */
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  margin-top: 30px;
-  width: 100%;
+  padding: 50px 0; /* Spațiu interior */
+  font-size: 18px; /* Dimensiunea textului */
+  text-align: center; /* Text centrat */
+  position: relative; /* Poziție relativă */
+  width: 100% !important; /* Ocupă întreaga lățime */
+  margin: 0; /* Elimină marginile */
 }
 
 .footer a {

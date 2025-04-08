@@ -1,0 +1,124 @@
+.card {
+  border: 3px solid #0056b3; /* Bordură albastră */
+  border-radius: 10px; /* Colțuri rotunjite */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+  padding: 20px; /* Spațiu interior */
+  background-color: #f8f8f8; /* Fundal deschis */
+  text-align: center; /* Text centrat */
+  overflow: hidden; /* Asigură că imaginea respectă colțurile rotunjite */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Ridică boxul la hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Umbră mai mare la hover */
+}
+
+.wider-card {
+  width: 100%; /* Asigură că boxurile ocupă întreaga lățime a coloanei */
+  border-radius: 10px; /* Colțuri rotunjite */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+  overflow: hidden; /* Asigură că imaginea respectă colțurile rotunjite */
+}
+
+.wider-card:hover {
+  transform: translateY(-5px); /* Ridică boxul la hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Umbră mai mare la hover */
+}
+
+.card-img-top {
+  width: 100%; /* Imaginea ocupă întreaga lățime a cardului */
+  height: 250px; /* Înălțime mai mare pentru imagini */
+  object-fit: cover; /* Taie imaginea pentru a se potrivi în dimensiuni */
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Permite ca boxurile să treacă pe rânduri noi */
+  justify-content: flex-start; /* Aliniază boxurile la stânga în mod implicit */
+}
+
+.row:last-child {
+  justify-content: center; /* Centrează boxurile de pe ultimul rând */
+}
+
+/* Container pentru boxuri */
+.class-item {
+  display: flex; /* Activează Flexbox */
+  flex-direction: column; /* Aranjează elementele pe verticală */
+  justify-content: space-between; /* Plasează imaginea sus și restul jos */
+  align-items: center; /* Centrează conținutul pe orizontală */
+  border: 2px solid #0056b3; /* Bordură albastră */
+  border-radius: 0; /* Elimină colțurile rotunjite */
+  overflow: hidden; /* Asigură că imaginea respectă dimensiunile boxului */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+  background-color: #ffffffe3; /* Fundal deschis */
+  text-align: center; /* Centrează textul */
+  padding: 20px; /* Spațiu interior */
+  height: 450px; /* Înălțime mai mare pentru boxuri */
+}
+
+/* Efect de hover pentru boxuri */
+.class-item:hover {
+  transform: translateY(-10px); /* Ridică boxul la hover */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Umbră mai mare la hover */
+}
+
+/* Imaginea din box */
+.class-image {
+  width: 100%; /* Imaginea ocupă întreaga lățime a boxului */
+  height: 250px; /* Înălțime fixă pentru imagine */
+  background-size: cover; /* Asigură că imaginea acoperă întreaga zonă */
+  background-position: center; /* Centrează imaginea */
+  background-repeat: no-repeat; /* Evită repetarea imaginii */
+  margin-bottom: 15px; /* Spațiu între imagine și conținut */
+  border-bottom: 2px solid #0056b3; /* Linie de separare între imagine și conținut */
+}
+
+.class-image img {
+  width: 100%; /* Imaginea ocupă întreaga lățime a boxului */
+  height: 250px; /* Înălțime fixă pentru imagini */
+  object-fit: cover; /* Taie imaginea pentru a se potrivi în dimensiuni */
+}
+
+/* Informațiile din box */
+.class-info {
+  padding: 15px; /* Spațiu interior */
+  text-align: center; /* Centrează textul */
+}
+
+.class-info h5 {
+  font-size: 1.4rem; /* Dimensiunea titlului mai mică */
+  font-weight: bold; /* Titlu îngroșat */
+  margin-bottom: 10px; /* Spațiu sub titlu */
+}
+
+.class-info p {
+  font-size: 1rem; /* Dimensiunea textului mai mică */
+  color: #ffffff; /* Culoare gri pentru text */
+}
+
+/* Butonul din box */
+.class-action {
+  margin-top: auto; /* Plasează butonul în partea de jos */
+  text-align: center; /* Centrează butonul */
+}
+
+.class-action .btn {
+  font-size: 0.9rem; /* Dimensiunea textului din buton mai mică */
+  padding: 8px 12px; /* Spațiu interior mai mic în buton */
+  border-radius: 0; /* Elimină colțurile rotunjite ale butonului */
+}
