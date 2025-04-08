@@ -4,7 +4,7 @@ profesori = [
     {
         "nume": "Bogdan Rațiu",
         "materie": "Limba și literatura română",
-        "descriere": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam mollitia dolores libero ut harum molestiae, a eligendi dolorum reiciendis ex maiores illo nam, aut assumenda? Possimus quasi nobis laborum nihil.",
+        "descriere": "Mereu mi-am dorit ca sala de curs să fie un spațiu în care cu toții să fim angrenați într-un exercițiu intelectual și într-un proces de formare. De aceea, îi provoc pe elevi să iasă din zona de confort și să-și descopere propria voce, îi îndrum să înțeleagă profund textele și să fie atenți la o expresie corectă. Sper că sunt un bun observator al emoțiilor și al nevoilor elevilor,  iar lecțiile să reprezinte un ghid în care se îmbină rigoarea științifică cu empatia profundă. În continuare, orele de Limba și literatura română vor fi un spațiu dinamic, cu idei, deschideri culturale vaste și multă reflecție. ",
         "citat": "Traim local, gandim global.",
         "imagine": "",
         "rol": "Conducere",
@@ -80,14 +80,14 @@ profesori = [
     {
         "nume": "Crina Chirilă",
         "materie": "Geografie",
-        "descriere": "",
-        "citat": "",
+        "descriere": "De mică, am fost pasionată de explorarea lumii și de înțelegerea fenomenelor naturale, iar din pasiune mi-am creat o profesie. Ca profesoară de geografie încerc sa deschid orizonturi noi pentru elevii mei, transformând hărțile în povești. Geografia este una dintre disciplinele care ne creează „conștiința eco”, iar pentru a nu face rău lumii din jur avem nevoie să înțelegem dinamica pământului și modul în care timpul ne-a construit din adâncul oceanelor în vârful munților. Sper ca fiecare lecție să-i ajute pe elevi să cunoască lumea și să le ofere șansa de a-și găsi un loc în ea.",
+        "citat": " Natura are un limbaj propriu și, dacă îi înțelegem semnele și ritmul, ne dezvăluie taine pe care nimic altceva nu le poate exprima",
         "imagine": ""
     },
     {
         "nume": "Nora Dumbravă",
         "materie": "Logică",
-        "descriere": "",
+        "descriere": " ",
         "citat": "",
         "imagine": ""
     },

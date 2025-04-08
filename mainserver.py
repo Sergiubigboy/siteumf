@@ -34,7 +34,7 @@ def lista_clase():
         clase=clase,
         subtitlu="Elevi",
         title="Elevi",
-        background=f"static/images/Poza-UMFST/grup9B/bgclasa9B.jpg"
+        background=f"static/images/pozaelevi.jpg"
     )
 @app.route('/elevi/<int:clasa>/<litera>')
 def elevi_clasa(clasa, litera):
@@ -88,7 +88,7 @@ def lista_profesori():
         profesori=profesori_filtrati,
         subtitlu="Corp Profesoral",
         title="Corp Profesoral",
-        background="bgmain.png"
+        background="static/images/pozaprofesori.jpg"
     )
 
 @app.route('/corp-profesoral/<nume>')
