@@ -64,9 +64,6 @@
                   <li>
                     <a class="dropdown-item" href="/facilitati">Resurse materiale</a>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="/anunturi">Anunțuri</a>
-                  </li>
                 </ul>
               </li>
             <li class="nav-item dropdown">
@@ -103,7 +100,7 @@
                 href="#"
                 id="eleviDropdown"
                 role="button"
-                data-bs-toggle="dropdown"
+                data-toggle="dropdown"
                 aria-expanded="false"
               >
                 Elevi
@@ -111,7 +108,6 @@
               <ul class="dropdown-menu" aria-labelledby="eleviDropdown">
                 <li><a class="dropdown-item" href="{{ url_for('lista_clase') }}">Clase</a></li>
                 <li><a class="dropdown-item" href="{{ url_for('catalog') }}">Catalog</a></li>
-                <li><a class="dropdown-item" href="{{ url_for('orar') }}">Orar</a></li>
                 <li><a class="dropdown-item" href="{{ url_for('performante') }}">Performanțe</a></li>
               </ul>
             </li>
@@ -248,13 +244,6 @@
       // Rulează funcția la încărcarea paginii
       document.addEventListener("DOMContentLoaded", handleScroll);
     </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var dropdowns = document.querySelectorAll('.dropdown-toggle');
-        dropdowns.forEach(function (dropdown) {
-          new bootstrap.Dropdown(dropdown);
-        });
-      });
-    </script>
+    {% block extra_js %}{% endblock %}
   </body>
 </html>

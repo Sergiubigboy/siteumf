@@ -340,12 +340,12 @@ transform: translateY(0); /* Revine la poziția inițială */
 }
 
 /* Adjust dropdown for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .dropdown-menu {
     position: fixed; /* Position the dropdown relative to the viewport */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position to be exactly in the center */
+    transform: translate(5%, 0%); /* Adjust position to be exactly in the center */
     width: 90%; /* Dropdown occupies 90% of the screen width */
     background-color: #002c58; /* Dark blue background */
     z-index: 1050; /* Ensure it is above other elements */
