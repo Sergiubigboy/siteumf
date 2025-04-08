@@ -1,13 +1,13 @@
 import unicodedata
 
 anunturi = [
-    {"titlu": "Anunț 1", "descriere": "Detalii despre anunțul 1."},
-    {"titlu": "Anunț 2", "descriere": "Detalii despre anunțul 2."},
-    {"titlu": "Anunț 3", "descriere": "Detalii despre anunțul 3."},
-    {"titlu": "Anunț 4", "descriere": "Detalii despre anunțul 3."},
-    {"titlu": "Anunț 5", "descriere": "Detalii despre anunțul 3."},
-    {"titlu": "Anunț 6", "descriere": "Detalii despre anunțul 3."},
-    {"titlu": "Anunț 7", "descriere": "Detalii despre anunțul 3."},
+    {"titlu": "Anunț 1", "descriere": "Detalii despre anunțul 1.", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 2", "descriere": "Detalii despre anunțul 2.", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 3", "descriere": "Detalii despre anunțul 3.", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 4", "descriere": "Detalii despre anunțul 3.", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 5", "descriere": "Detalii despre anunțul 3.", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 6", "descriere": "Detalii despre anunțul 3.", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 7", "descriere": "Detalii despre anunțul 3.", "imagine": "bgmain.png"},
 
 ]
 
