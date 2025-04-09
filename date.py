@@ -1,5 +1,43 @@
 import unicodedata
 
+activitati = [
+    {
+        "titlu": "Campania: Conversații în jurul școlii",
+        "imagine": "BancaDinFata.jpg",
+        "link": "#",
+    },
+    {
+        "titlu": "LyceumCloud.UMFST",
+        "imagine": "BancaDinFata.jpg",
+        "link": "#",
+    },
+    {
+        "titlu": "Banca din față",
+        "imagine": "BancaDinFata.jpg",
+        "link": "#",
+    },
+    {
+        "titlu": "Mix IT Hub UMFST – Centrul pasiunilor elevilor",
+        "imagine": "BancaDinFata.jpg",
+        "link": "#",
+    },
+    {
+        "titlu": "Campania: Conversații în jurul școlii",
+        "imagine": "BancaDinFata.jpg",
+        "link": "#",
+    },
+    {
+        "titlu": "Act4Change",
+        "imagine": "BancaDinFata.jpg",
+        "link": "#",
+    },
+    {
+        "titlu": "Porțile deschise ale liceului UMFST",
+        "imagine": "BancaDinFata.jpg",
+        "link": "#",
+    },
+]
+
 anunturi = [
     {"titlu": "Anunț 1", "descriere": "Detalii despre anunțul 1.", "imagine": "bgmain.png"},
     {"titlu": "Anunț 2", "descriere": "Detalii despre anunțul 2.", "imagine": "bgmain.png"},

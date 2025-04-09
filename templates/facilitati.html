@@ -1,9 +1,100 @@
-{% extends "layout.html" %}
-{% block content %}
+{% extends "layout.html" %} {% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/facilitati.css') }}"
+/>
+{% endblock %} {% block content %}
 <div class="container my-5">
-  <h1 class="text-center">Resurse materiale</h1>
-  <p class="text-center mt-4">
-    Liceul UMFST oferă elevilor săi acces la facilități moderne, inclusiv laboratoare de științe, săli de clasă bine echipate, biblioteci și acces la tehnologie de ultimă generație. Aceste resurse sunt menite să sprijine procesul educațional și să ofere un mediu de învățare de calitate.
-  </p>
+  <h2 class="text-center mb-5">
+    Descoperă facilitățile noastre moderne, concepute pentru a sprijini
+    excelența educațională și dezvoltarea personală.
+  </h2>
+  <div class="row g-4">
+    <!-- Casetă 1 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="facility-box shadow-lg">
+        <img
+          src="{{ url_for('static', filename='images/gradina-botanica.jpg') }}"
+          alt="Grădina Botanică"
+          class="facility-image"
+        />
+        <div class="facility-content p-3">
+          <h3 class="facility-title">Grădina Botanică</h3>
+          <p class="facility-description">
+            Descoperiți frumusețea naturii în grădina noastră botanică.
+          </p>
+          <a href="#" class="btn btn-primary btn-sm">Află mai multe</a>
+        </div>
+      </div>
+    </div>
+    <!-- Casetă 2 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="facility-box shadow-lg">
+        <img
+          src="{{ url_for('static', filename='images/biblioteca.jpg') }}"
+          alt="Biblioteca"
+          class="facility-image"
+        />
+        <div class="facility-content p-3">
+          <h3 class="facility-title">Biblioteca</h3>
+          <p class="facility-description">
+            Accesați o colecție vastă de cărți și resurse educaționale.
+          </p>
+          <a href="#" class="btn btn-primary btn-sm">Află mai multe</a>
+        </div>
+      </div>
+    </div>
+    <!-- Casetă 3 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="facility-box shadow-lg">
+        <img
+          src="{{ url_for('static', filename='images/cabinete.jpg') }}"
+          alt="Cabinete"
+          class="facility-image"
+        />
+        <div class="facility-content p-3">
+          <h3 class="facility-title">Cabinete</h3>
+          <p class="facility-description">
+            Cabinete moderne pentru activități practice și educaționale.
+          </p>
+          <a href="#" class="btn btn-primary btn-sm">Află mai multe</a>
+        </div>
+      </div>
+    </div>
+    <!-- Casetă 4 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="facility-box shadow-lg">
+        <img
+          src="{{ url_for('static', filename='images/campus.JPG') }}"
+          alt="Campus"
+          class="facility-image"
+        />
+        <div class="facility-content p-3">
+          <h3 class="facility-title">Campus</h3>
+          <p class="facility-description">
+            Un campus modern, dotat cu toate facilitățile necesare.
+          </p>
+          <a href="#" class="btn btn-primary btn-sm">Află mai multe</a>
+        </div>
+      </div>
+    </div>
+    <!-- Casetă 5 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="facility-box shadow-lg">
+        <img
+          src="{{ url_for('static', filename='images/sali-de-concurs.jpg') }}"
+          alt="Săli de concurs"
+          class="facility-image"
+        />
+        <div class="facility-content p-3">
+          <h3 class="facility-title">Săli de concurs</h3>
+          <p class="facility-description">
+            Săli moderne pentru concursuri și evenimente speciale.
+          </p>
+          <a href="#" class="btn btn-primary btn-sm">Află mai multe</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}
