@@ -245,6 +245,144 @@ elevi = [
     {"nume": "Ungur Filip", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
     {"nume": "Vasloban Maria", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"}
 ]
+performante = [
+    {
+        "nume": "Szász Roberta Veronica",
+        "clasa": "9B",
+        "realizari": [
+            {
+                "titlu": "Olimpiada Națională de Biologie",
+                "locatie": "Tg. Mureș, etapa județeană",
+                "premiu": "Premiul II"
+            },
+            {
+                "titlu": "Olimpiada Interdisciplinară „Culturalitate și spiritualitate românească“",
+                "locatie": "Tg. Mureș, etapa județeană",
+                "premiu": "Premiul III"
+            }
+        ]
+    },
+    {
+        "nume": "Cotoi Iulius",
+        "clasa": "9B",
+        "realizari": [
+            {
+                "titlu": "Olimpiada Națională de Biologie",
+                "locatie": "Tg. Mureș, etapa județeană",
+                "premiu": "Mențiune 1"
+            }
+        ]
+    },
+    {
+        "nume": "Loghin Ioana Nicole",
+        "clasa": "9B",
+        "realizari": [
+            {
+                "titlu": "Olimpiada Națională de Limba Engleză",
+                "locatie": "Tg. Mureș, etapa județeană",
+                "premiu": "Premiul III"
+            }
+        ]
+    },
+    {
+        "nume": "Pacă Raoul",
+        "clasa": "9A",
+        "realizari": [
+            {
+                "titlu": "Olimpiada Națională de Informatică",
+                "locatie": "Tg. Mureș, etapa județeană",
+                "premiu": "Premiul III"
+            }
+        ]
+    },
+    {
+        "nume": "Muth Cristian",
+        "clasa": "9A",
+        "realizari": [
+            {
+                "titlu": "Concursul Interjudețean Alexandru Papiu Ilarian",
+                "locatie": "",
+                "premiu": "Premiul II"
+            },
+            {
+                "titlu": "Concursul Interdisciplinar de Matematică și Fizică „Vranceanu-Procopiu“",
+                "locatie": "Bacău, etapa națională",
+                "premiu": "Mențiune"
+            },
+            {
+                "titlu": "Concursul „Prin Labirintul Matematicii“",
+                "locatie": "Baia Mare",
+                "premiu": "Premiul I, cu punctaj maxim"
+            },
+            {
+                "titlu": "Concursul „Matematica de drag“",
+                "locatie": "Bistrița Năsăud",
+                "premiu": "Mențiune"
+            },
+            {
+                "titlu": "Concursul „Marian Țarina“",
+                "locatie": "Cluj Napoca",
+                "premiu": "Premiul III"
+            },
+            {
+                "titlu": "Concursul „Argument“",
+                "locatie": "Baia Mare",
+                "premiu": "Premiul I"
+            },
+            {
+                "titlu": "Concursul Național de Matematică și Informatică „Grigore Moisil“",
+                "locatie": "Cluj Napoca",
+                "premiu": "Premiul II"
+            },
+            {
+                "titlu": "Olimpiada Județeană de Matematică",
+                "locatie": "Botoșani",
+                "premiu": "Premiul II și calificare la națională"
+            },
+            {
+                "titlu": "Olimpiada Județeană de Fizică",
+                "locatie": "Slobozia",
+                "premiu": "Premiul I și calificare la etapa națională"
+            }
+        ]
+    },
+    {
+        "nume": "Nagy Eliz",
+        "clasa": "9A",
+        "realizari": [
+            {
+                "titlu": "Convocare Lotul Național U16",
+                "locatie": "Bulgaria, Sofia",
+                "premiu": "Participare la Turul 1 de calificare pentru Turneul final al Campionatului European"
+            },
+            {
+                "titlu": "Campionat Național volei U19",
+                "locatie": "Timișoara",
+                "premiu": "Locul I, Etapa semifinală"
+            },
+            {
+                "titlu": "Calificare turneu final U19 Campionat Național",
+                "locatie": "Ediția 2024/2025",
+                "premiu": "Cele mai bune 6 echipe din țară"
+            },
+            {
+                "titlu": "Calificare turneu final Cupa României U19",
+                "locatie": "Ediția 2024/2025",
+                "premiu": "Cele mai bune 8 echipe"
+            },
+            {
+                "titlu": "Convocare Lotul Național U16",
+                "locatie": "Slovenia, Maribor",
+                "premiu": "Participare la Turul 2 de calificare pentru Turneul final al Campionatului European"
+            },
+            {
+                "titlu": "Calificare turneu final de promovare Divizia A1",
+                "locatie": "Liga I senioare, ediția 2024/2025",
+                "premiu": ""
+            }
+        ]
+    }
+]
 
 def normalize_text(text):
     return ''.join(

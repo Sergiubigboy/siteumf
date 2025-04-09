@@ -137,3 +137,71 @@
     padding: 5px; /* Spațiu interior între imagine și bordură */
   }
 }
+
+/* Performanțe */
+.performance-card {
+  background-color: #ffffff; /* Fundal alb */
+  border: 1px solid #ddd; /* Bordură subtilă */
+  border-radius: 10px; /* Colțuri rotunjite */
+  padding: 20px; /* Spațiu interior */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+}
+
+.performance-card:hover {
+  transform: translateY(-5px); /* Ridică boxul la hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai mare la hover */
+}
+
+.performance-header h5 {
+  font-size: 1.5rem; /* Dimensiunea titlului */
+  font-weight: bold; /* Titlu îngroșat */
+  margin-bottom: 15px; /* Spațiu sub titlu */
+  color: #0056b3; /* Culoare albastră */
+}
+
+.performance-body ul {
+  list-style-type: none; /* Elimină punctele din listă */
+  padding: 0; /* Elimină padding-ul implicit */
+  margin: 0; /* Elimină marginile implicite */
+}
+
+.performance-body li {
+  font-size: 1rem; /* Dimensiunea textului */
+  color: #555; /* Culoare gri */
+  margin-bottom: 10px; /* Spațiu între elementele listei */
+}
+
+.performance-body li strong {
+  color: #000; /* Evidențiază titlul realizării */
+}
+
+.performance-body {
+  margin-bottom: 15px; /* Spațiu între conținut și footer */
+}
+
+.performance-footer {
+  text-align: center; /* Centrează footer-ul */
+  font-size: 0.9rem; /* Dimensiunea textului mai mică */
+  color: #777; /* Culoare gri deschis */
+}
+
+.performance-footer .badge {
+  font-size: 0.9rem; /* Dimensiunea textului din badge */
+  padding: 5px 10px; /* Spațiu interior în badge */
+
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #003d80;
+}

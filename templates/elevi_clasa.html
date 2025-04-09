@@ -52,5 +52,46 @@
         <img src="{{ url_for('static', filename=orar) }}" alt="Orarul Clasei {{ clasa }}" class="img-fluid orar-img">
       </div>
     </div>
+
+    <!-- Secțiunea Performanțe -->
+    <div class="container-fluid mt-5 custom-container">
+      <div class="row">
+        <div class="col-12 text-center">
+        </div>
+      </div>
+      <div class="row g-4">
+        {% for performanta in performante %}
+        <div class="col-lg-4 col-md-6">
+          <div class="performance-card shadow-lg">
+            <div class="performance-header text-center">
+              <h5>{{ performanta.nume }}</h5>
+            </div>
+            <div class="performance-body">
+              <ul>
+                {% for realizare in performanta.realizari %}
+                <li>
+                  <strong>{{ realizare.titlu }}</strong> - {{ realizare.locatie }} - {{ realizare.premiu }}
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <pre>{{ performante | safe }}</pre>
+    </div>
+
+    <!-- Secțiunea Performanțe -->
+    <div class="container-fluid mt-5 custom-container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="{{ url_for('performante_clasa', clasa=clasa) }}" class="btn btn-primary">
+            Vezi Performanțele Clasei {{ clasa }}
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 {% endblock %}
+

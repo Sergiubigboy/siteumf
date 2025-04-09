@@ -60,10 +60,42 @@ def elevi_clasa(clasa, litera):
         no_hero=True
     )
 
+@app.route('/clasa/<int:clasa>/<litera>')
+def afiseaza_clasa(clasa, litera):
+    # Importă datele despre performanțe
+    from date import performante
 
-@app.route('/performante')
-def performante():
-    return render_template('performante.html', title="Performanțe", subtitlu="Performanțe")
+    # Creează formatul "9A" din clasa și litera
+    clasa_completa = f"{clasa}{litera}"
+
+    # Filtrare performanțe pentru clasa specificată
+    performante_clasa = [p for p in performante if p['clasa'] == clasa_completa]
+
+    # Transmite datele către șablon
+    return render_template(
+        'elevi_clasa.html',
+        clasa=clasa_completa,
+        performante=performante_clasa,
+        orar=f"orar_{clasa_completa}.png"  # Exemplu de orar
+    )
+
+@app.route('/performante/<clasa>')
+def performante_clasa(clasa):
+    # Importă datele despre performanțe
+    from date import performante
+
+    # Filtrare performanțe pentru clasa specificată
+    performante_clasa = [p for p in performante if p['clasa'] == clasa]
+
+    # Transmite datele către șablon
+    return render_template(
+        'performante_clasa.html',
+        clasa=clasa,
+        performante=performante_clasa,
+        subtitlu=f"Performanțele Clasei {clasa}",
+        title=f"Performanțe Clasa {clasa}"
+    )
+
 @app.route('/corp-profesoral')
 def lista_profesori():
     # Obține termenul de căutare din query string
