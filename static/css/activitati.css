@@ -138,7 +138,6 @@ h2.text-center {
   text-transform: uppercase; /* Transformă textul în majuscule */
   letter-spacing: 2px; /* Spațiere între litere pentru un aspect modern */
   background: linear-gradient(90deg, #0056b3, #85c1e9); /* Gradient pentru text */
-  -webkit-background-clip: text; /* Clip textul la gradient */
   -webkit-text-fill-color: transparent; /* Face textul transparent pentru gradient */
   text-align: center;
   margin-bottom: 20px;
