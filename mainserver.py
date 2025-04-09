@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from date import CatalogPersonal, profesori, elevi, normalize_text, anunturi, activitati
+import unicodedata
 
 
 # Inițializează catalogul profesorilor
@@ -8,6 +9,15 @@ Elevi = CatalogPersonal(elevi)
 
 
 app = Flask(__name__)
+
+def normalize_text(text):
+    """Normalizează textul pentru a fi utilizat în URL."""
+    return ''.join(
+        c for c in unicodedata.normalize('NFD', text)
+        if unicodedata.category(c) != 'Mn'
+    ).replace(' ', '-').lower()
+
+app.jinja_env.globals.update(normalize_text=normalize_text)
 
 @app.route('/')
 def mainpage():
@@ -133,6 +143,85 @@ def pagina_profesor(nume):
 @app.route('/activitati')
 def echohub():
     return render_template('activitati.html', subtitlu="Activități", title="Activități", background="static/images/Poza-UMFST/grup9A/bgclasa9A.jpg", activitati=activitati)
+
+@app.route('/campania-conversatii-in-jurul-scolii')
+def activitate_1():
+    activitate = {
+        "titlu": "Campania: Conversații în jurul școlii",
+        "imagine": "BancaDinFata.jpg",
+    }
+    return render_template(
+        'campania.html',
+        activitate=activitate,
+        subtitlu=activitate["titlu"],
+        title=activitate["titlu"]
+    )
+
+@app.route('/lyceumcloud-umfst')
+def activitate_2():
+    activitate = {
+        "titlu": "LyceumCloud.UMFST",
+        "imagine": "BancaDinFata.jpg",
+    }
+    return render_template(
+        'lyceumcloud-umfst.html',
+        activitate=activitate,
+        subtitlu=activitate["titlu"],
+        title=activitate["titlu"]
+    )
+
+@app.route('/banca-din-fata')
+def activitate_3():
+    activitate = {
+        "titlu": "Banca din față",
+        "imagine": "BancaDinFata.jpg",
+    }
+    return render_template(
+        'banca-din-fata.html',
+        activitate=activitate,
+        subtitlu=activitate["titlu"],
+        title=activitate["titlu"]
+    )
+
+@app.route('/mix-it-hub-umfst')
+def activitate_4():
+    activitate = {
+        "titlu": "Mix IT Hub UMFST – Centrul pasiunilor elevilor",
+        "imagine": "BancaDinFata.jpg",
+    }
+    return render_template(
+        'mix-it-hub-umfst.html',
+        activitate=activitate,
+        subtitlu=activitate["titlu"],
+        title=activitate["titlu"]
+    )
+
+@app.route('/act4change')
+def activitate_5():
+    activitate = {
+        "titlu": "Act4Change",
+        "imagine": "BancaDinFata.jpg",
+    }
+    return render_template(
+        'act4change.html',
+        activitate=activitate,
+        subtitlu=activitate["titlu"],
+        title=activitate["titlu"]
+    )
+
+@app.route('/portile-deschise-umfst')
+def activitate_6():
+    activitate = {
+        "titlu": "Porțile deschise ale liceului UMFST",
+        "imagine": "BancaDinFata.jpg",
+    }
+    return render_template(
+        'portile-deschise-umfst.html',
+        activitate=activitate,
+        subtitlu=activitate["titlu"],
+        title=activitate["titlu"]
+    )
+
 @app.route('/regulamente')
 def regulamente():
     return render_template('regulamente.html', title="Regulamente", subtitlu="Regulamente")

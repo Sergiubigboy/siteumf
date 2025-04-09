@@ -9,23 +9,60 @@
     Descoperiți oportunitățile unice pe care activitățile noastre le oferă!
   </h2>
   <div class="row g-4">
-    {% for activitate in activitati %}
-    <div class="col-lg-6 col-md-12">
-      <div class="activity-box shadow-lg">
-        <img
-          src="{{ url_for('static', filename='images/' + activitate.imagine) }}"
-          alt="{{ activitate.titlu }}"
-          class="activity-image"
-        />
-        <div class="activity-content p-3">
-          <h3 class="activity-title">{{ activitate.titlu }}</h3>
-          <a href="{{ activitate.link }}" class="btn btn-primary btn-sm mt-3"
-            >Detalii</a
-          >
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='images/BancaDinFata.jpg') }}" class="card-img-top" alt="Campania: Conversații în jurul școlii">
+        <div class="card-body">
+          <h5 class="card-title">Campania: Conversații în jurul școlii</h5>
+          <a href="{{ url_for('activitate_1') }}" class="btn btn-primary btn-sm mt-3">Vezi detalii</a>
         </div>
       </div>
     </div>
-    {% endfor %}
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='images/BancaDinFata.jpg') }}" class="card-img-top" alt="LyceumCloud.UMFST">
+        <div class="card-body">
+          <h5 class="card-title">LyceumCloud.UMFST</h5>
+          <a href="{{ url_for('activitate_2') }}" class="btn btn-primary btn-sm mt-3">Vezi detalii</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='images/BancaDinFata.jpg') }}" class="card-img-top" alt="Banca din față">
+        <div class="card-body">
+          <h5 class="card-title">Banca din față</h5>
+          <a href="{{ url_for('activitate_3') }}" class="btn btn-primary btn-sm mt-3">Vezi detalii</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='images/BancaDinFata.jpg') }}" class="card-img-top" alt="Mix IT Hub UMFST – Centrul pasiunilor elevilor">
+        <div class="card-body">
+          <h5 class="card-title">Mix IT Hub UMFST – Centrul pasiunilor elevilor</h5>
+          <a href="{{ url_for('activitate_4') }}" class="btn btn-primary btn-sm mt-3">Vezi detalii</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='images/BancaDinFata.jpg') }}" class="card-img-top" alt="Act4Change">
+        <div class="card-body">
+          <h5 class="card-title">Act4Change</h5>
+          <a href="{{ url_for('activitate_5') }}" class="btn btn-primary btn-sm mt-3">Vezi detalii</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='images/BancaDinFata.jpg') }}" class="card-img-top" alt="Porțile deschise ale liceului UMFST">
+        <div class="card-body">
+          <h5 class="card-title">Porțile deschise ale liceului UMFST</h5>
+          <a href="{{ url_for('activitate_6') }}" class="btn btn-primary btn-sm mt-3">Vezi detalii</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/activitati/campania.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <img src="{{ url_for('static', filename='images/' + activitate.imagine) }}" alt="{{ activitate.titlu }}" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <div class="p-4 bg-light rounded shadow-sm text-justify">
+        <p>
+          <strong>Campania Conversații în jurul școlii</strong> este o campanie de conștientizare a nevoii de a discuta despre educație în mod critic și informat. Ne dorim o comunitate care învață, care ascultă și care crește. De aceea, considerăm că o comunitate care crede în școală, trebuie să discute altfel despre ea: mai informat, mai responsabil, mai critic și mai empatic.
+        </p>
+        <p>
+          Ne propunem să aducem educația în centrul comunității, să schimbăm tonul și direcția discuțiilor despre școală. Vom înlocui zvonurile, nostalgiile sau opiniile nejustificate cu dialoguri cu sens, constructive, bazate pe știință și pe argumente.
+        </p>
+        <h5>Ce ne dorim?</h5>
+        <ul>
+          <li>să vorbim despre educație cu inima deschisă și cu opinii validate științific;</li>
+          <li>să ascultăm vocea profesorilor, a elevilor, a părinților și a celor care fac cercetare în științele educației;</li>
+          <li>să ne raportăm la școală nu ca la o problemă, ci ca la un spațiu în care construim împreună viitorul;</li>
+          <li>să depășim clișeele, miturile educaționale, opiniile nefundamentate sau ideile privite dintr-o singură perspectivă.</li>
+        </ul>
+        <h5>Cum facem asta?</h5>
+        <ul>
+          <li>prin conferințe, dezbateri publice, ateliere, întâlniri pe teme educaționale;</li>
+          <li>prin colaborarea dintre universitate, școală, părinți, instituții din domeniu și ONG-uri;</li>
+          <li>prin a da voce oamenilor care cred că educația e șansa pentru o societate evoluată, coerentă și puternică;</li>
+          <li>prin a da vizibilitate unor idei care sprijină dezvoltarea școlii și a comunității.</li>
+        </ul>
+        <p><strong>Educația ca proiect de comunitate!</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

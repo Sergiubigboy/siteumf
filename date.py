@@ -2,36 +2,42 @@ import unicodedata
 
 activitati = [
     {
+        "id":1,
         "titlu": "Campania: Conversații în jurul școlii",
         "imagine": "BancaDinFata.jpg",
-        "link": "#",
     },
     {
+        "id":2,
         "titlu": "LyceumCloud.UMFST",
         "imagine": "BancaDinFata.jpg",
         "link": "#",
     },
     {
+       "id":3,
         "titlu": "Banca din față",
         "imagine": "BancaDinFata.jpg",
         "link": "#",
     },
     {
+        "id":4,
         "titlu": "Mix IT Hub UMFST – Centrul pasiunilor elevilor",
         "imagine": "BancaDinFata.jpg",
         "link": "#",
     },
     {
+        "id":5,
         "titlu": "Campania: Conversații în jurul școlii",
         "imagine": "BancaDinFata.jpg",
         "link": "#",
     },
     {
+        "id":6,
         "titlu": "Act4Change",
         "imagine": "BancaDinFata.jpg",
         "link": "#",
     },
     {
+        "id":7,
         "titlu": "Porțile deschise ale liceului UMFST",
         "imagine": "BancaDinFata.jpg",
         "link": "#",
