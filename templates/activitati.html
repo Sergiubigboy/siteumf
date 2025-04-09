@@ -1,144 +1,31 @@
-{% extends "layout.html" %} {% block extra_css %}<link
+{% extends "layout.html" %} {% block extra_css %}
+<link
   rel="stylesheet"
   href="{{ url_for('static', filename='css/activitati.css') }}"
-/>{% endblock %} {% block content %}
-<div class="container-fluid mt-4"> <!-- Container fluid pentru lățime maximă -->
-  <div class="row">
-    <!-- Box 1 -->
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="class-item">
-        <div class="class-image">
-          <img
-            src="{{ url_for('static', filename='images/BancaDinFata.jpg') }}"
-            alt="Activitate 1"
-            class="img-fluid"
-          />
-        </div>
-        <div class="class-info">
-          <h5>Campania: Conversații în jurul școlii</h5>
-        </div>
-        <div class="class-action">
-          <a href="#" class="btn btn-primary btn-sm">Detalii</a>
-        </div>
-      </div>
-    </div>
-    <!-- Box 2 -->
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="class-item">
-        <div class="class-image">
-          <img
-            src="{{ url_for('static', filename='images/activitate2.jpg') }}"
-            alt="Activitate 2"
-            class="img-fluid"
-          />
-        </div>
-        <div class="class-info">
-          <h5>LyceumCloud.UMFST</h5>
-        </div>
-        <div class="class-action">
-          <a href="#" class="btn btn-primary btn-sm">Detalii</a>
+/>
+{% endblock %} {% block content %}
+<div class="container my-5">
+  <h2 class="text-center mb-5">
+    Descoperiți oportunitățile unice pe care activitățile noastre le oferă!
+  </h2>
+  <div class="row g-4">
+    {% for activitate in activitati %}
+    <div class="col-lg-6 col-md-12">
+      <div class="activity-box shadow-lg">
+        <img
+          src="{{ url_for('static', filename='images/' + activitate.imagine) }}"
+          alt="{{ activitate.titlu }}"
+          class="activity-image"
+        />
+        <div class="activity-content p-3">
+          <h3 class="activity-title">{{ activitate.titlu }}</h3>
+          <a href="{{ activitate.link }}" class="btn btn-primary btn-sm mt-3"
+            >Detalii</a
+          >
         </div>
       </div>
     </div>
-
-    <!-- Box 3 -->
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="class-item">
-        <div class="class-image">
-          <img
-            src="{{ url_for('static', filename='images/activitate3.jpg') }}"
-            alt="Activitate 3"
-            class="img-fluid"
-          />
-        </div>
-        <div class="class-info">
-          <h5>Banca din față</h5>
-
-          </div>
-        <div class="class-action">
-          <a href="#" class="btn btn-primary btn-sm">Detalii</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Box 4 -->
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="class-item">
-        <div class="class-image">
-          <img
-            src="{{ url_for('static', filename='images/activitate4.jpg') }}"
-            alt="Activitate 4"
-            class="img-fluid"
-          />
-        </div>
-        <div class="class-info">
-          <h5>Mix IT Hub UMFST – Centrul pasiunilor elevilor</h5>
-
-        </div>
-        <div class="class-action">
-          <a href="#" class="btn btn-primary btn-sm">Detalii</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <!-- Box 5 -->
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="class-item">
-        <div class="class-image">
-          <img
-            src="{{ url_for('static', filename='images/activitate5.jpg') }}"
-            alt="Activitate 5"
-            class="img-fluid"
-          />
-        </div>
-        <div class="class-info">
-          <h5>Campania: Conversații în jurul școlii</h5>
-        </div>
-        <div class="class-action">
-          <a href="#" class="btn btn-primary btn-sm">Detalii</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Box 6 -->
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="class-item">
-        <div class="class-image">
-          <img
-            src="{{ url_for('static', filename='images/activitate6.jpg') }}"
-            alt="Activitate 6"
-            class="img-fluid"
-          />
-        </div>
-        <div class="class-info">
-          <h5>Act4Change </h5>
-        </div>
-        <div class="class-action">
-          <a href="#" class="btn btn-primary btn-sm">Detalii</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Box 7 -->
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-      <div class="class-item">
-        <div class="class-image">
-          <img
-            src="{{ url_for('static', filename='images/activitate7.jpg') }}"
-            alt="Activitate 7"
-            class="img-fluid"
-          />
-        </div>
-        <div class="class-info">
-          <h5>Porțile deschise ale liceului UMFST</h5>
-        </div>
-        <div class="class-action">
-          <a href="#" class="btn btn-primary btn-sm">Detalii</a>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
 {% endblock %}

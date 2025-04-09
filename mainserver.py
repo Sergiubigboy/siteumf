@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from date import CatalogPersonal, profesori, elevi, normalize_text, anunturi
+from date import CatalogPersonal, profesori, elevi, normalize_text, anunturi, activitati
 
 
 # Inițializează catalogul profesorilor
@@ -60,10 +60,6 @@ def elevi_clasa(clasa, litera):
         no_hero=True
     )
 
-# Elimină această rută
-# @app.route('/catalog')
-# def catalog():
-#     return render_template('catalog.html', title="Catalog", subtitlu="Catalog")
 
 @app.route('/performante')
 def performante():
@@ -104,7 +100,7 @@ def pagina_profesor(nume):
 
 @app.route('/activitati')
 def echohub():
-    return render_template('activitati.html', subtitlu="Activități", title="Activități", background="static/images/Poza-UMFST/grup9A/bgclasa9A.jpg")
+    return render_template('activitati.html', subtitlu="Activități", title="Activități", background="static/images/Poza-UMFST/grup9A/bgclasa9A.jpg", activitati=activitati)
 @app.route('/regulamente')
 def regulamente():
     return render_template('regulamente.html', title="Regulamente", subtitlu="Regulamente")
@@ -123,7 +119,7 @@ def proceduri():
 
 @app.route('/facilitati')
 def facilitati():
-    return render_template('facilitati.html', title="Resurse materiale", subtitlu="Facilități")
+    return render_template('facilitati.html', title="Facilități", subtitlu="Facilități", background="static/images/facilitati1.jpg")
 
 @app.route('/corp-administrativ')
 def corp_administrativ():
