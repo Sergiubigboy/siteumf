@@ -138,14 +138,37 @@
   }
 }
 
-/* Performanțe */
+
+
+/* Container general */
+.container-fluid {
+  padding: 20px;
+}
+
+/* Container general pentru boxuri */
+.container-fluid .d-flex {
+  display: flex;
+  flex-wrap: nowrap; /* Nu permite trecerea pe un alt rând */
+  overflow-x: auto; /* Adaugă scroll orizontal dacă boxurile depășesc lățimea paginii */
+  gap: 20px; /* Spațiu între boxuri */
+  padding: 10px 0; /* Spațiu interior sus și jos */
+}
+
+/* Boxurile de performanțe */
 .performance-card {
+  flex: 0 0 auto; /* Boxurile nu se vor micșora și vor avea dimensiunea fixă */
   background-color: #ffffff; /* Fundal alb */
   border: 1px solid #ddd; /* Bordură subtilă */
   border-radius: 10px; /* Colțuri rotunjite */
   padding: 20px; /* Spațiu interior */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+  width: 500px; /* Lățime fixă */
+  height: 300px; /* Înălțime ajustată */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aliniază conținutul la început */
+  justify-content: flex-start; /* Conținutul începe de sus */
 }
 
 .performance-card:hover {
@@ -153,55 +176,59 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai mare la hover */
 }
 
+/* Titlul boxului */
 .performance-header h5 {
   font-size: 1.5rem; /* Dimensiunea titlului */
   font-weight: bold; /* Titlu îngroșat */
-  margin-bottom: 15px; /* Spațiu sub titlu */
+  margin-bottom: 10px; /* Spațiu sub titlu */
   color: #0056b3; /* Culoare albastră */
+  text-align: left; /* Textul este aliniat la stânga */
+  width: 100%; /* Ocupă întreaga lățime */
 }
 
+/* Lista realizărilor */
 .performance-body ul {
   list-style-type: none; /* Elimină punctele din listă */
   padding: 0; /* Elimină padding-ul implicit */
   margin: 0; /* Elimină marginile implicite */
+  overflow-y: auto; /* Adaugă scroll vertical dacă lista este prea lungă */
+  max-height: 200px; /* Limitează înălțimea listei */
+  width: 100%; /* Ocupă întreaga lățime */
 }
 
 .performance-body li {
   font-size: 1rem; /* Dimensiunea textului */
-  color: #555; /* Culoare gri */
-  margin-bottom: 10px; /* Spațiu între elementele listei */
+  color: #555; /* Culoare gri pentru textul general */
+  margin-bottom: 5px; /* Spațiu între elementele listei */
+  font-weight: bold;
 }
 
 .performance-body li strong {
-  color: #000; /* Evidențiază titlul realizării */
+  color: #0056b3; /* Culoare albastră pentru titlul concursului */
+  font-weight: bold; /* Îngroșează textul */
+  font-size: 1.1rem; /* Dimensiune puțin mai mare */
 }
 
-.performance-body {
-  margin-bottom: 15px; /* Spațiu între conținut și footer */
+.performance-body li span {
+  color: #d9534f; /* Culoare roșie pentru premiu */
+  font-weight: bold; /* Îngroșează textul premiului */
+  font-size: 1.2rem; /* Dimensiune mai mare pentru premiu */
+  text-transform: uppercase; /* Transformă textul premiului în litere mari */
 }
 
-.performance-footer {
-  text-align: center; /* Centrează footer-ul */
-  font-size: 0.9rem; /* Dimensiunea textului mai mică */
-  color: #777; /* Culoare gri deschis */
-}
+/* Responsive */
+@media (max-width: 768px) {
+  .performance-card {
+    padding: 15px;
+    width: 100%; /* Lățime completă pe ecrane mici */
+    height: auto; /* Înălțime automată pe ecrane mici */
+  }
 
-.performance-footer .badge {
-  font-size: 0.9rem; /* Dimensiunea textului din badge */
-  padding: 5px 10px; /* Spațiu interior în badge */
+  .performance-header h5 {
+    font-size: 1.2rem;
+  }
 
-}
-
-.btn-primary {
-  background-color: #0056b3;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #003d80;
+  .performance-body li {
+    font-size: 0.9rem;
+  }
 }

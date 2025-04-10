@@ -4,94 +4,82 @@
   href="{{ url_for('static', filename='css/elevi_clasa.css') }}"
 />
 {% endblock %} {% block content %}
-  <div class="container mt-4 custom-container">
-    <!-- Secțiunea citat -->
-    <div class="quote-section">
-      <p>"Unitatea este cheia succesului nostru!"</p>
+<div class="container mt-4 custom-container">
+  <!-- Secțiunea citat -->
+  <div class="quote-section">
+    <p>"{{citat}}"</p>
+  </div>
+
+  <!-- Titluri -->
+  <h1 class="class-title">Clasa {{ clasa }}</h1>
+  <h3 class="class-subtitle">Profil: {{ profil }}</h3>
+
+  <!-- Buton Înapoi -->
+  <a href="{{ url_for('lista_clase') }}" class="btn btn-secondary fade-in">
+    Înapoi la clase
+  </a>
+
+  <!-- Antet unic pentru toate tabelele -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="table-header"></div>
     </div>
+  </div>
 
-    <!-- Titluri -->
-    <h1 class="class-title">Clasa {{ clasa }}</h1>
-    <h3 class="class-subtitle">Profil: {{ profil }}</h3>
-
-    <!-- Buton Înapoi -->
-    <a href="{{ url_for('lista_clase') }}" class="btn btn-secondary fade-in">
-      Înapoi la clase
-    </a>
-
-    <!-- Antet unic pentru toate tabelele -->
-    <div class="row mt-4">
-      <div class="col-12">
-        <div class="table-header"></div>
-      </div>
+  <!-- Grilă cu elevi -->
+  <div class="row mt-4">
+    {% for elev in elevi %} {% if loop.index0 % 9 == 0 %}
+    <div class="col-md-4">
+      <table class="table table-striped">
+        <tbody>
+          {% endif %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ elev.nume }}</td>
+          </tr>
+          {% if loop.index0 % 9 == 8 or loop.last %}
+        </tbody>
+      </table>
     </div>
+    {% endif %} {% endfor %}
+  </div>
 
-    <!-- Grilă cu elevi -->
-    <div class="row mt-4">
-      {% for elev in elevi %}
-      {% if loop.index0 % 9 == 0 %}
-      <div class="col-md-4">
-        <table class="table table-striped">
-          <tbody>
-      {% endif %}
-            <tr>
-              <td>{{ loop.index }}</td>
-              <td>{{ elev.nume }}</td>
-            </tr>
-      {% if loop.index0 % 9 == 8 or loop.last %}
-          </tbody>
-        </table>
-      </div>
-      {% endif %}
-      {% endfor %}
+  <!-- Orar -->
+  <div class="row mt-4">
+    <div class="col-12 text-center">
+      <img
+        src="{{ url_for('static', filename=orar) }}"
+        alt="Orarul Clasei {{ clasa }}"
+        class="img-fluid orar-img"
+      />
     </div>
-
-    <!-- Orar -->
-    <div class="row mt-4">
-      <div class="col-12 text-center">
-        <img src="{{ url_for('static', filename=orar) }}" alt="Orarul Clasei {{ clasa }}" class="img-fluid orar-img">
-      </div>
-    </div>
-
-    <!-- Secțiunea Performanțe -->
-    <div class="container-fluid mt-5 custom-container">
-      <div class="row">
-        <div class="col-12 text-center">
-        </div>
-      </div>
-      <div class="row g-4">
-        {% for performanta in performante %}
-        <div class="col-lg-4 col-md-6">
-          <div class="performance-card shadow-lg">
-            <div class="performance-header text-center">
-              <h5>{{ performanta.nume }}</h5>
-            </div>
-            <div class="performance-body">
-              <ul>
-                {% for realizare in performanta.realizari %}
-                <li>
-                  <strong>{{ realizare.titlu }}</strong> - {{ realizare.locatie }} - {{ realizare.premiu }}
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
+  </div>
+  <!-- Performanțe -->
+  {% if elevi_cu_performante %}
+  <div class="row mt-5">
+    <div class="col-12">
+      <h3>Elevi cu Performanțe</h3>
+      <div class="d-flex flex-wrap justify-content-center">
+        {% for elev in elevi_cu_performante %}
+        <div class="performance-card shadow-lg m-3">
+          <div class="performance-header text-center">
+            <h5>{{ elev.nume }}</h5>
+          </div>
+          <div class="performance-body">
+            <ul>
+              {% for realizare in elev.performante %}
+              <li>
+                <strong>{{ realizare.titlu }}</strong> - {{ realizare.locatie }}
+                - <span>{{ realizare.premiu }}</span>
+              </li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
         {% endfor %}
       </div>
-      <pre>{{ performante | safe }}</pre>
-    </div>
-
-    <!-- Secțiunea Performanțe -->
-    <div class="container-fluid mt-5 custom-container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <a href="{{ url_for('performante_clasa', clasa=clasa) }}" class="btn btn-primary">
-            Vezi Performanțele Clasei {{ clasa }}
-          </a>
-        </div>
-      </div>
     </div>
   </div>
+  {% endif %}
+</div>
 {% endblock %}
-

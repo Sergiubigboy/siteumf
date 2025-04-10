@@ -1,21 +1,14 @@
 from flask import Flask, render_template, request
-from date import CatalogPersonal, profesori, elevi, normalize_text, anunturi, activitati
+from date import Profesori, Clase, profesori, clase, normalize_text, anunturi, activitati
 import unicodedata
 
 
 # Inițializează catalogul profesorilor
-Profesori = CatalogPersonal(profesori)
-Elevi = CatalogPersonal(elevi)
+profesori = Profesori(profesori)
+clase = Clase(clase)
 
 
 app = Flask(__name__)
-
-def normalize_text(text):
-    """Normalizează textul pentru a fi utilizat în URL."""
-    return ''.join(
-        c for c in unicodedata.normalize('NFD', text)
-        if unicodedata.category(c) != 'Mn'
-    ).replace(' ', '-').lower()
 
 app.jinja_env.globals.update(normalize_text=normalize_text)
 
@@ -29,40 +22,60 @@ def despre():
 
 @app.route('/clase')
 def lista_clase():
-    # Obține toate clasele distincte
-    clase = sorted(set((elev["clasa"], elev["litera"], elev["profil"]) for elev in elevi))
+    # Obține toate clasele din obiectul Clase
+    clase_distincte = [
+        (clasa["numar"], clasa["litera"], clasa["profil"])
+        for clasa in clase.clase
+    ]
     
+    # Sortează clasele
+    clase_distincte = sorted(clase_distincte)
+
     # Obține termenul de căutare
     search_query = request.args.get('search', '').lower()
     if search_query:
-        clase = [
-            (clasa, litera, profil) for clasa, litera, profil in clase
-            if search_query in f"{clasa}{litera}{profil}".lower()
+        clase_distincte = [
+            (numar, litera, profil) for numar, litera, profil in clase_distincte
+            if search_query in f"{numar}{litera}{profil}".lower()
         ]
+    
     return render_template(
         'elevi.html',
-        clase=clase,
+        clase=clase_distincte,
         subtitlu="Elevi",
         title="Elevi",
-        background=f"static/images/pozaelevi.jpg"
+        background="static/images/pozaelevi.jpg"
     )
 @app.route('/elevi/<int:clasa>/<litera>')
 def elevi_clasa(clasa, litera):
-    # Filtrează elevii din clasa specificată
-    elevi_filtrati = [
-        elev for elev in elevi if elev["clasa"] == clasa and elev["litera"] == litera
+    # Filtrează clasa specificată
+    clasa_filtrata = next(
+        (c for c in clase.clase if c["numar"] == clasa and c["litera"].lower() == litera.lower()), 
+        None
+    )
+
+    if not clasa_filtrata:
+        return f"Clasa {clasa}{litera} nu a fost găsită.", 404
+
+    # Obține elevii și profilul clasei
+    elevi_filtrati = clasa_filtrata["elevi"]
+    profil = clasa_filtrata["profil"]
+
+    # Filtrează elevii cu performanțe
+    elevi_cu_performante = [
+        elev for elev in elevi_filtrati if "performante" in elev
     ]
-    # Obține profilul clasei (toți elevii din aceeași clasă au același profil)
-    profil = elevi_filtrati[0]["profil"] if elevi_filtrati else "Necunoscut"
 
     # Setează orarul în funcție de clasă
-    orar = f"images/orar{clasa}{litera}.PNG"
+    orar = f"static/images/orar{clasa}{litera}.PNG"
 
     return render_template(
         'elevi_clasa.html',
         elevi=elevi_filtrati,
+        elevi_cu_performante=elevi_cu_performante,
         clasa=f"{clasa}{litera}",
         profil=profil,
+        citat=clasa_filtrata["citat"],
         subtitlu=f"Clasa {clasa}{litera}",
         title=f"Clasa {clasa}{litera}",
         background=f"static/images/Poza-UMFST/grup{clasa}{litera}/bgclasa{clasa}{litera}.jpg",
@@ -70,41 +83,6 @@ def elevi_clasa(clasa, litera):
         no_hero=True
     )
 
-@app.route('/clasa/<int:clasa>/<litera>')
-def afiseaza_clasa(clasa, litera):
-    # Importă datele despre performanțe
-    from date import performante
-
-    # Creează formatul "9A" din clasa și litera
-    clasa_completa = f"{clasa}{litera}"
-
-    # Filtrare performanțe pentru clasa specificată
-    performante_clasa = [p for p in performante if p['clasa'] == clasa_completa]
-
-    # Transmite datele către șablon
-    return render_template(
-        'elevi_clasa.html',
-        clasa=clasa_completa,
-        performante=performante_clasa,
-        orar=f"orar_{clasa_completa}.png"  # Exemplu de orar
-    )
-
-@app.route('/performante/<clasa>')
-def performante_clasa(clasa):
-    # Importă datele despre performanțe
-    from date import performante
-
-    # Filtrare performanțe pentru clasa specificată
-    performante_clasa = [p for p in performante if p['clasa'] == clasa]
-
-    # Transmite datele către șablon
-    return render_template(
-        'performante_clasa.html',
-        clasa=clasa,
-        performante=performante_clasa,
-        subtitlu=f"Performanțele Clasei {clasa}",
-        title=f"Performanțe Clasa {clasa}"
-    )
 
 @app.route('/corp-profesoral')
 def lista_profesori():
