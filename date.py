@@ -192,119 +192,64 @@ profesori = [
 
 
 
-elevi = [
-    # Clasa 9B
-    {"nume": "Bumbac Ileana", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Bumbu Luca", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Colcer Sonia", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Cosarca Alexandru", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Cotoi Iulius", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Cretu Daria", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Crisan Andrei", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Dumitru Radu", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Florea Sara", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Florea Rares", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Gherman Eric", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Hanc Mihai", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Harsa Sofia", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Lazar Larisa", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Loghin Ioana", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Lupsa Maria", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Macarie Rares", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Orban David", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Onisor Rares", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Ormenisan Anastatia", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Popa Cynthia", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Sabau Raul", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Sandru Octavian", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Serbu Raluca", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Szasz Roberta", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Vasiliu Anca", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-    {"nume": "Vidican Andreea", "clasa": 9, "litera": "B", "profil": "Științele Naturii"},
-
-    # Clasa 9A
-    {"nume": "Biris Sergiu", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Corondeanu Raul", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Cucuiet Andrei", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Curta Rares", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "David Aiana", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Ercean David", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Gherman Cezara", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Jovrea Stefan", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Lazar Cristian", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Maier Alia", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Marian Ciprian", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Mitoseriu David", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Muth Cristian", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Nagy Eliz", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Oanes Sofia", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Paca Raoul", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Pantea Tudor", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Pastia Catinca", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Somesan Adrian", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Staicu Eric", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Stinga David", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Stoica Andrei", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Suciu Iustina", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Trifan Raul", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Turdean Cleo", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Ungur Filip", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"},
-    {"nume": "Vasloban Maria", "clasa": 9, "litera": "A", "profil": "Mate-Informatică"}
-]
-performante = [
+clase = [
     {
-        "nume": "Szász Roberta Veronica",
-        "clasa": "9B",
-        "realizari": [
-            {
-                "titlu": "Olimpiada Națională de Biologie",
-                "locatie": "Tg. Mureș, etapa județeană",
-                "premiu": "Premiul II"
-            },
-            {
-                "titlu": "Olimpiada Interdisciplinară „Culturalitate și spiritualitate românească“",
-                "locatie": "Tg. Mureș, etapa județeană",
-                "premiu": "Premiul III"
-            }
+        "numar": 9,
+        "litera": "B",
+        "diriginte": "Crina Chirilă",
+        "profil": "Științele Naturii",
+        "citat": "Natura are un limbaj propriu și, dacă îi înțelegem semnele și ritmul, ne dezvăluie taine pe care nimic altceva nu le poate exprima",
+        "elevi": [
+            {"nume": "Bumbac Ileana"},
+            {"nume": "Bumbu Luca"},
+            {"nume": "Colcer Sonia"},
+            {"nume": "Cosarca Alexandru"},
+            {"nume": "Cotoi Iulius", "performante": [{"titlu": "Olimpiada Națională de Biologie","locatie": "Tg. Mureș, etapa județeană","premiu": "Mențiune 1" }]},
+            {"nume": "Cretu Daria"},
+            {"nume": "Crisan Andrei"},
+            {"nume": "Dumitru Radu"},
+            {"nume": "Florea Sara"},
+            {"nume": "Florea Rares"},
+            {"nume": "Gherman Eric"},
+            {"nume": "Hanc Mihai"},
+            {"nume": "Harsa Sofia"},
+            {"nume": "Lazar Larisa"},
+            {"nume": "Loghin Ioana","performante": [ {"titlu": "Olimpiada Națională de Limba Engleză","locatie": "Tg. Mureș, etapa județeană","premiu": "Premiul III"}]},
+            {"nume": "Lupsa Maria"},
+            {"nume": "Macarie Rares"},
+            {"nume": "Orban David"},
+            {"nume": "Onisor Rares"},
+            {"nume": "Ormenisan Anastatia"},
+            {"nume": "Popa Cynthia"},
+            {"nume": "Sabau Raul"},
+            {"nume": "Sandru Octavian"},
+            {"nume": "Serbu Raluca"},
+            {"nume": "Szasz Roberta", "performante" : [{"titlu": "Olimpiada Națională de Biologie", "locatie": "Tg. Mureș, etapa județeană", "premiu": "Premiul II"}, {"titlu": "Olimpiada Interdisciplinară „Culturalitate și spiritualitate românească“", "locatie": "Tg. Mureș, etapa județeană", "premiu": "Premiul III"}]},
+            {"nume": "Vasiliu Anca"},
+            {"nume": "Vidican Andreea"}
         ]
     },
     {
-        "nume": "Cotoi Iulius",
-        "clasa": "9B",
-        "realizari": [
-            {
-                "titlu": "Olimpiada Națională de Biologie",
-                "locatie": "Tg. Mureș, etapa județeană",
-                "premiu": "Mențiune 1"
-            }
-        ]
-    },
-    {
-        "nume": "Loghin Ioana Nicole",
-        "clasa": "9B",
-        "realizari": [
-            {
-                "titlu": "Olimpiada Națională de Limba Engleză",
-                "locatie": "Tg. Mureș, etapa județeană",
-                "premiu": "Premiul III"
-            }
-        ]
-    },
-    {
-        "nume": "Pacă Raoul",
-        "clasa": "9A",
-        "realizari": [
-            {
-                "titlu": "Olimpiada Națională de Informatică",
-                "locatie": "Tg. Mureș, etapa județeană",
-                "premiu": "Premiul III"
-            }
-        ]
-    },
-    {
-        "nume": "Muth Cristian",
-        "clasa": "9A",
-        "realizari": [
+        "numar": 9,
+        "litera": "A",
+        "diriginte": "Roland Bolboacă",
+        "profil": "Mate-Informatică",
+        "citat": "Live. Love. Teach. Teaching hearts, shaping minds.",
+        "elevi": [
+            {"nume": "Biris Sergiu"},
+            {"nume": "Corondeanu Raul"},
+            {"nume": "Cucuiet Andrei"},
+            {"nume": "Curta Rares"},
+            {"nume": "David Aiana"},
+            {"nume": "Ercean David"},
+            {"nume": "Gherman Cezara"},
+            {"nume": "Jovrea Stefan"},
+            {"nume": "Lazar Cristian"},
+            {"nume": "Maier Alia"},
+            {"nume": "Marian Ciprian"},
+            {"nume": "Mitoseriu David"},
+            {"nume": "Muth Cristian",
+              "performante": [
             {
                 "titlu": "Concursul Interjudețean Alexandru Papiu Ilarian",
                 "locatie": "",
@@ -350,12 +295,9 @@ performante = [
                 "locatie": "Slobozia",
                 "premiu": "Premiul I și calificare la etapa națională"
             }
-        ]
-    },
-    {
-        "nume": "Nagy Eliz",
-        "clasa": "9A",
-        "realizari": [
+        ]},
+            {"nume": "Nagy Eliz", 
+             "performante": [
             {
                 "titlu": "Convocare Lotul Național U16",
                 "locatie": "Bulgaria, Sofia",
@@ -386,6 +328,20 @@ performante = [
                 "locatie": "Liga I senioare, ediția 2024/2025",
                 "premiu": ""
             }
+        ]},
+            {"nume": "Oanes Sofia"},
+            {"nume": "Paca Raoul"},
+            {"nume": "Pantea Tudor"},
+            {"nume": "Pastia Catinca"},
+            {"nume": "Somesan Adrian"},
+            {"nume": "Staicu Eric"},
+            {"nume": "Stinga David"},
+            {"nume": "Stoica Andrei"},
+            {"nume": "Suciu Iustina"},
+            {"nume": "Trifan Raul"},
+            {"nume": "Turdean Cleo"},
+            {"nume": "Ungur Filip"},
+            {"nume": "Vasloban Maria"}
         ]
     }
 ]
@@ -396,7 +352,7 @@ def normalize_text(text):
         if unicodedata.category(c) != 'Mn'
     ).lower()
 
-class CatalogPersonal:
+class Profesori:
     def __init__(self, personal):
         self.personal = personal
         for pers in self.personal:
@@ -410,13 +366,29 @@ class CatalogPersonal:
     def findbykey(self, materie, cheie):
         return [prof for prof in self.personal if prof[cheie] == materie]
 
+class Clase:
+    def __init__(self, clase):
+        self.clase = clase
+        self.elevi_performante = []
+        for clasa in self.clase:
+            for elev in clasa["elevi"]:
+                if "performante" in elev:
+                    self.elevi_performante.append(elev)
+
+    def findbykey(self, cheie, valoare):
+        return [cls for cls in self.clase if cls[cheie] == valoare]
 
 if __name__ == "__main__":
-    catalog = CatalogPersonal(profesori)
+    catalog = Profesori(profesori)
 
     # Testează funcția findbyname
-    profesor = catalog.findbyname("Jeddi Tunde")
+    profesor = catalog.findbyname("Bogdan Rațu")
     if profesor:
         print(f"Profesor găsit: {profesor}")
     else:
         print("Profesorul nu a fost găsit.")
+
+    clase = Clase(clase)
+    for elev in clase.elevi_performante:
+        print(elev["nume"])
+    
