@@ -1,100 +1,119 @@
-{% extends "layout.html" %} {% block extra_css %}
-<link
-  rel="stylesheet"
-  href="{{ url_for('static', filename='css/contact.css') }}"
-/>
+{% extends "layout.html" %} 
 
-{% endblock %} {% block content %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+{% endblock %}
+
+{% block content %}
 <div class="color-section">
-<div class="container-fluid position-relative">
-  <!-- Forme opace pe toată secțiunea -->
-  
-
-  <div class="container my-5">
-    <div class="contact-box shadow p-4">
-      <h2 class="section-title text-center">Informații de Contact</h2>
-      <p class="section-text text-center">
-        Ne puteți contacta pentru orice întrebări sau informații suplimentare:
-      </p>
-      <ul class="contact-list list-unstyled text-center">
-        <li>
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
+  <div class="container-fluid position-relative">
+    <div class="container my-5">
+      <div class="contact-box shadow p-4">
+        <h2 class="section-title text-center">Informații de Contact</h2>
+        <p class="section-text text-center">
+          Ne puteți contacta pentru orice întrebări sau informații suplimentare:
+        </p>
+        <ul class="contact-list list-unstyled text-center">
+          <li>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
               d="M12 2C8.13 2 5 5.13 5 9c0 6.75 7 13 7 13s7-6.25 7-13c0-3.87-3.13-7-7-7z"
-            ></path>
-            <circle cx="12" cy="9" r="2"></circle>
-          </svg>
-          <strong>Adresă:</strong>
-          <a
-            href="https://maps.app.goo.gl/8zMpywfxEXCWah1A8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          Strada Gheorghe Marinescu nr. 38, Târgu Mureș, România
-          </a>
-        </li>
-        <li>
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              d="M22 16.92a15.64 15.64 0 0 1-6.92-1.82A15.64 15.64 0 0 1 3.08 6 3.36 3.36 0 0 1 6 3.08a15.64 15.64 0 0 1 8.3 8.3A15.64 15.64 0 0 1 22 16.92z"
-            ></path>
-          </svg>
-          <strong>Telefon:</strong> +40-265-215.551
-        </li>
-        <li>
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M4 4h16v16H4z"></path>
-            <path d="M22 6l-10 7L2 6"></path>
-          </svg>
-          <strong>Email:</strong>
-          <a href="mailto:liceul.umfst@umfst.ro">liceul.umfst@umfst.ro</a>
-        </li>
-        <li>
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M12 6v6l4 2"></path>
-          </svg>
-          <strong>Program:</strong> Luni-Vineri: 8:00 - 19:00 
-        </li>
-      </ul>
+              ></path>
+              <circle cx="12" cy="9" r="2"></circle>
+            </svg>
+            <strong>Adresă:</strong>
+            <a
+              href="https://maps.app.goo.gl/8zMpywfxEXCWah1A8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Strada Gheorghe Marinescu nr. 38, Târgu Mureș, România
+            </a>
+          </li>
+          <li>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92a15.64 15.64 0 0 1-6.92-1.82A15.64 15.64 0 0 1 3.08 6 3.36 3.36 0 0 1 6 3.08a15.64 15.64 0 0 1 8.3 8.3A15.64 15.64 0 0 1 22 16.92z"
+              ></path>
+            </svg>
+            <strong>Telefon:</strong> +40-265-215.551
+          </li>
+          <li>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M4 4h16v16H4z"></path>
+              <path d="M22 6l-10 7L2 6"></path>
+            </svg>
+            <strong>Email:</strong>
+            <a href="mailto:liceul.umfst@umfst.ro">liceul.umfst@umfst.ro</a>
+          </li>
+          <li>
+          </li>
+          <li>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 2h-12c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4v-7h-2v-2h2v-1.5c0-2.1 1.3-3.5 3.3-3.5.9 0 1.7.1 1.9.1v2h-1.3c-1 0-1.2.5-1.2 1.2v1.7h2.5l-.5 2h-2v7h4c1.1 0 2-.9 2-2v-12c0-1.1-.9-2-2-2z"
+              ></path>
+            </svg>
+            <strong>Facebook:</strong>
+            <a href="https://www.facebook.com/liceulumfst" target="_blank" rel="noopener noreferrer">facebook.com/liceulumfst</a>
+          </li>
+          <li>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37a4 4 0 1 1-4.73-4.73 4 4 0 0 1 4.73 4.73z"></path>
+              <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+            </svg>
+            <strong>Instagram:</strong>
+            <a href="https://www.instagram.com/liceul_umfst" target="_blank" rel="noopener noreferrer">@liceul_umfst</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 </div>
 {% endblock content %}
