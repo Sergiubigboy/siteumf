@@ -1,0 +1,47 @@
+{% extends "layout.html" %} {% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/activitati.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="container mt-4">
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <img
+        src="{{ url_for('static', filename='images/' + activitate.imagine) }}"
+        alt="{{ activitate.titlu }}"
+        class="img-fluid rounded"
+      />
+    </div>
+    <div class="col-md-6">
+      <div class="p-4 bg-light rounded shadow-sm text-justify">
+        <h2>
+          LyceumCloud.UMFST – Revista care prinde forma amintirilor din liceu
+        </h2>
+        <p>
+          Bine ai venit în LyceumCloud, spațiul unde ideile prind contur, iar
+          liceul devine mai mult decât un loc – devine o poveste. Inspirată din
+          spiritul clasic al școlii și animată de energia fiecărei generații,
+          revista noastră este o punte între ceea ce trăim azi și ceea ce vom
+          povesti mâine.
+        </p>
+        <p>
+          LyceumCloud este realizată de liceenii UMFST pentru tineri. Aici,
+          fiecare rubrică le deschide celorlalți o parte din lumea pe care
+          merită să o cunoască:
+        </p>
+        <p>
+          LyceumCloud nu e doar o revistă, e o comunitate. E vocea noastră,
+          scrisă, desenată, gândită și trăită. E amintirea pe care o construim,
+          număr cu număr.
+        </p>
+        <a
+          href="https://www.lyceumcloudumfst.ro"
+          class="btn btn-primary btn-sm mt-3"
+          >Intră pe site</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
