@@ -1,0 +1,24 @@
+.celebration-page-box {
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.celebration-page-box h2 {
+  color: #0056b3;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.celebration-page-box p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+.spacer {
+  height: 100px; /* Înălțimea spațiului invizibil */
+  width: 100%; /* Lățimea completă */
+}

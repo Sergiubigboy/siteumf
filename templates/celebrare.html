@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/celebrare.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="celebration-page-box p-5 shadow-lg rounded">
+    <h2 class="text-center mb-4">{{ titlu }}</h2>
+    <div class="text-center mb-4">
+      <img src="{{ imagine }}" alt="{{ titlu }}" class="img-fluid rounded">
+    </div>
+    <div class="descriere">
+      {{ descriere|safe }}
+    </div>
+  </div>
+</div>
+{% endblock %}
