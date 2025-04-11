@@ -1,0 +1,165 @@
+{% extends "layout.html" %} {% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/mix-it-hub-umfst.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="container mt-5">
+  <div class="modern-box p-5 shadow-lg rounded">
+    <h2 class="text-center mb-4">Mix IT Hub UMFST</h2>
+    <p>
+      Bine ați venit în <strong>Mix IT Hub UMFST</strong>, locul unde ideile,
+      curiozitatea și energia liceenilor se întâlnesc pentru a crea ceva cu
+      adevărat valoros. Este centrul activităților extracurriculare ale liceului
+      – un hub în care tinerii se pot descoperi, exprima și dezvolta dincolo de
+      orele de curs.
+    </p>
+    <p>
+      Elevii, fie că sunt pasionați de tehnologie sau sunt atrași de robotică,
+      vor să-și antreneze gândirea critică în clubul de dezbateri, să-și pună
+      emoțiile pe scenă prin teatru sau să-și lase vocea să sune în muzică, Mix
+      IT Hub oferă un loc în care să se poată explora pasiunile.
+    </p>
+    <p>
+      Aici se desfășoară și ateliere cu invitați speciali, evenimente
+      interactive, activități tematice și tot ce poate contribui la o dezvoltare
+      armonioasă și autentică a fiecărui elev. Este un spațiu viu, mereu în
+      mișcare, creat de elevi și de profesori, pentru elevii liceului, în care
+      dinamismul și colaborarea sunt la ele acasă.
+    </p>
+    <p>
+      Suntem siguri că liceul nu înseamnă doar materii și note, înseamnă
+      experiențe. Iar Mix IT Hub este locul unde acestea prind viață!
+    </p>
+  </div>
+</div>
+
+<!-- Secțiunea Cluburi -->
+<div class="cluburi-box mt-5 p-5 shadow-lg rounded">
+  <h2 class="text-center mb-4">Cluburi</h2>
+  <div class="row">
+    <!-- Club de teatru -->
+    <div class="col-md-6 mb-4">
+      <div class="club-box p-4 shadow-sm rounded">
+        <h3 class="text-center">Club de teatru</h3>
+        <p>
+          Clubul de teatru este locul unde elevii își pot exprima creativitatea
+          și emoțiile prin artă dramatică. Este o oportunitate de a învăța să
+          comunice mai bine, să colaboreze și să-și dezvolte încrederea în sine.
+        </p>
+        <div class="text-center">
+          <a href="/club/teatru" class="btn btn-primary">Detalii</a>
+        </div>
+      </div>
+    </div>
+    <!-- Club de dezbateri -->
+    <div class="col-md-6 mb-4">
+      <div class="club-box p-4 shadow-sm rounded">
+        <h3 class="text-center">Club de dezbateri</h3>
+        <p>
+          Clubul de dezbateri îi ajută pe elevi să-și dezvolte gândirea critică,
+          abilitățile de argumentare și să învețe să-și exprime ideile într-un
+          mod clar și convingător. Este locul perfect pentru cei care vor să-și
+          antreneze mintea.
+        </p>
+        <div class="text-center">
+          <a href="/club/dezbateri" class="btn btn-primary">Detalii</a>
+        </div>
+      </div>
+    </div>
+    <!-- Club de robotică -->
+    <div class="col-md-6 mb-4">
+      <div class="club-box p-4 shadow-sm rounded">
+        <h3 class="text-center">Club de robotică</h3>
+        <p>
+          Clubul de robotică este locul unde elevii pasionați de tehnologie pot
+          învăța să construiască și să programeze roboți. Este o oportunitate
+          excelentă de a dezvolta abilități tehnice și de a lucra în echipă.
+        </p>
+        <div class="text-center">
+          <a href="/club/robotica" class="btn btn-primary">Detalii</a>
+        </div>
+      </div>
+    </div>
+    <!-- Club de muzică -->
+    <div class="col-md-6 mb-4">
+      <div class="club-box p-4 shadow-sm rounded">
+        <h3 class="text-center">Club de muzică</h3>
+        <p>
+          Clubul de muzică oferă elevilor șansa de a-și dezvolta talentul
+          muzical, fie că este vorba de cântat, compus sau interpretare
+          instrumentală. Este locul perfect pentru a-ți lăsa creativitatea să
+          strălucească.
+        </p>
+        <div class="text-center">
+          <a href="/club/muzica" class="btn btn-primary">Detalii</a>
+        </div>
+      </div>
+    </div>
+    <!-- Club de public speaking -->
+    <div class="col-md-6 mb-4">
+      <div class="club-box p-4 shadow-sm rounded">
+        <h3 class="text-center">Club de public speaking</h3>
+        <p>
+          Clubul de public speaking îi ajută pe elevi să-și dezvolte abilitățile
+          de vorbire în public, să-și crească încrederea în sine și să învețe să
+          comunice eficient în fața unui public.
+        </p>
+        <div class="text-center">
+          <a href="/club/public-speaking" class="btn btn-primary">Detalii</a>
+        </div>
+      </div>
+    </div>
+    <!-- Club de activități sportive -->
+    <div class="col-md-6 mb-4">
+      <div class="club-box p-4 shadow-sm rounded">
+        <h3 class="text-center">Club de activități sportive</h3>
+        <p>
+          Clubul de activități sportive promovează un stil de viață sănătos prin
+          sporturi de echipă și individuale. Este locul ideal pentru a-ți
+          dezvolta abilitățile fizice și spiritul de echipă.
+        </p>
+        <div class="text-center">
+          <a href="/club/sportiv" class="btn btn-primary">Detalii</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Secțiunea Proiecte în Comunitate -->
+
+<!-- Secțiunea Proiecte Speciale -->
+<div class="proiecte-speciale-box mt-5 p-5 shadow-lg rounded">
+  <h2 class="text-center mb-4">Proiecte în Comunitate</h2>
+  <div class="row">
+    <!-- Bookflix -->
+    <div class="col-md-4 mb-4">
+      <div class="project-box p-4 shadow-sm rounded text-center">
+        <h3>Bookflix</h3>
+        <p>
+          Descoperă lumea fascinantă a cărților prin proiectul nostru Bookflix!
+        </p>
+        <a href="/proiect/bookflix" class="btn btn-primary mt-3">Detalii</a>
+      </div>
+    </div>
+    <!-- Săptămâna lecturii -->
+    <div class="col-md-4 mb-4">
+      <div class="project-box p-4 shadow-sm rounded text-center">
+        <h3>Săptămâna lecturii</h3>
+        <p>Un eveniment dedicat promovării lecturii și literaturii.</p>
+        <a href="/proiect/saptamana-lecturii" class="btn btn-primary mt-3"
+          >Detalii</a
+        >
+      </div>
+    </div>
+    <!-- Vis de iarnă -->
+    <div class="col-md-4 mb-4">
+      <div class="project-box p-4 shadow-sm rounded text-center">
+        <h3>Vis de iarnă</h3>
+        <p>Un proiect magic pentru a sărbători frumusețea iernii.</p>
+        <a href="/proiect/vis-de-iarna" class="btn btn-primary mt-3">Detalii</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

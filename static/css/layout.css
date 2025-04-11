@@ -366,3 +366,11 @@ transform: translateY(0); /* Revine la poziția inițială */
     text-align: center; /* Center-align the text inside */
   }
 }
+.hero-logo-top-right {
+  position: absolute;
+  top: 20px; /* Distanța față de partea de sus */
+  right: 20px; /* Distanța față de partea dreaptă */
+  height: 80px; /* Înălțimea logo-ului */
+  width: auto; /* Păstrează proporțiile */
+  z-index: 10; /* Asigură că logo-ul este deasupra altor elemente */
+}
