@@ -2,46 +2,41 @@ import unicodedata
 
 activitati = [
     {
-        "id":1,
+        "id": "campania-conversatii-in-jurul-scolii",
         "titlu": "Campania: Conversații în jurul școlii",
         "imagine": "BancaDinFata.jpg",
+        "template": "activitatiSub/campania.html"
     },
     {
-        "id":2,
+        "id": "lyceumcloud-umfst",
         "titlu": "LyceumCloud.UMFST",
         "imagine": "BancaDinFata.jpg",
-        "link": "#",
+        "template": "activitatiSub/lyceumcloud-umfst.html"
     },
     {
-       "id":3,
+        "id": "banca-din-fata",
         "titlu": "Banca din față",
         "imagine": "BancaDinFata.jpg",
-        "link": "#",
+        "template": "activitatiSub/banca-din-fata.html"
     },
     {
-        "id":4,
+        "id": "mix-it-hub-umfst",
         "titlu": "Mix IT Hub UMFST – Centrul pasiunilor elevilor",
         "imagine": "BancaDinFata.jpg",
-        "link": "#",
+        "template": "activitatiSub/mix-it-hub-umfst.html"
     },
     {
-        "id":5,
-        "titlu": "Campania: Conversații în jurul școlii",
-        "imagine": "BancaDinFata.jpg",
-        "link": "#",
-    },
-    {
-        "id":6,
+        "id": "act4change",
         "titlu": "Act4Change",
         "imagine": "BancaDinFata.jpg",
-        "link": "#",
+        "template": "activitatiSub/act4change.html"
     },
     {
-        "id":7,
-        "titlu": "Porțile deschise ale liceului UMFST",
+        "id": "echo-reactor",
+        "titlu": "Echo Reactor",
         "imagine": "BancaDinFata.jpg",
-        "link": "#",
-    },
+        "template": "activitatiSub/echoReactor.html"
+    }
 ]
 
 anunturi = [
@@ -77,7 +72,7 @@ profesori = [
     {
         "nume": "Bianca Han",
         "materie": "Limba engleză",
-        "descriere": "",
+        "descriere": "Scriem împreună o filă nouă în cartea celor mai noi elevi ai celui mai nou liceu din Târgu-Mureș, Liceul UMFST „George Emil Palade”, liceul pe care ei l-au pus pe hartă ca fiind cel mai bun liceu din județ în urma rezultatelor la admitere. Să fii cel mai bun e greu, să rămâi cel mai bun e și mai greu, dar nu imposibil. Și asta vom demonstra noi împreună, pentru că acești tineri frumoși vor ajunge la stele.",
         "citat": "Live. Love. Teach. Teaching hearts, shaping minds.",
         "imagine": "",
         "rol": "Conducere",
@@ -121,15 +116,15 @@ profesori = [
     {
         "nume": "Corneliu Tănase",
         "materie": "Biologie",
-        "descriere": "",
-        "citat": "",
+        "descriere": "În fiecare lecție de biologie se ascunde o poveste despre viață — despre echilibru, frumusețe, fragilitate și uimire. Ca profesor de biologie, cred că educația înseamnă să le trezești elevilor mirarea în fața vieții și să-i înveți să observe, să înțeleagă și să respecte lumea vie.",
+        "citat": "Cunoașterea vieții ne învață să o prețuim.",
         "imagine": ""
     },
     {
         "nume": "Georgeta Fodor",
         "materie": "Istorie",
-        "descriere": "",
-        "citat": "",
+        "descriere": "Există o expresie celebră, “nu pentru școală ci pentru viața” care redă succint misiunea școlii și a profesorilor . Este ceea ce încerc să le transmit studenților mei, să îi conving ca școala este o experiență de învățare și nu o goană nebună după cat mai multe note de 10. Nu trebuie să facem parada cu ceea ce știm ci să acumulăm pentru a pune în practică, pentru a deveni cea mai bună versiune a noastră. O astfel de abordare presupune a renunța la “marșul triumfal spre “a termina materia” la sfârșit de an. Nu cred ca este relevant cât putem memora ci cum ceea ce acumulăm ne transformă, ne bucura, ne determină să vrem mai mult. Ca om și ca profesor sunt la fel! Îmi place să descopăr lucruri noi, învăț permanent, citesc și cred în puterea magică a cărților, mă respect și îi respect pe toți cei din jurul meu!",
+        "citat": "Nu pentru școală ci pentru viața",
         "imagine": ""
     },
     {
@@ -143,13 +138,13 @@ profesori = [
         "nume": "Nora Dumbravă",
         "materie": "Logică",
         "descriere": " ",
-        "citat": "",
+        "citat": "Să înveți fără să gândești este fără sens; să gândești fără să înveți este periculos.",
         "imagine": ""
     },
     {
         "nume": "Bârsan Ovidiu",
         "materie": "Religie",
-        "descriere": "",
+        "descriere": "Cred în miracolul terapeutic al bucuriei, al zâmbetului și al lacrimii. De aici convingerea că zâmbim ca să nu murim și plângem ca să înviem. Am pariat pe capacitatea omului de a câștiga meciul cu el însuși, sub asistența harului divin, pentru a deveni un adevărat selecționer de valori culturale și spirituale. De altminteri, perena educație începe și dăinuie printr-un arest al autosuficienței, pur și simplu.Dar mai presus de toate, cred că existăm ca să iubim și iubind vom birui oriunde.",
         "citat": "",
         "imagine": ""
     },
@@ -196,9 +191,9 @@ clase = [
     {
         "numar": 9,
         "litera": "B",
-        "diriginte": "Crina Chirilă",
+        "diriginte": "Bogdan Rațiu",
         "profil": "Științele Naturii",
-        "citat": "Natura are un limbaj propriu și, dacă îi înțelegem semnele și ritmul, ne dezvăluie taine pe care nimic altceva nu le poate exprima",
+        "citat": "Clasa de smecheri n ai ce zice",
         "elevi": [
             {"nume": "Bumbac Ileana"},
             {"nume": "Bumbu Luca"},
@@ -232,9 +227,9 @@ clase = [
     {
         "numar": 9,
         "litera": "A",
-        "diriginte": "Roland Bolboacă",
+        "diriginte": "Bianca Han",
         "profil": "Mate-Informatică",
-        "citat": "Live. Love. Teach. Teaching hearts, shaping minds.",
+        "citat": "Respect, respect si iara respect.",
         "elevi": [
             {"nume": "Biris Sergiu"},
             {"nume": "Corondeanu Raul"},
@@ -391,4 +386,3 @@ if __name__ == "__main__":
     clase = Clase(clase)
     for elev in clase.elevi_performante:
         print(elev["nume"])
-    
