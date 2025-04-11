@@ -49,6 +49,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #002c58; /* Dark blue background */
   opacity: 1; /* Ensure the navbar is fully opaque */
   transition: background-color 0.3s ease; /* Smooth transition for background color */
+  padding-left: 15px; /* Adaugă spațiu între marginea navbar-ului și conținut */
 }
 
 .navbar-collapse {
@@ -91,6 +92,18 @@ body::-webkit-scrollbar-thumb:hover {
   width: auto;
   display: flex;
   align-items: center;
+}
+
+.navbar-brand {
+  display: flex; /* Activează Flexbox pentru aliniere */
+  align-items: center; /* Centrează vertical logo-ul și textul */
+  justify-content: flex-start; /* Poziționează elementele spre stânga */
+  margin-left: 0; /* Elimină orice spațiu implicit */
+  padding-left: 10px; /* Adaugă un mic spațiu față de marginea stângă */
+  color: white; /* Text alb */
+  font-size: 1.2rem; /* Dimensiune text */
+  font-weight: bold; /* Text îngroșat */
+  text-align: left; /* Aliniere la stânga */
 }
 
 .navbar-nav {
@@ -266,7 +279,7 @@ opacity: 0.9; /* Ensure the logo is fully visible */
 .hero-logo-left {
   left: 100px; /* Aproape de marginea stângă */
   top: 50%; /* Urcă logo-ul mai sus */
-  max-width: 220px; /* Mărește dimensiunea logo-ului */
+  max-width: 200px; /* Mărește dimensiunea logo-ului */
   transform: scale(1.5);
   transform: translateY(-50%); /* Centrează vertical */
 }
@@ -274,7 +287,7 @@ opacity: 0.9; /* Ensure the logo is fully visible */
 .hero-logo-right {
   right: 100px; /* Aproape de marginea dreaptă */
   top: 50%; /* Urcă logo-ul mai sus */
-  max-width: 340px; /* Mărește dimensiunea logo-ului */
+  max-width: 290px; /* Mărește dimensiunea logo-ului */
   transform: translateY(-50%); /* Centrează vertical */
 }
 
