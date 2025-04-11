@@ -14,7 +14,7 @@ app.jinja_env.globals.update(normalize_text=normalize_text)
 
 @app.route('/')
 def mainpage():
-    return render_template('mainpage.html', subtitlu="Acasa", title="Bine ati venit!", background="static/images/bgmain.png", anunturi=anunturi)
+    return render_template('mainpage.html', subtitlu="Acasa", title="Bine ati venit!", background="static/images/poze-hero/bgmain.png", anunturi=anunturi)
 
 @app.route('/contact')
 def despre():
@@ -44,7 +44,7 @@ def lista_clase():
         clase=clase_distincte,
         subtitlu="Elevi",
         title="Elevi",
-        background="static/images/pozaelevi.jpg"
+        background="static/images/poze-hero/pozaelevi.jpg"
     )
 @app.route('/elevi/<int:clasa>/<litera>')
 def elevi_clasa(clasa, litera):
@@ -93,12 +93,12 @@ def lista_profesori():
     # Filtrează profesorii pe baza termenului de căutare (nume sau materie)
     if search_query:
         profesori_filtrati = [
-            profesor for profesor in Profesori.personal
+            profesor for profesor in profesori.personal
             if search_query_normalized in normalize_text(profesor["nume"]) or
                search_query_normalized in normalize_text(profesor["materie"])
         ]
     else:
-        profesori_filtrati = Profesori.personal
+        profesori_filtrati = profesori.personal
 
     # Transmite lista filtrată către șablon
     return render_template(
@@ -106,13 +106,13 @@ def lista_profesori():
         profesori=profesori_filtrati,
         subtitlu="Corp Profesoral",
         title="Corp Profesoral",
-        background="static/images/pozaprofesori.jpg"
+        background="static/images/poze-hero/pozaprofesori.jpg"
     )
 
 @app.route('/corp-profesoral/<nume>')
 def pagina_profesor(nume):
     # Găsește profesorul după nume
-    profesor = Profesori.findbyname(nume)
+    profesor = profesori.findbyname(nume)
     if profesor:
         return render_template('pagina_profesor.html', profesor=profesor, subtitlu=profesor["nume"], title=profesor["nume"], background="bgmain.png", no_hero=True)
     else:
@@ -218,7 +218,7 @@ def proceduri():
 
 @app.route('/facilitati')
 def facilitati():
-    return render_template('facilitati.html', title="Facilități", subtitlu="Facilități", background="static/images/facilitati1.jpg")
+    return render_template('facilitati.html', title="Facilități", subtitlu="Facilități", background="static/images/poze-hero/facilitati1.jpg")
 
 @app.route('/corp-administrativ')
 def corp_administrativ():
@@ -226,7 +226,7 @@ def corp_administrativ():
         'administrativ.html',
         title="Corp Administrativ",
         subtitlu="Echipa Administrativă",
-        background="static/images/Hero-principal.png"
+        background="static/images/poze-hero/Hero-principal.png"
     )
 
 
