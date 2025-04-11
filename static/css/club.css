@@ -1,0 +1,19 @@
+.club-page-box {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .club-page-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .spacer {
+    height: 400px; /* Înălțimea spațiului invizibil /
+    width: 100%; / Lățimea completă */
+  }

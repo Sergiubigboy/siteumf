@@ -1,0 +1,27 @@
+{% extends "layout.html" %} {% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/club.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="container mt-5">
+  <div class="club-page-box p-5 shadow-lg rounded">
+    <h2 class="text-center mb-4">{{ titlu }}</h2>
+    <div class="text-center mb-4">
+      <img src="{{ imagine }}" alt="{{ imagine }}" class="img-fluid rounded" />
+    </div>
+    <p class="text-center">{{ descriere }}</p>
+    <hr />
+    <h4 class="text-center mt-4">Coordonatori</h4>
+    <ul class="list-unstyled text-center">
+      {% for coordonator in coordonatori %}
+      <li>{{ coordonator }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<!-- Container invizibil pentru a împinge footer-ul jos -->
+<div class="spacer"></div>
+
+{% endblock %}

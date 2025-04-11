@@ -1,0 +1,128 @@
+.modern-box {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1); /* Fundal gradient subtil */
+    border: 1px solid #ddd; /* Bordură discretă */
+    border-radius: 15px; /* Margini rotunjite */
+    padding: 30px; /* Spațiu interior */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+  }
+  
+  .modern-box:hover {
+    transform: translateY(-5px); /* Ridică caseta la hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată la hover */
+  }
+  
+  .modern-box h2 {
+    color: #0056b3; /* Albastru pentru titlu */
+    font-weight: bold; /* Text îngroșat */
+    margin-bottom: 20px; /* Spațiu sub titlu */
+  }
+  
+  .modern-box p {
+    font-size: 1.1rem; /* Dimensiune text */
+    line-height: 1.8; /* Spațiu între linii */
+    color: #333; /* Text gri închis */
+    margin-bottom: 15px; /* Spațiu între paragrafe */
+  }
+  
+  .modern-box strong {
+    color: #0056b3; /* Evidențiază textul important */
+  }
+  
+  .cluburi-box {
+    background: linear-gradient(135deg, #f9f9f9, #ffffff); /* Fundal gradient subtil */
+    border: 1px solid #ddd; /* Bordură discretă */
+    border-radius: 15px; /* Margini rotunjite */
+    padding: 30px; /* Spațiu interior */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+  }
+  
+  .club-box {
+    background-color: #ffffff; /* Fundal alb */
+    border: 1px solid #ddd; /* Bordură discretă */
+    border-radius: 10px; /* Margini rotunjite */
+    padding: 20px; /* Spațiu interior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+  }
+  
+  .club-box:hover {
+    transform: translateY(-5px); /* Ridică box-ul la hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată la hover */
+  }
+  
+  .club-box h3 {
+    color: #0056b3; /* Albastru pentru titlu */
+    font-weight: bold; /* Text îngroșat */
+    margin-bottom: 15px; /* Spațiu sub titlu */
+  }
+  
+  .club-box p {
+    font-size: 1rem; /* Dimensiune text */
+    line-height: 1.6; /* Spațiu între linii */
+    color: #555; /* Text gri */
+    margin-bottom: 20px; /* Spațiu sub text */
+  }
+  
+  .btn-primary {
+    background-color: #0056b3; /* Albastru pentru buton */
+    border: none; /* Elimină bordura */
+    padding: 10px 20px; /* Spațiu interior */
+    border-radius: 5px; /* Margini rotunjite */
+    color: #fff; /* Text alb */
+    text-decoration: none; /* Elimină sublinierea */
+    transition: background-color 0.3s ease; /* Efect de hover */
+  }
+  
+  .btn-primary:hover {
+    background-color: #003d80; /* Albastru mai închis la hover */
+  }
+  
+  .club {
+    margin-bottom: 20px; /* Spațiu între cluburi */
+  }
+  
+  .club h3 {
+    color: #333; /* Text gri închis */
+    font-weight: bold; /* Text îngroșat */
+    margin-bottom: 10px; /* Spațiu sub titlu */
+  }
+  
+  .club p {
+    font-size: 1rem; /* Dimensiune text */
+    line-height: 1.6; /* Spațiu între linii */
+    color: #555; /* Text gri */
+  }
+  
+  /* Stilizare pentru boxurile proiectelor */
+  .project-box {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-box h3 {
+    color: #0056b3;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .project-box p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .project-box .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }

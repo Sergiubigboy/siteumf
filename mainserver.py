@@ -143,6 +143,115 @@ def pagina_activitate(id_activitate):
         title=activitate["titlu"]
     )
 
+@app.route('/club/<club_name>')
+def club_page(club_name):
+    # Datele despre cluburi
+    cluburi = {
+        "teatru": {
+            "titlu": "Club de teatru",
+            "descriere": "Alături de Teatrul „Scena” din Târgu Mureș elevii Liceului UMFST „George Emil Palade” au parte de un atelier de actorie și de dezvoltare personală prin teatru. Atelierul este coordonat de actorul Liviu Pancu și le oferă elevilor Liceului UMFST oportunitatea de a-și îmbunătăți abilitățile de comunicare și vorbire în public, de a-și gestiona emoțiile și de a-și folosi creativitatea și imaginația într-un mod constructiv.",
+            "imagine": "static/images/activitati/club/teatru.jpg",
+            "coordonatori": ["Liviu Pancu"]
+        },
+        "dezbateri": {
+            "titlu": "Club de dezbateri",
+            "descriere": "Atelierul este dedicat elevilor pasionați de idei, curioși, dornici să-și dezvolte gândirea critică și abilitățile de comunicare. În fiecare săptămână ne propunem să construim argumente solide, să analizăm perspective diferite și să ne exprimăm convingător asupra unor subiecte actuale. ",
+            "imagine": "static/images/cluburi/dezbateri.jpg",
+            "coordonatori": ["Bogdan Rațiu"]
+        },
+        "robotica": {
+            "titlu": "Club de robotică",
+            "descriere": "Elevii pasionați de tehnologie, de soluții inteligente, au șansa de a participa la acest atelier în care imaginația se  întâlnește cu știința, iar treptat ideile prin formă prin fire, senzori și cod. Liceenii lucrează în echipe pentru a proiecta, construi și programa roboți, iar clubul îți oferă șansa de a crea și de a concura în competiții locale și naționale. ",
+            "imagine": "static/images/cluburi/robotica.jpg",
+            "coordonatori": [""]
+        },
+        "muzica": {
+            "titlu": "Club de muzică",
+            "descriere": "Clubul de muzică încearcă să răspundă dorinței elevilor de a-și cultiva pasiunea pentru artă. Nu e vorba de un singur gen de muzică, pentru că elevii noștri au oportunitatea de a cânta atât în trupa școlii, cât și în concerte alături de Orchestra UMFST.  ",
+            "imagine": "static/images/muzica.jpg",
+            "coordonatori": [""]
+        },
+        "public-speaking": {
+            "titlu": "Club de public speaking",
+            "descriere": "La acest club alături de profesorii care predau limbi străine învățăm să transformăm emoțiile în energie și ideile în discursuri persuasive. Se realizează activități practice pornind din discursuri tematice, precum și exerciții de dicție și de retorică. ",
+            "imagine": "static/images/cluburi/public-speaking.jpg",
+            "coordonatori": ["Bianca Han ", "Andreea Ban"]
+        },
+        "sportiv": {
+            "titlu": "Club de activități sportive",
+            "descriere": "Numeroși elevi care iubesc mișcarea, competiția și un stil de viață sănătos au șansa de a se bucura de facilitățile pe care le oferă campusul universității. Este un loc în care nu contează doar performanța, ci și spiritul de echipă, fairplayul și bucuria de a fi activ. În funcție de talentul elevilor se oferă o varietate de activități pentru fiecare nivel de experiență. ",
+            "imagine": "static/images/cluburi/sportiv.jpg",
+            "coordonatori": ["Răzvan Alexandrescu  "]
+        }
+    }
+
+    # Verifică dacă clubul există
+    club = cluburi.get(club_name)
+    if not club:
+        return "Clubul nu a fost găsit.", 404
+
+    # Randează pagina clubului
+    return render_template(
+        'club.html',
+        titlu=club["titlu"],
+        descriere=club["descriere"],
+        imagine=club["imagine"],
+        coordonatori=club["coordonatori"],
+        no_hero=True
+    )
+
+@app.route('/proiect/<proiect_name>')
+def proiect_page(proiect_name):
+    proiecte = {
+        "bookflix": {
+            "titlu": "Bookflix",
+            "subtitlu": "Descoperă lumea fascinantă a cărților prin Bookflix!",
+            "descriere": "Bookflix este o activitate complexă, care combină lectura în limba străină cu dezvoltarea si valorificarea abilităților digitale și de comunicare ale elevilor. Astfel, elevii reușesc să pună în scenă „digital skills” și „soft skills”, pornind de la lectura unei cărți în limba engleză.",
+            "imagine": "static/images/proiecte/bookflix.jpg"
+        },
+        "saptamana-lecturii": {
+            "titlu": "Săptămâna lecturii",
+            "subtitlu": "Un eveniment dedicat promovării lecturii și literaturii.",
+            "descriere": """
+            <p>În perioada 10-16 februarie 2025, elevii Liceului UMFST celebrează lectura printr-o serie de activități speciale, menite să aducă mai aproape pasiunea pentru cărți și să încurajeze cititul în comunitate.</p>
+
+            <p><strong>Cititori contra timp</strong><br>
+            Pe tot parcursul săptămânii, elevii vor promova lectura pe rețelele sociale prin materiale video și mesaje puternice despre impactul cărților în viața lor. Vă invităm să îi urmăriți pe pagina administrată de elevi, @boboci_liceul_umfst.</p>
+
+            <p><strong>Secretul din cărți (12 februarie)</strong><br>
+            O activitate interactivă de tip vânătoare de comori, unde elevii vor descoperi titluri valoroase din patrimoniul cultural.</p>
+
+            <p><strong>Cursa cărților (10-14 februarie)</strong><br>
+            Membrii comunității academice UMFST sunt invitați să doneze cărți, între 10 și 13 februarie, în spațiul special amenajat la parterul clădirii principale a universității (holul liceului). Pe 14 februarie, elevii vor porni cu entuziasm într-o călătorie prin Târgu Mureș, unde vor oferi cărțile colectate comunității locale, încurajând astfel lectura.</p>
+
+            <p><strong>Workshop didactic (15 februarie)</strong><br>
+            Evenimentul care încheie săptămâna va fi dedicat cadrelor didactice din învățământul primar. Asist. univ. dr. Bogdan Rațiu va susține workshopul „Lectură literară vs. Literație?”, în care vor fi prezentate strategii de lectură și literație aplicabile la clasă.</p>
+            """,
+            "imagine": "static/images/proiecte/saptamana-lecturii.jpg"
+        },
+        "vis-de-iarna": {
+            "titlu": "Vis de iarnă",
+            "subtitlu": "Un proiect magic pentru a sărbători frumusețea iernii.",
+            "descriere": "În colaborare cu Palatul Copiilor din Baia Mare:  proiectul educațional național „Vis de iarnă”, la care au participat și elevii Liceului UMFST „George Emil Palade” din Târgu Mureș. Proiectul a avut patru secțiuni: concursul de creații literare cu tema „Iarna de odinioară versus iarna actuală”, ateliere de arte plastice și lucrări tridimensionale și concursul de interpretare vocală – colinde tradiționale. În data de 9 decembrie a avut loc și spectacolul de colinde „Vis de iarnă”.",
+            "imagine": "static/images/proiecte/vis-de-iarna.jpg"
+        }
+    }
+
+    # Verifică dacă proiectul există
+    proiect = proiecte.get(proiect_name)
+    if not proiect:
+        return "Proiectul nu a fost găsit.", 404
+
+    # Randează pagina proiectului
+    return render_template(
+        'proiect.html',
+        titlu=proiect["titlu"],
+        subtitlu=proiect["subtitlu"],
+        descriere=proiect["descriere"],
+        imagine=proiect["imagine"],
+        no_hero=True
+    )
+
 @app.route('/regulamente')
 def regulamente():
     return render_template('regulamente.html', title="Regulamente", subtitlu="Regulamente")
