@@ -94,35 +94,110 @@
     color: #555; /* Text gri */
   }
   
-  /* Stilizare pentru boxurile proiectelor */
-  .project-box {
-    background: linear-gradient(135deg, #ffffff, #f9f9f9);
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .project-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-  
-  .project-box h3 {
-    color: #0056b3;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .project-box p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .project-box .btn {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
+ /* Stilizare pentru boxurile proiectelor */
+.project-box {
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 300px; /* Setează o înălțime minimă uniformă */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-box h3 {
+  color: #0056b3;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.project-box p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Asigură că descrierea ocupă spațiul disponibil */
+}
+
+.project-box .btn {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  align-self: center; /* Centrează butonul */
+}
+/* Stilizare pentru boxurile din secțiunea Celebrări */
+.celebration-box {
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px; /* Setează o înălțime minimă uniformă */
+  text-align: center;
+}
+
+.celebration-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.celebration-box h3 {
+  color: #0056b3; /* Culoare albastră pentru titlu */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.celebration-box p {
+  font-size: 1rem;
+  color: #333333; /* Culoare albastră pentru text */
+  margin-bottom: 20px;
+}
+
+.celebration-box .btn {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  align-self: center; /* Centrează butonul */
+}
+.atelier-box {
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Margini mai puțin rotunjite */
+  padding: 15px; /* Spațiu interior mai mic */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră mai subtilă */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px; /* Dimensiune minimă mai mică */
+  text-align: center;
+}
+
+.atelier-box:hover {
+  transform: translateY(-3px); /* Ridică mai puțin la hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Umbră mai subtilă la hover */
+}
+
+.atelier-box h3 {
+  color: #0056b3; /* Culoare albastră pentru titlu */
+  font-weight: bold;
+  font-size: 1.4rem; /* Dimensiune mai mică pentru titlu */
+  margin-bottom: 10px; /* Spațiu mai mic sub titlu */
+}
+
+.atelier-box p {
+  font-size: 1.1rem; /* Dimensiune mai mică pentru text */
+  color: #555;
+  margin-bottom: 10px; /* Spațiu mai mic sub text */
+}
