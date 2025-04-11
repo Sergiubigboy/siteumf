@@ -119,82 +119,25 @@ def pagina_profesor(nume):
         return "Profesorul nu a fost găsit.", 404
 
 @app.route('/activitati')
-def echohub():
-    return render_template('activitati.html', subtitlu="Activități", title="Activități", background="static/images/Poza-UMFST/grup9A/bgclasa9A.jpg", activitati=activitati)
-
-@app.route('/campania-conversatii-in-jurul-scolii')
-def activitate_1():
-    activitate = {
-        "titlu": "Campania: Conversații în jurul școlii",
-        "imagine": "BancaDinFata.jpg",
-    }
+def lista_activitati():
     return render_template(
-        'campania.html',
-        activitate=activitate,
-        subtitlu=activitate["titlu"],
-        title=activitate["titlu"]
+        'activitati.html', 
+        activitati=activitati,
+        subtitlu="Activități", 
+        title="Activități", 
+        background="static/images/Poza-UMFST/grup9A/bgclasa9A.jpg"
     )
 
-@app.route('/lyceumcloud-umfst')
-def activitate_2():
-    activitate = {
-        "titlu": "LyceumCloud.UMFST",
-        "imagine": "BancaDinFata.jpg",
-    }
+@app.route('/activitati/<id_activitate>')
+def pagina_activitate(id_activitate):
+    # Găsește activitatea cu ID-ul specificat
+    activitate = next((a for a in activitati if a["id"] == id_activitate), None)
+    
+    if not activitate:
+        return f"Activitatea '{id_activitate}' nu a fost găsită.", 404
+    
     return render_template(
-        'lyceumcloud-umfst.html',
-        activitate=activitate,
-        subtitlu=activitate["titlu"],
-        title=activitate["titlu"]
-    )
-
-@app.route('/banca-din-fata')
-def activitate_3():
-    activitate = {
-        "titlu": "Banca din față",
-        "imagine": "BancaDinFata.jpg",
-    }
-    return render_template(
-        'banca-din-fata.html',
-        activitate=activitate,
-        subtitlu=activitate["titlu"],
-        title=activitate["titlu"]
-    )
-
-@app.route('/mix-it-hub-umfst')
-def activitate_4():
-    activitate = {
-        "titlu": "Mix IT Hub UMFST – Centrul pasiunilor elevilor",
-        "imagine": "BancaDinFata.jpg",
-    }
-    return render_template(
-        'mix-it-hub-umfst.html',
-        activitate=activitate,
-        subtitlu=activitate["titlu"],
-        title=activitate["titlu"]
-    )
-
-@app.route('/act4change')
-def activitate_5():
-    activitate = {
-        "titlu": "Act4Change",
-        "imagine": "BancaDinFata.jpg",
-    }
-    return render_template(
-        'act4change.html',
-        activitate=activitate,
-        subtitlu=activitate["titlu"],
-        title=activitate["titlu"]
-    )
-
-@app.route('/portile-deschise-umfst')
-def activitate_6():
-    activitate = {
-        "titlu": "Porțile deschise ale liceului UMFST",
-        "imagine": "BancaDinFata.jpg",
-    }
-    return render_template(
-        'portile-deschise-umfst.html',
+        activitate["template"],
         activitate=activitate,
         subtitlu=activitate["titlu"],
         title=activitate["titlu"]

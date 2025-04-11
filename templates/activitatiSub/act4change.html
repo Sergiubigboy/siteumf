@@ -1,0 +1,44 @@
+{% extends "layout.html" %} {% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/activitati/campania.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="container mt-4">
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <img
+        src="{{ url_for('static', filename='images/' + activitate.imagine) }}"
+        alt="{{ activitate.titlu }}"
+        class="img-fluid rounded"
+      />
+    </div>
+    <div class="col-md-6">
+      <div class="p-4 bg-light rounded shadow-sm text-justify">
+        <h2>Act4Change – Acțiunile unei generații implicate</h2>
+        <p>
+          Este spațiul în care echipa de voluntari a liceului își vor prezenta
+          activitatea. Sunt elevi care cred în puterea ideilor, în forța
+          culturii și în valoarea cunoașterii. Se implică pentru că știu că
+          schimbarea începe cu fiecare dintre noi – și că, prin acțiuni
+          concrete, putem construi o comunitate mai conștientă, mai vie, mai
+          deschisă.
+        </p>
+        <p>
+          Ca instituție, sprijinim inițiativele sociale, dar privim cu
+          prioritate spre cultură și știință – două repere care modelează felul
+          în care gândim, simțim și acționăm. Ne dorim ca elevii să înțeleagă că
+          arta, lectura, spațiul amplu al culturii, dezbaterea de idei nu sunt
+          doar pentru „olimpici” sau „artiști”, ci pentru oricine vrea să
+          înțeleagă lumea și să se bucure de tot ce se dezvăluie sub ochii săi.
+        </p>
+        <p>
+          Fiecare proiect, fiecare eveniment, fiecare moment de voluntariat e o
+          invitație la implicare, reflecție și curaj. Putem crea o lume mai
+          bună, doar dacă alegem să fim parte din proces!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
