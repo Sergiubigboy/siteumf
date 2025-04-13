@@ -333,6 +333,9 @@ def proceduri():
 @app.route('/facilitati')
 def facilitati():
     return render_template('facilitati.html', title="Facilități", subtitlu="Facilități", background="static/images/poze-hero/facilitati1.jpg")
+@app.route('/developers')
+def developari():
+    return render_template('developers.html', title="Developers", subtitlu="developers", background="static/images/poze-hero/bgmain.png")
 
 @app.route('/corp-administrativ')
 def corp_administrativ():
