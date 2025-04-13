@@ -16,6 +16,7 @@ body {
   flex-wrap: wrap; /* Permite chenarelor să treacă pe un rând nou dacă spațiul este insuficient */
 }
 
+/* Stilurile existente pentru chenare */
 .chenar {
   background: linear-gradient(135deg, #ffffff, #f9f9f9); /* Fundal gradient subtil */
   border: 1px solid #ddd;
@@ -71,4 +72,38 @@ body {
 .casuta:active {
   transform: scale(0.95); /* Micșorează căsuța la click */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Umbre mai subtile la click */
+}
+
+/* Media queries pentru chenare și căsuțe */
+@media (max-width: 768px) {
+  .chenar {
+    max-width: 100%; /* Chenarele ocupă întregul rând */
+    padding: 20px; /* Reduce padding-ul */
+  }
+
+  .casuta {
+    padding: 15px; /* Reduce padding-ul */
+    font-size: 0.9rem; /* Diminuează dimensiunea textului */
+  }
+
+  .casute {
+    gap: 10px; /* Reduce spațiul dintre căsuțe */
+  }
+}
+
+@media (max-width: 480px) {
+  .chenar {
+    max-width: 100%; /* Chenarele ocupă întregul rând */
+    padding: 15px; /* Padding mai mic pentru ecrane foarte mici */
+  }
+
+  .casuta {
+    padding: 10px; /* Padding mai mic pentru căsuțe */
+    font-size: 0.8rem; /* Diminuează și mai mult dimensiunea textului */
+  }
+
+  .casute {
+    flex-direction: column; /* Afișează căsuțele una sub alta */
+    gap: 10px; /* Spațiu mai mic între căsuțe */
+  }
 }
