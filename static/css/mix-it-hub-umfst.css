@@ -1,5 +1,5 @@
 .modern-box {
-    background: linear-gradient(135deg, #ffffff, #f1f1f1); /* Fundal gradient subtil */
+    background: linear-gradient(135deg, #faf9f9, #f1f1f1); /* Fundal gradient subtil */
     border: 1px solid #ddd; /* Bordură discretă */
     border-radius: 15px; /* Margini rotunjite */
     padding: 30px; /* Spațiu interior */
@@ -29,23 +29,33 @@
     color: #0056b3; /* Evidențiază textul important */
   }
   
-  .cluburi-box {
-    background: linear-gradient(135deg, #f9f9f9, #ffffff); /* Fundal gradient subtil */
-    border: 1px solid #ddd; /* Bordură discretă */
-    border-radius: 15px; /* Margini rotunjite */
-    padding: 30px; /* Spațiu interior */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+  .club-box {
+    background: linear-gradient(135deg, #fffefe, #fffefe); /* Fundal gradient subtil */
+    border: 1px solid #ddd; /* Bordură subtilă */
+    border-radius: 25px; /* Colțuri mai rotunjite */
+    padding: 20px; /* Spațiu interior */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1); /* Umbre mai moderne */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px; /* Înălțime minimă uniformă */
+    text-align: center;
   }
   
   .club-box {
-    background-color: #ffffff; /* Fundal alb */
-    border: 1px solid #ddd; /* Bordură discretă */
-    border-radius: 10px; /* Margini rotunjite */
+    background: linear-gradient(135deg, #fffefe, #fffefe); /* Fundal gradient subtil */
+    border: none; /* Elimină bordura */
+    border-radius: 25px; /* Colțuri mai rotunjite */
     padding: 20px; /* Spațiu interior */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1); /* Umbre mai moderne */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px; /* Înălțime minimă uniformă */
+    text-align: center;
   }
-  
   .club-box:hover {
     transform: translateY(-5px); /* Ridică box-ul la hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată la hover */
@@ -95,17 +105,18 @@
   }
   
  /* Stilizare pentru boxurile proiectelor */
-.project-box {
-  background: linear-gradient(135deg, #ffffff, #f9f9f9);
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-height: 300px; /* Setează o înălțime minimă uniformă */
+ .project-box {
+  background: linear-gradient(135deg, #fffefe, #fffefe); /* Fundal gradient subtil */
+  border: 1px solid #ddd; /* Bordură subtilă */
+  border-radius: 25px; /* Colțuri mai rotunjite */
+  padding: 20px; /* Spațiu interior */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1); /* Umbre mai moderne */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 250px; /* Înălțime minimă uniformă */
+  text-align: center;
 }
 
 .project-box:hover {
@@ -134,19 +145,18 @@
 }
 /* Stilizare pentru boxurile din secțiunea Celebrări */
 .celebration-box {
-  background: linear-gradient(135deg, #ffffff, #f9f9f9);
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #fffefe, #fffefe); /* Fundal gradient subtil */
+  border: 1px solid #ddd; /* Bordură subtilă */
+  border-radius: 25px; /* Colțuri mai rotunjite */
+  padding: 20px; /* Spațiu interior */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1); /* Umbre mai moderne */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 300px; /* Setează o înălțime minimă uniformă */
+  min-height: 250px; /* Înălțime minimă uniformă */
   text-align: center;
 }
-
 .celebration-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
@@ -171,29 +181,51 @@
   align-self: center; /* Centrează butonul */
 }
 .atelier-box {
-  background: linear-gradient(135deg, #ffffff, #f9f9f9);
-  border: 1px solid #ddd;
-  border-radius: 10px; /* Margini mai puțin rotunjite */
-  padding: 15px; /* Spațiu interior mai mic */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră mai subtilă */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #fffefe, #fffefe); /* Fundal gradient subtil */
+  border: 1px solid #ddd; /* Bordură subtilă */
+  border-radius: 25px; /* Colțuri mai rotunjite */
+  padding: 20px; /* Spațiu interior */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1); /* Umbre mai moderne */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 180px; /* Dimensiune minimă mai mică */
+  min-height: 210px; /* Înălțime minimă uniformă */
   text-align: center;
 }
 
 .atelier-box:hover {
-  transform: translateY(-3px); /* Ridică mai puțin la hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Umbră mai subtilă la hover */
+  transform: translateY(-8px); /* Ridică box-ul la hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.15); /* Umbre mai pronunțate la hover */
 }
 
 .atelier-box h3 {
   color: #0056b3; /* Culoare albastră pentru titlu */
   font-weight: bold;
-  font-size: 1.4rem; /* Dimensiune mai mică pentru titlu */
-  margin-bottom: 10px; /* Spațiu mai mic sub titlu */
+  font-size: 1.6rem; /* Dimensiune mai mare pentru titlu */
+  margin-bottom: 15px; /* Spațiu sub titlu */
+}
+
+.atelier-box p {
+  font-size: 1rem; /* Dimensiune text */
+  color: #555; /* Text gri */
+  margin-bottom: 15px; /* Spațiu sub text */
+  line-height: 1.6; /* Spațiu între linii */
+}
+
+.atelier-box .btn {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 20px; /* Buton rotunjit */
+  background-color: #0056b3; /* Culoare albastră pentru buton */
+  color: #fff; /* Text alb */
+  text-decoration: none; /* Elimină sublinierea */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Efect de hover */
+}
+
+.atelier-box .btn:hover {
+  background-color: #003d80; /* Albastru mai închis la hover */
+  transform: scale(1.05); /* Mărește butonul la hover */
 }
 
 .atelier-box p {
