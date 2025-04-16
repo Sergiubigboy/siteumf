@@ -2,11 +2,8 @@ from flask import Flask, render_template, request
 from date import Profesori, Clase, profesori, clase, normalize_text, anunturi, activitati
 import unicodedata
 
-
-# Inițializează catalogul profesorilor
 profesori = Profesori(profesori)
 clase = Clase(clase)
-
 
 app = Flask(__name__)
 
@@ -22,23 +19,17 @@ def despre():
 
 @app.route('/clase')
 def lista_clase():
-    # Obține toate clasele din obiectul Clase
     clase_distincte = [
         (clasa["numar"], clasa["litera"], clasa["profil"])
         for clasa in clase.clase
     ]
-    
-    # Sortează clasele
     clase_distincte = sorted(clase_distincte)
-
-    # Obține termenul de căutare
     search_query = request.args.get('search', '').lower()
     if search_query:
         clase_distincte = [
             (numar, litera, profil) for numar, litera, profil in clase_distincte
             if search_query in f"{numar}{litera}{profil}".lower()
         ]
-    
     return render_template(
         'elevi.html',
         clase=clase_distincte,
@@ -46,29 +37,21 @@ def lista_clase():
         title="Elevi",
         background="static/images/poze-hero/pozaelevi.jpg"
     )
+
 @app.route('/elevi/<int:clasa>/<litera>')
 def elevi_clasa(clasa, litera):
-    # Filtrează clasa specificată
     clasa_filtrata = next(
         (c for c in clase.clase if c["numar"] == clasa and c["litera"].lower() == litera.lower()), 
         None
     )
-
     if not clasa_filtrata:
         return f"Clasa {clasa}{litera} nu a fost găsită.", 404
-
-    # Obține elevii și profilul clasei
     elevi_filtrati = clasa_filtrata["elevi"]
     profil = clasa_filtrata["profil"]
-
-    # Filtrează elevii cu performanțe
     elevi_cu_performante = [
         elev for elev in elevi_filtrati if "performante" in elev
     ]
-
-    # Setează orarul în funcție de clasă
     orar = f"static/images/orar{clasa}{litera}.PNG"
-
     return render_template(
         'elevi_clasa.html',
         elevi=elevi_filtrati,
@@ -83,14 +66,10 @@ def elevi_clasa(clasa, litera):
         no_hero=True
     )
 
-
 @app.route('/corp-profesoral')
 def lista_profesori():
-    # Obține termenul de căutare din query string
     search_query = request.args.get('search', '').lower()
     search_query_normalized = normalize_text(search_query)
-    
-    # Filtrează profesorii pe baza termenului de căutare (nume sau materie)
     if search_query:
         profesori_filtrati = [
             profesor for profesor in profesori.personal
@@ -99,8 +78,6 @@ def lista_profesori():
         ]
     else:
         profesori_filtrati = profesori.personal
-
-    # Transmite lista filtrată către șablon
     return render_template(
         'profesori.html',
         profesori=profesori_filtrati,
@@ -111,7 +88,6 @@ def lista_profesori():
 
 @app.route('/corp-profesoral/<nume>')
 def pagina_profesor(nume):
-    # Găsește profesorul după nume
     profesor = profesori.findbyname(nume)
     if profesor:
         return render_template('pagina_profesor.html', profesor=profesor, subtitlu=profesor["nume"], title=profesor["nume"], background="bgmain.png", no_hero=True)
@@ -130,12 +106,9 @@ def lista_activitati():
 
 @app.route('/activitati/<id_activitate>')
 def pagina_activitate(id_activitate):
-    # Găsește activitatea cu ID-ul specificat
     activitate = next((a for a in activitati if a["id"] == id_activitate), None)
-    
     if not activitate:
         return f"Activitatea '{id_activitate}' nu a fost găsită.", 404
-    
     return render_template(
         activitate["template"],
         activitate=activitate,
@@ -145,7 +118,6 @@ def pagina_activitate(id_activitate):
 
 @app.route('/club/<club_name>')
 def club_page(club_name):
-    # Datele despre cluburi
     cluburi = {
         "teatru": {
             "titlu": "Club de teatru",
@@ -155,42 +127,38 @@ def club_page(club_name):
         },
         "dezbateri": {
             "titlu": "Club de dezbateri",
-            "descriere": "Atelierul este dedicat elevilor pasionați de idei, curioși, dornici să-și dezvolte gândirea critică și abilitățile de comunicare. În fiecare săptămână ne propunem să construim argumente solide, să analizăm perspective diferite și să ne exprimăm convingător asupra unor subiecte actuale. ",
+            "descriere": "Atelierul este dedicat elevilor pasionați de idei, curioși, dornici să-și dezvolte gândirea critică și abilitățile de comunicare. În fiecare săptămână ne propunem să construim argumente solide, să analizăm perspective diferite și să ne exprimăm convingător asupra unor subiecte actuale.",
             "imagine": "static/images/cluburi/dezbateri.jpg",
             "coordonatori": ["Bogdan Rațiu"]
         },
         "robotica": {
             "titlu": "Club de robotică",
-            "descriere": "Elevii pasionați de tehnologie, de soluții inteligente, au șansa de a participa la acest atelier în care imaginația se  întâlnește cu știința, iar treptat ideile prin formă prin fire, senzori și cod. Liceenii lucrează în echipe pentru a proiecta, construi și programa roboți, iar clubul îți oferă șansa de a crea și de a concura în competiții locale și naționale. ",
+            "descriere": "Elevii pasionați de tehnologie, de soluții inteligente, au șansa de a participa la acest atelier în care imaginația se întâlnește cu știința, iar treptat ideile prin formă prin fire, senzori și cod. Liceenii lucrează în echipe pentru a proiecta, construi și programa roboți, iar clubul îți oferă șansa de a crea și de a concura în competiții locale și naționale.",
             "imagine": "static/images/cluburi/robotica.jpg",
             "coordonatori": [""]
         },
         "muzica": {
             "titlu": "Club de muzică",
-            "descriere": "Clubul de muzică încearcă să răspundă dorinței elevilor de a-și cultiva pasiunea pentru artă. Nu e vorba de un singur gen de muzică, pentru că elevii noștri au oportunitatea de a cânta atât în trupa școlii, cât și în concerte alături de Orchestra UMFST.  ",
+            "descriere": "Clubul de muzică încearcă să răspundă dorinței elevilor de a-și cultiva pasiunea pentru artă. Nu e vorba de un singur gen de muzică, pentru că elevii noștri au oportunitatea de a cânta atât în trupa școlii, cât și în concerte alături de Orchestra UMFST.",
             "imagine": "static/images/muzica.jpg",
             "coordonatori": [""]
         },
         "public-speaking": {
             "titlu": "Club de public speaking",
-            "descriere": "La acest club alături de profesorii care predau limbi străine învățăm să transformăm emoțiile în energie și ideile în discursuri persuasive. Se realizează activități practice pornind din discursuri tematice, precum și exerciții de dicție și de retorică. ",
+            "descriere": "La acest club alături de profesorii care predau limbi străine învățăm să transformăm emoțiile în energie și ideile în discursuri persuasive. Se realizează activități practice pornind din discursuri tematice, precum și exerciții de dicție și de retorică.",
             "imagine": "static/images/cluburi/public-speaking.jpg",
-            "coordonatori": ["Bianca Han ", "Andreea Ban"]
+            "coordonatori": ["Bianca Han", "Andreea Ban"]
         },
         "sportiv": {
             "titlu": "Club de activități sportive",
-            "descriere": "Numeroși elevi care iubesc mișcarea, competiția și un stil de viață sănătos au șansa de a se bucura de facilitățile pe care le oferă campusul universității. Este un loc în care nu contează doar performanța, ci și spiritul de echipă, fairplayul și bucuria de a fi activ. În funcție de talentul elevilor se oferă o varietate de activități pentru fiecare nivel de experiență. ",
+            "descriere": "Numeroși elevi care iubesc mișcarea, competiția și un stil de viață sănătos au șansa de a se bucura de facilitățile pe care le oferă campusul universității. Este un loc în care nu contează doar performanța, ci și spiritul de echipă, fairplayul și bucuria de a fi activ. În funcție de talentul elevilor se oferă o varietate de activități pentru fiecare nivel de experiență.",
             "imagine": "static/images/cluburi/sportiv.jpg",
-            "coordonatori": ["Răzvan Alexandrescu  "]
+            "coordonatori": ["Răzvan Alexandrescu"]
         }
     }
-
-    # Verifică dacă clubul există
     club = cluburi.get(club_name)
     if not club:
         return "Clubul nu a fost găsit.", 404
-
-    # Randează pagina clubului
     return render_template(
         'club.html',
         titlu=club["titlu"],
@@ -214,16 +182,12 @@ def proiect_page(proiect_name):
             "subtitlu": "Un eveniment dedicat promovării lecturii și literaturii.",
             "descriere": """
             <p>În perioada 10-16 februarie 2025, elevii Liceului UMFST celebrează lectura printr-o serie de activități speciale, menite să aducă mai aproape pasiunea pentru cărți și să încurajeze cititul în comunitate.</p>
-
             <p><strong>Cititori contra timp</strong><br>
             Pe tot parcursul săptămânii, elevii vor promova lectura pe rețelele sociale prin materiale video și mesaje puternice despre impactul cărților în viața lor. Vă invităm să îi urmăriți pe pagina administrată de elevi, @boboci_liceul_umfst.</p>
-
             <p><strong>Secretul din cărți (12 februarie)</strong><br>
             O activitate interactivă de tip vânătoare de comori, unde elevii vor descoperi titluri valoroase din patrimoniul cultural.</p>
-
             <p><strong>Cursa cărților (10-14 februarie)</strong><br>
             Membrii comunității academice UMFST sunt invitați să doneze cărți, între 10 și 13 februarie, în spațiul special amenajat la parterul clădirii principale a universității (holul liceului). Pe 14 februarie, elevii vor porni cu entuziasm într-o călătorie prin Târgu Mureș, unde vor oferi cărțile colectate comunității locale, încurajând astfel lectura.</p>
-
             <p><strong>Workshop didactic (15 februarie)</strong><br>
             Evenimentul care încheie săptămâna va fi dedicat cadrelor didactice din învățământul primar. Asist. univ. dr. Bogdan Rațiu va susține workshopul „Lectură literară vs. Literație?”, în care vor fi prezentate strategii de lectură și literație aplicabile la clasă.</p>
             """,
@@ -236,13 +200,9 @@ def proiect_page(proiect_name):
             "imagine": "static/images/proiecte/vis-de-iarna.jpg"
         }
     }
-
-    # Verifică dacă proiectul există
     proiect = proiecte.get(proiect_name)
     if not proiect:
         return "Proiectul nu a fost găsit.", 404
-
-    # Randează pagina proiectului
     return render_template(
         'proiect.html',
         titlu=proiect["titlu"],
@@ -280,7 +240,6 @@ def corp_administrativ():
         subtitlu="Echipa Administrativă",
         background="static/images/poze-hero/Hero-principal.png"
     )
-
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")

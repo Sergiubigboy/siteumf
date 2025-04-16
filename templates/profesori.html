@@ -5,14 +5,12 @@
 />
 {% endblock %} {% block content %}
 <div class="container mt-4 position-relative">
-  <!-- Cercuri decorative -->
   <div class="circle blue-circle"></div>
   <div class="circle red-circle"></div>
   <div class="circle small-blue-circle"></div>
   <div class="circle small-red-circle"></div>
   <div class="circle small-center-circle"></div>
 
-  <!-- Search Bar -->
   <form method="GET" action="{{ url_for('lista_profesori') }}" class="mb-4">
     <div class="input-group">
       <input
@@ -26,7 +24,6 @@
     </div>
   </form>
 
-  <!-- Lista de profesori -->
   <div class="row g-4">
     {% for profesor in profesori %}
     <div class="col-md-4 fade-in">

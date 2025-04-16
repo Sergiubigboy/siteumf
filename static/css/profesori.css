@@ -1,24 +1,20 @@
-/* Stilizare pentru containerul general */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
 
-
-
-/* Stilizare pentru carduri */
 .card {
   border: none;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   background-color: #f0f0f0;
-  height: 100%; /* Asigură o înălțime uniformă */
+  height: 100%;
   display: flex;
-  flex-direction: column; /* Aranjează conținutul pe verticală */
-  justify-content: space-between; /* Spațiu între elemente */
-  align-items: center; /* Centrează elementele pe orizontală */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
 
@@ -28,46 +24,45 @@
 }
 
 .card-title {
-  font-size: 1.5rem; /* Text mai mare pentru numele profesorilor */
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #00548F; /* Albastru pentru text */
-  text-align: center; /* Centrează textul */
+  color: #00548F;
+  text-align: center;
 }
 
 .card-text {
-  font-size: 1.1rem; /* Text mai mare pentru materia profesorilor */
+  font-size: 1.1rem;
   color: #333;
   font-weight: bold;
-  text-align: center; /* Centrează textul */
-  margin-bottom: 20px; /* Adaugă spațiu între text și buton */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .card-body {
-  flex-grow: 1; /* Umple spațiul disponibil între titlu și buton */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribuie spațiul între titlu și buton */
-  align-items: center; /* Centrează textul pe orizontală */
-  width: 100%; /* Asigură că textul ocupă toată lățimea cardului */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   padding: 20px;
 }
 
-/* Stilizare pentru buton */
 .btn-primary {
-  background-color: #00548F; /* Albastru pentru buton */
+  background-color: #00548F;
   border-color: #003f7f;
-  font-size: 0.85rem; /* Dimensiune mai mică */
+  font-size: 0.85rem;
   padding: 5px 15px;
   border-radius: 20px;
   text-transform: uppercase;
   font-weight: bold;
   color: #ffffff;
-  margin-top: auto; /* Împinge butonul în partea de jos */
-  align-self: center; /* Centrează butonul pe orizontală */
+  margin-top: auto;
+  align-self: center;
 }
 
 .btn-primary:hover {
-  background-color: #003f7f; /* Albastru mai închis la hover */
+  background-color: #003f7f;
   border-color: #003f7f;
 }
 
@@ -75,38 +70,36 @@
   box-shadow: none;
 }
 
-/* Stilizare pentru rânduri și distanțare */
 .row.g-4 {
-  gap: 30px; /* Mai mult spațiu între carduri */
+  gap: 30px;
 }
 
 .col-md-4 {
-  flex: 0 0 23%; /* 4 carduri pe rând */
+  flex: 0 0 23%;
   max-width: 23%;
 }
 
 @media (max-width: 992px) {
   .col-md-4 {
-    flex: 0 0 32%; /* 3 carduri pe rând pentru ecrane medii */
+    flex: 0 0 32%;
     max-width: 32%;
   }
 }
 
 @media (max-width: 768px) {
   .col-md-4 {
-    flex: 0 0 48%; /* 2 carduri pe rând pentru ecrane mici */
+    flex: 0 0 48%;
     max-width: 48%;
   }
 }
 
 @media (max-width: 576px) {
   .col-md-4 {
-    flex: 0 0 100%; /* 1 card pe rând pentru ecrane foarte mici */
+    flex: 0 0 100%;
     max-width: 100%;
   }
 }
 
-/* Stilizare pentru search bar */
 .input-group {
   max-width: 1000px;
   margin: 0 auto 30px auto;
@@ -116,14 +109,14 @@
   border-radius: 20px 0 0 20px;
   border: 1px solid #ddd;
   padding: 10px 15px;
-  font-size: 1rem; /* Dimensiune mai mare */
+  font-size: 1rem;
 }
 
 .input-group .btn-primary {
   border-radius: 0 20px 20px 0;
-  background-color: #0056b3; /* Albastru pentru butonul de căutare */
+  background-color: #0056b3;
   border: none;
-  font-size: 1rem; /* Dimensiune mai mare */
+  font-size: 1rem;
   padding: 7px 20px;
 }
 
@@ -131,19 +124,17 @@
   background-color: #003f7f;
 }
 
-/* Cercuri decorative */
 .circle {
   position: absolute;
   border-radius: 50%;
   opacity: 0.2;
-  z-index: -1; /* Asigură-te că sunt în spatele conținutului */
+  z-index: -1;
 }
 
-/* Cercuri mari */
 .blue-circle {
   width: 200px;
   height: 200px;
-  background: #0056b3; /* Albastru */
+  background: #0056b3;
   top: 10px;
   left: -50px;
 }
@@ -151,16 +142,15 @@
 .red-circle {
   width: 300px;
   height: 300px;
-  background: #940000; /* Roșu */
+  background: #940000;
   bottom: -200px;
   right: -100px;
 }
 
-/* Cercuri mici */
 .small-blue-circle {
   width: 100px;
   height: 100px;
-  background: #0056b3; /* Albastru */
+  background: #0056b3;
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
@@ -169,7 +159,7 @@
 .small-red-circle {
   width: 80px;
   height: 80px;
-  background: #940000; /* Roșu */
+  background: #940000;
   top: 300px;
   left: 30%;
 }
@@ -177,7 +167,7 @@
 .small-center-circle {
   width: 120px;
   height: 120px;
-  background: #0056b3; /* Albastru */
+  background: #0056b3;
   top: 400px;
   left: 60%;
 }
