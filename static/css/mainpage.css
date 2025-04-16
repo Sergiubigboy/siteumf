@@ -1,10 +1,8 @@
-/* Ensure content is above the circles */
 .container {
   position: relative;
   z-index: 1;
 }
 
-/* Stiluri generale pentru secțiuni */
 .section-title {
   font-size: 2rem;
   font-weight: bold;
@@ -17,7 +15,6 @@
   line-height: 1.8;
 }
 
-/* Imagini */
 .img-fluid {
   width: 500px;
   height: 300px;
@@ -33,7 +30,6 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Div-urile care conțin imaginile */
 .col-md-6 {
   display: flex;
   align-items: center;
@@ -41,12 +37,10 @@
   margin-bottom: 30px;
 }
 
-/* Dimensiuni carduri */
 .card-small {
   min-height: 200px;
 }
 
-/* Stiluri generale pentru carduri */
 .text-container {
   margin-top: 20px;
   background-color: #ffffff;
@@ -82,14 +76,12 @@
   color: #555;
 }
 
-/* Aliniere la mijloc */
 .row.align-items-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Decorative circles */
 .background-shape {
   position: absolute;
   border-radius: 50%;
@@ -126,29 +118,25 @@
   left: 50px;
 }
 
-/* Secțiunea de anunțuri */
 .anunturi-section {
   margin-top: 50px;
   position: relative;
-  padding-bottom: 50px; /* Adaugă spațiu între anunțuri și conținutul de dedesubt */
+  padding-bottom: 50px;
 }
 
-/* Container slider */
 .anunturi-slider-container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  margin-bottom: 30px; /* Adaugă spațiu între slider și alte secțiuni */
+  margin-bottom: 30px;
 }
 
-/* Slider */
 .anunturi-slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
   gap: 20px;
 }
 
-/* Card anunț */
 .anunt-card {
   flex: 0 0 calc(33.333% - 20px);
   margin: 0 10px;
@@ -156,21 +144,20 @@
   background-color: #ffffff;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #ddd; /* Adaugă o margine subtilă */
-  border-radius: 12px; /* Colțuri rotunjite pentru un aspect modern */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adaugă o umbră pentru un efect modern */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .anunt-card:hover {
-  transform: scale(1.05); /* Mărește cardul la hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbra devine mai proeminentă */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Imagine anunț */
 .anunt-image {
   display: flex;
-  justify-content: center; /* Centrează imaginea pe orizontală */
-  align-items: center; /* Centrează imaginea pe verticală */
+  justify-content: center;
+  align-items: center;
 }
 
 .anunt-image img {
@@ -178,15 +165,14 @@
   height: 200px;
   object-fit: cover;
   transition: transform 0.3s ease;
-  border: none; /* Elimină border-ul */
-  border-radius: none; /* Elimină colțurile rotunjite pentru imagine */
+  border: none;
+  border-radius: none;
 }
 
 .anunt-card:hover .anunt-image img {
-  transform: scale(1.01); /* Mărește imaginea la hover */
+  transform: scale(1.01);
 }
 
-/* Overlay text */
 .card-overlay {
   position: absolute;
   top: 0;
@@ -201,15 +187,14 @@
   color: white;
 }
 
-/* Informațiile despre anunț */
 .anunt-info {
   padding: 20px;
-  text-align: center; /* Centrează textul */
+  text-align: center;
 }
 
 .anunt-info h5 {
   margin: 15px 0;
-  font-size: 1.6rem; /* Dimensiune mai mare pentru titlu */
+  font-size: 1.6rem;
   font-weight: bold;
   color: #0056b3;
 }
@@ -217,31 +202,29 @@
 .anunt-info p {
   font-size: 1rem;
   color: #555;
-  margin-bottom: 20px; /* Adaugă spațiu între text și buton */
+  margin-bottom: 20px;
 }
 
-/* Buton pentru acțiune */
 .anunt-action {
   display: flex;
-  justify-content: center; /* Centrează butonul */
-  margin-bottom: 20px; /* Adaugă spațiu între buton și marginea cardului */
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .anunt-action .btn-primary {
   background-color: #0056b3;
   border-color: #0056b3;
   font-size: 1rem;
-  padding: 10px 30px; /* Buton mai mare */
-  border-radius: 20px; /* Colțuri rotunjite pentru buton */
+  padding: 10px 30px;
+  border-radius: 20px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .anunt-action .btn-primary:hover {
   background-color: #003f7f;
-  transform: scale(1.1); /* Mărește butonul la hover */
+  transform: scale(1.1);
 }
 
-/* Săgeți navigare */
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -272,7 +255,6 @@
   right: 10px;
 }
 
-/* Listă anunțuri */
 .anunturi-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -280,7 +262,6 @@
   margin-top: 30px;
 }
 
-/* Item anunț */
 .anunt-item {
   display: flex;
   flex-direction: column;
@@ -299,7 +280,6 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Buton acțiune */
 .anunt-action .btn-primary {
   background-color: #0056b3;
   border-color: #0056b3;
@@ -313,17 +293,16 @@
   border-color: #003f7f;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .anunturi-list {
     grid-template-columns: 1fr;
   }
 
   .anunt-image img {
-    height: 250px; /* Imagine mai mare pe dispozitive mici */
+    height: 250px;
   }
 
   .anunt-card {
-    flex: 0 0 calc(100% - 20px); /* 1 card pe rând pe dispozitive mici */
+    flex: 0 0 calc(100% - 20px);
   }
 }

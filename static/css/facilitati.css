@@ -1,71 +1,66 @@
-/* Stiluri pentru casetele de facilități */
 .facility-box {
-  background-color: #ffffff; /* Fundal alb */
-  border-radius: 16px; /* Colțuri rotunjite */
-  overflow: hidden; /* Ascunde marginile imaginilor care depășesc */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animație la hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 30px;
 }
 
 .facility-box:hover {
-  transform: translateY(-5px); /* Ridică caseta la hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Imaginea facilității */
 .facility-image {
-  width: 100%; /* Imaginea ocupă întreaga lățime */
-  height: 250px; /* Înălțime mai mare pentru imagini */
-  object-fit: cover; /* Ajustează imaginea să se potrivească în casetă */
-  transition: transform 0.3s ease; /* Animație la hover */
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .facility-box:hover .facility-image {
-  transform: scale(1.05); /* Mărește imaginea la hover */
+  transform: scale(1.05);
 }
 
-/* Conținutul facilității */
 .facility-content {
   padding: 20px;
   text-align: center;
 }
 
 .facility-title {
-  font-size: 1.5rem; /* Dimensiune mai mare pentru titlu */
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #003f7f; /* Albastru mai închis */
+  color: #003f7f;
   margin-bottom: 10px;
 }
 
 .facility-description {
   font-size: 1rem;
-  color: #555; /* Gri pentru text */
+  color: #555;
   margin-bottom: 15px;
 }
 
-/* Buton pentru acțiune */
 .facility-content .btn-primary {
   background-color: #0056b3;
   border-color: #0056b3;
   font-size: 1rem;
   padding: 10px 20px;
-  border-radius: 20px; /* Colțuri rotunjite pentru buton */
+  border-radius: 20px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .facility-content .btn-primary:hover {
   background-color: #003f7f;
-  transform: scale(1.1); /* Mărește butonul la hover */
+  transform: scale(1.1);
 }
 
-/* Titlul secțiunii */
 h2.text-center {
-  font-size: 2rem; /* Dimensiune mai mare pentru titlu */
+  font-size: 2rem;
   font-weight: bold;
-  color: #003f7f; /* Albastru închis pentru text */
-  text-transform: uppercase; /* Transformă textul în majuscule */
-  letter-spacing: 2px; /* Spațiere între litere pentru un aspect modern */
+  color: #003f7f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
@@ -74,9 +69,9 @@ h2.text-center {
 h2.text-center::after {
   content: "";
   display: block;
-  width: 80px; /* Lungimea liniei decorative */
-  height: 4px; /* Grosimea liniei decorative */
-  background: linear-gradient(90deg, #0056b3, #85c1e9); /* Gradient pentru linie */
-  margin: 10px auto 0; /* Centrează linia sub titlu */
-  border-radius: 2px; /* Colțuri rotunjite pentru linie */
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0056b3, #85c1e9);
+  margin: 10px auto 0;
+  border-radius: 2px;
 }

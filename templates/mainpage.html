@@ -5,12 +5,12 @@
 />
 {% endblock %} {% block content %}
 <div class="mainpage-bg">
-  <!-- Decorative Circles -->
+
   <div class="background-shape shape-blue shape-1"></div>
   <div class="background-shape shape-light-blue shape-2"></div>
   <div class="background-shape shape-blue shape-3"></div>
 
-  <!-- Secțiunea de anunțuri -->
+
   <div class="anunturi-section">
     <h2 class="section-title text-center">Anunțuri</h2>
     <div class="anunturi-slider-container">
@@ -42,7 +42,7 @@
   </div>
 
   <div class="container my-5">
-    <!-- Secțiunea 1 -->
+  
     <div class="row g-4 align-items-center fade-in">
       <div class="col-md-6">
         <div class="text-container shadow card-small">
@@ -65,7 +65,7 @@
       </div>
     </div>
 
-    <!-- Secțiunea 2 -->
+    
     <div class="row g-4 align-items-center fade-in">
       <div class="col-md-6 order-md-2">
         <div class="text-container shadow card-small">
@@ -87,7 +87,7 @@
       </div>
     </div>
 
-    <!-- Secțiunea 3 -->
+    
     <div class="row g-4 align-items-center fade-in">
       <div class="col-md-6">
         <div class="text-container shadow card-small">
@@ -109,7 +109,7 @@
       </div>
     </div>
   </div>
-  <!-- Casetă unică -->
+  
   <div class="color-section">
     <div class="container my-5">
       <div class="row g-4 align-items-center fade-in">
@@ -211,7 +211,7 @@
     let currentIndex = 0;
 
     const updateSliderPosition = () => {
-      const cardWidth = slider.querySelector(".anunt-card").offsetWidth + 20; // Lățimea cardului + gap
+      const cardWidth = slider.querySelector(".anunt-card").offsetWidth + 20;
       slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
     };
 
@@ -234,10 +234,9 @@
       }
     });
 
-    // Recalculează poziția slider-ului la redimensionarea ferestrei
+
     window.addEventListener("resize", updateSliderPosition);
 
-    // Inițializează poziția slider-ului
     updateSliderPosition();
   });
 </script>
