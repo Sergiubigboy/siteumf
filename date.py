@@ -109,7 +109,7 @@ profesori = [
     {
         "nume": "Mihai Babotă",
         "materie": "Chimie",
-        "descriere": "",
+        "descriere": "Aflată la granița dintre știință, empirism și mister, chimia ne descoperă dincolo de reacții, formule și structuri esența proceselor care guvernează existența micro și macro universului, precum și modul în care omul poate trăi în echilibru cu el însuși și cu mediul înconjurător.Ca disciplină de studiu și știință exactă transpusă în cotidian, cred că ne explică faptul că \"E chimie între noi\" - parafrazând titlul unei melodii. Chimia e realitate frumoasă, plină de culoare și fascinație, pe care o trăim și o simțim în viața de zi cu zi.",
         "citat": "",
         "imagine": ""
     },
@@ -138,7 +138,7 @@ profesori = [
         "nume": "Nora Dumbravă",
         "materie": "Logică",
         "descriere": " ",
-        "citat": "Să înveți fără să gândești este fără sens; să gândești fără să înveți este periculos.",
+        "citat": "Să înveți fără să gândești este fără sens; să gândești fără să înveți este periculos. - Confucius",
         "imagine": ""
     },
     {
@@ -159,7 +159,7 @@ profesori = [
         "nume": "Răzvan Alexandrescu",
         "materie": "Educație fizică",
         "descriere": "",
-        "citat": "",
+        "citat": "Cred în puterea mișcării, în disciplină și în dezvoltarea caracterului prin sport. Ca profesor de educație fizică și antrenor, îmi doresc să inspir elevii să devină mai buni în fiecare zi – nu doar fizic, ci și mental. La liceul UMFST, vom învăța împreună să ne depășim limitele, să lucrăm în echipă și să nu renunțăm, indiferent de obstacole.",
         "imagine": ""
     },
     {
