@@ -4,7 +4,7 @@ activitati = [
     {
         "id": "campania-conversatii-in-jurul-scolii",
         "titlu": "Campania: Conversații în jurul școlii",
-        "imagine": "BancaDinFata.jpg",
+        "imagine": "campania.jpg",
         "template": "activitatiSub/campania.html"
     },
     {
@@ -80,8 +80,8 @@ profesori = [
     {
         "nume": "Kutasi Reka",
         "materie": "Limba engleză",
-        "descriere": "",
-        "citat": "",
+        "descriere": "Sunt o persoană empatică, deschisă și dornică de a sprijini elevii în procesul lor de învățare și dezvoltare personală. Cred cu tărie că rolul unui dascăl nu se limitează doar la transmiterea cunoștințelor, ci implică și formarea unor oameni integri, capabili să gândească critic și să acționeze cu responsabilitate. Consider că fiecare elev are un potențial unic, iar rolul meu, ca profesor, este să îl descopăr, să îl cultiv și să îl susțin cu răbdare și implicare. Prin activitatea mea urmăresc să inspir, să încurajez și să contribui la dezvoltarea unei generații conștiente și bine pregătite pentru provocările lumii de mâine. ",
+        "citat": "Educația este cea mai puternică armă pe  care o putem folosi pentru a schimba lumea. Nelson Mandela",
         "imagine": ""
     },
     {
@@ -109,7 +109,7 @@ profesori = [
     {
         "nume": "Mihai Babotă",
         "materie": "Chimie",
-        "descriere": "",
+        "descriere": "Aflată la granița dintre știință, empirism și mister, chimia ne descoperă dincolo de reacții, formule și structuri esența proceselor care guvernează existența micro și macro universului, precum și modul în care omul poate trăi în echilibru cu el însuși și cu mediul înconjurător.Ca disciplină de studiu și știință exactă transpusă în cotidian, cred că ne explică faptul că \"E chimie între noi\" - parafrazând titlul unei melodii. Chimia e realitate frumoasă, plină de culoare și fascinație, pe care o trăim și o simțim în viața de zi cu zi.",
         "citat": "",
         "imagine": ""
     },
@@ -138,7 +138,7 @@ profesori = [
         "nume": "Nora Dumbravă",
         "materie": "Logică",
         "descriere": " ",
-        "citat": "Să înveți fără să gândești este fără sens; să gândești fără să înveți este periculos.",
+        "citat": "Să înveți fără să gândești este fără sens; să gândești fără să înveți este periculos. - Confucius",
         "imagine": ""
     },
     {
@@ -159,7 +159,7 @@ profesori = [
         "nume": "Răzvan Alexandrescu",
         "materie": "Educație fizică",
         "descriere": "",
-        "citat": "",
+        "citat": "Cred în puterea mișcării, în disciplină și în dezvoltarea caracterului prin sport. Ca profesor de educație fizică și antrenor, îmi doresc să inspir elevii să devină mai buni în fiecare zi – nu doar fizic, ci și mental. La liceul UMFST, vom învăța împreună să ne depășim limitele, să lucrăm în echipă și să nu renunțăm, indiferent de obstacole.",
         "imagine": ""
     },
     {
@@ -193,32 +193,32 @@ clase = [
         "litera": "B",
         "diriginte": "Bogdan Rațiu",
         "profil": "Științele Naturii",
-        "citat": "Clasa de smecheri n ai ce zice",
+        "citat": "",
         "elevi": [
             {"nume": "Bumbac Ileana"},
             {"nume": "Bumbu Luca"},
             {"nume": "Colcer Sonia"},
-            {"nume": "Cosarca Alexandru"},
+            {"nume": "Coșarcă Alexandru"},
             {"nume": "Cotoi Iulius", "performante": [{"titlu": "Olimpiada Națională de Biologie","locatie": "Tg. Mureș, etapa județeană","premiu": "Mențiune 1" }]},
-            {"nume": "Cretu Daria"},
-            {"nume": "Crisan Andrei"},
+            {"nume": "Crețu Daria"},
+            {"nume": "Crișan Andrei"},
             {"nume": "Dumitru Radu"},
             {"nume": "Florea Sara"},
-            {"nume": "Florea Rares"},
+            {"nume": "Florea Rareș"},
             {"nume": "Gherman Eric"},
             {"nume": "Hanc Mihai"},
-            {"nume": "Harsa Sofia"},
-            {"nume": "Lazar Larisa"},
+            {"nume": "Harșa Sofia"},
+            {"nume": "Lazăr Larisa"},
             {"nume": "Loghin Ioana","performante": [ {"titlu": "Olimpiada Națională de Limba Engleză","locatie": "Tg. Mureș, etapa județeană","premiu": "Premiul III"}]},
-            {"nume": "Lupsa Maria"},
-            {"nume": "Macarie Rares"},
+            {"nume": "Lupșa Maria"},
+            {"nume": "Macarie Rareș"},
             {"nume": "Orban David"},
             {"nume": "Onisor Rares"},
-            {"nume": "Ormenisan Anastatia"},
+            {"nume": "Ormenișan Anastasia"},
             {"nume": "Popa Cynthia"},
-            {"nume": "Sabau Raul"},
-            {"nume": "Sandru Octavian"},
-            {"nume": "Serbu Raluca"},
+            {"nume": "Sabău Raul"},
+            {"nume": "Șandru Octavian"},
+            {"nume": "Șerbu Raluca"},
             {"nume": "Szasz Roberta", "performante" : [{"titlu": "Olimpiada Națională de Biologie", "locatie": "Tg. Mureș, etapa județeană", "premiu": "Premiul II"}, {"titlu": "Olimpiada Interdisciplinară „Culturalitate și spiritualitate românească“", "locatie": "Tg. Mureș, etapa județeană", "premiu": "Premiul III"}]},
             {"nume": "Vasiliu Anca"},
             {"nume": "Vidican Andreea"}
@@ -229,20 +229,20 @@ clase = [
         "litera": "A",
         "diriginte": "Bianca Han",
         "profil": "Mate-Informatică",
-        "citat": "Respect, respect si iara respect.",
+        "citat": "",
         "elevi": [
-            {"nume": "Biris Sergiu"},
+            {"nume": "Biriș Sergiu"},
             {"nume": "Corondeanu Raul"},
             {"nume": "Cucuiet Andrei"},
             {"nume": "Curta Rares"},
             {"nume": "David Aiana"},
             {"nume": "Ercean David"},
             {"nume": "Gherman Cezara"},
-            {"nume": "Jovrea Stefan"},
-            {"nume": "Lazar Cristian"},
+            {"nume": "Jovrea Ștefan"},
+            {"nume": "Lazăr Cristian"},
             {"nume": "Maier Alia"},
             {"nume": "Marian Ciprian"},
-            {"nume": "Mitoseriu David"},
+            {"nume": "Mitoșeriu David"},
             {"nume": "Muth Cristian",
               "performante": [
             {
@@ -324,19 +324,19 @@ clase = [
                 "premiu": ""
             }
         ]},
-            {"nume": "Oanes Sofia"},
+            {"nume": "Oaneș Sofia"},
             {"nume": "Paca Raoul"},
             {"nume": "Pantea Tudor"},
             {"nume": "Pastia Catinca"},
-            {"nume": "Somesan Adrian"},
+            {"nume": "Someșan Adrian"},
             {"nume": "Staicu Eric"},
-            {"nume": "Stinga David"},
+            {"nume": "Stîngă David"},
             {"nume": "Stoica Andrei"},
             {"nume": "Suciu Iustina"},
             {"nume": "Trifan Raul"},
             {"nume": "Turdean Cleo"},
             {"nume": "Ungur Filip"},
-            {"nume": "Vasloban Maria"}
+            {"nume": "Vașloban Maria"}
         ]
     }
 ]

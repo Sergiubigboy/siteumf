@@ -306,5 +306,14 @@ def corp_administrativ():
         background="static/images/poze-hero/Hero-principal.png"
     )
 
+@app.route('/activitatiSub/echoReactor')
+def echo_reactor():
+    return render_template(
+        'activitatiSub/echoReactor.html',
+        title="Echo Reactor",
+        subtitlu="Echo Reactor",
+        no_hero=True
+    )
+
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")

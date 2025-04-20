@@ -1,39 +1,67 @@
-{% extends "layout.html" %} {% block extra_css %}
-<link
-  rel="stylesheet"
-  href="{{ url_for('static', filename='css/activitati/campania.css') }}"
-/>
-{% endblock %} {% block content %}
+{% extends "layout.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/activitati/banca-din-fata.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="hero-section" style="background: url('{{ url_for('static', filename='images/activitati/heropodcast.jpg') }}') no-repeat center center; background-size: cover;">
+  <div class="hero-overlay">
+    <div class="container text-center text-white">
+      <h1 class="hero-title">Banca din față – Podcastul liceului UMFST</h1>
+    </div>
+  </div>
+</div>
+
 <div class="container mt-4">
   <div class="row mt-4">
     <div class="col-md-6">
-      <img
-        src="{{ url_for('static', filename='images/' + activitate.imagine) }}"
-        alt="{{ activitate.titlu }}"
-        class="img-fluid rounded"
-      />
+      <img src="{{ url_for('static', filename='images/activitati/' + activitate.imagine) }}" alt="{{ activitate.titlu }}" class="img-fluid rounded">
     </div>
     <div class="col-md-6">
       <div class="p-4 bg-light rounded shadow-sm text-justify">
         <h2>Bine ați venit la Banca din față – podcastul liceului UMFST!</h2>
         <p>
-          Aici, vocea elevilor capătă putere și prinde contur. Banca din față
-          este spațiul în care ne așezăm metaforic, cu sinceritate și
-          curiozitate, pentru a discuta despre tot ce ne preocupă: viața de zi
-          cu zi în liceu, dinamica relațiilor dintre profesori și elevi,
-          pasiunile noastre, provocările generației noastre și multe altele.
-        </p>
-        <p>
-          Fiecare episod aduce în prim-plan teme relevante, invitați din școală
-          sau din comunitatea mai largă, povești autentice și perspective
-          diverse. E un loc al dialogului, al ideilor și al descoperirii – un
-          colț al vocilor pentru tinerii care au ceva de spus.
-        </p>
-        <p>
-          Așază-te alături de noi, în „banca din față”, și dă volumul tare ca să
-          ascultăm împreună ce are de spus generația de azi.
+          Aici, vocea elevilor capătă putere și prinde contur. Banca din față este spațiul în care ne așezăm metaforic, cu sinceritate și curiozitate, pentru a discuta despre tot ce ne preocupă: viața de zi cu zi în liceu, dinamica relațiilor dintre profesori și elevi, pasiunile noastre, provocările generației noastre și multe altele.
         </p>
       </div>
+    </div>
+  </div>
+
+  <div class="episodes mt-5">
+    <h3 class="text-center mb-4">Episoade</h3>
+
+    <div class="episode mb-4 p-4 bg-white rounded shadow-sm">
+      <h4 class="episode-title">Episodul 1: Dialog deschis între generații</h4>
+      <p>
+        Banca din față este spațiul în care ne așezăm cu sinceritate și curiozitate, pentru a discuta despre tot ce ne preocupă: viața de zi cu zi în liceu, dinamica relațiilor dintre profesori și elevi, pasiunile noastre, provocările generației noastre și multe altele.
+      </p>
+      <p>
+        Primul invitat al podcastului „Banca din față” este prof. univ. dr. Leonard Azamfirei, rectorul UMFST G.E. Palade Târgu Mureș.
+      </p>
+      <a href="https://www.youtube.com/watch?v=9TzR5Hy07gY&t=29s&ab_channel=UMFSTLive" target="_blank" class="btn btn-primary">Urmărește episodul</a>
+    </div>
+
+    <div class="episode mb-4 p-4 bg-white rounded shadow-sm">
+      <h4 class="episode-title">Episodul 2: Despre cultura vieții</h4>
+      <p>
+        „Banca din față” este spațiul în care ne-am așezat și de această dată să discutăm despre bucuria de a avea credință și de a împărtăși celor de jur binele și frumosul. Invitatul ediției este preotul Ovidiu Bârsan, profesor de religie în cadrul Liceului UMFST „George Emil Palade”.
+      </p>
+      <p>
+        Este un dialog despre nevoia de sens, de spiritualitate și de încrederea în „cultura vieții” atunci când, ca tânăr, începi să simți „valurile vieții”.
+      </p>
+      <a href="https://www.youtube.com/watch?v=3OK2JksITfE&ab_channel=UMFSTLive" target="_blank" class="btn btn-primary">Urmărește episodul</a>
+    </div>
+
+    <div class="episode mb-4 p-4 bg-white rounded shadow-sm">
+      <h4 class="episode-title">Episodul 3: Etapele devenirii liceului</h4>
+      <p>
+        La „Banca din față” suntem invitați să cunoaștem mai multe despre Liceul UMFST „George Emil Palade”, alături de directoarea acestei unități de învățământ, lect. univ. dr. Andreea-Romana Ban.
+      </p>
+      <p>
+        Urmăriți o discuție despre etapele devenirii liceului și planurile de viitor, interviul încercând totodată să ne prezinte și imaginea autentică a unui dascăl, model pentru mulți tineri.
+      </p>
+      <a href="https://www.youtube.com/watch?v=kk74q2Zvb-I&ab_channel=UMFSTLive" target="_blank" class="btn btn-primary">Urmărește episodul</a>
     </div>
   </div>
 </div>
