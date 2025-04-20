@@ -113,7 +113,8 @@ def pagina_activitate(id_activitate):
         activitate["template"],
         activitate=activitate,
         subtitlu=activitate["titlu"],
-        title=activitate["titlu"]
+        title=activitate["titlu"],
+        background="static/images/poze-hero/bgmain.png",
     )
 
 @app.route('/club/<club_name>')
@@ -212,6 +213,67 @@ def proiect_page(proiect_name):
         no_hero=True
     )
 
+@app.route('/celebrari/<celebrare_name>')
+def celebrare_page(celebrare_name):
+    celebrari = {
+        "1-decembrie": {
+    "titlu": "Ziua de 1 Decembrie",
+    "subtitlu": "Ziua Națională a României",
+    "descriere": """
+    <p>Elevii și profesorii Liceului UMFST „George Emil Palade” au sărbătorit împreună Ziua Națională a României.</p>
+    
+    <p>Mână-n mână s-au creat proiecte despre Unire și despre România.</p>
+    
+    <p>Mână de la mână s-au strâns pe masă bunătăți tradiționale românești.</p>
+    
+    <p>Mână de mână ne-am prins în horă să ne bucurăm de Ziua Națională a României.</p>
+    """,
+    "imagine": "static/images/celebrari/1-decembrie.jpg"
+},
+        "mica-unire": {
+            "titlu": "Mica Unire - 24 Ianuarie",
+            "subtitlu": "Unirea Principatelor Române",
+            "descriere": """
+            <p>Mica Unire a fost sărbătorită la Liceul UMFST „George Emil Palade” printr-o altfel de oră de istorie susținută de conf. univ. dr. Georgeta Fodor. Cadrele didactice și elevii au încercat să reconstituie și să înțeleagă emoția și entuziasmul dublei alegeri a lui Alexandru Ioan Cuza prin sondarea și interpretarea unor surse istorice. Elevii celor două clase au devenit pentru o oră reprezentanți ai moldovenilor și muntenilor care au decis, „ad hoc”, alegerea aceluiași conducător. La final, elevii au reconstituit atmosfera alegerii lui Cuza pe baza operei de artă semnată de Theodor Aman: „Proclamarea Unirii (24 Ianuarie 1859)”. Activitatea este parte a inițiativelor coordonate de cadrele didactice ale Liceului UMFST „George Emil Palade” cu scopul de a le oferi elevilor repere fundamentale necesare devenirii lor ca cetățeni activi și conștienți de importanța implicării civice.</p>
+            """,
+            "imagine": "static/images/celebrari/mica-unire.jpg"
+        },
+        "ziua-culturii-nationale": {
+            "titlu": "Ziua Culturii Naționale",
+            "subtitlu": "Sărbătoarea culturii românești",
+            "descriere": """
+            <p>Ziua Culturii Naționale a fost sărbătorită la UMFST G.E. Palade Târgu Mureș miercuri, 15 ianuarie 2025, între orele 10:00 – 12:00, în Aula Magna (str. Nicolae Iorga), printr-un eveniment care îl va omagia pe poetul „nepereche” al românilor, Mihai Eminescu, și va pune în lumină aspecte valoroase din patrimoniul nostru cultural.
+Prin coordonarea cadrelor didactice de la Facultatea de Științe și Litere „Petru Maior”, studenți și masteranzi ai facultății, alături de elevi de la Liceul UMFST „George Emil Palade”, au dat dovada talentului, implicării și inocenței lor.
+Evenimentul a avut momente de recitări din poeziile eminesciene în limba română și traduse în limbi străine, momente de interpretare vocală și instrumentală din compozitori români, prezentarea unui videoclip cu un „tezaur uman” - meșter popular din județul Mureș, iar ca încununare a momentului artistic vor fi purtate cu mândrie cămăși naționale, iile cusute de un cadru didactic din universitate. Semnificația profundă a manifestării va fi expusă de cadre didactice
+</p>
+            """,
+            "imagine": "static/images/celebrari/ziua-culturii-nationale.jpg"
+        },
+        "ziua-cititului-impreuna": {
+            "titlu": "Ziua Cititului Împreună",
+            "subtitlu": "Istoria prin obiecte tangibile. Cufărul poetului Mihai Eminescu Cufărul lui Eminescu la Muzeul UMFST",
+            "descriere": """
+            <p>Muzeul Universității „George Emil Palade” are onoarea de a găzdui un obiect cu o profundă valoare istorică și culturală: cufărul lui Mihai Eminescu. Renumitul cufăr, marcat pe placheta centrală cu inscripția „M. Eminovici”, l-a însoțit pe Eminescu de-a lungul întregii sale vieți, devenind martor al călătoriilor sale prin țară și Europa încă din copilărie. În cadrul evenimentului cultural „Istoria prin obiecte tangibile. Cufărul poetului Mihai Eminescu”, care a avut loc în data de 5 februarie 2025, când a fost sărbătorită Ziua Internațională a Cititului Împreună, cei prezenți au avut ocazia să admire cufărul și să descopere povestea din spatele acestuia, dar și să participe la un moment special pregătit de elevii Liceului UMFST „George Emil Palade”. </p>
+            """,
+            "imagine": "static/images/celebrari/ziua-cititului-impreuna.jpg"
+        }
+    }
+
+    # Verifică dacă celebrarea există
+    celebrare = celebrari.get(celebrare_name)
+    if not celebrare:
+        return "Pagina pentru celebrarea solicitată nu a fost găsită.", 404
+
+    # Randează pagina celebrării
+    return render_template(
+        'celebrare.html',
+        titlu=celebrare["titlu"],
+        subtitlu=celebrare["subtitlu"],
+        descriere=celebrare["descriere"],
+        imagine=celebrare["imagine"],
+        no_hero=True
+    )
+
 @app.route('/regulamente')
 def regulamente():
     return render_template('regulamente.html', title="Regulamente", subtitlu="Regulamente")
@@ -231,6 +293,9 @@ def proceduri():
 @app.route('/facilitati')
 def facilitati():
     return render_template('facilitati.html', title="Facilități", subtitlu="Facilități", background="static/images/poze-hero/facilitati1.jpg")
+@app.route('/developers')
+def developari():
+    return render_template('developers.html', title="Developers", subtitlu="developers", background="static/images/poze-hero/bgmain.png")
 
 @app.route('/corp-administrativ')
 def corp_administrativ():
@@ -239,6 +304,15 @@ def corp_administrativ():
         title="Corp Administrativ",
         subtitlu="Echipa Administrativă",
         background="static/images/poze-hero/Hero-principal.png"
+    )
+
+@app.route('/activitatiSub/echoReactor')
+def echo_reactor():
+    return render_template(
+        'activitatiSub/echoReactor.html',
+        title="Echo Reactor",
+        subtitlu="Echo Reactor",
+        no_hero=True
     )
 
 if __name__ == "__main__":

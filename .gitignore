@@ -1,0 +1,12 @@
+# Ignoră fișierele compilate Python
+__pycache__/
+*.pyc
+
+# Ignoră fișierele generate de sistemul de operare
+.DS_Store
+Thumbs.db
+
+# Ignoră fișierele generate de editori/IDE-uri
+.vscode/
+.idea/
+*.swp

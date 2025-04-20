@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto; /* Centrare pe orizontală */
+  padding: 20px; /* Spațiu interior */
+  box-sizing: border-box; /* Asigură că padding-ul nu afectează dimensiunea totală */
+  display: flex; /* Afișează elementele din container unul lângă altul */
+  justify-content: space-between; /* Spațiu egal între chenare */
+  gap: 20px; /* Spațiu între chenare */
+  flex-wrap: wrap; /* Permite chenarelor să treacă pe un rând nou dacă spațiul este insuficient */
+}
+
+/* Stilurile existente pentru chenare */
+.chenar {
+  background: linear-gradient(135deg, #ffffff, #f9f9f9); /* Fundal gradient subtil */
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Colțuri mai rotunjite */
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Umbre mai moderne */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+  flex: 1; /* Face chenarele să aibă dimensiuni egale */
+  max-width: 48%; /* Limitează lățimea chenarelor pentru a încăpea două pe un rând */
+}
+
+.chenar:hover {
+  transform: translateY(-5px); /* Ridică chenarul la hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Umbre mai pronunțate la hover */
+}
+
+.chenar h2 {
+  color: #004b9b; /* Culoare albastru închis pentru titlu */
+  font-size: 2rem; /* Dimensiune mai mare pentru titlu */
+  font-weight: bold; /* Text îngroșat */
+  margin-bottom: 25px; /* Spațiu suplimentar sub titlu */
+  text-transform: uppercase; /* Transformă textul în majuscule */
+  letter-spacing: 2px; /* Spațiere între litere */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Umbră subtilă pentru text */
+}
+
+.casute {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px; /* Spațiu între căsuțe */
+  padding: 20px; /* Padding între boxuri și marginea containerului */
+}
+
+.casuta {
+  background: linear-gradient(135deg, #0056b3, #0056b3); /* Gradient modern */
+  border: none; /* Elimină bordura */
+  border-radius: 15px; /* Colțuri mai rotunjite */
+  padding: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Umbre subtile */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
+}
+
+.casuta:hover {
+  transform: scale(1.05); /* Mărește căsuța la hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Umbre mai pronunțate la hover */
+}
+
+.casuta:active {
+  transform: scale(0.95); /* Micșorează căsuța la click */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Umbre mai subtile la click */
+}
+
+/* Media queries pentru chenare și căsuțe */
+@media (max-width: 768px) {
+  .chenar {
+    max-width: 100%; /* Chenarele ocupă întregul rând */
+    padding: 20px; /* Reduce padding-ul */
+  }
+
+  .casuta {
+    padding: 15px; /* Reduce padding-ul */
+    font-size: 0.9rem; /* Diminuează dimensiunea textului */
+  }
+
+  .casute {
+    gap: 10px; /* Reduce spațiul dintre căsuțe */
+  }
+}
+
+@media (max-width: 480px) {
+  .chenar {
+    max-width: 100%; /* Chenarele ocupă întregul rând */
+    padding: 15px; /* Padding mai mic pentru ecrane foarte mici */
+  }
+
+  .casuta {
+    padding: 10px; /* Padding mai mic pentru căsuțe */
+    font-size: 0.8rem; /* Diminuează și mai mult dimensiunea textului */
+  }
+
+  .casute {
+    flex-direction: column; /* Afișează căsuțele una sub alta */
+    gap: 10px; /* Spațiu mai mic între căsuțe */
+  }
+}

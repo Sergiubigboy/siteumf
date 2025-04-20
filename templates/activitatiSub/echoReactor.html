@@ -1,53 +1,165 @@
-{% extends "layout.html" %} {% block extra_css %}
-<link
-  rel="stylesheet"
-  href="{{ url_for('static', filename='css/activitati/campania.css') }}"
-/>
-{% endblock %} {% block content %}
-<div class="container mt-4">
-  <div class="row mt-4">
-    <div class="col-md-6">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo Reactor</title>
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/echoReactor.css') }}"
+  />
+</head>
+<body>
+  <!-- Buton pentru întoarcerea acasă -->
+  <a href="/" class="back-button">Acasă</a>
+
+  <div class="echo-container">
+    <!-- Logo-ul central -->
+    <div class="logo-container">
       <img
-        src="{{ url_for('static', filename='images/' + activitate.imagine) }}"
-        alt="{{ activitate.titlu }}"
-        class="img-fluid rounded"
+        src="{{ url_for('static', filename='images/echo/echo-color.png') }}"
+        alt="Echo Reactor Logo"
+        class="logo"
       />
+      <h1 class="tagline">Unde ideile prind glas și se propagă</h1>
     </div>
-    <div class="col-md-6">
-      <div class="p-4 bg-light rounded shadow-sm text-justify">
-        <h2>Echo Reactor – Spațiul unde ideile prind glas și se propagă</h2>
+
+    <!-- Secțiuni interactive -->
+    <div class="sections">
+      <div class="section">
+        <h2>De ce „Echo”?</h2>
         <p>
-          Bine ați venit în Echo Reactor, platforma care adună sub aceeași
-          umbrelă toate concursurile organizate de liceul nostru. Aici,
-          competiția va avea un nou sens: nu e doar despre a fi „cel mai bun”,
-          ci despre a gândi împreună, a construi, a inova și a da mai departe.
+          Ideile bune merită să se propage. Adevărul științific trebuie să se audă,
+          să se înțeleagă și să ajungă în comunități.
         </p>
+      </div>
+      <div class="section">
+        <h2>De ce „Reactor”?</h2>
         <p>
-          <strong>De ce „Echo”?</strong> Pentru că ideile bune merită să se
-          propage. Pentru că adevărul științific trebuie să se audă, să se
-          înțeleagă, să ajungă în școli, în case, în comunități.
+          Este un spațiu de energie, gândire și explorare. Un loc unde liceenii
+          creează, testează și învață împreună.
         </p>
+      </div>
+      <div class="section">
+        <h2>Intră în joc!</h2>
         <p>
-          <strong>De ce „Reactor”?</strong> Pentru că este un spațiu de energie,
-          de gândire, de explorare. Un loc în care liceenii creează, testează,
-          greșesc, corectează și învață împreună.
-        </p>
-        <p>
-          Echo Reactor este un spațiu viu, care pune accent pe colaborare,
-          gândire critică și creativitate aplicată. Este locul în care
-          provocările devin oportunități, iar competiția se transformă într-un
-          catalizator pentru idei noi, care merită să se audă mai departe – ca
-          un ecou care inspiră. Fie că vorbim despre știință, artă, tehnologie
-          sau inițiative sociale, concursurile din cadrul Echo Reactor nu sunt
-          doar despre premii, ci despre impact. Despre cum putem deveni mai buni
-          împreună.
-        </p>
-        <p>
-          <strong>Intră în joc!</strong> Propune! Creează! Fii parte din ecoul
-          care schimbă regulile!
+          Propune! Creează! Fii parte din ecoul care schimbă regulile și inspiră
+          generațiile viitoare.
         </p>
       </div>
     </div>
+
+    <!-- Caseta invizibilă pentru mesaj și imagine -->
+    <div class="freedom-container">
+      <div class="freedom-box">
+        <p>
+          Bine ați venit în Echo Reactor, platforma care adună sub aceeași umbrelă toate concursurile organizate de liceul nostru. Aici, competiția va avea un nou sens: nu e doar despre a fi „cel mai bun”, ci despre a gândi împreună, a construi, a inova și a da mai departe.
+        </p>
+      </div>
+      <div class="freedom-image">
+        <img
+          src="{{ url_for('static', filename='images/echo/poze1-echo.png') }}"
+          alt="Echo Reactor"
+        />
+      </div>
+    </div>
+
+    <!-- Caseta pentru mesaj suplimentar -->
+    <div class="extra-box">
+      <div class="extra-image">
+        <img
+          src="{{ url_for('static', filename='images/echo/poze2-echo.png') }}"
+          alt="Echo Reactor Extra"
+        />
+      </div>
+      <div class="extra-text">
+        <p>
+          Echo Reactor este un spațiu viu, care pune accent pe colaborare, gândire critică și creativitate aplicată. Este locul în care provocările devin oportunități, iar competiția se transformă într-un catalizator pentru idei noi, care merită să se audă mai departe – ca un ecou care inspiră. Fie că vorbim despre știință, artă, tehnologie sau inițiative sociale, concursurile din cadrul Echo Reactor nu sunt doar despre premii, ci despre impact, despre cum putem deveni mai buni împreună.
+        </p>
+      </div>
+    </div>
+
+    <!-- Secțiune „De ce” -->
+    <div class="why-echo">
+      <div class="why-item">
+        <h3>De ce „Echo”?</h3>
+        <p>
+          Pentru că ideile bune merită să se propage. Pentru că adevărul științific trebuie să se audă, să se înțeleagă, să ajungă în școli, în case, în comunități.
+        </p>
+      </div>
+      <div class="why-item">
+        <h3>De ce „Reactor”?</h3>
+        <p>
+          Pentru că este un spațiu de energie, de gândire, de explorare. Un loc în care echipe de liceeni creează, testează, greșesc, corectează și învață împreună.
+        </p>
+      </div>
+      <div class="why-item">
+        <h3>De ce „Impact”?</h3>
+        <p>
+          Pentru că știința nu este un turn de fildeș. Este un instrument prin care înțelegem lumea și luăm decizii mai bune. Elevii pot fi ambasadorii științei în comunitățile lor!
+        </p>
+      </div>
+    </div>
+
+    <!-- Secțiune „Impact” -->
+    <div class="impact-section">
+      <div class="impact-header">
+        <h2>Echo Reactor Impact</h2>
+        <img
+          src="{{ url_for('static', filename='images/echo/echo-negru.png') }}"
+          alt="Echo Reactor Logo"
+          class="impact-logo"
+        />
+      </div>
+      <p>
+        Echo Reactor Impact este un concurs cu participare internațională dedicat elevilor de liceu, care cred în puterea cunoașterii și a cercetării științifice de a schimba lumea. Concursul provoacă tinerii să formeze echipe, să aleagă o problemă științifică relevantă, să o investigheze în profunzime și să comunice rezultatele într-un mod clar, convingător și cu impact pentru comunitate.
+      </p>
+      <p>
+        Participanții vor alege o problemă științifică sau o întrebare de cercetare care are relevanță socială (ex: sănătate, mediu, educație, tehnologie, psihologie, alimentație, inteligență artificială, dezinformare etc.). Încurajăm elevii să pornească de la întrebări științifice care stârnesc dezbatere sau care sunt foarte puțin înțelese public și să nu se concentreze pe teme generale.
+      </p>
+      <p>
+        <strong>Criterii esențiale:</strong> problema să aibă fundament științific; să poată fi abordată prin cercetare, observație, interviuri, experimente etc.; să poată fi comunicată pe înțelesul altor tineri sau al publicului larg.
+      </p>
+    </div>
+    <div class="separator-image">
+      <div class="separator-content">
+        <img
+          src="{{ url_for('static', filename='images/echo/echo-alb.png') }}"
+          alt="Echo Reactor Logo Alb"
+          class="separator-logo"
+        />
+        <img
+          src="{{ url_for('static', filename='images/echo/poze3-echo.png') }}"
+          alt="Echo Reactor Separator"
+          class="separator-main-image"
+        />
+      </div>
+    </div>
+    
+
+    <!-- Secțiune „Obiective” -->
+    <div class="objectives-section">
+      <div class="objectives-content">
+        <div class="objectives-text">
+          <h2>Obiectivele Echo Reactor Impact</h2>
+          <ul>
+            <li>Să dezvolte gândirea critică, creativitatea și interesul pentru știință în rândul elevilor de liceu.</li>
+            <li>Să promoveze demersuri inter/transdisciplinare și o cunoaștere contextuală, complexă și integrată a unor subiecte.</li>
+            <li>Să îi provoace pe elevii de liceu să investigheze probleme științifice relevante pentru lumea în care trăiesc.</li>
+            <li>Să încurajeze lucrul în echipă, colaborarea, folosirea metodei științifice și abordări de tip „design thinking”.</li>
+            <li>Să susțină învățarea pe tot parcursul vieții și comunicarea științei către publicul larg.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secțiune „Final Call to Action” -->
+    <div class="final-call-to-action">
+      <p>
+        Într-o lume în care adevărul e deseori relativizat, tinerii pot deveni ecoul cunoașterii științifice. Prin întrebări bine puse, prin metode riguroase și prin curajul de a explica ce pare complicat, ei pot face știința relevantă pentru toți.
+      </p>
+      <h3>Intră în joc! Propune! Creează! Fii parte din ecoul care schimbă regulile!</h3>
+    </div>
   </div>
-</div>
-{% endblock %}
+</body>
+</html>
