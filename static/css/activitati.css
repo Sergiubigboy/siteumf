@@ -1,144 +1,134 @@
-/* Container pentru boxuri */
 .class-item {
-  display: flex; /* Activează Flexbox */
-  flex-direction: column; /* Aranjează elementele pe verticală */
-  justify-content: space-between; /* Plasează imaginea sus și restul jos */
-  align-items: center; /* Centrează conținutul pe orizontală */
-  border: 2px solid #0056b3; /* Bordură albastră */
-  border-radius: 0; /* Elimină colțurile rotunjite */
-  overflow: hidden; /* Asigură că imaginea respectă dimensiunile boxului */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efect de hover */
-  background-color: #ffffffe3; /* Fundal deschis */
-  text-align: center; /* Centrează textul */
-  padding: 20px; /* Spațiu interior */
-  height: 650px; /* Înălțime mai mare pentru boxuri */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #0056b3;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffffe3;
+  text-align: center;
+  padding: 20px;
+  height: 650px;
 }
 
-/* Efect de hover pentru boxuri */
 .class-item:hover {
-  transform: translateY(-10px); /* Ridică boxul la hover */
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Umbră mai mare la hover */
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 }
 
-/* Imaginea din box */
 .class-image {
-  width: 100%; /* Imaginea ocupă întreaga lățime a boxului */
-  height: 400px; /* Înălțime fixă pentru imagine */
-  background-size: cover; /* Asigură că imaginea acoperă întreaga zonă */
-  background-position: center; /* Centrează imaginea */
-  background-repeat: no-repeat; /* Evită repetarea imaginii */
-  margin-bottom: 15px; /* Spațiu între imagine și conținut */
-  border-bottom: 2px solid #0056b3; /* Linie de separare între imagine și conținut */
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0056b3;
 }
 
 .class-image img {
-  width: 100%; /* Imaginea ocupă întreaga lățime a boxului */
-  height: 400px; /* Înălțime fixă pentru imagini */
-  object-fit: cover; /* Taie imaginea pentru a se potrivi în dimensiuni */
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
-/* Informațiile din box */
 .class-info {
-  padding: 15px; /* Spațiu interior */
-  text-align: center; /* Centrează textul */
+  padding: 15px;
+  text-align: center;
 }
 
 .class-info h5 {
-  font-size: 1.4rem; /* Dimensiunea titlului mai mică */
-  font-weight: bold; /* Titlu îngroșat */
-  margin-bottom: 10px; /* Spațiu sub titlu */
-}
-
-.class-info p {
-  font-size: 1rem; /* Dimensiunea textului mai mică */
-  color: #ffffff; /* Culoare gri pentru text */
-}
-
-/* Butonul din box */
-.class-action {
-  margin-top: auto; /* Plasează butonul în partea de jos */
-  text-align: center; /* Centrează butonul */
-}
-
-.class-action .btn {
-  font-size: 0.9rem; /* Dimensiunea textului din buton mai mică */
-  padding: 8px 12px; /* Spațiu interior mai mic în buton */
-  border-radius: 0; /* Elimină colțurile rotunjite ale butonului */
-}
-
-/* Stiluri pentru casetele de activități */
-.activity-box {
-  background-color: #ffffff; /* Fundal alb */
-  border-radius: 16px; /* Colțuri rotunjite */
-  overflow: hidden; /* Ascunde marginile imaginilor care depășesc */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animație la hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
-  margin-top: 30px; /* Spațiu între casete */
-  display: flex;
-  flex-direction: column; /* Aranjează elementele pe verticală */
-  justify-content: space-between; /* Distribuie uniform conținutul */
-  height: 500px; /* Înălțime mai mare pentru toate casetele */
-}
-
-.activity-box:hover {
-  transform: translateY(-5px); /* Ridică caseta la hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată */
-}
-
-/* Imaginea activității */
-.activity-image {
-  width: 100%; /* Imaginea ocupă întreaga lățime */
-  height: 70%; /* Înălțime mai mare pentru imagini */
-  object-fit: cover; /* Ajustează imaginea să se potrivească în casetă */
-  object-position: center; /* Centrează imaginea */
-  transition: transform 0.3s ease; /* Animație la hover */
-}
-
-.activity-box:hover .activity-image {
-  transform: scale(1.05); /* Mărește imaginea la hover */
-}
-
-/* Conținutul activității */
-.activity-content {
-  padding: 20px;
-  text-align: center;
-  flex-grow: 1; /* Permite conținutului să ocupe spațiul rămas */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Distribuie uniform titlul și butonul */
-}
-
-.activity-title {
-  font-size: 1.5rem; /* Dimensiune mai mare pentru titlu */
+  font-size: 1.4rem;
   font-weight: bold;
-  color: #003f7f; /* Albastru mai închis */
   margin-bottom: 10px;
 }
 
-/* Buton pentru acțiune */
+.class-info p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.class-action {
+  margin-top: auto;
+  text-align: center;
+}
+
+.class-action .btn {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 0;
+}
+
+.activity-box {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.activity-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.activity-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.activity-box:hover .activity-image {
+  transform: scale(1.05);
+}
+
+.activity-content {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #003f7f;
+  margin-bottom: 10px;
+}
+
 .activity-content .btn-primary {
   background-color: #0056b3;
   border-color: #0056b3;
   font-size: 1rem;
   padding: 10px 20px;
-  border-radius: 20px; /* Colțuri rotunjite pentru buton */
+  border-radius: 20px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .activity-content .btn-primary:hover {
   background-color: #003f7f;
-  transform: scale(1.1); /* Mărește butonul la hover */
+  transform: scale(1.1);
 }
 
-/* Stiluri pentru titlul secțiunii */
 h2.text-center {
-  font-size: 3rem; /* Dimensiune mai mare pentru titlu */
+  font-size: 3rem;
   font-weight: bold;
-  text-transform: uppercase; /* Transformă textul în majuscule */
-  letter-spacing: 2px; /* Spațiere între litere pentru un aspect modern */
-  background: linear-gradient(90deg, #0056b3, #85c1e9); /* Gradient pentru text */
-  -webkit-text-fill-color: transparent; /* Face textul transparent pentru gradient */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #0056b3, #85c1e9);
+  -webkit-text-fill-color: transparent;
   text-align: center;
   margin-bottom: 20px;
   position: relative;
@@ -147,9 +137,9 @@ h2.text-center {
 h2.text-center::after {
   content: "";
   display: block;
-  width: 100px; /* Lungimea liniei decorative */
-  height: 4px; /* Grosimea liniei decorative */
-  background: linear-gradient(90deg, #0056b3, #85c1e9); /* Gradient pentru linie */
-  margin: 10px auto 0; /* Centrează linia sub titlu */
-  border-radius: 2px; /* Colțuri rotunjite pentru linie */
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #0056b3, #85c1e9);
+  margin: 10px auto 0;
+  border-radius: 2px;
 }

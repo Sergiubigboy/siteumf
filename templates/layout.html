@@ -25,7 +25,7 @@
     {% block extra_css %}{% endblock %}
   </head>
   <body>
-    <!-- Navbar -->
+    
      <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
       <div class="container">
         <a class="navbar-brand" href="/">Liceul UMFST „George Emil Palade"</a>
@@ -158,32 +158,32 @@
       </div>
     </nav>
 
-    <!-- Hero Section outside the block -->
+    
     {% if not no_hero %}
     <div
       class="hero-section"
       style="background: url('{{ background }}') no-repeat center top; background-size: cover;"
     >
-      <!-- Left Logo -->
+      
       <img
         src="{{ url_for('static', filename='images/sigle/UMFST.png') }}"
         alt="Liceu Sigla"
         class="hero-logo-left"
       />
 
-      <!-- Hero Content -->
+      
       <div class="hero-overlay"></div>
       <div class="hero-container">
         <h1 class="hero-title">{{ title }}</h1>
       </div>
 
-      <!-- Right Logo -->
+      
       <img
         src="{{ url_for('static', filename='images/sigle/liceuSigla.png') }}"
         alt="UMFST Logo"
         class="hero-logo-right"
       />
-       <!-- Top Right Logo -->
+       
   <img
   src="{{ url_for('static', filename='images/sigle/logo80alb.png') }}"
   alt="Logo 80 Alb"
@@ -192,12 +192,9 @@
 </div>
 {% endif %}
 
-
-    <!-- Content block -->
-
     {% block content %}{% endblock %}
 
-    <!-- Footer -->
+    
 <footer class="footer mt-5">
   <div class="text-center py-4">
     <p class="mb-2">© 2025 Liceul UMFST. Toate drepturile rezervate.</p>
@@ -217,29 +214,26 @@
           window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > lastScrollTop) {
-          // Scroll în jos - ascunde navbar-ul
-          navbar.style.top = "-400px"; // Ascunde navbar-ul (ajustează în funcție de înălțimea navbar-ului)
+          navbar.style.top = "-400px"; 
         } else {
-          // Scroll în sus - arată navbar-ul
           navbar.style.top = "0";
         }
 
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Previne valori negative
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
       });
     </script>
     <script>
-      // Funcție pentru a verifica dacă un element este vizibil în viewport cu un offset
+    
       function isInViewport(element) {
         const rect = element.getBoundingClientRect();
-        const offset = 80; // Offset de 20px
+        const offset = 80; 
         return (
           rect.top <=
             (window.innerHeight || document.documentElement.clientHeight) -
               offset && rect.bottom >= offset
         );
       }
-
-      // Activează clasa "show" pentru elementele vizibile
+  
       function handleScroll() {
         const fadeElements = document.querySelectorAll(".fade-in");
         fadeElements.forEach((el) => {
@@ -248,11 +242,7 @@
           }
         });
       }
-
-      // Ascultă evenimentul de scroll
       window.addEventListener("scroll", handleScroll);
-
-      // Rulează funcția la încărcarea paginii
       document.addEventListener("DOMContentLoaded", handleScroll);
     </script>
     {% block extra_js %}{% endblock %}

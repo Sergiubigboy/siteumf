@@ -1,7 +1,6 @@
 
 
 
-/* Forme opace pe toată secțiunea */
 .background-shape {
     position: absolute;
     border-radius: 50%;
@@ -63,48 +62,47 @@
     margin-bottom: 30px;
 }
 
-/* Stiluri pentru secțiunea de contact */
 .contact-section {
-    background-color: #f8f9fa; /* Fundal deschis */
-    border-radius: 8px; /* Colțuri rotunjite */
+    background-color: #f8f9fa; 
+    border-radius: 8px;
     text-align: center;
 }
 
 .contact-section .section-title {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #002c58; /* Albastru închis */
+    color: #002c58; 
     margin-bottom: 20px;
 }
 
 .contact-section .section-text {
     font-size: 1rem;
-    color: #555; /* Gri deschis */
+    color: #555; 
     margin-bottom: 30px;
 }
 
 .contact-box {
-    background-color: #f8f9fa; /* Fundal deschis */
-    border-radius: 8px; /* Colțuri rotunjite */
+    background-color: #f8f9fa; 
+    border-radius: 8px; 
     text-align: center;
-    position: relative; /* Asigură-te că poziționarea este relativă */
-    z-index: 10; /* Aduce caseta în prim-plan */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adaugă o umbră pentru evidențiere */
-    padding: 20px; /* Spațiere interioară */
+    position: relative; 
+    z-index: 10; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
     margin-top: 10%;
 }
 
 .contact-box .section-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #002c58; /* Albastru închis */
-    z-index:10; /* Asigură-te că titlul este deasupra formelor */
+    color: #002c58; 
+    z-index:10; 
     margin-bottom: 20px;
 }
 
 .contact-box .section-text {
     font-size: 1.5rem;
-    color: #555; /* Gri deschis */
+    color: #555; 
     margin-bottom: 20px;
 }
 
@@ -115,15 +113,15 @@
 }
 
 .contact-list li:hover {
-    cursor: pointer; /* Schimbă cursorul pentru interactivitate */
+    cursor: pointer; 
     color:#940000;
 }
 
 .contact-list a {
-    color: #0056b3; /* Albastru pentru link */
+    color: #0056b3; 
     text-decoration: none;
 }
 
 .contact-list a:hover {
-    text-decoration: underline; /* Subliniere pentru linkuri la hover */
+    text-decoration: underline; 
 }
