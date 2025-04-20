@@ -1,0 +1,676 @@
+/* Stiluri generale */
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Container principal */
+.echo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Logo-ul central */
+.logo-container {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 560px; /* Dimensiune mai mare pentru logo */
+  height: auto; /* Păstrează proporțiile */
+  animation: pulse 2s infinite ease-in-out; /* Animația rămâne activă */
+}
+
+.tagline {
+  font-size: 2.4rem;
+  margin-top: 20px;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+}
+
+/* Container pentru logo-ul cu efect 3D */
+.logo-flip-container {
+  perspective: 1000px; /* Adaugă efect 3D */
+  width: 450px; /* Dimensiunea containerului mărită */
+  height: 450px;
+  margin: 50px auto; /* Centrează pe pagină */
+}
+
+.logo-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; /* Activează efectul 3D */
+  transition: transform 0.6s ease; /* Tranziție pentru flip */
+}
+
+.logo-flip-container:hover .logo-flip {
+  transform: rotateY(180deg); /* Efect de flip la hover */
+}
+
+.logo-flip img {
+  position: absolute;
+  width: 100%; /* Logo-urile ocupă întreaga dimensiune a containerului */
+  height: 100%; /* Păstrează proporțiile */
+  backface-visibility: hidden; /* Ascunde partea din spate */
+  border-radius: 15px; /* Colțuri rotunjite */
+}
+
+/* Logo-ul alb */
+.logo-front {
+  animation: pulse !important;
+  transform: none !important;
+}
+
+/* Logo-ul color (pulse) */
+.logo:not(.logo-front) {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Animație pentru efectul de pulse */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animație pentru squash and stretch */
+@keyframes squash-stretch {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1.05, 0.95);
+  }
+  50% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.02, 0.98);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* Secțiuni interactive */
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
+
+/* Buton pentru întoarcerea acasă */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)); /* Gradient modern */
+  color: #00d4ff;
+  text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #0073e6, 0 0 80px #0073e6; /* Efect neon */
+  text-decoration: none;
+  padding: 15px 25px; /* Dimensiune mai mare */
+  border-radius: 50px; /* Colțuri complet rotunjite */
+  font-size: 1.2rem; /* Text mai mare */
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Umbre mai pronunțate */
+  transition: all 0.3s ease; /* Tranziție pentru toate proprietățile */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Bordură subtilă */
+}
+
+.back-button:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); /* Inversare gradient */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* Umbre mai mari */
+  transform: scale(1.1); /* Mărește butonul la hover */
+}
+
+.back-button:active {
+  transform: scale(0.95); /* Micșorează butonul la click */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Umbre mai mici */
+}
+
+/* Animație subtilă pentru buton */
+.back-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.back-button:hover::before {
+  opacity: 0.2; /* Efect subtil de lumină */
+}
+
+/* Container pentru freedom-box și imagine */
+.freedom-container {
+  display: flex;
+  align-items: center; /* Aliniază vertical caseta și imaginea */
+  justify-content: space-between; /* Spațiu între casetă și imagine */
+  gap: 20px; /* Spațiu între elemente */
+  max-width: 1200px; /* Lățime maximă pentru container */
+  margin: 40px auto; /* Centrează containerul pe pagină */
+  padding: 20px;
+}
+
+/* Caseta invizibilă pentru mesaj */
+.freedom-box {
+  flex: 1; /* Caseta ocupă mai mult spațiu */
+  padding: 20px;
+  text-align: left; /* Aliniază textul la stânga */
+  background: transparent; /* Fundal invizibil */
+  color: #ffffff; /* Text alb */
+  font-size: 1.6rem; /* Dimensiune mai mare a textului */
+  font-family: 'Poppins', sans-serif; /* Font modern */
+  font-weight: 600; /* Bold pentru text */
+  line-height: 2; /* Spațiere între linii pentru lizibilitate */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.1); /* Neon subtil */
+  border-left: px solid rgba(255, 111, 0, 0.8); /* Linie decorativă portocalie */
+  padding-left: 30px; /* Spațiu suplimentar pentru text */
+  position: relative; /* Necesită pentru efectul neon */
+}
+
+/* Efect neon pentru border-left */
+.freedom-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px; /* Lățimea liniei */
+  background: rgba(255, 111, 0, 0.8); /* Portocaliu vibrant */
+  box-shadow: 0 0 10px rgba(255, 111, 0, 0.8), 0 0 20px rgba(255, 111, 0, 0.6); /* Efect neon */
+  z-index: 1;
+}
+
+/* Imaginea din dreapta */
+.freedom-image img {
+  max-width: 400px; /* Dimensiune maximă pentru imagine */
+  width: 100%; /* Imaginea se redimensionează proporțional */
+  border-radius: 15px; /* Colțuri rotunjite */
+  border: 4px solid rgba(255, 111, 0, 0.8); /* Border portocaliu vibrant */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Umbre subtile */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecte de hover */
+}
+
+.freedom-image img:hover {
+  transform: scale(1.05); /* Mărește imaginea la hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* Umbre mai pronunțate */
+  border-color: rgba(255, 140, 0, 1); /* Border mai intens la hover */
+}
+
+/* Caseta suplimentară pentru mesaj */
+.extra-box {
+  display: flex; /* Activează layout-ul flexibil */
+  align-items: center; /* Aliniază vertical imaginea și textul */
+  justify-content: space-between; /* Spațiu între imagine și text */
+  gap: 20px; /* Spațiu între imagine și text */
+  margin-top: 40px; /* Spațiu între caseta anterioară și aceasta */
+  padding: 20px;
+  text-align: left; /* Aliniază textul la stânga */
+  background: transparent; /* Fundal invizibil */
+  color: #ffffff; /* Text alb */
+  font-size: 1.4rem; /* Dimensiune mai mare a textului */
+  font-family: 'Poppins', sans-serif; /* Font modern */
+  font-weight: 600; /* Bold pentru text */
+  line-height: 2; /* Spațiere între linii pentru lizibilitate */
+  max-width: 1200px; /* Lățime egală cu cea a freedom-box */
+  margin-left: auto;
+  margin-right: auto; /* Centrează caseta pe pagină */
+  position: relative; /* Necesită pentru linia decorativă */
+}
+
+/* Imaginea din extra-box */
+.extra-image img {
+  max-width: 400px; /* Dimensiune maximă pentru imagine */
+  width: 100%; /* Imaginea se redimensionează proporțional */
+  border-radius: 15px; /* Colțuri rotunjite */
+  border: 4px solid #00d4ff; /* Border portocaliu vibrant */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Umbre subtile */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecte de hover */
+}
+
+/* Textul din extra-box */
+.extra-text {
+  flex: 1; /* Textul ocupă restul spațiului */
+}
+
+/* Hover pentru imagine */
+.extra-image img:hover {
+  transform: scale(1.05); /* Mărește imaginea la hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* Umbre mai pronunțate */
+  border-color: #0073e6; /* Border mai intens la hover */
+}
+
+/* Linie decorativă pe partea dreaptă */
+.extra-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0; /* Linie pe partea dreaptă */
+  bottom: 0;
+  width: 4px; /* Lățimea liniei */
+  background: linear-gradient(180deg, #00d4ff, #0073e6); /* Gradient albastru */
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 0 0 20px rgba(0, 212, 255, 0.6); /* Efect neon */
+  z-index: 1;
+}
+
+/* Text neon */
+.extra-box p {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.1); /* Neon subtil */
+  color: #ffffff; /* Text alb */
+}
+
+/* Container pentru secțiunea „De ce” */
+.why-echo {
+  background: rgba(0, 212, 255, 0.1);
+  border: 2px solid rgba(0, 212, 255, 0.5);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 50px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  position: relative;
+}
+
+.why-echo::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(255, 111, 0, 0.2));
+  z-index: -1;
+  filter: blur(20px);
+}
+
+/* Fiecare secțiune „De ce” */
+.why-item {
+  text-align: left; /* Aliniază textul la stânga */
+  padding: 20px;
+  border-left: 4px solid transparent; /* Ascunde linia statică */
+  position: relative;
+}
+
+.why-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #00d4ff, #00d4ff); /* Gradient albastru */
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 0 0 20px rgba(0, 212, 255, 0.6); /* Neon subtil */
+  z-index: 1;
+}
+
+/* Linie decorativă combinată cu gradient fix */
+.why-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px; /* Lățime mai mare pentru a evidenția tranziția */
+  height: 100%;
+  background: linear-gradient(180deg, #ff6f00, #ff8c00, #ff8c00, #ff8c00); /* Gradient combinat portocaliu-albastru */
+  box-shadow: 0 0 10px rgba(255, 111, 0, 0.8), 0 0 20px rgba(0, 212, 255, 0.6); /* Neon subtil */
+  z-index: 1;
+}
+
+/* Titlurile secțiunilor */
+.why-item h3 {
+  font-size: 1.8rem;
+  color: #00d4ff; /* Albastru deschis */
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.8); /* Neon subtil */
+}
+
+/* Textul secțiunilor */
+.why-item p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ffffff; /* Text alb */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Neon subtil */
+}
+
+/* Secțiunea impact */
+.impact-section {
+  background: rgba(0, 212, 255, 0.1);
+  border: 2px solid rgba(0, 212, 255, 0.5);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 50px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  position: relative;
+}
+
+.impact-section h2 {
+  font-size: 2rem;
+  color: #00d4ff;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 0 0 20px rgba(0, 212, 255, 0.6);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.impact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.impact-section strong {
+  color: #ff6f00;
+  text-shadow: 0 0 10px rgba(255, 111, 0, 0.8), 0 0 20px rgba(255, 111, 0, 0.6);
+}
+
+.impact-section::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(255, 111, 0, 0.2));
+  z-index: -1;
+  filter: blur(20px);
+}
+.impact-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.impact-header h2 {
+  font-size: 2rem;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 0 0 20px rgba(0, 212, 255, 0.6);
+  margin: 0;
+}
+
+.impact-logo {
+  width: 200px;
+  height: auto;
+  padding-left: 340px;
+}
+.objectives-section {
+  background: rgba(0, 212, 255, 0.1);
+  border: 2px solid rgba(0, 212, 255, 0.5);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 50px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  position: relative;
+}
+
+.objectives-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.objectives-image-container {
+  flex: 0 0 350px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.objectives-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.objectives-text h2 {
+  font-size: 2rem;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 0 0 20px rgba(0, 212, 255, 0.6);
+  margin-bottom: 20px;
+}
+
+.objectives-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.objectives-text ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  position: relative;
+  padding-left: 20px;
+}
+
+.objectives-text ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ff6f00;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.separator-image {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 1200px; /* Lățimea secțiunii Impact */
+}
+
+.separator-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 360px; /* Înălțime fixă pentru logo și imagine */
+}
+
+.separator-logo,
+.separator-main-image {
+  height: 100%; /* Ambele elemente ocupă întreaga înălțime */
+  object-fit: contain; /* Păstrează proporțiile imaginii */
+}
+
+.separator-logo {
+  flex: 1; /* Logo-ul ocupă o parte din spațiu */
+  max-width: 80%; /* Proporție mai mică pentru logo */
+  border-radius: 10px;
+}
+
+.separator-main-image {
+  flex: 2; /* Imaginea principală ocupă mai mult spațiu */
+  max-width: 70%; /* Proporție mai mare pentru imagine */
+  border-radius: 15px;
+  border: 4px solid rgba(0, 212, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.8), 0 0 30px rgba(0, 212, 255, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.separator-main-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 212, 255, 1), 0 0 50px rgba(0, 212, 255, 0.8);
+}
+.final-call-to-action {
+  background: rgba(0, 212, 255, 0.1);
+  border: 2px solid rgba(0, 212, 255, 0.5);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 50px auto;
+  max-width: 900px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.final-call-to-action::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(255, 111, 0, 0.2));
+  z-index: -1;
+  filter: blur(20px);
+}
+
+.final-call-to-action p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 212, 255, 0.3), 0 0 30px rgba(0, 212, 255, 0.2);
+  color: #ffffff;
+}
+
+.final-call-to-action h3 {
+  font-size: 1.5rem;
+  color: #ff6f00;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(255, 111, 0, 0.8), 0 0 30px rgba(255, 111, 0, 0.6), 0 0 45px rgba(255, 111, 0, 0.4);
+  margin: 0;
+  text-align: center;
+}
+
+.final-call-to-action p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 212, 255, 0.3), 0 0 30px rgba(0, 212, 255, 0.2);
+  color: #ffffff;
+}
+
+.final-call-to-action h3 {
+  font-size: 1.5rem;
+  color: #ff6f00;
+  text-shadow: 0 0 15px rgba(255, 111, 0, 0.8), 0 0 30px rgba(255, 111, 0, 0.6), 0 0 45px rgba(255, 111, 0, 0.4);
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+  .sections {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .freedom-container {
+    flex-direction: column; /* Elemente afișate pe verticală */
+    gap: 20px;
+  }
+
+  .freedom-image img {
+    max-width: 100%; /* Imaginea ocupă întreaga lățime pe ecrane mici */
+  }
+
+  .extra-box {
+    flex-direction: column; /* Elemente afișate pe verticală */
+    gap: 20px;
+  }
+
+  .extra-image img {
+    max-width: 100%; /* Imaginea ocupă întreaga lățime pe ecrane mici */
+  }
+
+  .extra-text {
+    font-size: 1.2rem; /* Dimensiune mai mică pentru text pe ecrane mici */
+  }
+
+  .extra-box {
+    font-size: 1.2rem; /* Dimensiune mai mică pe ecrane mici */
+    padding: 15px;
+  }
+}
+
+/* Importă fontul Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
