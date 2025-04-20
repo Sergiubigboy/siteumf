@@ -1,4 +1,3 @@
-/* Stiluri pentru meniul de navigare */
 .nav-pills .nav-link {
   color: #007bff;
   font-weight: bold;
@@ -12,38 +11,37 @@
   color: #fff;
 }
 
-/* Stiluri pentru cardurile persoanelor */
 .card {
   border: 3px solid #0056b3;
   border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a larger shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover effect */
-  padding: 10px; /* Reduce padding to make the content more compact */
-  min-height: 150px; /* Reduce the height to make the boxes thinner */
-  margin: 20px 10px; /* Add spacing between the boxes */
-  background-color: #f8f8f8; /* Set a white background for the cards */
-  text-align: center; /* Center the text horizontally */
-  display: flex; /* Enable Flexbox */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+  min-height: 150px;
+  margin: 20px 10px;
+  background-color: #f8f8f8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Slightly lift the card on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .card-title {
-  font-size: 1.5rem; /* Slightly reduce the title size */
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 6px; /* Reduce spacing below the title */
+  margin-bottom: 6px;
   margin-top: 20px;
 }
 
 .card-text {
-  font-size: 1.2rem; /* Slightly reduce the font size for better readability */
-  color: #555; /* Use a slightly darker color for text */
+  font-size: 1.2rem;
+  color: #555;
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -62,10 +60,10 @@
 
 .hero-section {
   background: url('/static/images/hero.jpg') no-repeat center center;
-  background-size: cover; /* Ensure the image covers the entire section */
-  height: 300px; /* Adjust the height as needed */
+  background-size: cover;
+  height: 300px;
   position: relative;
-  margin-bottom: 50px; /* Add space below the hero section */
+  margin-bottom: 50px;
 }
 
 .hero-overlay {
@@ -74,40 +72,40 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center; /* Center the text vertically */
-  justify-content: center; /* Center the text horizontally */
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-overlay h1 {
   font-size: 2.5rem;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow to the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   margin: 0;
 }
 
 .rotated-background {
   background: url('/static/images/texture.png') no-repeat center center;
-  background-size: 200px 200px; /* Mărește textura */
-  position: fixed; /* Fundal fix */
+  background-size: 200px 200px;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 1500px; /* Lărgește fundalul */
-  height: 100vh; /* Acoperă întreaga înălțime a paginii */
-  transform: rotate(90deg); /* Rotește imaginea cu 90 de grade */
-  z-index: -1; /* Trimite fundalul în spate */
-  filter: hue-rotate(200deg); /* Aplică o nuanță de albastru */
+  width: 1500px;
+  height: 100vh;
+  transform: rotate(90deg);
+  z-index: -1;
+  filter: hue-rotate(200deg);
 }
 
 .color-section {
-  width: 100%; /* Lățime completă */
-  background-color: #00172d; /* Culoare de rezervă */
-  background-image: url('/static/images/texture.png'); /* Imaginea texturii */
-  background-size: cover; /* Asigură că textura acoperă întreaga secțiune */
-  background-blend-mode: overlay; /* Combină textura cu culoarea de fundal */
+  width: 100%;
+  background-color: #00172d;
+  background-image: url('/static/images/texture.png');
+  background-size: cover;
+  background-blend-mode: overlay;
   position: relative;
   margin-top: 20px;
-  padding: 100px 0; /* Reduce înălțimea secțiunii */
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); /* Creează unghiuri la margini */
+  padding: 100px 0;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
 }

@@ -6,10 +6,10 @@
 {% endblock %} {% block content %}
 
 <div class="page-container">
-  <!-- Secțiunea claselor -->
+
   <div class="container my-5">
     <div class="class-section">
-      <!-- Search Bar -->
+    
       <form method="GET" action="{{ url_for('lista_clase') }}" class="mb-4">
         <div class="input-group">
           <input
@@ -23,7 +23,7 @@
         </div>
       </form>
 
-      <!-- Lista clase pe mai multe rânduri -->
+      
       <div class="class-list">
         {% for clasa, litera, profil in clase %}
         <div class="class-item">
@@ -54,7 +54,7 @@
         {% endfor %}
       </div>
 
-      <!-- Secțiunea statisticilor elevilor -->
+    
       <div class="student-stats my-5">
         <h3 class="stats-title">Statistici Elevi</h3>
         <div class="stats-cards">
