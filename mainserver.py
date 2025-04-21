@@ -115,6 +115,7 @@ def pagina_activitate(id_activitate):
         subtitlu=activitate["titlu"],
         title=activitate["titlu"],
         background="static/images/poze-hero/bgmain.png",
+        no_hero=True
     )
 
 @app.route('/club/<club_name>')
@@ -141,7 +142,7 @@ def club_page(club_name):
         "muzica": {
             "titlu": "Club de muzică",
             "descriere": "Clubul de muzică încearcă să răspundă dorinței elevilor de a-și cultiva pasiunea pentru artă. Nu e vorba de un singur gen de muzică, pentru că elevii noștri au oportunitatea de a cânta atât în trupa școlii, cât și în concerte alături de Orchestra UMFST.",
-            "imagine": "static/images/muzica.jpg",
+            "imagine": "images/HUB/club-de-muzica.jpg",
             "coordonatori": [""]
         },
         "public-speaking": {

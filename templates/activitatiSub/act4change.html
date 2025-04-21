@@ -1,14 +1,17 @@
 {% extends "layout.html" %} {% block extra_css %}
 <link
   rel="stylesheet"
-  href="{{ url_for('static', filename='css/activitati/campania.css') }}"
+  href="{{ url_for('static', filename='css/activitati.css') }}"
 />
 {% endblock %} {% block content %}
 <div class="container mt-4">
+  <div class="title-box">
+    <h1>Act4Change</h1>
+  </div>
   <div class="row mt-4">
     <div class="col-md-6">
       <img
-        src="{{ url_for('static', filename='images/' + activitate.imagine) }}"
+        src="{{ url_for('static', filename='images/activitati/act4change.jpg') }}"
         alt="{{ activitate.titlu }}"
         class="img-fluid rounded"
       />
