@@ -10,11 +10,11 @@
   />
 </head>
 <body>
-  <!-- Buton pentru întoarcerea acasă -->
+
   <a href="/" class="back-button">Acasă</a>
 
   <div class="echo-container">
-    <!-- Logo-ul central -->
+
     <div class="logo-container">
       <img
         src="{{ url_for('static', filename='images/echo/echo-color.png') }}"
@@ -24,7 +24,6 @@
       <h1 class="tagline">Unde ideile prind glas și se propagă</h1>
     </div>
 
-    <!-- Secțiuni interactive -->
     <div class="sections">
       <div class="section">
         <h2>De ce „Echo”?</h2>
@@ -49,7 +48,6 @@
       </div>
     </div>
 
-    <!-- Caseta invizibilă pentru mesaj și imagine -->
     <div class="freedom-container">
       <div class="freedom-box">
         <p>
@@ -64,7 +62,7 @@
       </div>
     </div>
 
-    <!-- Caseta pentru mesaj suplimentar -->
+
     <div class="extra-box">
       <div class="extra-image">
         <img
@@ -79,7 +77,6 @@
       </div>
     </div>
 
-    <!-- Secțiune „De ce” -->
     <div class="why-echo">
       <div class="why-item">
         <h3>De ce „Echo”?</h3>
@@ -101,7 +98,6 @@
       </div>
     </div>
 
-    <!-- Secțiune „Impact” -->
     <div class="impact-section">
       <div class="impact-header">
         <h2>Echo Reactor Impact</h2>
@@ -136,8 +132,6 @@
       </div>
     </div>
     
-
-    <!-- Secțiune „Obiective” -->
     <div class="objectives-section">
       <div class="objectives-content">
         <div class="objectives-text">
@@ -153,7 +147,6 @@
       </div>
     </div>
 
-    <!-- Secțiune „Final Call to Action” -->
     <div class="final-call-to-action">
       <p>
         Într-o lume în care adevărul e deseori relativizat, tinerii pot deveni ecoul cunoașterii științifice. Prin întrebări bine puse, prin metode riguroase și prin curajul de a explica ce pare complicat, ei pot face știința relevantă pentru toți.
@@ -161,5 +154,26 @@
       <h3>Intră în joc! Propune! Creează! Fii parte din ecoul care schimbă regulile!</h3>
     </div>
   </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img
+          src="{{ url_for('static', filename='images/echo/echo-alb.png') }}"
+          alt="Echo Reactor Logo Alb"
+        />
+      </div>
+      <div class="footer-quote">
+        <p>Echo Reactor - Unde ideile prind glas și se propagă.</p>
+      </div>
+    </div>
+    <div class="footer-contact">
+      <p>Email: <a href="mailto:contact@echoreactor.com">contact@echoreactor.com</a></p>
+      <p>Telefon: <a href="tel:+40712345678">+40 712 345 678</a></p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Echo Reactor. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -317,13 +317,13 @@ body {
 
 /* Container pentru secțiunea „De ce” */
 .why-echo {
-  background: rgba(0, 212, 255, 0.1);
-  border: 2px solid rgba(0, 212, 255, 0.5);
+  background: rgba(0, 213, 255, 0);
+  border: 2px solid rgba(0, 213, 255, 0);
   border-radius: 15px;
   padding: 30px;
   margin: 50px auto;
   max-width: 900px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0);
   text-align: left;
   color: #ffffff;
   font-weight: bold;
@@ -340,7 +340,7 @@ body {
   right: -10px;
   bottom: -10px;
   border-radius: 20px;
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(255, 111, 0, 0.2));
+  background: linear-gradient(135deg, rgba(0, 213, 255, 0), rgba(255, 111, 0, 0));
   z-index: -1;
   filter: blur(20px);
 }
@@ -674,3 +674,66 @@ body {
 
 /* Importă fontul Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.site-footer {
+  background: rgba(0, 22, 63, 0.9); /* Fundal închis, ușor transparent */
+  color: #ffffff;
+  padding: 10px 5px; /* Padding redus pentru a face footer-ul mai mic */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem; /* Text mai mic */
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5); /* Umbre subtile pentru separare */
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Spațiu redus între logo și citat */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 180px; /* Logo mai mare */
+  height: auto;
+}
+
+.footer-quote p {
+  font-size: 1.8rem; /* Text mai mic pentru citat */
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.8); /* Neon albastru */
+  color: #00d4ff;
+  text-align: left; /* Aliniază textul la stânga */
+}
+
+.footer-contact {
+  margin-top: 5px; /* Spațiu redus între secțiuni */
+}
+
+.footer-contact p {
+  margin: 3px 0;
+  font-size: 0.9rem; /* Text mai mic */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Neon subtil */
+}
+
+.footer-contact a {
+  color: #ff6f00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-shadow: 0 0 10px rgba(255, 111, 0, 0.8); /* Neon portocaliu */
+}
+
+.footer-contact a:hover {
+  color: #00d4ff;
+  text-shadow: 0 0 15px rgba(0, 212, 255, 1); /* Neon albastru intens */
+}
+
+.footer-bottom {
+  margin-top: 5px; /* Spațiu redus între secțiuni */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Linie discretă */
+  padding-top: 5px; /* Padding redus */
+  font-size: 0.8rem; /* Text mai mic pentru copyright */
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Neon subtil */
+}

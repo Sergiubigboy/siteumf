@@ -72,7 +72,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 500px;
+  height: 700px;
 }
 
 .activity-box:hover {
@@ -123,15 +123,15 @@
 }
 
 h2.text-center {
-  font-size: 3rem;
+  font-size: 2.4rem;
+  color: #0056b3; /* Albastru solid */
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background: linear-gradient(90deg, #0056b3, #85c1e9);
-  -webkit-text-fill-color: transparent;
   text-align: center;
   margin-bottom: 20px;
   position: relative;
+  z-index: 10;
 }
 
 h2.text-center::after {
@@ -139,7 +139,8 @@ h2.text-center::after {
   display: block;
   width: 100px;
   height: 4px;
-  background: linear-gradient(90deg, #0056b3, #85c1e9);
+  background: linear-gradient(90deg, #0056b3, #85c1e9); /* Gradient albastru */
   margin: 10px auto 0;
   border-radius: 2px;
+  z-index: 10;
 }
