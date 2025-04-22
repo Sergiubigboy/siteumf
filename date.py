@@ -4,13 +4,13 @@ activitati = [
     {
         "id": "campania-conversatii-in-jurul-scolii",
         "titlu": "Campania: Conversații în jurul școlii",
-        "imagine": "campania.jpg",
+        "imagine": "activitati/campania.jpg",
         "template": "activitatiSub/campania.html"
     },
     {
         "id": "lyceumcloud-umfst",
         "titlu": "LyceumCloud.UMFST",
-        "imagine": "BancaDinFata.jpg",
+        "imagine": "activitati/lyceumcloud.jpg",
         "template": "activitatiSub/lyceumcloud-umfst.html"
     },
     {
@@ -28,7 +28,7 @@ activitati = [
     {
         "id": "act4change",
         "titlu": "Act4Change",
-        "imagine": "BancaDinFata.jpg",
+        "imagine": "activitati/act4change.jpg",
         "template": "activitatiSub/act4change.html"
     },
     {
@@ -40,13 +40,13 @@ activitati = [
 ]
 
 anunturi = [
-    {"titlu": "Anunț 1", "descriere": "Detalii despre anunțul 1.", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 2", "descriere": "Detalii despre anunțul 2.", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 3", "descriere": "Detalii despre anunțul 3.", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 4", "descriere": "Detalii despre anunțul 3.", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 5", "descriere": "Detalii despre anunțul 3.", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 6", "descriere": "Detalii despre anunțul 3.", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 7", "descriere": "Detalii despre anunțul 3.", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 1", "descriere": "Detalii despre anunțul 1 (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 2", "descriere": "Detalii despre anunțul 2 (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 3", "descriere": "Detalii despre anunțul 3 (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 4", "descriere": "Detalii despre anunțul 4 (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 5", "descriere": "Detalii despre anunțul 5 (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 6", "descriere": "Detalii despre anunțul 6 (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 7", "descriere": "Detalii despre anunțul 7 (În curând).", "imagine": "bgmain.png"},
 
 ]
 

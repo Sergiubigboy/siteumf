@@ -1,9 +1,10 @@
-{% extends "layout.html" %} {% block extra_css %}
-<link
-  rel="stylesheet"
-  href="{{ url_for('static', filename='css/activitati.css') }}"
-/>
-{% endblock %} {% block content %}
+{% extends "layout.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/activitati.css') }}">
+{% endblock %}
+
+{% block content %}
 <div class="container my-5">
   <h2 class="text-center mb-5">
     Descoperiți oportunitățile unice pe care activitățile noastre le oferă!
@@ -11,19 +12,14 @@
   <div class="row g-4">
     {% for activitate in activitati %}
     <div class="col-lg-4 col-md-6">
-      <div class="card shadow-sm">
-        <img
-          src="{{ url_for('static', filename='images/' + activitate.imagine) }}"
-          class="card-img-top"
-          alt="{{ activitate.titlu }}"
-        />
-        <div class="card-body">
-          <h5 class="card-title">{{ activitate.titlu }}</h5>
-          <a
-            href="{{ url_for('pagina_activitate', id_activitate=activitate.id) }}"
-            class="btn btn-primary btn-sm mt-3"
-            >Vezi detalii</a
-          >
+      <div class="activity-box shadow-sm">
+        <div class="activity-title-box">
+          <h5 class="activity-title">{{ activitate.titlu }}</h5>
+        </div>
+        <div class="activity-button-box">
+          <a href="{{ url_for('pagina_activitate', id_activitate=activitate.id) }}" class="btn btn-primary btn-sm">
+            Vezi detalii
+          </a>
         </div>
       </div>
     </div>
