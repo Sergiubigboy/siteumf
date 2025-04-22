@@ -19,6 +19,18 @@ body {
   padding: 200px 0;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
 }
+@media (max-width: 768px) {
+  .color-section {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    padding: 50px 20px;
+  }
+
+  .color-section h2,
+  .color-section p {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 
 body::-webkit-scrollbar { 
   width: 8px;
@@ -331,6 +343,19 @@ main {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .header-title {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
