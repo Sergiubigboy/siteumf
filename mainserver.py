@@ -109,9 +109,25 @@ def pagina_activitate(id_activitate):
     activitate = next((a for a in activitati if a["id"] == id_activitate), None)
     if not activitate:
         return f"Activitatea '{id_activitate}' nu a fost găsită.", 404
+
+    
+    hub_imagini = []
+    if id_activitate == "mix-it-hub-umfst":
+        hub_imagini = [
+            "1-ipostazefeminitatii.jpg",
+            "2-visdeiarna.jpg",
+            "3-1decembrie.jpg",
+            "4-cufaruleminescu.jpg",
+            "5-24ianuarie.jpg",
+            "6-voluntariatcopiimici.jpg",
+            "7-intalnirecucampioana.jpg",
+            "8-voluntariatolimpbio.jpg"
+        ]
+
     return render_template(
         activitate["template"],
         activitate=activitate,
+        hub_imagini=hub_imagini,  
         subtitlu=activitate["titlu"],
         title=activitate["titlu"],
         background="static/images/poze-hero/bgmain.png",

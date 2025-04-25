@@ -38,7 +38,16 @@ activitati = [
         "template": "activitatiSub/echoReactor.html"
     }
 ]
-
+hub_imagini = [
+    "1-ipostazelefeminitatii.jpg",
+    "2-visdeiarna.jpg",
+    "3-1decembrie.jpg",
+    "4-cufaruleminescu.jpg",
+    "5-24ianuarie.jpg",
+    "6-voluntariatcopiimici.jpg",
+    "7-intalnirecucampioana.jpg",
+    "8-voluntariatolimpbio.jpg"
+]
 anunturi = [
     {"titlu": "Anunț 1", "descriere": "Detalii despre anunțul 1 (În curând).", "imagine": "bgmain.png"},
     {"titlu": "Anunț 2", "descriere": "Detalii despre anunțul 2 (În curând).", "imagine": "bgmain.png"},
