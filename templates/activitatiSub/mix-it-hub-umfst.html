@@ -37,11 +37,15 @@
 
 <div class="hub-gallery mt-5 p-5 shadow-lg rounded">
   <h2 class="text-center mb-4">Galerie Mix IT Hub</h2>
-  <div class="row g-4">
+  <div class="row">
     {% for imagine in hub_imagini %}
-    <div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
       <div class="gallery-image-box shadow-sm rounded">
-        <img src="{{ url_for('static', filename='images/HUB/' + imagine) }}" alt="Mix IT Hub" class="img-fluid rounded">
+        <img 
+          src="{{ url_for('static', filename='images/HUB/' + imagine) }}" 
+          alt="Mix IT Hub" 
+          class="img-fluid rounded"
+        >
       </div>
     </div>
     {% endfor %}
