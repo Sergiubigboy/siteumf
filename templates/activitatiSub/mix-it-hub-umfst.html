@@ -4,6 +4,7 @@
   href="{{ url_for('static', filename='css/mix-it-hub-umfst.css') }}"
 />
 {% endblock %} {% block content %}
+
 <div class="container mt-5">
   <div class="modern-box p-5 shadow-lg rounded">
     <h2 class="text-center mb-4">Mix IT Hub UMFST</h2>
@@ -31,6 +32,19 @@
       Suntem siguri că liceul nu înseamnă doar materii și note, înseamnă
       experiențe. Iar Mix IT Hub este locul unde acestea prind viață!
     </p>
+  </div>
+</div>
+
+<div class="hub-gallery mt-5 p-5 shadow-lg rounded">
+  <h2 class="text-center mb-4">Galerie Mix IT Hub</h2>
+  <div class="row g-4">
+    {% for imagine in hub_imagini %}
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="gallery-image-box shadow-sm rounded">
+        <img src="{{ url_for('static', filename='images/HUB/' + imagine) }}" alt="Mix IT Hub" class="img-fluid rounded">
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
 
