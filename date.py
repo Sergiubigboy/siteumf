@@ -39,7 +39,7 @@ activitati = [
     }
 ]
 hub_imagini = [
-    "1-ipostazelefeminitatii.jpg",
+    "1-ipostazealefeminitatii.jpg",
     "2-visdeiarna.jpg",
     "3-1decembrie.jpg",
     "4-cufaruleminescu.jpg",

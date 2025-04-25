@@ -51,7 +51,7 @@ def elevi_clasa(clasa, litera):
     elevi_cu_performante = [
         elev for elev in elevi_filtrati if "performante" in elev
     ]
-    orar = f"static/images/orar{clasa}{litera}.PNG"
+    orar = f"orar{clasa}{litera}.PNG"
     return render_template(
         'elevi_clasa.html',
         elevi=elevi_filtrati,
