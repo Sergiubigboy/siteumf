@@ -39,7 +39,7 @@ activitati = [
     }
 ]
 hub_imagini = [
-    "1-ipostazealefeminitatii.jpg",
+    "1-ipostazelefeminitatii.jpg",
     "2-visdeiarna.jpg",
     "3-1decembrie.jpg",
     "4-cufaruleminescu.jpg",
@@ -334,7 +334,14 @@ clase = [
             }
         ]},
             {"nume": "Oaneș Sofia"},
-            {"nume": "Paca Raoul"},
+            {"nume": "Paca Raoul",
+             "performante": [
+                {
+                    "titlu": "Olimpiada Națională de Informatică",
+                    "locatie": "Tg Mureș, etapa județeană",
+                    "premiu": "Premiul III"
+                }
+            ]},
             {"nume": "Pantea Tudor"},
             {"nume": "Pastia Catinca"},
             {"nume": "Someșan Adrian"},
