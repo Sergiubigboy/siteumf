@@ -123,6 +123,7 @@
   justify-content: space-between;
   text-align: center;
   position: relative;
+  height: 240px;
   overflow: hidden;
 }
 
@@ -132,7 +133,7 @@
   top: -50px;
   left: -50px;
   width: 150px;
-  height: 150px;
+  height: 180px;
   background: rgba(0, 86, 179, 0.1);
   border-radius: 50%;
   z-index: 0;

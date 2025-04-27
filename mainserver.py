@@ -114,7 +114,7 @@ def pagina_activitate(id_activitate):
     hub_imagini = []
     if id_activitate == "mix-it-hub-umfst":
         hub_imagini = [
-            "1-ipostazefeminitatii.jpg",
+            "1-ipostazelefeminitatii.jpg",
             "2-visdeiarna.jpg",
             "3-1decembrie.jpg",
             "4-cufaruleminescu.jpg",
@@ -151,7 +151,6 @@ def club_page(club_name):
         "robotica": {
             "titlu": "Club de robotică",
             "descriere": "Elevii pasionați de tehnologie, de soluții inteligente, au șansa de a participa la acest atelier în care imaginația se întâlnește cu știința, iar treptat ideile prin formă prin fire, senzori și cod. Liceenii lucrează în echipe pentru a proiecta, construi și programa roboți, iar clubul îți oferă șansa de a crea și de a concura în competiții locale și naționale.",
-            "imagine": "static/images/cluburi/robotica.jpg",
             "coordonatori": [""]
         },
         "muzica": {
@@ -180,7 +179,6 @@ def club_page(club_name):
         'club.html',
         titlu=club["titlu"],
         descriere=club["descriere"],
-        imagine=club["imagine"],
         coordonatori=club["coordonatori"],
         no_hero=True
     )
@@ -192,7 +190,6 @@ def proiect_page(proiect_name):
             "titlu": "Bookflix",
             "subtitlu": "Descoperă lumea fascinantă a cărților prin Bookflix!",
             "descriere": "Bookflix este o activitate complexă, care combină lectura în limba străină cu dezvoltarea si valorificarea abilităților digitale și de comunicare ale elevilor. Astfel, elevii reușesc să pună în scenă „digital skills” și „soft skills”, pornind de la lectura unei cărți în limba engleză.",
-            "imagine": "static/images/proiecte/bookflix.jpg"
         },
         "saptamana-lecturii": {
             "titlu": "Săptămâna lecturii",
@@ -208,13 +205,13 @@ def proiect_page(proiect_name):
             <p><strong>Workshop didactic (15 februarie)</strong><br>
             Evenimentul care încheie săptămâna va fi dedicat cadrelor didactice din învățământul primar. Asist. univ. dr. Bogdan Rațiu va susține workshopul „Lectură literară vs. Literație?”, în care vor fi prezentate strategii de lectură și literație aplicabile la clasă.</p>
             """,
-            "imagine": "static/images/proiecte/saptamana-lecturii.jpg"
+
         },
         "vis-de-iarna": {
             "titlu": "Vis de iarnă",
             "subtitlu": "Un proiect magic pentru a sărbători frumusețea iernii.",
             "descriere": "În colaborare cu Palatul Copiilor din Baia Mare:  proiectul educațional național „Vis de iarnă”, la care au participat și elevii Liceului UMFST „George Emil Palade” din Târgu Mureș. Proiectul a avut patru secțiuni: concursul de creații literare cu tema „Iarna de odinioară versus iarna actuală”, ateliere de arte plastice și lucrări tridimensionale și concursul de interpretare vocală – colinde tradiționale. În data de 9 decembrie a avut loc și spectacolul de colinde „Vis de iarnă”.",
-            "imagine": "static/images/proiecte/vis-de-iarna.jpg"
+
         }
     }
     proiect = proiecte.get(proiect_name)
@@ -225,7 +222,6 @@ def proiect_page(proiect_name):
         titlu=proiect["titlu"],
         subtitlu=proiect["subtitlu"],
         descriere=proiect["descriere"],
-        imagine=proiect["imagine"],
         no_hero=True
     )
 
@@ -263,7 +259,7 @@ Prin coordonarea cadrelor didactice de la Facultatea de Științe și Litere „
 Evenimentul a avut momente de recitări din poeziile eminesciene în limba română și traduse în limbi străine, momente de interpretare vocală și instrumentală din compozitori români, prezentarea unui videoclip cu un „tezaur uman” - meșter popular din județul Mureș, iar ca încununare a momentului artistic vor fi purtate cu mândrie cămăși naționale, iile cusute de un cadru didactic din universitate. Semnificația profundă a manifestării va fi expusă de cadre didactice
 </p>
             """,
-            "imagine": "static/images/celebrari/ziua-culturii-nationale.jpg"
+            "imagine":None
         },
         "ziua-cititului-impreuna": {
             "titlu": "Ziua Cititului Împreună",
@@ -271,7 +267,7 @@ Evenimentul a avut momente de recitări din poeziile eminesciene în limba româ
             "descriere": """
             <p>Muzeul Universității „George Emil Palade” are onoarea de a găzdui un obiect cu o profundă valoare istorică și culturală: cufărul lui Mihai Eminescu. Renumitul cufăr, marcat pe placheta centrală cu inscripția „M. Eminovici”, l-a însoțit pe Eminescu de-a lungul întregii sale vieți, devenind martor al călătoriilor sale prin țară și Europa încă din copilărie. În cadrul evenimentului cultural „Istoria prin obiecte tangibile. Cufărul poetului Mihai Eminescu”, care a avut loc în data de 5 februarie 2025, când a fost sărbătorită Ziua Internațională a Cititului Împreună, cei prezenți au avut ocazia să admire cufărul și să descopere povestea din spatele acestuia, dar și să participe la un moment special pregătit de elevii Liceului UMFST „George Emil Palade”. </p>
             """,
-            "imagine": "static/images/celebrari/ziua-cititului-impreuna.jpg"
+            "imagine": None
         }
     }
 
@@ -286,7 +282,6 @@ Evenimentul a avut momente de recitări din poeziile eminesciene în limba româ
         titlu=celebrare["titlu"],
         subtitlu=celebrare["subtitlu"],
         descriere=celebrare["descriere"],
-        imagine=celebrare["imagine"],
         no_hero=True
     )
 

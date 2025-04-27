@@ -37,7 +37,6 @@
     left: 50px;
 }
 
-/* Stiluri pentru secțiuni */
 .section-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
@@ -124,4 +123,83 @@
 
 .contact-list a:hover {
     text-decoration: underline; 
+}
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem; 
+    }
+
+    .section-text {
+        font-size: 1rem; 
+        line-height: 1.6;
+    }
+
+    .contact-section .section-title {
+        font-size: 1.5rem; 
+    }
+
+    .contact-section .section-text {
+        font-size: 0.9rem; 
+    }
+
+    .contact-box {
+        padding: 15px;
+        margin-top: 5%; 
+    }
+
+    .contact-box .section-title {
+        font-size: 2rem;
+    }
+
+    .contact-box .section-text {
+        font-size: 1.2rem; 
+    }
+
+    .contact-list li {
+        font-size: 1.2rem; 
+        margin-bottom: 15px;
+    }
+
+    .contact-list a {
+        font-size: 1.2rem; 
+    }
+
+    
+    .background-shape {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem; 
+    }
+
+    .section-text {
+        font-size: 0.9rem; 
+    }
+
+     .contact-section .section-title {
+        font-size: 1.3rem;
+    }
+
+    .contact-section .section-text {
+        font-size: 0.85rem;
+    }
+
+    .contact-box .section-title {
+        font-size: 1.8rem; 
+    }
+
+    .contact-box .section-text {
+        font-size: 1rem; 
+    }
+
+    .contact-list li {
+        font-size: 1rem; 
+    }
+
+     .contact-list a {
+        font-size: 1rem;
+    }
 }

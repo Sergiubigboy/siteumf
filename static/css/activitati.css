@@ -11,7 +11,7 @@
   background-color: #ffffffe3;
   text-align: center;
   padding: 20px;
-  height: 650px;
+  height: 450px;
 }
 
 .class-item:hover {
@@ -63,42 +63,71 @@
 }
 
 .activity-box {
-  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  background-color: #f9f9f9; 
   border-radius: 15px;
-  padding: 20px;
+  padding: 15px; 
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; 
   height: 100%;
   position: relative;
   overflow: hidden;
-  min-height: 350px;
-}
+  min-height: 230px; 
+  margin-bottom: 40px;
 
-.activity-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: linear-gradient(90deg, #0056b3, #85c1e9);
-  z-index: 1;
-}
+ 
+  background-image:
+    /* Cercuri Albastre (mai multe) */
+    radial-gradient(circle, rgba(0, 86, 179, 0.15) 10%, transparent 11%), 
+    radial-gradient(circle, rgba(0, 86, 179, 0.2) 20%, transparent 21%),
+    radial-gradient(circle, rgba(133, 193, 233, 0.2) 15%, transparent 16%), 
+    radial-gradient(circle, rgba(0, 86, 179, 0.1) 12%, transparent 13%), 
+    radial-gradient(circle, rgba(133, 193, 233, 0.15) 22%, transparent 23%), 
+    radial-gradient(circle, rgba(0, 86, 179, 0.18) 18%, transparent 19%), 
+    /* Cercuri Roșii (mai multe) */
+    radial-gradient(circle, rgba(220, 53, 69, 0.15) 8%, transparent 9%),   
+    radial-gradient(circle, rgba(241, 148, 138, 0.2) 18%, transparent 19%),
+    radial-gradient(circle, rgba(220, 53, 69, 0.1) 14%, transparent 15%),
+    radial-gradient(circle, rgba(241, 148, 138, 0.15) 28%, transparent 29%),
+    radial-gradient(circle, rgba(220, 53, 69, 0.18) 22%, transparent 23%); 
 
-.activity-box::after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  width: 100px;
-  height: 100px;
-  background: rgba(0, 86, 179, 0.1);
-  border-radius: 50%;
-  z-index: 0;
+  background-repeat: no-repeat;
+
+ 
+  background-size:
+    /* Albastre */
+    50px 50px,  
+    120px 120px, 
+    80px 80px,  
+    60px 60px, 
+    140px 140px,
+    100px 100px, 
+    /* Roșii */
+    40px 40px,  
+    150px 150px, 
+    90px 90px,  
+    70px 70px,  
+    160px 160px, 
+    110px 110px; 
+
+  background-position:
+    /* Albastre */
+    10% 15%,   
+    85% 20%,   
+    30% 80%,   
+    50% 5%,    
+    95% 95%,   
+    15% 60%,   
+    /* Roșii */
+    5% 90%,   
+    70% 75%, 
+    40% 40%,   
+    90% 50%,   
+    20% 30%,   
+    60% 95%;   
 }
 
 .activity-box:hover {
@@ -107,14 +136,14 @@
 }
 
 .activity-box:hover .activity-title-box {
-  background: linear-gradient(135deg, #0056b3, #85c1e9);
+  background: linear-gradient(135deg, #85c1e9, #85c1e9);
   color: #ffffff;
   border: none;
 }
 
 .activity-image {
-  width: 100%;
-  height: 70%;
+  width: 10%;
+  height: 0px; 
   object-fit: cover;
   object-position: center;
   transition: transform 0.3s ease;
@@ -125,29 +154,30 @@
 }
 
 .activity-content {
-  padding: 20px;
+  padding: 13px 13px; 
   text-align: center;
-  flex-grow: 1;
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Aliniem conținutul mai aproape de partea de sus */
-  gap: 5px; /* Adăugăm un spațiu mic între titlu și buton */
+  justify-content: space-around; 
+  gap: 0; 
   position: relative;
   z-index: 2;
+  background-color: transparent;
 }
 
 .activity-title-box {
   background: #e3f2fd;
   border: 1px solid #0056b3;
   border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 0; /* Eliminăm distanța suplimentară dintre titlu și buton */
+  padding: 10px;
+  margin-bottom: 0;
   position: relative;
   z-index: 2;
 }
 
 .activity-title {
-  font-size: 1.4rem;
+  font-size: 1.5rem; 
   font-weight: bold;
   color: #0056b3;
   margin: 0;
@@ -157,8 +187,8 @@
   background: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 10px;
-  margin-top: 0; /* Eliminăm complet distanța dintre buton și titlu */
+  padding: 15px;
+  margin-top: 0;
   position: relative;
   z-index: 2;
 }
