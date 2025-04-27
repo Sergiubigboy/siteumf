@@ -385,7 +385,6 @@ class Clase:
 if __name__ == "__main__":
     catalog = Profesori(profesori)
 
-    # Testează funcția findbyname
     profesor = catalog.findbyname("Bogdan Rațu")
     if profesor:
         print(f"Profesor găsit: {profesor}")
