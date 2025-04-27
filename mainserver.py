@@ -275,12 +275,12 @@ Evenimentul a avut momente de recitări din poeziile eminesciene în limba româ
         }
     }
 
-    # Verifică dacă celebrarea există
+    
     celebrare = celebrari.get(celebrare_name)
     if not celebrare:
         return "Pagina pentru celebrarea solicitată nu a fost găsită.", 404
 
-    # Randează pagina celebrării
+    
     return render_template(
         'celebrare.html',
         titlu=celebrare["titlu"],
