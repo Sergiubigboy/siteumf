@@ -5,13 +5,11 @@
 />
 {% endblock %} {% block content %}
 <div class="mainpage-bg">
-
   <div class="background-shape shape-blue shape-1"></div>
   <div class="background-shape shape-light-blue shape-2"></div>
   <div class="background-shape shape-blue shape-3"></div>
 
-
-  <div class="anunturi-section">
+  <!-- <div class="anunturi-section">
     <h2 class="section-title text-center">Anunțuri</h2>
     <div class="anunturi-slider-container">
       <div class="anunturi-slider" id="anunturiSlider">
@@ -39,20 +37,19 @@
       <button class="slider-arrow left-arrow" id="prevArrow">&#10094;</button>
       <button class="slider-arrow right-arrow" id="nextArrow">&#10095;</button>
     </div>
-  </div>
+  </div> -->
 
   <div class="container my-5">
-  
     <div class="row g-4 align-items-center fade-in">
       <div class="col-md-6">
         <div class="text-container shadow card-small">
           <h2 class="section-title">Despre Liceul UMFST</h2>
           <p class="section-text">
             Liceul UMFST este locul unde educația întâlnește excelența. Cu o
-            tradiție de peste 80 de ani ca universitate, oferim elevilor noștri oportunități
-            unice de dezvoltare personală și profesională. Profesorii noștri
-            dedicați și resursele moderne creează un mediu educațional de
-            excepție.
+            tradiție de peste 80 de ani ca universitate, oferim elevilor noștri
+            oportunități unice de dezvoltare personală și profesională.
+            Profesorii noștri dedicați și resursele moderne creează un mediu
+            educațional de excepție.
           </p>
         </div>
       </div>
@@ -65,7 +62,6 @@
       </div>
     </div>
 
-    
     <div class="row g-4 align-items-center fade-in">
       <div class="col-md-6 order-md-2">
         <div class="text-container shadow card-small">
@@ -87,7 +83,6 @@
       </div>
     </div>
 
-    
     <div class="row g-4 align-items-center fade-in">
       <div class="col-md-6">
         <div class="text-container shadow card-small">
@@ -109,7 +104,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="color-section">
     <div class="container my-5">
       <div class="row g-4 align-items-center fade-in">
@@ -206,7 +201,10 @@
   <div class="row">
     <!-- Ateliere -->
     <div class="col-md-3 mb-4">
-      <a href="/activitati/mix-it-hub-umfst#ateliere" class="text-decoration-none">
+      <a
+        href="/activitati/mix-it-hub-umfst#ateliere"
+        class="text-decoration-none"
+      >
         <div class="main-box p-4 shadow-sm rounded text-center">
           <h3>Ateliere</h3>
         </div>
@@ -214,7 +212,10 @@
     </div>
     <!-- Celebrări -->
     <div class="col-md-3 mb-4">
-      <a href="/activitati/mix-it-hub-umfst#celebrari" class="text-decoration-none">
+      <a
+        href="/activitati/mix-it-hub-umfst#celebrari"
+        class="text-decoration-none"
+      >
         <div class="main-box p-4 shadow-sm rounded text-center">
           <h3>Celebrări</h3>
         </div>
@@ -222,20 +223,26 @@
     </div>
     <!-- Proiecte în Comunitate -->
     <div class="col-md-3 mb-4">
-      <a href="/activitati/mix-it-hub-umfst#proiect" class="text-decoration-none">
+      <a
+        href="/activitati/mix-it-hub-umfst#proiect"
+        class="text-decoration-none"
+      >
         <div class="main-box p-4 shadow-sm rounded text-center">
           <h3>Proiecte în Comunitate</h3>
         </div>
       </a>
     </div>
     <!-- Cluburi -->
-<div class="col-md-3 mb-4">
-  <a href="/activitati/mix-it-hub-umfst#cluburi" class="text-decoration-none">
-    <div class="main-box p-4 shadow-sm rounded text-center">
-      <h3>Cluburi</h3>
+    <div class="col-md-3 mb-4">
+      <a
+        href="/activitati/mix-it-hub-umfst#cluburi"
+        class="text-decoration-none"
+      >
+        <div class="main-box p-4 shadow-sm rounded text-center">
+          <h3>Cluburi</h3>
+        </div>
+      </a>
     </div>
-  </a>
-</div>
   </div>
 </div>
 {% endblock %} {% block extra_js %}
@@ -270,7 +277,6 @@
         updateSliderPosition();
       }
     });
-
 
     window.addEventListener("resize", updateSliderPosition);
 

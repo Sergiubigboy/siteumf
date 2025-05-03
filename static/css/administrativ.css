@@ -98,14 +98,3 @@
   filter: hue-rotate(200deg);
 }
 
-.color-section {
-  width: 100%;
-  background-color: #00172d;
-  background-image: url('/static/images/texture.png');
-  background-size: cover;
-  background-blend-mode: overlay;
-  position: relative;
-  margin-top: 20px;
-  padding: 100px 0;
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-}

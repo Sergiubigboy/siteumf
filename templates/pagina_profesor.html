@@ -6,18 +6,18 @@
 {% endblock %} {% block content %}
 <div id="margin"></div>
 <div class="profesor-container mt-4">
-  
+  {% if profesor.citat %}
   <div class="profesor-quote">
     <p>"{{ profesor.citat }}"</p>
   </div>
-
+  {% endif %}
 
   <div class="profesor-content">
     <div class="profesor-image-container">
       {% if profesor.imagine %}
       <img
         src="{{ url_for('static', filename='images/Poza-UMFST/profesori/' + profesor.imagine) }}"
-        alt="{{ profesor.imagine }}"
+        alt=""
         class="profesor-image"
       />
       {% else %}
