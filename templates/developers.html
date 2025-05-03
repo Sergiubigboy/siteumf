@@ -1,27 +1,32 @@
-{% extends "layout.html" %}
-{% block extra_css %}
-<link rel="stylesheet" href="/static/css/developers.css">
-{% endblock %}
+{% extends "layout.html" %} {% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/developers.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="color-section">
+  <div class="container-fluid position-relative">
+    <div class="container my-5">
+      <div class="developers-box shadow p-4">
+        <h2 class="section-title text-center">Echipa Site</h2>
 
-
-{% block content %}
-<div class="container">
-  <div class="chenar">
-    <h2>HTML & CSS</h2>
-    <div class="casute">
-      <div class="casuta">Biriș Sergiu</div>
-      <div class="casuta">Mitoșeriu David</div>
-      <div class="casuta">Pantea Tudor</div>
-    </div>
-  </div>
-
-  
-  <div class="chenar">
-    <h2>Python</h2>
-    <div class="casute">
-      <div class="casuta">Biriș Sergiu</div>
-      <div class="casuta">Pantea Tudor</div>
-      <div class="casuta">Mitoșeriu David</div>
+        <div class="developers-list">
+          <h3 class="developers-subtitle">HTML & CSS & Python</h3>
+          <ul class="list-unstyled">
+            <li>Biriș Sergiu</li>
+            <li>Pantea Tudor</li>
+            <li>Mitoșeriu David</li>
+          </ul>
+          <h3 class="developers-subtitle">Coordonator proiect</h3>
+          <ul class="list-unstyled">
+            <li>Bogdan Ratiu</li>
+            <li>
+              Email:
+              <a href="mailto:bogdan.ratiu@umfst.ro">bogdan.ratiu@umfst.ro</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
