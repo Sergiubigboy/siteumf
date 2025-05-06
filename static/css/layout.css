@@ -106,7 +106,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin-left: 0;
   padding-left: 10px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: bold;
   text-align: left;
 }
@@ -357,10 +357,6 @@ main {
     align-items: center;
     justify-content: center;
   }
-
-  .navbar-brand {
-    font-size: 0.8rem;
-  }
 }
 .hero-logo-top-right {
   position: absolute;
@@ -369,4 +365,17 @@ main {
   height: 80px;
   width: auto;
   z-index: 10;
+}
+
+.short-title {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .full-title {
+    display: none;
+  }
+  .short-title {
+    display: inline;
+  }
 }
