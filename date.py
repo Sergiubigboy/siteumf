@@ -314,7 +314,7 @@ clase = [
         "litera": "B",
         "diriginte": "Bogdan Rațiu",
         "profil": "Științele Naturii",
-        "citat": "Respect. It's been a long way, without you my friend. And I'll tell you all about it when I see you again.",
+        "citat": "Cand pisica nu-i acasa, soarecii joaca pe masa.",
         "elevi": [
             {"nume": "Bumbac Ileana"},
             {"nume": "Bumbu Luca"},
@@ -350,7 +350,7 @@ clase = [
         "litera": "A",
         "diriginte": "Bianca Han",
         "profil": "Mate-Informatică",
-        "citat": "A fi profesor înseamnă a fi un artist, un magician, un visător și un călător. În fiecare zi, ne întâlnim cu elevii noștri pentru a-i ajuta să-și descopere potențialul și să-și transforme visele în realitate.",
+        "citat": "Ai n-ai mingea dai la poartă.",
         "elevi": [
             {"nume": "Biriș Sergiu"},
             {"nume": "Corondeanu Raul"},
