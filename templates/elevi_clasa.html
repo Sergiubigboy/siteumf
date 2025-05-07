@@ -56,29 +56,41 @@
   </div>
 
   {% if elevi_cu_performante %}
-  <div class="row mt-5">
-    <div class="col-12">
-      <h3>Elevi cu Performanțe</h3>
-      <div class="d-flex flex-wrap justify-content-center">
-        {% for elev in elevi_cu_performante %}
-        <div class="performance-card shadow-lg m-3">
-          <div class="performance-header text-center">
-            <h5>{{ elev.nume }}</h5>
-          </div>
-          <div class="performance-body">
-            <ul>
-              {% for realizare in elev.performante %}
-              <li>
-                <strong>{{ realizare.titlu }}</strong> - {{ realizare.locatie }}
-                - <span>{{ realizare.premiu }}</span>
-              </li>
-              {% endfor %}
-            </ul>
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-11">
+        <div class="premii-container-general">
+          <h4 class="text-center mb-3">Elevi cu Performanțe Remarcabile</h4>
+          <div class="premii-scroll-box">
+            {% for elev_perf in elevi_cu_performante %}
+            <div class="elev-performanta-item mb-3">
+              <h5>{{ elev_perf.nume }}</h5>
+              {% if elev_perf.performante %}
+              <ul class="list-unstyled">
+                {% for perf in elev_perf.performante %}
+                <li class="performanta-detaliu">
+                  <strong>{{ perf.titlu }}</strong>
+                  {% if perf.locatie %}<small class="d-block text-muted">{{ perf.locatie }}</small>{% endif %}
+                  {% if perf.premiu %}<small class="d-block text-muted">Premiu: {{ perf.premiu }}</small>{% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+              {% else %}
+              <p class="text-muted"><small>Nu sunt performanțe înregistrate.</small></p>
+              {% endif %}
+            </div>
+            {% if not loop.last %}
+              <hr class="my-2">
+            {% endif %}
+            {% endfor %}
           </div>
         </div>
-        {% endfor %}
       </div>
     </div>
+  </div>
+  {% else %}
+  <div class="container mt-4">
+    <p class="text-center text-muted">Nu sunt elevi cu performanțe de afișat pentru această clasă.</p>
   </div>
   {% endif %}
 </div>
