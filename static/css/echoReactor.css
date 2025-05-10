@@ -1,4 +1,3 @@
-
 body {
   background: linear-gradient(135deg, #1a1a2e, #16213e);
   color: #ffffff;
@@ -116,32 +115,34 @@ body {
 
 
 .back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
+  position: fixed; /* Changed to fixed */
+  top: 15px; /* Adjusted for smaller screens */
+  left: 15px; /* Adjusted for smaller screens */
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 115, 230, 0.2)); /* Subtle background */
   color: #00d4ff;
   text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #0073e6, 0 0 80px #0073e6;
   text-decoration: none;
-  padding: 15px 25px; 
-  border-radius: 50px; 
-  font-size: 1.2rem; 
-  font-weight: bold;
+  padding: 10px 20px; /* Adjusted padding */
+  border-radius: 50px;
+  font-size: 1rem; /* Adjusted font size */
+  font-weight: 600; /* Adjusted font weight */
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
-  transition: all 0.3s ease; 
-  border: 2px solid rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  transition: all 0.3s ease;
+  border: 2px solid rgba(0, 212, 255, 0.4); /* Clearer border */
+  z-index: 1000; /* Ensure it's on top */
 }
 
 .back-button:hover {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); 
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); 
-  transform: scale(1.1); 
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(0, 115, 230, 0.3)); /* Slightly more visible on hover */
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4); /* Enhanced hover shadow */
+  transform: scale(1.05); /* Subtle scale effect */
+  border-color: rgba(0, 212, 255, 0.6);
 }
 
 .back-button:active {
-  transform: scale(0.95); 
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(0.98); /* Feedback on click */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -597,87 +598,250 @@ body {
 
 /* Responsivitate */
 @media (max-width: 768px) {
-  .sections {
-    flex-direction: column;
-    gap: 15px;
+  .echo-container {
+    padding: 15px; /* Reduce padding */
   }
 
-  .section {
-    width: 100%;
+  .logo {
+    width: 80%; /* Make logo responsive */
+    max-width: 350px; /* Max size for logo on tablets */
   }
 
   .tagline {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Smaller tagline */
+    margin-top: 15px;
   }
 
-  .freedom-container {
-    flex-direction: column; 
-    gap: 20px;
+  .sections {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* Sections take full width */
   }
 
-  .freedom-image img {
-    max-width: 100%; 
-  }
-
-  .extra-box {
-    flex-direction: column; 
-    gap: 20px;
-  }
-
-  .extra-image img {
-    max-width: 100%; 
-  }
-
-  .extra-text {
-    font-size: 1.2rem;
-  }
-
-  .extra-box {
-    font-size: 1.2rem; 
+  .section {
+    width: 100%; /* Section takes full width */
     padding: 15px;
   }
-}
-@media (max-width: 768px) {
-  .impact-section {
-    padding: 25px;
-    max-width: 95%; 
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
+  }
+
+  .freedom-container,
+  .extra-box {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px; /* Add padding to containers */
+    margin: 20px auto; /* Adjust margin */
+  }
+
+  .freedom-box,
+  .extra-text {
+    font-size: 1.1rem; /* Adjust text size */
+    line-height: 1.7;
+    padding-left: 15px; /* Adjust padding for side lines */
+    border-left-width: 3px; /* Thinner line */
+  }
+  .extra-box::after {
+    width: 3px; /* Thinner line */
+  }
+
+
+  .freedom-image img,
+  .extra-image img {
+    max-width: 90%; /* Image takes more width */
+    margin: 0 auto; /* Center image */
+    border-width: 3px; /* Thinner border */
+  }
+
+  .why-echo,
+  .impact-section,
+  .objectives-section,
+  .final-call-to-action {
+    padding: 20px; /* Adjust padding */
+    margin: 30px auto; /* Adjust margin */
+    max-width: 95%; /* Take more width */
+  }
+
+  .why-item {
+    padding: 15px;
+    padding-left: 20px; /* Adjust padding for line */
+  }
+  .why-item::before, .why-item::after {
+      width: 3px; /* Thinner lines */
+  }
+
+
+  .why-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .why-item p {
+    font-size: 1rem;
   }
 
   .impact-header {
+    flex-direction: column; /* Stack logo and title */
+    align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .impact-header h2 {
-    font-size: 1.8rem; 
+    font-size: 1.6rem;
+    text-align: center;
   }
 
   .impact-logo {
-    width: 50px; 
+    width: 60px; /* Smaller logo */
+    padding-left: 0; /* Remove padding */
+    margin: 0 auto; /* Center logo */
   }
 
   .impact-section p {
-    font-size: 1rem; 
+    font-size: 1rem;
+    text-align: justify; /* Justify text for better readability */
+  }
+
+  .objectives-content {
+    flex-direction: column;
+    align-items: center; /* Center items */
+    gap: 20px;
+  }
+
+  .objectives-image-container {
+    flex: 0 0 auto; /* Reset flex basis */
+    width: 80%; /* Adjust width */
+    max-width: 300px; /* Max width for image container */
+  }
+
+  .objectives-text h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .objectives-text ul {
+    padding-left: 15px; /* Adjust list padding */
+  }
+
+  .objectives-text ul li {
+    font-size: 1rem;
+    padding-left: 15px; /* Adjust list item padding */
+  }
+  .objectives-text ul li::before {
+      font-size: 1.2rem; /* Smaller bullet */
+  }
+
+  .separator-content {
+    flex-direction: column;
+    height: auto; /* Auto height */
+    gap: 15px;
+  }
+  .separator-logo {
+      max-width: 100px; /* Smaller logo */
+  }
+  .separator-main-image {
+      max-width: 90%; /* Image takes more width */
+      border-width: 3px; /* Thinner border */
+  }
+
+
+  .final-call-to-action h3 {
+    font-size: 1.4rem;
+  }
+
+  .final-call-to-action p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .back-button {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    top: 10px;
+    left: 10px;
+    border-width: 1.5px;
   }
 }
 
 @media (max-width: 480px) {
-  .impact-section {
-    padding: 20px;
+  .logo {
+    max-width: 250px; /* Even smaller logo */
+  }
+
+  .tagline {
+    font-size: 1.2rem; /* Smaller tagline */
+  }
+
+  .section h2 {
+    font-size: 1.2rem;
+  }
+  .section p {
+    font-size: 0.9rem;
+  }
+
+  .freedom-box,
+  .extra-text {
+    font-size: 1rem;
+  }
+
+  .why-item h3 {
+    font-size: 1.3rem;
+  }
+  .why-item p {
+    font-size: 0.95rem;
   }
 
   .impact-header h2 {
-    font-size: 1.6rem; 
+    font-size: 1.4rem;
   }
-
   .impact-logo {
-    width: 40px; 
+    width: 50px;
+  }
+  .impact-section p {
+    font-size: 0.95rem;
   }
 
-  .impact-section p {
-    font-size: 0.95rem; 
+  .objectives-text h2 {
+    font-size: 1.4rem;
+  }
+  .objectives-text ul li {
+    font-size: 0.95rem;
+  }
+
+  .separator-content {
+    flex-direction: row; /* Le aranjează una lângă alta */
+    align-items: center; /* Aliniază imaginile vertical la centru */
+    justify-content: space-around; /* Distribuie spațiul în mod egal */
+    gap: 10px; /* Spațiu mai mic între imagini */
+  }
+
+  .separator-logo {
+    max-width: 35%; /* Redu lățimea maximă pentru logo-ul AB */
+    /* height: auto; este deja implicit și ajută la menținerea proporțiilor */
+  }
+
+  .separator-main-image {
+    max-width: 55%; /* Redu lățimea maximă pentru imaginea Echo 3 */
+    border-width: 2px; /* O bordură mai subțire dacă este necesar */
+    /* height: auto; este deja implicit */
+  }
+
+  .final-call-to-action h3 {
+    font-size: 1.3rem;
+  }
+  .final-call-to-action p {
+    font-size: 0.95rem;
+  }
+
+  .back-button {
+    font-size: 0.8rem;
+    padding: 7px 15px;
   }
 }
-
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
