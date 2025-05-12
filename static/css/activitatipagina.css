@@ -181,3 +181,11 @@
   background-color: #003d80;
   transform: scale(1.05);
 }
+
+/* Stil comun pentru imagini */
+.common-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
