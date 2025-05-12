@@ -3,7 +3,7 @@ import unicodedata
 activitati = [
     {
         "id": "campania-conversatii-in-jurul-scolii",
-        "titlu": "Campania: Conversații în jurul școlii",
+        "titlu": "Campanii",
         "imagine": "activitati/campania.jpg",
         "template": "activitatiSub/campania.html"
     },
