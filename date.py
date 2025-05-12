@@ -161,7 +161,7 @@ cluburi = {
             "titlu": "Club de public speaking",
             "descriere": "La acest club alături de profesorii care predau limbi străine învățăm să transformăm emoțiile în energie și ideile în discursuri persuasive. Se realizează activități practice pornind din discursuri tematice, precum și exerciții de dicție și de retorică.",
             "imagine": "static/images/cluburi/public-speaking.jpg",
-            "coordonatori": ["Bianca Han", "Andreea Ban"]
+            "coordonatori": ["Kutasi Reka, Corina Bozedean"]
         },
         "sportiv": {
             "titlu": "Club de activități sportive",
@@ -353,7 +353,14 @@ clase = [
         "citat": "Ai n-ai mingea dai la poartă.",
         "elevi": [
             {"nume": "Biriș Sergiu"},
-            {"nume": "Corondeanu Raul"},
+            {"nume": "Corondeanu Raul",
+             "performante": [
+                {
+                    "titlu": "Olimpiada Națională de Lb. Engleză",
+                    "locatie": "Tulcea, etapa națională",
+                    "premiu": "Participare"
+                }
+             ]},
             {"nume": "Cucuiet Andrei"},
             {"nume": "Curta Rares"},
             {"nume": "David Aiana"},
@@ -462,7 +469,14 @@ clase = [
             {"nume": "Stoica Andrei"},
             {"nume": "Suciu Iustina"},
             {"nume": "Trifan Raul"},
-            {"nume": "Turdean Cleo"},
+            {"nume": "Turdean Cleo",
+             "performante": [
+                {
+                    "titlu": "Concursul național „Vis de iarnă”",
+                    "locatie": "Baia Mare, etapa națională",
+                    "premiu": "Premiul I"
+                }
+             ]},
             {"nume": "Ungur Filip"},
             {"nume": "Vașloban Maria"}
         ]
