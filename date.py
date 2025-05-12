@@ -215,8 +215,8 @@ profesori = [
     {
         "nume": "Andreea-Romana Ban",
         "materie": "Limba germană",
-        "descriere": "",
-        "citat": "",
+        "descriere": "Dorința de a deveni profesoară a fost mereu parte din parcursul meu, o chemare pe care am urmat-o cu pasiune. De aceea, fiecare oră este pentru mine o aventură în lumea cuvintelor, a culturilor, dar și a descoperirii. Îmi place să transform lecțiile în experiențe vii, în care atmosfera caldă și degajată, curiozitatea și învățarea se îmbină armonios. Convingerea mea după mulți ani dedicați însușirii și predării limbilor străine este că acestea se predau foarte frumos dintr-un manual, dar ele se pot însuși și mai frumos dacă se trăiesc. Cum se pot trăi? Simplu: prin joc, conversație, film, muzică sau diverse proiecte creative. Mi-am dorit mereu să fiu acel tip de dascăl care nu doar transmite cunoștințe, ci și formează caractere, inspiră, încurajează, ghidează spiritul curios și deschis al elevilor.",
+        "citat": "Cu cretă, umor și talent, predau cu zâmbet, nu cu accent!",
         "imagine": "",
         "rol": "Conducere",
     },
