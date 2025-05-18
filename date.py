@@ -49,13 +49,13 @@ hub_imagini = [
     "8-voluntariatolimpbio.jpg"
 ]
 anunturi = [
-    {"titlu": "Anunț 1", "descriere": "Detalii despre anunțul 1 (În curând).", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 2", "descriere": "Detalii despre anunțul 2 (În curând).", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 3", "descriere": "Detalii despre anunțul 3 (În curând).", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 4", "descriere": "Detalii despre anunțul 4 (În curând).", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 5", "descriere": "Detalii despre anunțul 5 (În curând).", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 6", "descriere": "Detalii despre anunțul 6 (În curând).", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 7", "descriere": "Detalii despre anunțul 7 (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Ziua porților deschise", "descriere": "Detalii despre anunț.", "imagine": "anunt1.png"},
+    {"titlu": "Anunț 2", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 3", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 4", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 5", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 6", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "Anunț 7", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
 
 ]
 
@@ -314,7 +314,7 @@ clase = [
         "litera": "B",
         "diriginte": "Bogdan Rațiu",
         "profil": "Științele Naturii",
-        "citat": "Cand pisica nu-i acasa, soarecii joaca pe masa.",
+        "citat": "Trasăm linii care nu se șterg",
         "elevi": [
             {"nume": "Bumbac Ileana"},
             {"nume": "Bumbu Luca"},
@@ -350,7 +350,7 @@ clase = [
         "litera": "A",
         "diriginte": "Bianca Han",
         "profil": "Mate-Informatică",
-        "citat": "Ai n-ai mingea dai la poartă.",
+        "citat": "Prin respect, crești - pe tine și pe ceilalți.",
         "elevi": [
             {"nume": "Biriș Sergiu"},
             {"nume": "Corondeanu Raul",
