@@ -11,7 +11,7 @@ app.jinja_env.globals.update(normalize_text=normalize_text)
 
 @app.route('/')
 def mainpage():
-    return render_template('mainpage.html', subtitlu="Acasa", title="Bine ati venit!", background="static/images/poze-hero/bgmain.png", anunturi=anunturi)
+    return render_template('mainpage.html', subtitlu="Acasa", title="Bine ați venit!", background="static/images/poze-hero/bgmain.png", anunturi=anunturi)
 
 @app.route('/contact')
 def despre():
