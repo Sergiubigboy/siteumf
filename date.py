@@ -336,7 +336,14 @@ clase = [
             {"nume": "Orban David"},
             {"nume": "Onisor Rares"},
             {"nume": "Ormenișan Anastasia"},
-            {"nume": "Popa Cynthia"},
+            {"nume": "Popa Cynthia",
+             "performante": [
+                {
+                    "titlu": "Concursul Național ENROLL FOR FUN, ediția a VII-a, secțiunea creații literare, limba engleză",
+                    "locatie": "Baia Mare",
+                    "premiu": "Locul II"
+                }
+             ]},
             {"nume": "Sabău Raul"},
             {"nume": "Șandru Octavian"},
             {"nume": "Șerbu Raluca"},
@@ -359,7 +366,12 @@ clase = [
                     "titlu": "Olimpiada Națională de Lb. Engleză",
                     "locatie": "Tulcea, etapa națională",
                     "premiu": "Participare"
-                }
+                },   
+            {
+                "titlu": "Concursul Național ENROLL FOR FUN, ediția a VII-a, secțiunea creații literare, limba engleză",
+                "locatie": "Baia Mare",
+                "premiu": "Locul II"
+            }
              ]},
             {"nume": "Cucuiet Andrei"},
             {"nume": "Curta Rares"},
@@ -370,7 +382,14 @@ clase = [
             {"nume": "Lazăr Cristian"},
             {"nume": "Maier Alia"},
             {"nume": "Marian Ciprian"},
-            {"nume": "Mitoșeriu David"},
+            {"nume": "Mitoșeriu David",
+             "performante": [
+                {
+                    "titlu": "Concursul Național ENROLL FOR FUN, ediția a VII-a, secțiunea creații literare, limba engleză",
+                    "locatie": "Baia Mare",
+                    "premiu": "Locul II"
+                }
+             ]},
             {"nume": "Muth Cristian",
               "performante": [
             {
