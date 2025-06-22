@@ -379,7 +379,14 @@ clase = [
             {"nume": "Ercean David"},
             {"nume": "Gherman Cezara"},
             {"nume": "Jovrea Ștefan"},
-            {"nume": "Lazăr Cristian"},
+            {"nume": "Lazăr Cristian",
+             "performante": [
+                {
+                    "titlu": "Concursul județean de Matematică „Simon Petru“, ediția a XXIII-a",
+                    "locatie": "Tg Mureș, Colegiul Național „Unirea“",
+                    "premiu": "Locul II, secțiunea Matematică-informatică"
+                }
+             ]},
             {"nume": "Maier Alia"},
             {"nume": "Marian Ciprian"},
             {"nume": "Mitoșeriu David",
@@ -428,14 +435,14 @@ clase = [
                 "premiu": "Premiul II"
             },
             {
-                "titlu": "Olimpiada Județeană de Matematică",
-                "locatie": "Botoșani",
-                "premiu": "Premiul II și calificare la națională"
+                "titlu": "Olimpiada Națională De Matematică",
+                "locatie": "1-6 aprilie, Botoșani",
+                "premiu": "Premiul II la etapa județeană și calificare la etapa națională"
             },
             {
-                "titlu": "Olimpiada Județeană de Fizică",
-                "locatie": "Slobozia",
-                "premiu": "Premiul I și calificare la etapa națională"
+                "titlu": "Olimpiada Națională de Fizică",
+                "locatie": "10-15 aprilie, Slobozia",
+                "premiu": "Premiul I la etapa județeană și calificare la etapa națională"
             }
         ]},
             {"nume": "Nagy Eliz", 

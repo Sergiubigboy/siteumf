@@ -37,6 +37,10 @@ def lista_clase():
         title="Elevi",
         background="static/images/poze-hero/pozaelevi.jpg"
     )
+@app.route('/elevi/an-scolar24-25')
+def an_scolar_24_25():
+    return render_template('an-scolar24-25.html', title="An școlar 24-25")
+
 
 @app.route('/elevi/<int:clasa>/<litera>')
 def elevi_clasa(clasa, litera):
