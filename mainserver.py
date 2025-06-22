@@ -39,7 +39,7 @@ def lista_clase():
     )
 @app.route('/elevi/an-scolar24-25')
 def an_scolar_24_25():
-    return render_template('an-scolar24-25.html', title="An școlar 24-25")
+    return render_template('an-scolar24-25.html', title="An școlar 2024-2025")
 
 
 @app.route('/elevi/<int:clasa>/<litera>')

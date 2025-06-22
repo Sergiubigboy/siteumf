@@ -112,6 +112,7 @@ blockquote {
   box-shadow: 0 4px 24px rgba(0,86,179,0.10);
   background: #f8fbff;
 }
+
 @media (max-width: 991px) {
   .an-scolar-section {
     padding: 20px 5px;
@@ -130,6 +131,70 @@ blockquote {
     padding: 10px 2px;
   }
   .gallery-image-box {
-    height: 90px;
+    height: 180px; /* mărește imaginile din galerie pe mobil */
   }
+  .gallery-image-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  /* Stiluri pentru lista de premii pe mobil */
+  .modern-list {
+    padding-left: 0;
+  }
+  .modern-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.13rem;
+    padding: 14px 12px;
+    margin-bottom: 12px;
+    background: #f8fbff;
+    border-left: 4px solid #00bfff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,86,179,0.07);
+    width: 100%;
+    word-break: break-word;
+  }
+  .modern-list strong {
+    font-size: 1.13rem;
+    color: #0056b3;
+    margin-bottom: 2px;
+  }
+  /* Imaginea mare de jos să nu depășească ecranul */
+  .img-fluid.blue-frame.shadow-lg.mb-4 {
+    max-width: 100vw !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Stiluri generale pentru lista de premii pe desktop */
+.modern-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 1.08rem;
+  padding: 10px 18px;
+  margin-bottom: 6px;
+  background: #f4faff;
+  border-left: 4px solid #00bfff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,86,179,0.04);
+  word-break: break-word;
+}
+.modern-list strong {
+  min-width: 110px;
+  color: #0056b3;
+}
+
+/* Elimină sublinierea de la titlu festivitate */
+.an-scolar-section h1 span {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
 }
