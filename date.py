@@ -49,13 +49,8 @@ hub_imagini = [
     "8-voluntariatolimpbio.jpg"
 ]
 anunturi = [
-    {"titlu": "Ziua porților deschise", "descriere": "Detalii despre anunț.", "imagine": "anunt1.png"},
-    {"titlu": "Anunț 2", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 3", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 4", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 5", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 6", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
-    {"titlu": "Anunț 7", "descriere": "Detalii despre anunț (În curând).", "imagine": "bgmain.png"},
+    {"titlu": "baiiii", "descriere": "WAAAAATTT", "imagine": "anunt1.png"},
+
 
 ]
 
