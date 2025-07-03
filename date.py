@@ -49,8 +49,7 @@ hub_imagini = [
     "8-voluntariatolimpbio.jpg"
 ]
 anunturi = [
-    {"titlu": "baiiii", "descriere": "WAAAAATTT", "imagine": "anunt1.png"},
-
+    {"titlu": "Depunere dosare înscriere", "descriere": "24-29 iulie", "imagine": "anunt.jpg"},
 
 ]
 
