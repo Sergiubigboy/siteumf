@@ -122,55 +122,75 @@
   margin-top: 50px;
   position: relative;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .anunturi-slider-container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  margin-bottom: 30px;
+  max-width: 540px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .anunturi-slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
   gap: 20px;
-}
-
-.anunt-card {
-  flex: 0 0 calc(33.333% - 20px);
-  margin: 0 10px;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.anunt-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.anunt-image {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.anunt-image img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-  border: none;
-  border-radius: none;
+.anunt-card {
+  border: 2.5px solid #0074d9;
+  border-radius: 16px;
+  background: #f8fbff;
+  box-shadow: 0 2px 12px rgba(0, 86, 179, 0.07);
+  padding: 18px 16px 14px 16px;
+  margin: 0 8px;
+  transition: box-shadow 0.2s;
 }
 
-.anunt-card:hover .anunt-image img {
-  transform: scale(1.01);
+.anunt-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 86, 179, 0.13);
+}
+
+.anunt-image {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 14px auto;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f4f8fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 86, 179, 0.07);
+}
+
+.anunt-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+
+@media (max-width: 600px) {
+  .anunt-image {
+    width: 90vw;
+    max-width: 220px;
+    height: 90vw;
+    max-height: 220px;
+  }
+  .anunt-card {
+    padding: 14px 6vw 12px 6vw;
+  }
 }
 
 .card-overlay {
@@ -243,16 +263,24 @@
   transition: background-color 0.3s ease;
 }
 
-.slider-arrow:hover {
-  background-color: #003d80;
-}
-
 .left-arrow {
-  left: 10px;
+  left: 10px;   /* schimbă din -50px în 10px */
 }
 
 .right-arrow {
-  right: 10px;
+  right: 10px;  /* schimbă din -50px în 10px */
+}
+
+@media (max-width: 700px) {
+  .anunturi-slider-container {
+    max-width: 98vw;
+  }
+  .left-arrow {
+    left: 2px;
+  }
+  .right-arrow {
+    right: 2px;
+  }
 }
 
 .anunturi-list {
