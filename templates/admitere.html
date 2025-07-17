@@ -2,6 +2,16 @@
 {% block content %}
 <div class="container mt-4">
   <h1 class="text-center">Admiteri</h1>
-  <p class="text-center">Informații despre admiteri vor fi afișate aici.</p>
+  <div class="d-flex flex-column align-items-center mt-4" style="gap: 18px;">
+    <a href="{{ url_for('static', filename='images/documents/acte-necesare-inscriere-2025.pdf') }}" target="_blank" class="btn btn-outline-primary fw-bold px-4">
+      Acte necesare înscriere 2025
+    </a>
+    <a href="{{ url_for('static', filename='images/documents/precizari-inscriere-2025.pdf') }}" target="_blank" class="btn btn-outline-primary fw-bold px-4">
+      Precizări înscriere 2025
+    </a>
+    <a href="{{ url_for('static', filename='images/documents/precizari-admitere.pdf') }}" target="_blank" class="btn btn-outline-primary fw-bold px-4">
+      Calendarul admiterii la liceu 2025
+    </a>
+  </div>
 </div>
 {% endblock %}
