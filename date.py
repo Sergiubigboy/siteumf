@@ -304,7 +304,7 @@ profesori = [
 
 clase = [
     {
-        "numar": 9,
+        "numar": 10,
         "litera": "B",
         "diriginte": "Bogdan Rațiu",
         "profil": "Științele Naturii",
@@ -347,7 +347,7 @@ clase = [
         ]
     },
     {
-        "numar": 9,
+        "numar": 10,
         "litera": "A",
         "diriginte": "Bianca Han",
         "profil": "Mate-Informatică",
