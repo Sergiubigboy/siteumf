@@ -176,7 +176,16 @@ profesori = [
 
     },
     {
-        "nume": "Nicola Oprea",
+        "nume": "Tamara Istrate",
+        "materie": "Matematică",
+        "descriere": "",
+        "citat": "",
+        "imagine": "",
+
+
+    },
+    {
+        "nume": "Maria Larisa Gaga",
         "materie": "Matematică",
         "descriere": "",
         "citat": "",
@@ -200,7 +209,28 @@ profesori = [
         "imagine": ""
     },
     {
-        "nume": "Corina Bozedean",
+        "nume": "Daniela Lazăr",
+        "materie": "Limba engleză",
+        "descriere": "",
+        "citat": "",
+        "imagine": "",
+    },
+    {
+        "nume": "Stoica Briena",
+        "materie": "Limba engleză",
+        "descriere": "",
+        "citat": "",
+        "imagine": "",
+    },
+    {
+        "nume": "Andreea Bîtcă",
+        "materie": "Limba engleză",
+        "descriere": "",
+        "citat": "",
+        "imagine": "",
+    },
+    {
+        "nume": "Daniel Raduly",
         "materie": "Limba franceză",
         "descriere": "",
         "citat": "",
@@ -215,7 +245,7 @@ profesori = [
         "rol": "Conducere",
     },
     {
-        "nume": "Ioan Tușnea",
+        "nume": "Papp Botond",
         "materie": "Fizică",
         "descriere": "",
         "citat": "",
@@ -243,6 +273,13 @@ profesori = [
         "imagine": ""
     },
     {
+        "nume": "Grațiela Georgescu",
+        "materie": "Geografia/Istoria UK si SUA",
+        "descriere": "",
+        "citat": "",
+        "imagine": "",
+    },
+    {
         "nume": "Crina Chirilă",
         "materie": "Geografie",
         "descriere": "De mică, am fost pasionată de explorarea lumii și de înțelegerea fenomenelor naturale, iar din pasiune mi-am creat o profesie. Ca profesoară de geografie încerc sa deschid orizonturi noi pentru elevii mei, transformând hărțile în povești. Geografia este una dintre disciplinele care ne creează „conștiința eco”, iar pentru a nu face rău lumii din jur avem nevoie să înțelegem dinamica pământului și modul în care timpul ne-a construit din adâncul oceanelor în vârful munților. Sper ca fiecare lecție să-i ajute pe elevi să cunoască lumea și să le ofere șansa de a-și găsi un loc în ea.",
@@ -251,7 +288,7 @@ profesori = [
     },
     {
         "nume": "Nora Dumbravă",
-        "materie": "Logică",
+        "materie": "Logică/Psihologie",
         "descriere": " ",
         "citat": "Să înveți fără să gândești este fără sens; să gândești fără să înveți este periculos. - Confucius",
         "imagine": ""
@@ -271,29 +308,36 @@ profesori = [
         "imagine": ""
     },
     {
-        "nume": "Răzvan Alexandrescu",
+        "nume": "Cristian Petraș",
         "materie": "Educație fizică",
-        "descriere": "Cred în puterea mișcării, în disciplină și în dezvoltarea caracterului prin sport. Ca profesor de educație fizică și antrenor, îmi doresc să inspir elevii să devină mai buni în fiecare zi – nu doar fizic, ci și mental. La liceul UMFST, vom învăța împreună să ne depășim limitele, să lucrăm în echipă și să nu renunțăm, indiferent de obstacole.",
+        "descriere": "",
         "citat": "",
         "imagine": ""
     },
     {
-        "nume": "Jeddi Tünde",
+        "nume": "Jeddi Tünde-Mária",
         "materie": "Educație muzicală",
         "descriere": "",
         "citat": "",
         "imagine": ""
     },
     {
-        "nume": "Roland Bolboacă",
+        "nume": "Mihaela Bucur",
+        "materie": "Educație antreprenorială",
+        "descriere": "",
+        "citat": "",
+        "imagine": "",
+    },
+    {
+        "nume": "Andreea-Ioana Focșan",
         "materie": "Informatică",
         "descriere": "",
         "citat": "",
         "imagine": ""
     },
      {
-        "nume": " Feier Adrian",
-        "materie": "Informatică",
+        "nume": "Peres Gyula Dániel",
+        "materie": "TIC",
         "descriere": "",
         "citat": "",
         "imagine": ""
@@ -330,14 +374,7 @@ clase = [
             {"nume": "Orban David"},
             {"nume": "Onisor Rares"},
             {"nume": "Ormenișan Anastasia"},
-            {"nume": "Popa Cynthia",
-             "performante": [
-                {
-                    "titlu": "Concursul Național ENROLL FOR FUN, ediția a VII-a, secțiunea creații literare, limba engleză",
-                    "locatie": "Baia Mare",
-                    "premiu": "Locul II"
-                }
-             ]},
+            {"nume": "Pop Sara"},
             {"nume": "Sabău Raul"},
             {"nume": "Șandru Octavian"},
             {"nume": "Șerbu Raluca"},
@@ -368,7 +405,6 @@ clase = [
             }
              ]},
             {"nume": "Cucuiet Andrei"},
-            {"nume": "Curta Rares"},
             {"nume": "David Aiana"},
             {"nume": "Ercean David"},
             {"nume": "Gherman Cezara"},
