@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from date import Profesori, Clase, profesori, clase, normalize_text, anunturi, activitati, celebrari, cluburi, proiecte
+from date import Profesori, Clase, profesori, clase, normalize_text, anunturi, activitati, celebrari, cluburi, proiecte, hub_imagini
 import unicodedata
 
 profesori = Profesori(profesori)
@@ -105,7 +105,7 @@ def lista_activitati():
         activitati=activitati,
         subtitlu="Activități", 
         title="Activități", 
-        background="static/images/Poza-UMFST/grup9A/bgclasa9A.jpg"
+        background="static/images/Poza-UMFST/grup9A/bgclasa10A.jpg"
     )
 
 @app.route('/activitati/<id_activitate>')
@@ -115,23 +115,14 @@ def pagina_activitate(id_activitate):
         return f"Activitatea '{id_activitate}' nu a fost găsită.", 404
 
     
-    hub_imagini = []
+    hub_imagini_display = []
     if id_activitate == "mix-it-hub-umfst":
-        hub_imagini = [
-            "1-ipostazelefeminitatii.jpg",
-            "2-visdeiarna.jpg",
-            "3-1decembrie.jpg",
-            "4-cufaruleminescu.jpg",
-            "5-24ianuarie.jpg",
-            "6-voluntariatcopiimici.jpg",
-            "7-intalnirecucampioana.jpg",
-            "8-voluntariatolimpbio.jpg"
-        ]
+        hub_imagini_display = hub_imagini
 
     return render_template(
         activitate["template"],
         activitate=activitate,
-        hub_imagini=hub_imagini,  
+        hub_imagini=hub_imagini_display,  
         subtitlu=activitate["titlu"],
         title=activitate["titlu"],
         no_hero=True,
@@ -189,15 +180,15 @@ def regulamente():
 
 @app.route('/admitere')
 def admitere():
-    return render_template('admitere.html', subtitlu="Admiteri", title="Admiteri", background="bgmain.png")
+    return render_template('admitere.html', subtitlu="Admiteri", title="Admiteri", background="static/images/poze-hero/bgmain.png")
 
 @app.route('/transferuri')
 def transferuri():
-    return render_template('transferuri.html', subtitlu="Transferuri", title="Transferuri", background="bgmain.png")
+    return render_template('transferuri.html', subtitlu="Transferuri", title="Transferuri", background="static/images/poze-hero/bgmain.png")
 
 @app.route('/proceduri')
 def proceduri():
-    return render_template('proceduri.html', subtitlu="Proceduri", title="Proceduri", background="bgmain.png")
+    return render_template('proceduri.html', subtitlu="Proceduri", title="Proceduri", background="static/images/poze-hero/bgmain.png")
 
 @app.route('/facilitati')
 def facilitati():

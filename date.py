@@ -46,11 +46,17 @@ hub_imagini = [
     "5-24ianuarie.jpg",
     "6-voluntariatcopiimici.jpg",
     "7-intalnirecucampioana.jpg",
-    "8-voluntariatolimpbio.jpg"
+    "8-voluntariatolimpbio.jpg",
+    "atelier.jpeg",
+    "culturii.jpeg",
+    "debateexpress.jpeg",
+    "empatia.jpeg",
+    "pozecarti.jpeg",
+    "prezentare.jpeg",
+    "prislop.jpeg",
+    "voleisport.jpeg",
 ]
 anunturi = [
-    {"titlu": "Depunere dosare înscriere", "descriere": "24-29 iulie", "imagine": "anunt.jpg"},
-
 ]
 
 celebrari = {
