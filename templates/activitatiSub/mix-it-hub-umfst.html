@@ -56,91 +56,19 @@
   <h2 class="text-center mb-4">Cluburi</h2>
   <div class="row">
   
+    {% for club_key, club_data in cluburi.items() %}
     <div class="col-md-6 mb-4">
       <div class="club-box p-4 shadow-sm rounded">
-        <h3 class="text-center">Club de teatru</h3>
+        <h3 class="text-center">{{ club_data['titlu'] }}</h3>
         <p>
-          Clubul de teatru este locul unde elevii își pot exprima creativitatea
-          și emoțiile prin artă dramatică. Este o oportunitate de a învăța să
-          comunice mai bine, să colaboreze și să-și dezvolte încrederea în sine.
+          {{ club_data['descriere'][:200] }}{% if club_data['descriere']|length > 200 %}...{% endif %}
         </p>
         <div class="text-center">
-          <a href="/club/teatru" class="btn btn-primary">Detalii</a>
+          <a href="/club/{{ club_key }}" class="btn btn-primary">Detalii</a>
         </div>
       </div>
     </div>
-    
-    <div class="col-md-6 mb-4">
-      <div class="club-box p-4 shadow-sm rounded">
-        <h3 class="text-center">Club de dezbateri</h3>
-        <p>
-          Clubul de dezbateri îi ajută pe elevi să-și dezvolte gândirea critică,
-          abilitățile de argumentare și să învețe să-și exprime ideile într-un
-          mod clar și convingător. Este locul perfect pentru cei care vor să-și
-          antreneze mintea.
-        </p>
-        <div class="text-center">
-          <a href="/club/dezbateri" class="btn btn-primary">Detalii</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-6 mb-4">
-      <div class="club-box p-4 shadow-sm rounded">
-        <h3 class="text-center">Club de robotică</h3>
-        <p>
-          Clubul de robotică este locul unde elevii pasionați de tehnologie pot
-          învăța să construiască și să programeze roboți. Este o oportunitate
-          excelentă de a dezvolta abilități tehnice și de a lucra în echipă.
-        </p>
-        <div class="text-center">
-          <a href="/club/robotica" class="btn btn-primary">Detalii</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-6 mb-4">
-      <div class="club-box p-4 shadow-sm rounded">
-        <h3 class="text-center">Club de muzică</h3>
-        <p>
-          Clubul de muzică oferă elevilor șansa de a-și dezvolta talentul
-          muzical, fie că este vorba de cântat, compus sau interpretare
-          instrumentală. Este locul perfect pentru a-ți lăsa creativitatea să
-          strălucească.
-        </p>
-        <div class="text-center">
-          <a href="/club/muzica" class="btn btn-primary">Detalii</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-6 mb-4">
-      <div class="club-box p-4 shadow-sm rounded">
-        <h3 class="text-center">Club de public speaking</h3>
-        <p>
-          Clubul de public speaking îi ajută pe elevi să-și dezvolte abilitățile
-          de vorbire în public, să-și crească încrederea în sine și să învețe să
-          comunice eficient în fața unui public.
-        </p>
-        <div class="text-center">
-          <a href="/club/public-speaking" class="btn btn-primary">Detalii</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-6 mb-4">
-      <div class="club-box p-4 shadow-sm rounded">
-        <h3 class="text-center">Club de activități sportive</h3>
-        <p>
-          Clubul de activități sportive promovează un stil de viață sănătos prin
-          sporturi de echipă și individuale. Este locul ideal pentru a-ți
-          dezvolta abilitățile fizice și spiritul de echipă.
-        </p>
-        <div class="text-center">
-          <a href="/club/sportiv" class="btn btn-primary">Detalii</a>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
 
@@ -182,45 +110,20 @@
 <div id="celebrari" class="celebrari-box mt-5 p-5 shadow-lg rounded">
   <h2 class="text-center mb-4">Celebrări</h2>
   <div class="row">
-    <!-- Ziua de 1 Decembrie -->
+    {% for celebrare_key, celebrare_data in celebrari.items() %}
     <div class="col-md-4 mb-4">
       <div class="celebration-box p-4 shadow-sm rounded text-center">
-        <h3>Ziua de 1 Decembrie</h3>
-        <p>
-          Elevii și profesorii Liceului UMFST „George Emil Palade” au sărbătorit împreună Ziua Națională a României.
-        </p>
+        <h3>{{ celebrare_data['titlu'] }}</h3>
+        {{ celebrare_data['descriere']|striptags|truncate(250, True) }}
         <div class="text-center">
-          <a href="/celebrari/1-decembrie" class="btn btn-primary mt-3">Detalii</a>
+          <a href="/celebrari/{{ celebrare_key }}" class="btn btn-primary mt-3">Detalii</a>
         </div>
       </div>
     </div>
-    <!-- Mica Unire -->
-    <div class="col-md-4 mb-4">
-      <div class="celebration-box p-4 shadow-sm rounded text-center">
-        <h3>Mica Unire</h3>
-        <p>
-          Elevii au reconstituit atmosfera alegerii lui Alexandru Ioan Cuza prin activități tematice.
-        </p>
-        <div class="text-center">
-          <a href="/celebrari/mica-unire" class="btn btn-primary mt-3">Detalii</a>
-        </div>
-      </div>
-    </div>
-    <!-- Ziua Culturii Naționale -->
-    <div class="col-md-4 mb-4">
-      <div class="celebration-box p-4 shadow-sm rounded text-center">
-        <h3>Ziua Culturii Naționale</h3>
-        <p>
-          Evenimente dedicate promovării culturii românești și omagierii lui Mihai Eminescu.
-        </p>
-        <div class="text-center">
-          <a href="/celebrari/ziua-culturii-nationale" class="btn btn-primary mt-3">Detalii</a>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
-<!-- Ziua Cititului Împreună -->
+<!-- Secțiunea Ateliere -->
 <div class="col-md-4 mb-4">
   <div class="celebration-box p-4 shadow-sm rounded text-center">
     <h3>Ziua Cititului Împreună</h3>
@@ -329,6 +232,60 @@
         <h3>Un atelier de gândire artistică</h3>
         <p>
           Susținut de actorul Liviu Pancu, elevii au participat la activități tematice menite să evidențieze modul în care arta îi poate ajuta în exprimarea și gestionarea emoțiilor.
+        </p>
+      </div>
+    </div>
+    <!-- Lansări de carte -->
+    <div class="col-md-3 mb-4">
+      <div class="atelier-box p-4 shadow-sm rounded text-center">
+        <h3>Lansări de carte</h3>
+        <p>
+          Profesorii Liceului UMFST „George Emil Palade", Georgeta Fodor și Bogdan Rațiu, alături de autoarea Doina Ruști, au lansat sâmbătă, 27 septembrie 2025, la Salonul de Carte Bookfest de la Târgu Mureș, romanul autobiografic „Ferenike".
+        </p>
+      </div>
+    </div>
+    <!-- Workshop de traducere -->
+    <div class="col-md-3 mb-4">
+      <div class="atelier-box p-4 shadow-sm rounded text-center">
+        <h3>Workshop de traducere</h3>
+        <p>
+          Elevii Liceului UMFST „George Emil Palade" au participat joi, 6 noiembrie 2025, la un workshop de traducere de poezie intitulat "To inhabit words/Abitare le parole/Trăiește cuvintele", susținut de poeta Monica Guerra.
+        </p>
+      </div>
+    </div>
+    <!-- Atelier de educație muzeală -->
+    <div class="col-md-3 mb-4">
+      <div class="atelier-box p-4 shadow-sm rounded text-center">
+        <h3>Atelier de educație muzeală</h3>
+        <p>
+          În 21 noiembrie, am dus literatura acolo unde a luat naștere. Elevii Liceului UMFST au descoperit chiar la sursă în Casa Memorială „Liviu Rebreanu". Literatura se trăiește, se simte și se reconstruiește. Profesori coordonatori: Bogdan Rațiu și Szakacs Lehel.
+        </p>
+      </div>
+    </div>
+    <!-- Atelier de empatie -->
+    <div class="col-md-3 mb-4">
+      <div class="atelier-box p-4 shadow-sm rounded text-center">
+        <h3>Atelier de empatie</h3>
+        <p>
+          Liceul UMFST „George Emil Palade" organizează atelierul „Empatia - supraputerea care transformă conflictele în conexiune". Se mizează pe dezvoltarea abilităților emoționale și noncognitive.
+        </p>
+      </div>
+    </div>
+    <!-- Debate Express x Dialog sub Presiune -->
+    <div class="col-md-3 mb-4">
+      <div class="atelier-box p-4 shadow-sm rounded text-center">
+        <h3>Debate Express x Dialog sub Presiune</h3>
+        <p>
+          Atelierul a reunit elevii din Liceul UMFST Târgu Mureș și Liceul Universității „Alexandru Ioan Cuza" din Iași. Evenimentul s-a desfășurat în format online-hibrid cu o dezbatere impromptu pe tema decorațiilor de Crăciun.
+        </p>
+      </div>
+    </div>
+    <!-- Engineering Escape Room -->
+    <div class="col-md-3 mb-4">
+      <div class="atelier-box p-4 shadow-sm rounded text-center">
+        <h3>Workshopul Engineering Escape Room</h3>
+        <p>
+          Studenții ESTIEM LG Târgu Mureș au organizat workshopul în laboratoarele Facultății de Inginerie. Probele au inclus descifrarea de coduri și asamblarea unui microcontroller Arduino pentru rezolvarea unui puzzle tehnic.
         </p>
       </div>
     </div>

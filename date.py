@@ -99,8 +99,28 @@ Evenimentul a avut momente de recitări din poeziile eminesciene în limba româ
             "descriere": """
             <p>Muzeul Universității „George Emil Palade” are onoarea de a găzdui un obiect cu o profundă valoare istorică și culturală: cufărul lui Mihai Eminescu. Renumitul cufăr, marcat pe placheta centrală cu inscripția „M. Eminovici”, l-a însoțit pe Eminescu de-a lungul întregii sale vieți, devenind martor al călătoriilor sale prin țară și Europa încă din copilărie. În cadrul evenimentului cultural „Istoria prin obiecte tangibile. Cufărul poetului Mihai Eminescu”, care a avut loc în data de 5 februarie 2025, când a fost sărbătorită Ziua Internațională a Cititului Împreună, cei prezenți au avut ocazia să admire cufărul și să descopere povestea din spatele acestuia, dar și să participe la un moment special pregătit de elevii Liceului UMFST „George Emil Palade”. </p>
             """,
+            "imagine": None        },
+        "ziua-mondiala-educatiei": {
+            "titlu": "Ziua Mondială a Educației",
+            "subtitlu": "5 octombrie - Ziua Mondială a Educației",
+            "descriere": """
+            <p>Elevii și profesorii Liceului UMFST „George Emil Palade" au sărbătorit Ziua Mondială a Educației în 5 octombrie, un prilej de recunoștință și respect față de cei care se dedică educației și dau sens învățării.</p>
+            <p>Educația înseamnă mai mult decât transmitere și acumulare de cunoștințe. Educația deschide mintea, cultivă gândirea critică și valorile morale esențiale.</p>
+            <p>Educația reprezintă cea mai valoroasă și importantă investiție în viitorul generațiilor de azi și de mâine.</p>
+            """,
             "imagine": None
-        }
+        },
+        "ziua-recunostintei": {
+            "titlu": "Ziua Recunoștinței",
+            "subtitlu": "27 noiembrie - Thanksgiving",
+            "descriere": """
+            <p>Elevii și profesorii Liceului UMFST „George Emil Palade" au sărbătorit joi, 27 noiembrie 2025, Ziua Recunoștinței printr-un eveniment inedit și într-o atmosferă memorabilă.</p>
+            <p>Elevii din clasele a IX-a și a X-a, organizați în echipe mixte, au parcurs împreună Thanksgiving Journey și au realizat o serie de activități interactive inspirate din momente-cheie ale istoriei americane - de la St. Augustine și Plymouth până la proclamările prezidențiale care au modelat tradiția modernă. Prin jocuri colaborative și misiuni tematice, liceenii au explorat concepte precum încrederea, comunicarea, empatia și diversitatea culturală.</p>
+            <p>Activitatea a avut caracter interdisciplinar: nu doar profesorii de limba engleză au coordonat sesiunile, ci și cei de chimie, matematică, limba română și informatică, care au comunicat în limba engleză, contribuind la atmosfera autentică și dinamică a evenimentului.</p>
+            <p>Ziua s-a încheiat cu Washington's Address și cu o sesiune de dans și voie bună. A fost o experiență educativă, bilingvă și distractivă - o adevărată sărbătoare a comunității noastre și a valorilor Zilei Recunoștinței.</p>
+            <p>Le mulțumim pentru sprijin tuturor profesorilor implicați, alături de catedra de Limba engleză, elevilor din Consiliul elevilor și studentului Darius Cucuiet pentru componenta artistică.</p>
+            """,
+            "imagine": None        }
     }
 
 proiecte = {
@@ -132,7 +152,34 @@ proiecte = {
 
         }
     }
-
+ateliere = {
+    "lansari-de-carte": {
+        "titlu": "Lansări de carte",
+        "descriere": """Profesorii Liceului UMFST „George Emil Palade", Georgeta Fodor și Bogdan Rațiu, alături de autoarea Doina Ruští, au lansat sâmbătă, 27 septembrie 2025, la Salonul de Carte Bookfest de la Târgu Mureș, romanul autobiografic „Ferenike". În prezența unui public numeros, a avut loc o discuție captivantă despre ficțiune și realitate, vise și lumi imaginare. Elevii liceului au fost și ei prezenți într-un moment de celebrare a lecturii."""
+    },
+    "workshop-traducere": {
+        "titlu": "Workshop de traducere",
+        "descriere": """Elevii Liceului UMFST „George Emil Palade" au participat joi, 6 noiembrie 2025, la un workshop de traducere de poezie intitulat "To inhabit words/Abitare le parole/Trăiește cuvintele", susținut de poeta și traducătoarea de origine italiană Monica Guerra, cunoscută în special pentru lucrările sale de traducere de poezie din limba engleză în italiană și invers. Atelierul de traducere a fost coordonat de profesoarele Bianca Han, Kutasi Reka, Briena Stoica, Daniela Lazăr și Andreea Bîtcă."""
+    },
+    "educatie-muzeala": {
+        "titlu": "Atelier de educație muzeală",
+        "descriere": """În 21 noiembrie, am dus literatura acolo unde a luat naștere. Pentru că Ion este un roman realist și pentru că ne-am propus să înțelegem devenirea unei forme literare, am mutat ora de literatură la Casa Memorială „Liviu Rebreanu". Între paginile romanului și spațiul care l-a inspirat există un dialog tainic, iar elevii Liceului UMFST „George Emil Palade" l-au descoperit chiar la sursă. Am discutat despre raportul dintre realitate și ficțiune, am dezbătut aspecte ce țin de patrimoniul cultural și imaginarul colectiv care a modelat romanul și felul în care un loc poate deveni literatură. Elevii au avut parte de o lentilă biografică de lectură, pentru a înțelege cum ia naștere un roman veritabil. Literatura nu se studiază doar în manual. Literatura se trăiește, se simte și se reconstruiește. Iar noi am făcut asta împreună.
+Profesori coordonatori: Bogdan Rațiu și Szakacs Lehel"""
+    },
+    "atelier-empatie": {
+        "titlu": "Atelier de empatie",
+        "descriere": """Liceul UMFST „George Emil Palade" organizează miercuri, 10 decembrie 2025, atelierul „Empatia - supraputerea care transformă conflictele în conexiune". Activitatea propune un atelier în jurul conceptelor de empatie, conectare, conflicte, comunicare nonviolentă. Acestea sunt abordate în contextul adolescenților, prezentându-se diferite cazuri din realitatea elevilor. Se mizează pe dezvoltarea abilităților emoționale, noncognitive."""
+    },
+    "debate-express": {
+        "titlu": "Atelier de dezbatere - Debate Express x Dialog sub Presiune",
+        "descriere": """Atelierul a reunit elevii din Liceul UMFST „George Emil Palade" Târgu Mureș și Liceul Universității „Alexandru Ioan Cuza" din Iași într-o atmosferă caldă, festivă și plină de energie bună. Evenimentul s-a desfășurat în format online-hibrid, cu două săli pline de elevi implicați, urmărind cu atenție argumentele dintr-o dezbatere impromptu pe tema: „Acest Parlament crede că decorațiile de Crăciun nu ar trebui instalate mai devreme de luna decembrie." Runda a fost extrem de echilibrată, cu argumente clare, exemple creative și replici rapide, iar finalul a fost la fel de strâns: echipa din Iași s-a impus la doar un punct diferență, un rezultat care reflectă nivelul excelent al ambelor echipe. În cadrul evenimentului, elevii au participat și la un masterclass despre arta formulării întrebărilor strategice, precum și la o sesiune dedicată rolului vorbitorului 3.
+Colaboratori: prof. Antoaneta Ioana Luchian și prof. Laura Felea"""
+    },
+    "engineering-escape-room": {
+        "titlu": "Workshopul „Engineering Escape Room",
+        "descriere": """Studenții organizației ESTIEM LG Târgu Mureș au organizat, în laboratoarele Facultății de Inginerie și Tehnologia Informației, UMFST G.E. Palade Târgu Mureș, workshopul "Engineering Escape Room", o provocare practică dedicată elevilor Liceului UMFST „George Emil Palade". Evenimentul a fost conceput ca o experiență interactivă prin care elevii au avut ocazia să descopere ingineria într-un mod practic și atractiv. Probele au inclus descifrarea de coduri, exerciții de logică și cultură generală, precum și asamblarea și utilizarea unui microcontroller Arduino pentru rezolvarea unui puzzle tehnic. Activitatea a oferit elevilor o primă interacțiune cu mediul universitar și cu specificul domeniilor inginerești."""
+    }
+}
 cluburi = {
         "teatru": {
             "titlu": "Club de teatru",
@@ -141,15 +188,15 @@ cluburi = {
             "coordonatori": ["Liviu Pancu"]
         },
         "dezbateri": {
-            "titlu": "Club de dezbateri",
-            "descriere": "Atelierul este dedicat elevilor pasionați de idei, curioși, dornici să-și dezvolte gândirea critică și abilitățile de comunicare. În fiecare săptămână ne propunem să construim argumente solide, să analizăm perspective diferite și să ne exprimăm convingător asupra unor subiecte actuale.",
+            "titlu": "Paideia - club de dezbateri și oratorie",
+            "descriere": "Numele clubului, Paideia, provine din cultura greacă antică și desemnează idealul formării integrale a omului prin educație, cultură și dialog. Alegerea acestui nume reflectă convingerea că dezbaterea și arta discursului sunt instrumente esențiale pentru dezvoltarea rațiunii, a caracterului și a spiritului civic.\n\nClubul Paideia are misiunea de a sprijini elevii să își dezvolte gândirea critică, exprimarea clară și responsabilă, respectul față de diversitatea opiniilor și capacitatea de a construi argumente solide. Obiectivele principale sunt:\n• dezvoltarea competențelor de argumentare, retorică și public speaking\n• promovarea unei culturi a dialogului bazată pe respect, toleranță și fair-play\n• participarea constantă la competiții de dezbateri și de public speaking la nivel local, național și internațional\n• formarea unor atitudini morale și civice prin implicarea activă în activitățile clubului\n• dezvoltarea capacității de a aborda teme interdisciplinare și actuale, prin documentare riguroasă\n• cultivarea toleranței față de pluralismul opiniilor și a deschiderii către perspective diverse.\n\nActivitatea clubului include ateliere de public speaking și oratorie, sesiuni de dezbateri academice pe teme interdisciplinare, pregătirea echipelor pentru competiții și organizarea unor evenimente de tip \"dialog socratic\" sau mini-dezbateri interne. Elevii vor fi încurajați să participe în mod constant la concursuri de dezbateri și de oratorie înscrise în calendarele naționale și internaționale, reprezentând liceul cu profesionalism și responsabilitate.\n\nPrin pregătirea dezbaterilor, elevii sunt motivați să realizeze documentări temeinice, dobândind astfel cunoștințe variate și actuale din domenii diverse – social, cultural, economic și politic. Susținerea pledoariilor în fața publicului contribuie la formarea abilităților de oratorie și retorică, dar și la consolidarea spiritului de echipă.\n\nImpactul clubului Paideia se reflectă atât la nivelul dezvoltării personale a elevilor, cât și în comunitatea școlară. Elevii participanți dobândesc competențe de comunicare, gândire critică și cooperare, iar profesorii și părinții beneficiază indirect prin implicarea elevilor în activități de calitate. Comunitatea locală are, la rândul ei, de câștigat prin formarea unor tineri capabili să abordeze cu responsabilitate problemele lumii contemporane.",
             "imagine": "static/images/cluburi/dezbateri.jpg",
-            "coordonatori": ["Bogdan Rațiu"]
+            "coordonatori": ["Briena Stoica, Bogdan Rațiu"]
         },
         "robotica": {
             "titlu": "Club de robotică",
-            "descriere": "Elevii pasionați de tehnologie, de soluții inteligente, au șansa de a participa la acest atelier în care imaginația se întâlnește cu știința, iar treptat ideile prin formă prin fire, senzori și cod. Liceenii lucrează în echipe pentru a proiecta, construi și programa roboți, iar clubul îți oferă șansa de a crea și de a concura în competiții locale și naționale.",
-            "coordonatori": [""]
+            "descriere": "Robotica, alături de disciplinele Informatică și TIC, Matematică și Fizică, recomandă dezvoltarea competenţelor STEM (Știință, Tehnologie, Inginerie și Matematică) cu un caracter transdisciplinar. Clubul de robotică este locul unde elevii pasionați de tehnologie pot învăța să construiască și să programeze roboți. Este o oportunitate excelentă de a dezvolta abilități tehnice și de a lucra în echipă.\n\nObiectivele principale sunt:\n• formarea competenţelor de utilizare transdisciplinară și a achizițiilor din Fizică, Matematică, Informatică și TIC\n• dezvoltarea creativităţii tehnice, a gândirii logice şi a gândirii algoritmice, a competenţelor de modelare, algoritmizare şi programare a algoritmilor\n• dezvoltarea unor capacităţi de cercetare şi de creaţie tehnică.\n\nAtigerea acestor scopuri se realizează prin conceperea şi asamblarea modelelor de roboţi şi elaborarea de algoritmi şi programe de conducere. Prin studiul roboților, elevii pot dobândi achiziții de învățare relevante pentru domeniile: Inginerie, Tehnologie, Știința sistemelor și materialelor mecanice, electronice și sisteme electrice, concepte de programare și matematică aplicată. De asemenea, își formează abilități de muncă în echipă, leadership și rezolvarea problemelor.\n\nActivitățile de învățare propuse pot fi realizate în mod real cu ajutorul unor kit-uri achiziționate, sau într-un mediu de programare online, care permite programarea roboților. Prin intermediul a două proiecte (Fondul Științescu Mureș și proiect intern UMFST) au fost achiziționate kituri de electronica prin programare nivel începător și intermediar, kit-uri de Energie Verde (Casă Smart, Panou Solar, irigații plante) respectiv kit-uri de mașină robot, toate echipate cu mai mulți senzori electronici, și comandate prin sisteme Arduino.\n\nNe propunem, deasemenea participarea la Concursuri de Robotică atât la nivel local (intern UMFST și în colaborare cu alte licee) cât și la nivel national (ex. Nextlab).",
+            "coordonatori": ["Papp Botond, Peres Gyula"],
         },
         "muzica": {
             "titlu": "Club de muzică",
@@ -157,17 +204,35 @@ cluburi = {
             "imagine": "static/images/muzica.jpg",
             "coordonatori": [""]
         },
-        "public-speaking": {
-            "titlu": "Club de public speaking",
-            "descriere": "La acest club alături de profesorii care predau limbi străine învățăm să transformăm emoțiile în energie și ideile în discursuri persuasive. Se realizează activități practice pornind din discursuri tematice, precum și exerciții de dicție și de retorică.",
+        "lectura": {
+            "titlu": "Club de lectură",
+            "descriere": "Clubul de lectură este un spațiu de întâlnire în jurul textului. Nu este un loc al răspunsurilor \"corecte\", ci al interpretărilor argumentate și al bucuriei de a gândi împreună. Textele sunt citite atent, discutate în profunzime și puse în relație cu experiențele de viață ale participanților, cu alte texte, cu idei din cultură, filosofie sau știință. Accentul cade pe sens, pe felul în care literatura ne ajută să ne înțelegem pe noi înșine și lumea.\n\nActivitățile clubului includ:\n• cercuri de lectură bazate pe discuție liberă, ghidată de întrebări deschise\n• interpretarea textelor literare și nonliterare din perspective diferite\n• formularea și susținerea punctelor de vedere prin argumente\n• dialog între cititori, nu evaluare sau ierarhizare\n• conexiuni între texte și realitatea contemporană\n• exerciții de lectură reflexivă și scriere de reacție (jurnale de lectură, fragmente eseistice, note personale)\n• descoperirea plăcerii lecturii ca act intelectual și emoțional.\n\nClubul pune accent pe:\n• cititorul ca partener de dialog, nu ca simplu receptor\n• respectul față de opiniile diferite\n• ascultarea activă și capacitatea de a construi sens împreună\n• dezvoltarea gândirii critice și a expresivității personale.\n\nClubul de lectură este, în esență, o comunitate de cititori care cred că lectura bună se trăiește împreună și că sensul se construiește în dialog.",
             "imagine": "static/images/cluburi/public-speaking.jpg",
-            "coordonatori": ["Kutasi Reka, Corina Bozedean"]
+            "coordonatori": ["Bogdan Rațiu"]
         },
         "sportiv": {
             "titlu": "Club de activități sportive",
             "descriere": "Numeroși elevi care iubesc mișcarea, competiția și un stil de viață sănătos au șansa de a se bucura de facilitățile pe care le oferă campusul universității. Este un loc în care nu contează doar performanța, ci și spiritul de echipă, fairplayul și bucuria de a fi activ. În funcție de talentul elevilor se oferă o varietate de activități pentru fiecare nivel de experiență.",
             "imagine": "static/images/cluburi/sportiv.jpg",
-            "coordonatori": ["Răzvan Alexandrescu"]
+            "coordonatori": ["Cristian Petraș"]
+        },
+        "matematica": {
+            "titlu": "Club de matematică",
+            "descriere": "Cercul de Matematică este un spațiu dedicat elevilor care își doresc să aprofundeze matematica dincolo de cerințele standard ale programei, să își dezvolte gândirea logică și capacitatea de rezolvare a problemelor complexe. Activitatea cercului este construită pe ideea de excelență, rigoare intelectuală și plăcerea descoperirii matematice. În cadrul cercului se lucrează sistematic pe exerciții de nivel avansat, care solicită raționament, creativitate și transfer de cunoștințe. Elevii sunt provocați să analizeze situații-problemă autentice, să formuleze strategii de rezolvare, să compare metode diferite și să argumenteze matematic soluțiile obținute.\n\nUn accent important este pus pe:\n• probleme care pornesc din situații reale și necesită modelare matematică\n• sarcini deschise, cu mai multe soluții posibile, în care contează procesul de gândire\n• interpretarea și analiza datelor, inclusiv utilizarea graficelor, tabelelor și funcțiilor\n• demonstrații, justificări și explicații clare ale pașilor parcurși\n• conexiuni între algebră, analiză matematică, geometrie și statistică.\n\nActivitățile includ:\n• exerciții de excelență și probleme de concurs\n• rezolvarea de seturi complexe de probleme structurate pe niveluri de dificultate\n• sarcini de investigare matematică, în care elevii explorează un concept, formulează ipoteze și le verifică\n• mini-proiecte individuale sau de grup, bazate pe cercetare matematică\n• probleme de tip \"studiu de caz\", care cer aplicarea matematicii în contexte interdisciplinare\n• antrenament pentru evaluări scrise care solicită claritate, structură și argumentare\n• dezvoltarea limbajului matematic și a exprimării riguroase.\n\nCercul de Matematică încurajează gândirea critică și autonomia intelectuală. Elevii sunt învățați să își explice raționamentele, să își revizuiască soluțiile și să privească eroarea ca parte firească a procesului de învățare. Activitatea se desfășoară într-un cadru colaborativ, în care elevii lucrează individual, în perechi sau în echipe, învățând să își confrunte ideile și să construiască soluții împreună. Sunt valorificate atât performanța individuală, cât și capacitatea de cooperare. Este un loc în care matematica devine exercițiu al gândirii profunde, al disciplinei intelectuale și al bucuriei de a înțelege.",
+            "imagine": "static/images/cluburi/matematica.jpg",
+            "coordonatori": ["Larisa Gaga, Tamara Istrate"]
+        },
+        "biologie": {
+            "titlu": "Clubul de biologie „Tânărul biolog” (LifeLab)",
+            "descriere": "Clubul de Biologie este un spațiu dedicat elevilor pasionați de științele vieții, care își doresc să înțeleagă biologia dincolo de manual și programă, prin explorare, cercetare și experiment. Activitatea clubului se desfășoară într-un cadru organizat, stimulativ și sigur, în care teoria este permanent conectată la practică. Un element central al clubului îl reprezintă lucrul efectiv în laborator. Elevii desfășoară experimente și lucrări practice folosind resursele și dotările necesare: aparatură de laborator, materiale specifice și instrumente adecvate activităților experimentale. Astfel, conceptele biologice sunt investigate direct, observate, testate și înțelese prin experiență concretă.\n\nActivitățile clubului includ:\n• cercetare în echipe pe subiecte specifice de biologie\n• redactarea de referate și articole științifice bazate pe research, cu aplicabilitate pentru concursuri și olimpiade de științe\n• realizarea de experimente și lucrări practice\n• pregătire pentru concursuri și olimpiade\n• studii suplimentare, cu informații aprofundate, dincolo de programa școlară\n• activități experimentale desfășurate în laboratoare specializate.\n\nClubul își propune să creeze o comunitate de învățare formată din elevi cu interese, scopuri și valori comune, oferind oportunități reale de aprofundare pentru cei motivați de performanță și cunoaștere. Participanții sunt familiarizați cu contextul real al unei cariere în domeniul biologiei, învățând cum se desfășoară munca de cercetare, colaborarea în echipă și respectarea riguroasă a procedurilor științifice. În același timp, clubul pune accent pe dezvoltarea dimensiunii umane a muncii științifice: colaborarea, empatia, proactivitatea și altruismul sunt cultivate constant, prin activități de echipă și proiecte comune. Legăturile dintre membri se consolidează, iar spiritul de echipă devine un fundament al învățării. Clubul de Biologie este locul în care biologia se trăiește, se experimentează și se transformă într-o vocație.",
+            "imagine": "static/images/cluburi/biologie.jpg",
+            "coordonatori": ["Corneliu Tanase"]
+        },
+        "informatica": {
+            "titlu": "Club de informatică",
+            "descriere": "Clubul de informatica al liceului se adresează elevilor de la profilul Matematică-Informatică pasionați de programare, algoritmică și noile tehnologii. Clubul este conceput ca un spațiu de performanță și inovație, în care elevii se pot pregăti sistematic pentru concursuri și olimpiade de informatică, dar și pentru provocările reale ale domeniului IT.\n\nActivitățile vizează atât aprofundarea noțiunilor de programare și rezolvarea de probleme de nivel competițional, cât și realizarea de proiecte practice, individuale și de echipă. Elevii lucrează într-un laborator modern, dotat cu calculatoare performante, tablă interactivă, imprimantă 3D, ochelari VR, sistem de videoconferință și scanner 3D, ceea ce le permite să experimenteze tehnologii actuale și să dezvolte aplicații și prototipuri inovatoare.\n\nPrin participarea la Clubul de Informatică, elevii își dezvoltă gândirea logică, creativitatea, autonomia și capacitatea de colaborare, își construiesc un portofoliu relevant și dobândesc competențe esențiale pentru studiile universitare și pentru viitoarele cariere în domeniul STEM.\n\nClubul de Informatică este locul în care pasiunea pentru cod se transformă în performanță și în viitor profesional.",
+            "imagine": "static/images/cluburi/informatica.jpg",
+            "coordonatori": ["Andreea Drăguș"]
         }
     }
 
@@ -193,8 +258,8 @@ profesori = [
     {
         "nume": "Maria Larisa Gaga",
         "materie": "Matematică",
-        "descriere": "",
-        "citat": "",
+        "descriere": "Am intrat în învățământ cu dorința de a schimba percepția asupra matematicii – să nu mai fie privită ca o disciplină rigidă și dificilă, ci ca un spațiu al logicii clare, o provocare pentru dezvoltarea gândirii. Cred că fiecare elev poate găsi sens și încredere în învățarea matematicii, dacă este ghidat cu răbdare, încurajare și deschidere.",
+        "citat": "Învăţând matematică, înveţi să gândeşti.” Grigore Moisil",
         "imagine": "",
 
 
@@ -217,22 +282,22 @@ profesori = [
     {
         "nume": "Daniela Lazăr",
         "materie": "Limba engleză",
-        "descriere": "",
-        "citat": "",
+        "descriere": "Limba engleză este, pentru mine, o cheie către cultură, către diversitate, către înțelegerea lumii și a celuilalt. În egală măsură, învățarea autentică nu este posibilă fără empatie. De aceea, sala de clasă este un spațiu al bucuriei de a fi împreună. Sunt un profesor responsabil și implicat, pentru că știu că fiecare oră lasă urme. Îmi doresc să-i înțeleg pe elevi dincolo de rezultate, să le ascult poveștile, să le recunosc fragilitățile și să le valorific potențialul. Nu cred în etichete, ci în posibilitatea fiecărui copil de a da tot ce are mai bun, atunci când se simte în siguranță. Rigoarea mea nu exclude căldura, iar exigența nu anulează blândețea. Cred într-o eleganță a meseriei de profesor: în modul de a vorbi, de a corecta, de a îndruma, de a fi. Eleganța care se vede în respectul față de elev, față de limbaj și față de actul educațional. A fi profesor, pentru mine, înseamnă a fi prezent. A însoți, a provoca, a susține. A crede în copii chiar și atunci când ei nu cred încă în ei înșiși. Și, mai ales, a nu uita niciodată că educația este, înainte de toate, o relație umană.",
+        "citat": "„Cred că toți avem empatie. S-ar putea să nu avem suficient curaj să o arătăm.” – Maya Angelou",
         "imagine": "",
     },
     {
         "nume": "Stoica Briena",
         "materie": "Limba engleză",
-        "descriere": "",
-        "citat": "",
+        "descriere": "Cred că educația este o lucrare vie, care modelează nu doar mintea, ci și modul nostru de a fi în lume. Ea începe în interior — în cultivarea înțelegerii, a discernământului și a responsabilității — și se împlinește în afară, în felul în care relaționăm, gândim și acționăm în comunitate. Educația nu este o simplă transmitere de cunoștințe, ci o formare a conștiinței și a caracterului, o paideia prin care omul învață să trăiască cu sens, să caute binele și să contribuie la ordinea morală a lumii din jurul său. În acest proces, profesorul nu este doar un ghid al învățării, ci un însoțitor în devenire — un martor al creșterii interioare care face posibilă o lume mai dreaptă, mai luminoasă și mai umană. De aceea iubesc să fiu profesor: pentru că în fiecare elev se reflectă posibilitatea unei lumi întregite prin cunoaștere și caracter.",
+        "citat": "Educația este legătura vie dintre formarea interioară a omului și lumea pe care o zidește prin prezența și faptele sale.",
         "imagine": "",
     },
     {
         "nume": "Andreea Bîtcă",
         "materie": "Limba engleză",
-        "descriere": "",
-        "citat": "",
+        "descriere": "Iubitoare de om şi de frumos, spirit ludic, scopul meu principal la fiecare oră de curs este să duc activitatea de la clasă dincolo de exerciţiul intelectual spre o înflorire a spiritului. Apreciez creativitatea, exprimarea liberă a opiniilor, jocul cu noţiuni şi cunoştinţe, dar şi rigoarea, conştiinciozitatea şi tenacitatea. Consider că munca desfăşurată alături de adolescenţi este nepreţuită şi sper în fiecare zi ca fervorii şi setei de cunoaştere specific adolescentine să le aduc claritate, curajul de a-şi menţine mintea şi sufletul deschise, precum şi dorinţa de a lăsa fiecare părticică de viaţă pe care elevii o vor atinge mai frumoasă, mai bună, mai luminoasă.",
+        "citat": "„Fii schimbarea pe care vrei să o vezi în lume.” (Mahatma Ghandi)",
         "imagine": "",
     },
     {
@@ -253,7 +318,7 @@ profesori = [
     {
         "nume": "Papp Botond",
         "materie": "Fizică",
-        "descriere": "",
+        "descriere": "Sunt un profesor de fizică pasionat de cercetare și de felul în care legile universului pot deveni inteligibile pentru mintea unui adolescent. Investesc constant în digitalizarea conținutului de fizică, transformând concepte abstracte în simulări, modele vizuale și experiențe interactive. Încerc să cultiv gândirea științifică: formularea ipotezelor, verificarea lor, acceptarea erorii ca parte a cunoașterii. Îi învăț pe elevi să nu le frică de probleme dificile, ci să le descompună, să le modeleze și să le înțeleagă pas cu pas. În sala de clasă, fizica nu se memorează, ci se construiește. Este locul în care rigoarea se întâlnește cu pasiunea, iar legile naturii capătă sens, frumusețe și relevanță.",
         "citat": "",
         "imagine": ""
     },
@@ -276,14 +341,14 @@ profesori = [
         "materie": "Istorie",
         "descriere": "Există o expresie celebră, “nu pentru școală ci pentru viața” care redă succint misiunea școlii și a profesorilor . Este ceea ce încerc să le transmit studenților mei, să îi conving ca școala este o experiență de învățare și nu o goană nebună după cat mai multe note de 10. Nu trebuie să facem parada cu ceea ce știm ci să acumulăm pentru a pune în practică, pentru a deveni cea mai bună versiune a noastră. O astfel de abordare presupune a renunța la “marșul triumfal spre “a termina materia” la sfârșit de an. Nu cred ca este relevant cât putem memora ci cum ceea ce acumulăm ne transformă, ne bucura, ne determină să vrem mai mult. Ca om și ca profesor sunt la fel! Îmi place să descopăr lucruri noi, învăț permanent, citesc și cred în puterea magică a cărților, mă respect și îi respect pe toți cei din jurul meu!",
         "citat": "Nu pentru școală ci pentru viața",
-        "imagine": ""
+        "imagine": "",
     },
     {
-        "nume": "Grațiela Georgescu",
+        "nume": "Szabolcs-Lehel Szakács",
         "materie": "Geografia/Istoria UK si SUA",
-        "descriere": "",
-        "citat": "",
-        "imagine": "",
+        "descriere": "Pentru mine, educația nu e o linie dreaptă, ci o potecă sinuoasă, desenată de pașii curiozității. Este arta de a crea un mediu în care elevii pot explora liber, pot formula întrebări autentice și pot gândi dincolo de granițele obișnuinței. Cred într-un mod de predare care provoacă, care inspiră și care invită fiecare minte să devină coautor al semnificațiilor. Fie că urmărim cauzele revoluțiilor sau contururile continentelor, învățarea devine un dialog viu, în care cunoașterea și imaginația se întâlnesc în libertate. Sunt ferm convins că libertatea adevărată începe acolo unde avem curajul să punem sub semnul întrebării fiecare aspect al lumii în care trăim. Curajul de a întreba fără garanții valorează mai mult decât liniștea unui răspuns imposibil de contestat.",
+        "citat": "“I would rather have questions that can't be answered than answers that can't be questioned.” ― Richard Feynman",
+        "imagine": "static/images/Poza-UMFST/profesori/Lehel.jpg",
     },
     {
         "nume": "Crina Chirilă",
@@ -337,15 +402,15 @@ profesori = [
     {
         "nume": "Andreea-Ioana Focșan",
         "materie": "Informatică",
-        "descriere": "",
-        "citat": "",
+        "descriere": " Meseria de profesor este cea mai completă: trebuie să fii profesor, mentor, ghid, uneori psiholog, alteori motivator, uneori avocat sau judecător – de toate câte puțin. La orele de informatică nu există loc pentru plictiseală – fiecare elev e invitat să gândească, să experimenteze și să găsească soluții proprii. Deși sunt o persoană riguroasă și cerințele mele sunt clare, am răbdare să explic fiecare concept cu exemple din viața de zi cu zi, astfel încât materia să devină mai ușor de înțeles. Îmi place să provoc elevii prin probleme care stimulează gândirea critică și creativitatea și să folosesc metode moderne care fac învățarea mai activă și mai captivantă. Orele mele sunt un spațiu dinamic în care rigoarea se îmbină cu curiozitatea, iar greșelile devin oportunități de descoperire. Îmi doresc să lucrez cu elevii care sunt curioși, dornici să exploreze, să pună întrebări și să învețe prin experiență.",
+        "citat": "Algoritmi pentru minți curioase și învățători neobosiți.",
         "imagine": ""
     },
      {
         "nume": "Peres Gyula Dániel",
         "materie": "TIC",
-        "descriere": "",
-        "citat": "",
+        "descriere": "Pentru mine predarea nu înseamnă doar transmiterea de informații, ci mai mult de atât, formarea elevilor în oameni integri, înțelepți și maturi. Eu văd profesorii ca pe niște mentori - responsabili nu doar pentru a transmite cunoștințe, ci pentru a modela oameni capabili să se descurce în viața de zi cu zi și să folosească ceea ce învață în mod înțelept.",
+        "citat": "„Înțelepciunea este folosirea potrivită a cunoașterii.” Charles Spurgeon",
         "imagine": ""
     }
 ]
@@ -397,7 +462,6 @@ clase = [
         "elevi": [
             {"nume": "Bálint Erick"},
             {"nume": "Bereholschi Maia-Sofia"},
-            {"nume": "Blaga Nadia Veronica"},
             {"nume": "Blănaru Sara"},
             {"nume": "Bogdan Diana"},
             {"nume": "Chiriac Patricia-Mădălina"},
@@ -422,7 +486,6 @@ clase = [
             {"nume": "Ștefan Mara-Bianca"},
             {"nume": "Tancău Antonia"},
             {"nume": "Truța Cristian"},
-            {"nume": "Voicu Filip-Constantin"},
             {"nume": "Zilahi Irina-Maria"}
         ]
     },
