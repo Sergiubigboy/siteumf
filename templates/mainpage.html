@@ -5,38 +5,6 @@
 />
 {% endblock %} {% block content %}
 <div class="mainpage-bg">
-  {% if anunturi %}
-  <div class="anunturi-section">
-    <h2 class="section-title text-center">Anunțuri</h2>
-    <div class="anunturi-slider-container">
-      <div class="anunturi-slider" id="anunturiSlider">
-        {% for anunt in anunturi %}
-        <div class="anunt-card">
-          <div class="anunt-image">
-            <img
-              src="{{ url_for('static', filename='images/poze-hero/' + anunt.imagine) }}"
-              alt="{{ anunt.titlu }}"
-              class="img-fluid"
-            />
-          </div>
-          <div class="anunt-info">
-            <h5>{{ anunt.titlu }}</h5>
-            <p>{{ anunt.descriere }}</p>
-          </div>
-          <div class="anunt-action">
-            <a href="{{ anunt.link }}" class="btn btn-primary btn-sm"
-              >Citește mai mult</a
-            >
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-      <button class="slider-arrow left-arrow" id="prevArrow">&#10094;</button>
-      <button class="slider-arrow right-arrow" id="nextArrow">&#10095;</button>
-    </div>
-  </div>
-  {% endif %} 
-
   <div class="container my-5">
     <div class="row g-4 align-items-center fade-in">
       <div class="col-md-6">
@@ -244,41 +212,4 @@
   </div>
 </div>
 {% endblock %} {% block extra_js %}
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const slider = document.getElementById("anunturiSlider");
-    const prevArrow = document.getElementById("prevArrow");
-    const nextArrow = document.getElementById("nextArrow");
-
-    let currentIndex = 0;
-
-    const updateSliderPosition = () => {
-      const cardWidth = slider.querySelector(".anunt-card").offsetWidth + 20;
-      slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-    };
-
-    prevArrow.addEventListener("click", () => {
-      if (currentIndex > 0) {
-        currentIndex--;
-        updateSliderPosition();
-      }
-    });
-
-    nextArrow.addEventListener("click", () => {
-      const totalCards = slider.querySelectorAll(".anunt-card").length;
-      const visibleCards = Math.floor(
-        slider.offsetWidth /
-          (slider.querySelector(".anunt-card").offsetWidth + 10)
-      );
-      if (currentIndex < totalCards - visibleCards) {
-        currentIndex++;
-        updateSliderPosition();
-      }
-    });
-
-    window.addEventListener("resize", updateSliderPosition);
-
-    updateSliderPosition();
-  });
-</script>
 {% endblock %}

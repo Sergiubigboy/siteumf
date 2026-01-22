@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from date import Profesori, Clase, profesori, clase, normalize_text, anunturi, activitati, celebrari, cluburi, proiecte, hub_imagini, ateliere
+from date import Profesori, Clase, profesori, clase, normalize_text, anunturi, activitati, celebrari, cluburi, proiecte, hub_imagini
 import unicodedata
 
 profesori = Profesori(profesori)
@@ -128,7 +128,6 @@ def pagina_activitate(id_activitate):
         no_hero=True,
         cluburi=cluburi,
         celebrari=celebrari,
-        ateliere=ateliere,
     )
 
 @app.route('/club/<club_name>')
