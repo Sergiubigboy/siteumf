@@ -46,7 +46,19 @@ hub_imagini = [
     "5-24ianuarie.jpg",
     "6-voluntariatcopiimici.jpg",
     "7-intalnirecucampioana.jpg",
-    "8-voluntariatolimpbio.jpg"
+    "8-voluntariatolimpbio.jpg",
+    "atelier.jpeg",
+    "bookflix.jpg",
+    "club-de-muzica.jpg",
+    "culturii.jpeg",
+    "debateexpress.jpeg",
+    "empatia.jpeg",
+    "heropodcast.jpg",
+    "pozecarti.jpeg",
+    "prezentare.jpeg",
+    "prislop.jpeg",
+    "sapt-lecturii.jpg",
+    "voleisport.jpeg"
 ]
 anunturi = [
     {"titlu": "Depunere dosare înscriere", "descriere": "24-29 iulie", "imagine": "anunt.jpg"},
@@ -155,13 +167,13 @@ cluburi = {
             "titlu": "Club de public speaking",
             "descriere": "La acest club alături de profesorii care predau limbi străine învățăm să transformăm emoțiile în energie și ideile în discursuri persuasive. Se realizează activități practice pornind din discursuri tematice, precum și exerciții de dicție și de retorică.",
             "imagine": "static/images/cluburi/public-speaking.jpg",
-            "coordonatori": ["Kutasi Reka, Corina Bozedean"]
+            "coordonatori": ["Stoica Briena, Bogdan Rațiu"]
         },
         "sportiv": {
             "titlu": "Club de activități sportive",
             "descriere": "Numeroși elevi care iubesc mișcarea, competiția și un stil de viață sănătos au șansa de a se bucura de facilitățile pe care le oferă campusul universității. Este un loc în care nu contează doar performanța, ci și spiritul de echipă, fairplayul și bucuria de a fi activ. În funcție de talentul elevilor se oferă o varietate de activități pentru fiecare nivel de experiență.",
             "imagine": "static/images/cluburi/sportiv.jpg",
-            "coordonatori": ["Răzvan Alexandrescu"]
+            "coordonatori": ["Cristian Petraș"]
         }
     }
 
@@ -180,7 +192,7 @@ profesori = [
         "materie": "Matematică",
         "descriere": "",
         "citat": "",
-        "imagine": "",
+        "imagine": "static\images\Poza-UMFST\profesori\tamara-istrate.jpg",
 
 
     },
@@ -211,16 +223,16 @@ profesori = [
     {
         "nume": "Daniela Lazăr",
         "materie": "Limba engleză",
-        "descriere": "",
-        "citat": "",
-        "imagine": "",
+        "descriere": "Limba engleză este, pentru mine, o cheie către cultură, către diversitate, către înțelegerea lumii și a celuilalt. În egală măsură, învățarea autentică nu este posibilă fără empatie. De aceea, sala de clasă este un spațiu al bucuriei de a fi împreună. Sunt un profesor responsabil și implicat, pentru că știu că fiecare oră lasă urme. Îmi doresc să-i înțeleg pe elevi dincolo de rezultate, să le ascult poveștile, să le recunosc fragilitățile și să le valorific potențialul. Nu cred în etichete, ci în posibilitatea fiecărui copil de a da tot ce are mai bun, atunci când se simte în siguranță. Rigoarea mea nu exclude căldura, iar exigența nu anulează blândețea. Cred într-o eleganță a meseriei de profesor: în modul de a vorbi, de a corecta, de a îndruma, de a fi. Eleganța care se vede în respectul față de elev, față de limbaj și față de actul educațional. A fi profesor, pentru mine, înseamnă a fi prezent. A însoți, a provoca, a susține. A crede în copii chiar și atunci când ei nu cred încă în ei înșiși. Și, mai ales, a nu uita niciodată că educația este, înainte de toate, o relație umană.",
+        "citat": "„Cred că toți avem empatie. S-ar putea să nu avem suficient curaj să o arătăm.” – Maya Angelou",
+        "imagine": "static\images\Poza-UMFST\profesori\daniela-lazar.jpg",
     },
     {
         "nume": "Stoica Briena",
         "materie": "Limba engleză",
-        "descriere": "",
-        "citat": "",
-        "imagine": "",
+        "descriere": "Cred că educația este o lucrare vie, care modelează nu doar mintea, ci și modul nostru de a fi în lume. Ea începe în interior — în cultivarea înțelegerii, a discernământului și a responsabilității — și se împlinește în afară, în felul în care relaționăm, gândim și acționăm în comunitate. Educația nu este o simplă transmitere de cunoștințe, ci o formare a conștiinței și a caracterului, o paideia prin care omul învață să trăiască cu sens, să caute binele și să contribuie la ordinea morală a lumii din jurul său. În acest proces, profesorul nu este doar un ghid al învățării, ci un însoțitor în devenire — un martor al creșterii interioare care face posibilă o lume mai dreaptă, mai luminoasă și mai umană. De aceea iubesc să fiu profesor: pentru că în fiecare elev se reflectă posibilitatea unei lumi întregite prin cunoaștere și caracter.",
+        "citat": "Educația este legătura vie dintre formarea interioară a omului și lumea pe care o zidește prin prezența și faptele sale",
+        "imagine": "static\images\Poza-UMFST\profesori\briena-stoica.jpg",
     },
     {
         "nume": "Andreea Bîtcă",
@@ -247,7 +259,7 @@ profesori = [
     {
         "nume": "Papp Botond",
         "materie": "Fizică",
-        "descriere": "",
+        "descriere": "Sunt un profesor de fizică pasionat de cercetare și de felul în care legile universului pot deveni inteligibile pentru mintea unui adolescent. Investesc constant în digitalizarea conținutului de fizică, transformând concepte abstracte în simulări, modele vizuale și experiențe interactive. Încerc să cultiv gândirea științifică: formularea ipotezelor, verificarea lor, acceptarea erorii ca parte a cunoașterii. Îi învăț pe elevi să nu le frică de probleme dificile, ci să le descompună, să le modeleze și să le înțeleagă pas cu pas. În sala de clasă, fizica nu se memorează, ci se construiește. Este locul în care rigoarea se întâlnește cu pasiunea, iar legile naturii capătă sens, frumusețe și relevanță.",
         "citat": "",
         "imagine": ""
     },
@@ -273,7 +285,7 @@ profesori = [
         "imagine": ""
     },
     {
-        "nume": "Grațiela Georgescu",
+        "nume": "Szabolcs-Lehel Szakács",
         "materie": "Geografia/Istoria UK si SUA",
         "descriere": "",
         "citat": "",
@@ -340,7 +352,7 @@ profesori = [
         "materie": "TIC",
         "descriere": "",
         "citat": "",
-        "imagine": ""
+        "imagine": "static\images\Poza-UMFST\profesori\peres-gyula.jpg"
     }
 ]
 

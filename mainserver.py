@@ -35,7 +35,7 @@ def lista_clase():
         clase=clase_distincte,
         subtitlu="Elevi",
         title="Elevi",
-        background="static/images/poze-hero/pozaelevi.jpg"
+        background="static/images/poze-hero/pozaelevi.jpeg"
     )
 @app.route('/elevi/an-scolar24-25')
 def an_scolar_24_25():
