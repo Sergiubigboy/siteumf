@@ -10,6 +10,11 @@
     <p>"{{citat}}"</p>
   </div>
 
+  {% if imagine_clasa %}
+  <div class="class-image-container mb-4">
+    <img src="{{ url_for('static', filename='images/Poza-UMFST/' + imagine_clasa) }}" alt="Imagine clasa {{ clasa }}" class="img-fluid rounded">
+  </div>
+  {% endif %}
   
   <h1 class="class-title">Clasa {{ clasa }}</h1>
   <h3 class="class-subtitle">Profil: {{ profil }}</h3>

@@ -56,6 +56,7 @@ def elevi_clasa(clasa, litera):
         elev for elev in elevi_filtrati if "performante" in elev
     ]
     orar = f"orar{clasa}{litera}.PNG"
+    imagine_clasa = clasa_filtrata.get("imagine", "")
     return render_template(
         'elevi_clasa.html',
         elevi=elevi_filtrati,
@@ -63,6 +64,7 @@ def elevi_clasa(clasa, litera):
         clasa=f"{clasa}{litera}",
         profil=profil,
         citat=clasa_filtrata["citat"],
+        imagine_clasa=imagine_clasa,
         subtitlu=f"Clasa {clasa}{litera}",
         title=f"Clasa {clasa}{litera}",
         background=f"static/images/Poza-UMFST/grup{clasa}{litera}/bgclasa{clasa}{litera}.jpg",

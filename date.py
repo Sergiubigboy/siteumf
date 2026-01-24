@@ -103,7 +103,7 @@ Evenimentul a avut momente de recitări din poeziile eminesciene în limba româ
             "titlu": "Ziua Cititului Împreună",
             "subtitlu": "Istoria prin obiecte tangibile. Cufărul poetului Mihai Eminescu Cufărul lui Eminescu la Muzeul UMFST",
             "descriere": """
-            <p>Muzeul Universității „George Emil Palade” are onoarea de a găzdui un obiect cu o profundă valoare istorică și culturală: cufărul lui Mihai Eminescu. Renumitul cufăr, marcat pe placheta centrală cu inscripția „M. Eminovici”, l-a însoțit pe Eminescu de-a lungul întregii sale vieți, devenind martor al călătoriilor sale prin țară și Europa încă din copilărie. În cadrul evenimentului cultural „Istoria prin obiecte tangibile. Cufărul poetului Mihai Eminescu”, care a avut loc în data de 5 februarie 2025, când a fost sărbătorită Ziua Internațională a Cititului Împreună, cei prezenți au avut ocazia să admire cufărul și să descopere povestea din spatele acestuia, dar și să participe la un moment special pregătit de elevii Liceului UMFST „George Emil Palade”. </p>
+            <p>Muzeul Universității „George Emil Palade” are onoarea de a găzdui un obiect cu o profundă valoare istorică și culturală: cufărul lui Mihai Eminescu. Renumitul cufăr, marcat pe placheta centrală cu inscripția „M. Eminovici”, l-a însoțit pe Eminescu de-a lungul întregii sale vieți, devenind martor al călătoriilor sale prin țară și Europa încă din copilărie. </p>
             """,
             "imagine": None
         }
@@ -192,15 +192,15 @@ profesori = [
         "materie": "Matematică",
         "descriere": "",
         "citat": "",
-        "imagine": "static\images\Poza-UMFST\profesori\tamara-istrate.jpg",
+        "imagine": "tamara-istrate.jpg",
 
 
     },
     {
         "nume": "Maria Larisa Gaga",
         "materie": "Matematică",
-        "descriere": "",
-        "citat": "",
+        "descriere": "Am intrat în învățământ cu dorința de a schimba percepția asupra matematicii – să nu mai fie privită ca o disciplină rigidă și dificilă, ci ca un spațiu al logicii clare, o provocare pentru dezvoltarea gândirii. Cred că fiecare elev poate găsi sens și încredere în învățarea matematicii, dacă este ghidat cu răbdare, încurajare și deschidere.",
+        "citat": "„Învăţând matematică, înveţi să gândeşti.” Grigore Moisil",
         "imagine": "",
 
 
@@ -218,27 +218,27 @@ profesori = [
         "materie": "Limba engleză",
         "descriere": "Sunt o persoană empatică, deschisă și dornică de a sprijini elevii în procesul lor de învățare și dezvoltare personală. Cred cu tărie că rolul unui dascăl nu se limitează doar la transmiterea cunoștințelor, ci implică și formarea unor oameni integri, capabili să gândească critic și să acționeze cu responsabilitate. Consider că fiecare elev are un potențial unic, iar rolul meu, ca profesor, este să îl descopăr, să îl cultiv și să îl susțin cu răbdare și implicare. Prin activitatea mea urmăresc să inspir, să încurajez și să contribui la dezvoltarea unei generații conștiente și bine pregătite pentru provocările lumii de mâine. ",
         "citat": "Educația este cea mai puternică armă pe  care o putem folosi pentru a schimba lumea. Nelson Mandela",
-        "imagine": ""
+        "imagine": "kutasi-reka.jpg"
     },
     {
         "nume": "Daniela Lazăr",
         "materie": "Limba engleză",
         "descriere": "Limba engleză este, pentru mine, o cheie către cultură, către diversitate, către înțelegerea lumii și a celuilalt. În egală măsură, învățarea autentică nu este posibilă fără empatie. De aceea, sala de clasă este un spațiu al bucuriei de a fi împreună. Sunt un profesor responsabil și implicat, pentru că știu că fiecare oră lasă urme. Îmi doresc să-i înțeleg pe elevi dincolo de rezultate, să le ascult poveștile, să le recunosc fragilitățile și să le valorific potențialul. Nu cred în etichete, ci în posibilitatea fiecărui copil de a da tot ce are mai bun, atunci când se simte în siguranță. Rigoarea mea nu exclude căldura, iar exigența nu anulează blândețea. Cred într-o eleganță a meseriei de profesor: în modul de a vorbi, de a corecta, de a îndruma, de a fi. Eleganța care se vede în respectul față de elev, față de limbaj și față de actul educațional. A fi profesor, pentru mine, înseamnă a fi prezent. A însoți, a provoca, a susține. A crede în copii chiar și atunci când ei nu cred încă în ei înșiși. Și, mai ales, a nu uita niciodată că educația este, înainte de toate, o relație umană.",
         "citat": "„Cred că toți avem empatie. S-ar putea să nu avem suficient curaj să o arătăm.” – Maya Angelou",
-        "imagine": "static\images\Poza-UMFST\profesori\daniela-lazar.jpg",
+        "imagine": "daniela-lazar.jpg",
     },
     {
         "nume": "Stoica Briena",
         "materie": "Limba engleză",
         "descriere": "Cred că educația este o lucrare vie, care modelează nu doar mintea, ci și modul nostru de a fi în lume. Ea începe în interior — în cultivarea înțelegerii, a discernământului și a responsabilității — și se împlinește în afară, în felul în care relaționăm, gândim și acționăm în comunitate. Educația nu este o simplă transmitere de cunoștințe, ci o formare a conștiinței și a caracterului, o paideia prin care omul învață să trăiască cu sens, să caute binele și să contribuie la ordinea morală a lumii din jurul său. În acest proces, profesorul nu este doar un ghid al învățării, ci un însoțitor în devenire — un martor al creșterii interioare care face posibilă o lume mai dreaptă, mai luminoasă și mai umană. De aceea iubesc să fiu profesor: pentru că în fiecare elev se reflectă posibilitatea unei lumi întregite prin cunoaștere și caracter.",
         "citat": "Educația este legătura vie dintre formarea interioară a omului și lumea pe care o zidește prin prezența și faptele sale",
-        "imagine": "static\images\Poza-UMFST\profesori\briena-stoica.jpg",
+        "imagine": "briena-stoica.jpg",
     },
     {
         "nume": "Andreea Bîtcă",
         "materie": "Limba engleză",
-        "descriere": "",
-        "citat": "",
+        "descriere": "Iubitoare de om şi de frumos, spirit ludic, scopul meu principal la fiecare oră de curs este să duc activitatea de la clasă dincolo de exerciţiul intelectual spre o înflorire a spiritului. Apreciez creativitatea, exprimarea liberă a opiniilor, jocul cu noţiuni şi cunoştinţe, dar şi rigoarea, conştiinciozitatea şi tenacitatea. Consider că munca desfăşurată alături de adolescenţi este nepreţuită şi sper în fiecare zi ca fervorii şi setei de cunoaştere specific adolescentine să le aduc claritate, curajul de a-şi menţine mintea şi sufletul deschise, precum şi dorinţa de a lăsa fiecare părticică de viaţă pe care elevii o vor atinge mai frumoasă, mai bună, mai luminoasă.",
+        "citat": "„Fii schimbarea pe care vrei să o vezi în lume.” (Mahatma Ghandi)",
         "imagine": "",
     },
     {
@@ -268,7 +268,7 @@ profesori = [
         "materie": "Chimie",
         "descriere": "Aflată la granița dintre știință, empirism și mister, chimia ne descoperă dincolo de reacții, formule și structuri esența proceselor care guvernează existența micro și macro universului, precum și modul în care omul poate trăi în echilibru cu el însuși și cu mediul înconjurător.Ca disciplină de studiu și știință exactă transpusă în cotidian, cred că ne explică faptul că \"E chimie între noi\" - parafrazând titlul unei melodii. Chimia e realitate frumoasă, plină de culoare și fascinație, pe care o trăim și o simțim în viața de zi cu zi.",
         "citat": "",
-        "imagine": ""
+        "imagine": "mihai-babota.jpg"
     },
     {
         "nume": "Corneliu Tănase",
@@ -287,16 +287,16 @@ profesori = [
     {
         "nume": "Szabolcs-Lehel Szakács",
         "materie": "Geografia/Istoria UK si SUA",
-        "descriere": "",
-        "citat": "",
-        "imagine": "",
+        "descriere": "Pentru mine, educația nu e o linie dreaptă, ci o potecă sinuoasă, desenată de pașii curiozității. Este arta de a crea un mediu în care elevii pot explora liber, pot formula întrebări autentice și pot gândi dincolo de granițele obișnuinței. Cred într-un mod de predare care provoacă, care inspiră și care invită fiecare minte să devină coautor al semnificațiilor. Fie că urmărim cauzele revoluțiilor sau contururile continentelor, învățarea devine un dialog viu, în care cunoașterea și imaginația se întâlnesc în libertate. Sunt ferm convins că libertatea adevărată începe acolo unde avem curajul să punem sub semnul întrebării fiecare aspect al lumii în care trăim. Curajul de a întreba fără garanții valorează mai mult decât liniștea unui răspuns imposibil de contestat.",
+        "citat": ": “I would rather have questions that can't be answered than answers that can't be questioned.” ― Richard Feynman",
+        "imagine": "Lehel.jpg",
     },
     {
         "nume": "Crina Chirilă",
         "materie": "Geografie",
         "descriere": "De mică, am fost pasionată de explorarea lumii și de înțelegerea fenomenelor naturale, iar din pasiune mi-am creat o profesie. Ca profesoară de geografie încerc sa deschid orizonturi noi pentru elevii mei, transformând hărțile în povești. Geografia este una dintre disciplinele care ne creează „conștiința eco”, iar pentru a nu face rău lumii din jur avem nevoie să înțelegem dinamica pământului și modul în care timpul ne-a construit din adâncul oceanelor în vârful munților. Sper ca fiecare lecție să-i ajute pe elevi să cunoască lumea și să le ofere șansa de a-și găsi un loc în ea.",
         "citat": " Natura are un limbaj propriu și, dacă îi înțelegem semnele și ritmul, ne dezvăluie taine pe care nimic altceva nu le poate exprima",
-        "imagine": ""
+        "imagine": "crina-chirila.jpg"
     },
     {
         "nume": "Nora Dumbravă",
@@ -343,16 +343,16 @@ profesori = [
     {
         "nume": "Andreea-Ioana Focșan",
         "materie": "Informatică",
-        "descriere": "",
-        "citat": "",
+        "descriere": "Meseria de profesor este cea mai completă: trebuie să fii profesor, mentor, ghid, uneori psiholog, alteori motivator, uneori avocat sau judecător – de toate câte puțin. La orele de informatică nu există loc pentru plictiseală – fiecare elev e invitat să gândească, să experimenteze și să găsească soluții proprii. Deși sunt o persoană riguroasă și cerințele mele sunt clare, am răbdare să explic fiecare concept cu exemple din viața de zi cu zi, astfel încât materia să devină mai ușor de înțeles. Îmi place să provoc elevii prin probleme care stimulează gândirea critică și creativitatea și să folosesc metode moderne care fac învățarea mai activă și mai captivantă. Orele mele sunt un spațiu dinamic în care rigoarea se îmbină cu curiozitatea, iar greșelile devin oportunități de descoperire. Îmi doresc să lucrez cu elevii care sunt curioși, dornici să exploreze, să pună întrebări și să învețe prin experiență.",
+        "citat": "Algoritmi pentru minți curioase și învățători neobosiți.",
         "imagine": ""
     },
      {
         "nume": "Peres Gyula Dániel",
         "materie": "TIC",
-        "descriere": "",
-        "citat": "",
-        "imagine": "static\images\Poza-UMFST\profesori\peres-gyula.jpg"
+        "descriere": "Pentru mine predarea nu înseamnă doar transmiterea de informații, ci mai mult de atât, formarea elevilor în oameni integri, înțelepți și maturi. Eu văd profesorii ca pe niște mentori - responsabili nu doar pentru a transmite cunoștințe, ci pentru a modela oameni capabili să se descurce în viața de zi cu zi și să folosească ceea ce învață în mod înțelept.",
+        "citat": "„Înțelepciunea este folosirea potrivită a cunoașterii.” Charles Spurgeon",
+        "imagine": "peres-gyula.jpg"
     }
 ]
 
@@ -365,6 +365,7 @@ clase = [
         "diriginte": "Daniela Lazăr",
         "profil": "Mate-Informatică",
         "citat": "",
+        "imagine": "9A.jpeg",
         "elevi": [
             {"nume": "Bârlean Daria Andreea"},
             {"nume": "Bârlean Sofia Alexia"},
@@ -400,6 +401,7 @@ clase = [
         "diriginte": "Mihai Babotă",
         "profil": "Științele Naturii",
         "citat": "",
+        "imagine": "9B.jpeg",
         "elevi": [
             {"nume": "Bálint Erick"},
             {"nume": "Bereholschi Maia-Sofia"},
@@ -437,6 +439,7 @@ clase = [
         "diriginte": "Bogdan Rațiu",
         "profil": "Științele Naturii",
         "citat": "Trasăm linii care nu se șterg",
+        "imagine": "10B.jpg",
         "elevi": [
             {"nume": "Bumbac Ileana"},
             {"nume": "Bumbu Luca"},
@@ -473,6 +476,7 @@ clase = [
         "diriginte": "Bianca Han",
         "profil": "Mate-Informatică",
         "citat": "Prin respect, crești - pe tine și pe ceilalți.",
+        "imagine": "10A.jpg",
         "elevi": [
             {"nume": "Biriș Sergiu"},
             {"nume": "Corondeanu Raul",
