@@ -147,15 +147,15 @@ cluburi = {
             "coordonatori": ["Liviu Pancu"]
         },
         "dezbateri": {
-            "titlu": "Club de dezbateri",
-            "descriere": "Atelierul este dedicat elevilor pasionați de idei, curioși, dornici să-și dezvolte gândirea critică și abilitățile de comunicare. În fiecare săptămână ne propunem să construim argumente solide, să analizăm perspective diferite și să ne exprimăm convingător asupra unor subiecte actuale.",
+            "titlu": "Paideia - club de dezbateri și oratorie",
+            "descriere": "Numele clubului, Paideia, provine din cultura greacă antică și desemnează idealul formării integrale a omului prin educație, cultură și dialog. Alegerea acestui nume reflectă convingerea că dezbaterea și arta discursului sunt instrumente esențiale pentru dezvoltarea rațiunii, a caracterului și a spiritului civic.\nClubul Paideia are misiunea de a sprijini elevii să își dezvolte gândirea critică, exprimarea clară și responsabilă, respectul față de diversitatea opiniilor și capacitatea de a construi argumente solide. Obiectivele principale sunt:\n- dezvoltarea competențelor de argumentare, retorică și public speaking;\n- promovarea unei culturi a dialogului bazată pe respect, toleranță și fair-play;\n- participarea constantă la competiții de dezbateri și de public speaking la nivel local, național și internațional;\n- formarea unor atitudini morale și civice prin implicarea activă în activitățile clubului;\n- dezvoltarea capacității de a aborda teme interdisciplinare și actuale, prin documentare riguroasă;\n- cultivarea toleranței față de pluralismul opiniilor și a deschiderii către perspective diverse.\nActivitatea clubului include ateliere de public speaking și oratorie, sesiuni de dezbateri academice pe teme interdisciplinare, pregătirea echipelor pentru competiții și organizarea unor evenimente de tip „dialog socratic” sau mini-dezbateri interne. Elevii vor fi încurajați să participe în mod constant la concursuri de dezbateri și de oratorie înscrise în calendarele naționale și internaționale, reprezentând liceul cu profesionalism și responsabilitate.\nPrin pregătirea dezbaterilor, elevii sunt motivați să realizeze documentări temeinice, dobândind astfel cunoștințe variate și actuale din domenii diverse – social, cultural, economic și politic. Susținerea pledoariilor în fața publicului contribuie la formarea abilităților de oratorie și retorică, dar și la consolidarea spiritului de echipă.\nImpactul clubului Paideia se reflectă atât la nivelul dezvoltării personale a elevilor, cât și în comunitatea școlară. Elevii participanți dobândesc competențe de comunicare, gândire critică și cooperare, iar profesorii și părinții beneficiază indirect prin implicarea elevilor în activități de calitate. Comunitatea locală are, la rândul ei, de câștigat prin formarea unor tineri capabili să abordeze cu responsabilitate problemele lumii contemporane.",
             "imagine": "static/images/cluburi/dezbateri.jpg",
-            "coordonatori": ["Bogdan Rațiu"]
+            "coordonatori": ["Briena Stoica, Bogdan Rațiu"]
         },
         "robotica": {
             "titlu": "Club de robotică",
-            "descriere": "Elevii pasionați de tehnologie, de soluții inteligente, au șansa de a participa la acest atelier în care imaginația se întâlnește cu știința, iar treptat ideile prin formă prin fire, senzori și cod. Liceenii lucrează în echipe pentru a proiecta, construi și programa roboți, iar clubul îți oferă șansa de a crea și de a concura în competiții locale și naționale.",
-            "coordonatori": [""]
+            "descriere": "Robotica, alături de disciplinele Informatică și TIC, Matematică și Fizică, recomandă dezvoltarea competenţelor STEM (Știință, Tehnologie, Inginerie și Matematică) cu un caracter transdisciplinar.\nClubul de robotică este locul unde elevii pasionați de tehnologie pot învăța să construiască și să programeze roboți. Este o oportunitate excelentă de a dezvolta abilități tehnice și de a lucra în echipă.\nObiectivele principale sunt:\nformarea competenţelor de utilizare transdisciplinară și a achizițiilor din Fizică, Matematică, Informatică și TIC,\ndezvoltarea creativităţii tehnice, a gândirii logice şi a gândirii algoritmice, a competenţelor de modelare, algoritmizare şi programare a algoritmilor \ndezvoltarea unor capacităţi de cercetare şi de creaţie tehnică.\nAtingerea acestor scopuri se realizează prin conceperea şi asamblarea modelelor de roboţi şi elaborarea de algoritmi şi programe de conducere.\nPrin studiul roboților, elevii pot dobândi achiziții de învățare relevante pentru domeniile: Inginerie, Tehnologie, Știința sistemelor și materialelor mecanice, electronice și sisteme electrice, concepte de programare și matematică aplicată. De asemenea, își formează abilități de muncă în echipă, leadership și rezolvarea problemelor. Activitățile de învățare propuse pot fi realizate în mod real cu ajutorul unor kit-uri achiziționate, sau într-un mediu de programare online, care permite programarea roboților. Prin intermediul a două proiecte (Fondul Științescu Mureș și proiect intern UMFST) au fost achiziționate kituri de electronica prin programare nivel începător și intermediar, kit-uri de Energie Verde (Casă Smart, Panou Solar, irigații plante) respectiv kit-uri de mașină robot, toate echipate cu mai mulți senzori electronici, și comandate prin sisteme Arduino. \nNe propunem, deasemenea participarea la Concursuri de Robotică atât la nivel local (intern UMFST și în colaborare cu alte licee) cât și la nivel national (ex. Nextlab).",
+            "coordonatori": ["Papp Botond, Peres Gyula"]
         },
         "muzica": {
             "titlu": "Club de muzică",
@@ -163,18 +163,32 @@ cluburi = {
             "imagine": "static/images/muzica.jpg",
             "coordonatori": [""]
         },
-        "public-speaking": {
-            "titlu": "Club de public speaking",
-            "descriere": "La acest club alături de profesorii care predau limbi străine învățăm să transformăm emoțiile în energie și ideile în discursuri persuasive. Se realizează activități practice pornind din discursuri tematice, precum și exerciții de dicție și de retorică.",
-            "imagine": "static/images/cluburi/public-speaking.jpg",
-            "coordonatori": ["Stoica Briena, Bogdan Rațiu"]
+        "lectura": {
+            "titlu": "Club de lectură",
+            "descriere": "Clubul de lectură este un spațiu de întâlnire în jurul textului. Nu este un loc al răspunsurilor „corecte”, ci al interpretărilor argumentate și al bucuriei de a gândi împreună. Textele sunt citite atent, discutate în profunzime și puse în relație cu experiențele de viață ale participanților, cu alte texte, cu idei din cultură, filosofie sau știință. Accentul cade pe sens, pe felul în care literatura ne ajută să ne înțelegem pe noi înșine și lumea.\nActivitățile clubului includ:\ncercuri de lectură bazate pe discuție liberă, ghidată de întrebări deschise;\ninterpretarea textelor literare și nonliterare din perspective diferite;\nformularea și susținerea punctelor de vedere prin argumente;\ndialog între cititori, nu evaluare sau ierarhizare;\nconexiuni între texte și realitatea contemporană;\nexerciții de lectură reflexivă și scriere de reacție (jurnale de lectură, fragmente eseistice, note personale);\ndescoperirea plăcerii lecturii ca act intelectual și emoțional.\nClubul pune accent pe:\ncititorul ca partener de dialog, nu ca simplu receptor;\nrespectul față de opiniile diferite;\nascultarea activă și capacitatea de a construi sens împreună;\ndezvoltarea gândirii critice și a expresivității personale.\nClubul de lectură este, în esență, o comunitate de cititori care cred că lectura bună se trăiește împreună și că sensul se construiește în dialog.",
+            "imagine": "",
+            "coordonatori": ["Bogdan Rațiu"]
         },
         "sportiv": {
             "titlu": "Club de activități sportive",
             "descriere": "Numeroși elevi care iubesc mișcarea, competiția și un stil de viață sănătos au șansa de a se bucura de facilitățile pe care le oferă campusul universității. Este un loc în care nu contează doar performanța, ci și spiritul de echipă, fairplayul și bucuria de a fi activ. În funcție de talentul elevilor se oferă o varietate de activități pentru fiecare nivel de experiență.",
             "imagine": "static/images/cluburi/sportiv.jpg",
             "coordonatori": ["Cristian Petraș"]
+        },
+        "matematica": {
+            "titlu": "Club de matematică",
+            "descriere": "Cercul de Matematică este un spațiu dedicat elevilor care își doresc să aprofundeze matematica dincolo de cerințele standard ale programei, să își dezvolte gândirea logică și capacitatea de rezolvare a problemelor complexe. Activitatea cercului este construită pe ideea de excelență, rigoare intelectuală și plăcerea descoperirii matematice. În cadrul cercului se lucrează sistematic pe exerciții de nivel avansat, care solicită raționament, creativitate și transfer de cunoștințe. Elevii sunt provocați să analizeze situații-problemă autentice, să formuleze strategii de rezolvare, să compare metode diferite și să argumenteze matematic soluțiile obținute.\nUn accent important este pus pe:\nprobleme care pornesc din situații reale și necesită modelare matematică;\nsarcini deschise, cu mai multe soluții posibile, în care contează procesul de gândire;\ninterpretarea și analiza datelor, inclusiv utilizarea graficelor, tabelelor și funcțiilor;\ndemonstrații, justificări și explicații clare ale pașilor parcurși;\nconexiuni între algebră, analiză matematică, geometrie și statistică.\nActivitățile includ:\nexerciții de excelență și probleme de concurs;\nrezolvarea de seturi complexe de probleme structurate pe niveluri de dificultate;\nsarcini de investigare matematică, în care elevii explorează un concept, formulează ipoteze și le verifică;\nmini-proiecte individuale sau de grup, bazate pe cercetare matematică;\nprobleme de tip „studiu de caz”, care cer aplicarea matematicii în contexte interdisciplinare;\nantrenament pentru evaluări scrise care solicită claritate, structură și argumentare;\ndezvoltarea limbajului matematic și a exprimării riguroase.\nCercul de Matematică încurajează gândirea critică și autonomia intelectuală. Elevii sunt învățați să își explice raționamentele, să își revizuiască soluțiile și să privească eroarea ca parte firească a procesului de învățare. Activitatea se desfășoară într-un cadru colaborativ, în care elevii lucrează individual, în perechi sau în echipe, învățând să își confrunte ideile și să construiască soluții împreună. Sunt valorificate atât performanța individuală, cât și capacitatea de cooperare. Este un loc în care matematica devine exercițiu al gândirii profunde, al disciplinei intelectuale și al bucuriei de a înțelege.",
+            "imagine": "",
+            "coordonatori": ["Larisa Gaga, Tamara Istrate"]
+        },
+        "biologie": {
+            "titlu": "Clubul de biologie „Tânărul biolog” (LifeLab)",
+            "descriere": "Clubul de Biologie este un spațiu dedicat elevilor pasionați de științele vieții, care își doresc să înțeleagă biologia dincolo de manual și programă, prin explorare, cercetare și experiment. Activitatea clubului se desfășoară într-un cadru organizat, stimulativ și sigur, în care teoria este permanent conectată la practică. Un element central al clubului îl reprezintă lucrul efectiv în laborator. Elevii desfășoară experimente și lucrări practice folosind resursele și dotările necesare: aparatură de laborator, materiale specifice și instrumente adecvate activităților experimentale. Astfel, conceptele biologice sunt investigate direct, observate, testate și înțelese prin experiență concretă.\nActivitățile clubului includ:\ncercetare în echipe pe subiecte specifice de biologie;\nredactarea de referate și articole științifice bazate pe research, cu aplicabilitate pentru concursuri și olimpiade de științe;\nrealizarea de experimente și lucrări practice;\npregătire pentru concursuri și olimpiade;\nstudii suplimentare, cu informații aprofundate, dincolo de programa școlară;\nactivități experimentale desfășurate în laboratoare specializate.\nClubul își propune să creeze o comunitate de învățare formată din elevi cu interese, scopuri și valori comune, oferind oportunități reale de aprofundare pentru cei motivați de performanță și cunoaștere. Participanții sunt familiarizați cu contextul real al unei cariere în domeniul biologiei, învățând cum se desfășoară munca de cercetare, colaborarea în echipă și respectarea riguroasă a procedurilor științifice. În același timp, clubul pune accent pe dezvoltarea dimensiunii umane a muncii științifice: colaborarea, empatia, proactivitatea și altruismul sunt cultivate constant, prin activități de echipă și proiecte comune. Legăturile dintre membri se consolidează, iar spiritul de echipă devine un fundament al învățării. Clubul de Biologie este locul în care biologia se trăiește, se experimentează și se transformă într-o vocație.",
+            "imagine": "",
+            "coordonatori": ["Corneliu Tanase"]
         }
+
+
     }
 
 profesori = [
@@ -635,7 +649,8 @@ class Profesori:
     def __init__(self, personal):
         self.personal = personal
         for pers in self.personal:
-            pers['imagine'] = normalize_text(pers['nume'].replace(" ", "-").lower() + ".jpg")
+            if not pers.get('imagine'):
+                pers['imagine'] = normalize_text(pers['nume'].replace(" ", "-").lower() + ".jpg")
 
 
 
