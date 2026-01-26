@@ -11,8 +11,8 @@
   </div>
 
   {% if imagine_clasa %}
-  <div class="class-image-container mb-4">
-    <img src="{{ url_for('static', filename='images/Poza-UMFST/' + imagine_clasa) }}" alt="Imagine clasa {{ clasa }}" class="img-fluid rounded">
+  <div class="class-image-container mb-4 text-center">
+    <img src="{{ url_for('static', filename='images/Poza-UMFST/' + imagine_clasa) }}" alt="Imagine clasa {{ clasa }}" class="img-fluid rounded" style="height: 400px; object-fit: contain;">
   </div>
   {% endif %}
   

@@ -107,7 +107,7 @@ def lista_activitati():
         activitati=activitati,
         subtitlu="Activități", 
         title="Activități", 
-        background="static/images/Poza-UMFST/grup9A/bgclasa10A.jpg"
+        background="static/images/poze-hero/pozaactivitati.jpg"
     )
 
 @app.route('/activitati/<id_activitate>')

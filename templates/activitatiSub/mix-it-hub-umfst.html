@@ -60,9 +60,7 @@
     <div class="col-md-6 mb-4">
       <div class="club-box p-4 shadow-sm rounded">
         <h3 class="text-center">{{ club_data['titlu'] }}</h3>
-        <p>
-          {{ club_data['descriere'][:200] }}{% if club_data['descriere']|length > 200 %}...{% endif %}
-        </p>
+        <div>{{ club_data['descriere']|striptags|truncate(200, True) }}</div>
         <div class="text-center">
           <a href="/club/{{ club_key }}" class="btn btn-primary">Detalii</a>
         </div>
