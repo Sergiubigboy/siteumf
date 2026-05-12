@@ -4,6 +4,24 @@
   href="{{ url_for('static', filename='css/mainpage.css') }}"
 />
 {% endblock %} {% block content %}
+<div class="container my-4">
+  <div class="announcement-card shadow-lg rounded overflow-hidden mb-5">
+    <div class="row g-0 align-items-center">
+      <div class="col-md-4">
+        <img
+          src="{{ url_for('static', filename='images/Poza-UMFST/anunt_zpd.png') }}"
+          class="img-fluid h-100 w-100 object-fit-cover"
+          alt="Anunț Ziua Porților Deschise"
+        />
+      </div>
+      <div class="col-md-8 bg-primary text-white p-4">
+        <h2 class="mb-3">Anunț important</h2>
+        <p class="lead mb-2">Ziua Porților Deschise la Liceul UMFST</p>
+        <p class="mb-0">Te așteptăm pe 27 mai 2026 pentru a descoperi școala, activitățile noastre și viitorul tău educațional.</p>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="mainpage-bg">
   <div class="container my-5">
     <div class="row g-4 align-items-center fade-in">
