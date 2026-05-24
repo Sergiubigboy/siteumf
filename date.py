@@ -408,9 +408,68 @@ clase = [
             {"nume": "Cerghizan Adrian-Gabriel"},
             {"nume": "Chirteș Maria"},
             {"nume": "Cozma Ruxandra"},
-            {"nume": "Danci Dora-Elena"},
+            {"nume": "Danci Dora-Elena",
+             "performante": [
+                {
+                    "titlu": "Concursul Interjudețean de Matematică \"Matematica, de drag\"",
+                    "locatie": "Bistrița",
+                    "premiu": "Mențiune II"
+                },
+                {
+                    "titlu": "Concursul Județean \"Dialog Cultural Plurilingv\"",
+                    "locatie": "Secțiunea engleză",
+                    "premiu": "Mențiune II"
+                }
+             ]},
             {"nume": "Fărcaș Bogdan"},
-            {"nume": "Gligor Adriana-Emanuela"},
+            {"nume": "Gligor Adriana-Emanuela",
+             "performante": [
+                {
+                    "titlu": "Olimpiada Națională de Matematică",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul I"
+                },
+                {
+                    "titlu": "Olimpiada Națională de Matematică",
+                    "locatie": "Alba-Iulia, etapa națională",
+                    "premiu": "Participare"
+                },
+                {
+                    "titlu": "Olimpiada Națională de Limba și Literatura Română",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul II"
+                },
+                {
+                    "titlu": "Concursul Interjudețean de Matematică \"Alexandru Papiu Ilarian\"",
+                    "locatie": "nivel interjudețean",
+                    "premiu": "Mențiune"
+                },
+                {
+                    "titlu": "Concursul Interjudețean de Matematică \"Matematica, de drag\"",
+                    "locatie": "Bistrița, nivel interjudețean",
+                    "premiu": "Mențiune III"
+                },
+                {
+                    "titlu": "Concursul Național de Fizică Evrika",
+                    "locatie": "Brașov, nivel național",
+                    "premiu": "Participare"
+                },
+                {
+                    "titlu": "Concursul Interdisciplinar de Matematică și Fizică \"Vrănceanu-Procopiu\"",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul I"
+                },
+                {
+                    "titlu": "Concursul Interdisciplinar de Matematică și Fizică \"Vrănceanu-Procopiu\"",
+                    "locatie": "Bacău, etapa națională",
+                    "premiu": "Participare"
+                },
+                {
+                    "titlu": "Festivalul Francofoniei - ediția XVIII",
+                    "locatie": "nivel județean",
+                    "premiu": "Mențiune"
+                }
+             ]},
             {"nume": "Huza Cosmin"},
             {"nume": "Ignat Ariana Raluca"},
             {"nume": "Laurenț Cezar-Ioan"},
@@ -421,11 +480,25 @@ clase = [
             {"nume": "Oltean Cristina-Nicoleta"},
             {"nume": "Petrea Luca-Alexandru"},
             {"nume": "Popa Vlad-Ștefan"},
-            {"nume": "Rus Daria-Ioana"},
+            {"nume": "Rus Daria-Ioana",
+             "performante": [
+                {
+                    "titlu": "Concursul Național de Procese Simulate \"Matei Cantacuzino\"",
+                    "locatie": "etapa națională",
+                    "premiu": "Locul II"
+                }
+             ]},
             {"nume": "Rusu Mihai"},
             {"nume": "Stoica Dalia"},
             {"nume": "Varga Cezar-Andrei"},
-            {"nume": "Vasinc Daniel"},
+            {"nume": "Vasinc Daniel",
+             "performante": [
+                {
+                    "titlu": "AI For Good",
+                    "locatie": "etapa națională",
+                    "premiu": "Locul I + calificare la etapa internațională"
+                }
+             ]},
             {"nume": "Velcherean Ana"}
         ]
     },
@@ -440,7 +513,14 @@ clase = [
             {"nume": "Bálint Erick"},
             {"nume": "Bereholschi Maia-Sofia"},
             {"nume": "Blaga Nadia Veronica"},
-            {"nume": "Blănaru Sara"},
+            {"nume": "Blănaru Sara",
+             "performante": [
+                {
+                    "titlu": "Olimpiada Națională de Biologie",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul III"
+                }
+             ]},
             {"nume": "Bogdan Diana"},
             {"nume": "Chiriac Patricia-Mădălina"},
             {"nume": "Chirilean Alexia-Ioana"},
@@ -450,7 +530,14 @@ clase = [
             {"nume": "Gherendi Sofia"},
             {"nume": "Lenard Alexia"},
             {"nume": "Maier Alisia Eliza"},
-            {"nume": "Matei Irina"},
+            {"nume": "Matei Irina",
+             "performante": [
+                {
+                    "titlu": "Olimpiada Națională de Argumentare, Dezbatere și Gândire Critică \"Tinerii dezbat\"",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul II (echipă) + Mențiune (vorbitor)"
+                }
+             ]},
             {"nume": "Mihai Giulia-Elena"},
             {"nume": "Moldovan David-Rareș"},
             {"nume": "Nagy Victor-Alex"},
@@ -475,11 +562,25 @@ clase = [
         "citat": "Trasăm linii care nu se șterg",
         "imagine": "10B.jpg",
         "elevi": [
-            {"nume": "Bumbac Ileana"},
+            {"nume": "Bumbac Ileana",
+             "performante": [
+                {
+                    "titlu": "Olimpiada Națională de Limba Engleză",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul I"
+                }
+             ]},
             {"nume": "Bumbu Luca"},
             {"nume": "Colcer Sonia"},
-            {"nume": "Coșarcă Alexandru"},
-            {"nume": "Cotoi Iulius", "performante": [{"titlu": "Olimpiada Națională de Biologie","locatie": "Tg. Mureș, etapa județeană","premiu": "Mențiune 1" }]},
+            {"nume": "Coșarcă Alexandru",
+             "performante": [
+                {
+                    "titlu": "Olimpiada lectura ca abilitate de viață (OLAV)",
+                    "locatie": "etapa județeană",
+                    "premiu": "Mențiune II"
+                }
+             ]},
+            {"nume": "Cotoi Iulius", "performante": [{"titlu": "Olimpiada Națională de Biologie","locatie": "Tg. Mureș, etapa județeană","premiu": "Mențiune III" }]},
             {"nume": "Crețu Daria"},
             {"nume": "Crișan Andrei"},
             {"nume": "Dumitru Radu"},
@@ -499,9 +600,17 @@ clase = [
             {"nume": "Pop Sara"},
             {"nume": "Sabău Raul"},
             {"nume": "Șandru Octavian"},
-            {"nume": "Szasz Roberta", "performante" : [{"titlu": "Olimpiada Națională de Biologie", "locatie": "Tg. Mureș, etapa județeană", "premiu": "Premiul II"}, {"titlu": "Olimpiada Interdisciplinară „Culturalitate și spiritualitate românească“", "locatie": "Tg. Mureș, etapa județeană", "premiu": "Premiul III"}]},
-            {"nume": "Vasiliu Anca"},
-            {"nume": "Vidican Andreea"}
+            {"nume": "Szasz Roberta", "performante" : [{"titlu": "Olimpiada Națională de Biologie", "locatie": "Tg. Mureș, etapa județeană", "premiu": "Mențiune II"}, {"titlu": "Olimpiada Națională de Limba și literatura română", "locatie": "etapa județeană", "premiu": "Locul I"}, {"titlu": "Olimpiada Națională de Limba și literatura română", "locatie": "Botoșani, etapa națională", "premiu": "Premiu special la nivel național"}, {"titlu": "Olimpiada Interdisciplinară „Culturalitate și spiritualitate românească“", "locatie": "Tg. Mureș, etapa județeană", "premiu": "Premiul III"}]},
+            {"nume": "Vasiliu Anca",
+             "performante": [
+                {
+                    "titlu": "Olimpiada Națională de Chimie",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul I"
+                }
+             ]},
+            {"nume": "Vidican Andreea"},
+            {"nume": "Vașloban Maria"}
         ]
     },
     {
@@ -512,7 +621,19 @@ clase = [
         "citat": "Prin respect, crești - pe tine și pe ceilalți.",
         "imagine": "10A.jpg",
         "elevi": [
-            {"nume": "Biriș Sergiu"},
+            {"nume": "Biriș Sergiu",
+             "performante": [
+                {
+                    "titlu": "AI For Good",
+                    "locatie": "etapa națională",
+                    "premiu": "Locul I + calificare la etapa internațională"
+                },
+                {
+                    "titlu": "Olimpiada Națională de Argumentare, Dezbatere și Gândire Critică \"Tinerii dezbat\"",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul I + calificare la etapa națională"
+                }
+             ]},
             {"nume": "Corondeanu Raul",
              "performante": [
                 {
@@ -524,20 +645,55 @@ clase = [
                 "titlu": "Concursul Național ENROLL FOR FUN, ediția a VII-a, secțiunea creații literare, limba engleză",
                 "locatie": "Baia Mare",
                 "premiu": "Locul II"
+            },
+            {
+                "titlu": "Concursul Național ENROLL FOR FUN, ediția a VIII-a, secțiunea creații literare, limba engleză",
+                "locatie": "Targu Mureș",
+                "premiu": "Locul II"
+            },
+            {
+                "titlu": "Olimpiada Județeană de Chimie",
+                "locatie": "etapa județeană",
+                "premiu": "Locul III"
+            },
+            {
+                "titlu": "Maratonul de Educație Antreprenorială",
+                "locatie": "etapa județeană",
+                "premiu": "Locul I + calificare la etapa națională"
             }
              ]},
             {"nume": "Cucuiet Andrei"},
             {"nume": "David Aiana"},
             {"nume": "Ercean David"},
             {"nume": "Gherman Cezara"},
-            {"nume": "Jovrea Ștefan"},
+            {"nume": "Jovrea Ștefan",
+             "performante": [
+                {
+                    "titlu": "Olimpiada Națională de Lingvistică",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul II"
+                },
+                {
+                    "titlu": "Olimpiada Națională de Geografie",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul III"
+                },
+                {
+                    "titlu": "Olimpiada Națională de Limba Franceză",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul IV"
+                }
+             ]},
             {"nume": "Lazăr Cristian",
              "performante": [
                 {
                     "titlu": "Concursul județean de Matematică „Simon Petru“, ediția a XXIII-a",
                     "locatie": "Tg Mureș, Colegiul Național „Unirea“",
-                    "premiu": "Locul II, secțiunea Matematică-informatică"
-                }
+                    "premiu": "Locul II, secțiunea Matematică-informatică"                },
+                {
+                    "titlu": "Olimpiada Națională de Chimie",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul II"                }
              ]},
             {"nume": "Maier Alia"},
             {"nume": "Mitoșeriu David",
@@ -546,6 +702,16 @@ clase = [
                     "titlu": "Concursul Național ENROLL FOR FUN, ediția a VII-a, secțiunea creații literare, limba engleză",
                     "locatie": "Baia Mare",
                     "premiu": "Locul II"
+                },
+                {
+                    "titlu": "Concursul Național ENROLL FOR FUN, ediția a VIII-a, secțiunea creații literare, limba engleză",
+                    "locatie": "Targu Mureș",
+                    "premiu": "Locul II"
+                },
+                {
+                    "titlu": "AI For Good",
+                    "locatie": "etapa națională",
+                    "premiu": "Locul I + calificare la etapa internațională"
                 }
              ]},
             {"nume": "Muth Cristian",
@@ -568,7 +734,7 @@ clase = [
             {
                 "titlu": "Concursul „Matematica de drag“",
                 "locatie": "Bistrița Năsăud",
-                "premiu": "Mențiune"
+                "premiu": "Premiul I cu punctaj maxim"
             },
             {
                 "titlu": "Concursul „Marian Țarina“",
@@ -578,7 +744,7 @@ clase = [
             {
                 "titlu": "Concursul „Argument“",
                 "locatie": "Baia Mare",
-                "premiu": "Premiul I"
+                "premiu": "Premiul III"
             },
             {
                 "titlu": "Concursul Național de Matematică și Informatică „Grigore Moisil“",
@@ -586,9 +752,19 @@ clase = [
                 "premiu": "Premiul II"
             },
             {
-                "titlu": "Olimpiada Națională De Matematică",
-                "locatie": "1-6 aprilie, Botoșani",
-                "premiu": "Premiul II la etapa județeană și calificare la etapa națională"
+                "titlu": "Olimpiada Națională de Matematică",
+                "locatie": "etapa județeană",
+                "premiu": "Locul II + calificare la etapa națională"
+            },
+            {
+                "titlu": "Olimpiada Națională de Matematică",
+                "locatie": "etapa națională, Botoșani",
+                "premiu": "Locul 8 în clasamentul național"
+            },
+            {
+                "titlu": "Olimpiada Națională de Matematică",
+                "locatie": "Alba Iulia ",
+                "premiu": "Medalie de Argint  + calificare la baraj"
             },
             {
                 "titlu": "Olimpiada Națională de Fizică",
@@ -629,7 +805,14 @@ clase = [
                 "premiu": ""
             }
         ]},
-            {"nume": "Oaneș Sofia"},
+            {"nume": "Oaneș Sofia",
+             "performante": [
+                {
+                    "titlu": "AI For Good",
+                    "locatie": "etapa națională",
+                    "premiu": "Locul I + calificare la etapa internațională"
+                }
+             ]},
             {"nume": "Paca Raoul",
              "performante": [
                 {
@@ -638,8 +821,27 @@ clase = [
                     "premiu": "Premiul III"
                 }
             ]},
-            {"nume": "Pantea Tudor"},
-            {"nume": "Someșan Adrian"},
+            {"nume": "Pantea Tudor",
+             "performante": [
+                {
+                    "titlu": "AI For Good",
+                    "locatie": "etapa națională",
+                    "premiu": "Locul I + calificare la etapa internațională"
+                },
+                {
+                    "titlu": "Olimpiada Națională de Argumentare, Dezbatere și Gândire Critică \"Tinerii dezbat\"",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul I + calificare la etapa națională"
+                }
+             ]},
+            {"nume": "Someșan Adrian",
+             "performante": [
+                {
+                    "titlu": "Maratonul de Educație Antreprenorială",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul I + calificare la etapa națională"
+                }
+             ]},
             {"nume": "Staicu Eric"},
             {"nume": "Stîngă David"},
             {"nume": "Stoica Andrei"},
@@ -647,14 +849,25 @@ clase = [
             {"nume": "Trifan Raul"},
             {"nume": "Turdean Cleo",
              "performante": [
+                {   "titlu": "Concursul Național ENROLL FOR FUN, ediția a VIII-a, secțiunea creații literare, limba engleză",
+                    "locatie": "Targu Mureș",
+                    "premiu": "Locul II"
+                },
                 {
-                    "titlu": "Concursul național „Vis de iarnă”",
-                    "locatie": "Baia Mare, etapa națională",
-                    "premiu": "Premiul I"
-                }
+                    "titlu": "AI For Good",
+                    "locatie": "etapa națională",
+                    "premiu": "Locul I + calificare la etapa internațională"
+                },
+                
              ]},
-            {"nume": "Ungur Filip"},
-            {"nume": "Vașloban Maria"}
+            {"nume": "Ungur Filip",
+             "performante": [
+                {
+                    "titlu": "Olimpiada Națională de Argumentare, Dezbatere și Gândire Critică \"Tinerii dezbat\"",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul I + calificare la etapa națională"
+                }
+             ]}
         ]
     }
 ]
