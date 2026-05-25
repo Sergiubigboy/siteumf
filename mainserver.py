@@ -157,6 +157,8 @@ def proiect_page(proiect_name):
         titlu=proiect["titlu"],
         subtitlu=proiect["subtitlu"],
         descriere=proiect["descriere"],
+        imagine=proiect.get("imagine"),
+        imagini=proiect.get("imagini", []),
         no_hero=True
     )
 

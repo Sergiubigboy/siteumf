@@ -148,8 +148,72 @@ proiecte = {
             Membrii comunității academice UMFST sunt invitați să doneze cărți, între 10 și 13 februarie, în spațiul special amenajat la parterul clădirii principale a universității (holul liceului). Pe 14 februarie, elevii vor porni cu entuziasm într-o călătorie prin Târgu Mureș, unde vor oferi cărțile colectate comunității locale, încurajând astfel lectura.</p>
             <p><strong>Workshop didactic (15 februarie)</strong><br>
             Evenimentul care încheie săptămâna va fi dedicat cadrelor didactice din învățământul primar. Asist. univ. dr. Bogdan Rațiu va susține workshopul „Lectură literară vs. Literație?”, în care vor fi prezentate strategii de lectură și literație aplicabile la clasă.</p>
+            <ul>
+              <li>Lectura ca dialog: Întâlnire cu criticul literar Al. Cistelecan. De ce să (mai) citim?</li>
+              <li>Lectura în spațiul urban: „Orașul care citește”.</li>
+              <li>Lectura ca performance.</li>
+              <li>Lectura ca responsabilitate civică: Manifest pentru lectură! De ce contează lectura pentru o societate democratică? Ce pierdem când nu citim?</li>
+              <li>Lectura ca experiență socială, nu doar intelectuală.</li>
+              <li>Cafeneaua literară: discuții libere despre o carte, nu analiză școlară, ci conversație culturală.</li>
+              <li>Procesul operelor: pro și contra în fața unei opere.</li>
+            </ul>
+            <p>Vezi și materialul video: <a href="https://www.youtube.com/watch?v=fMlneB3wZ2U" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=fMlneB3wZ2U</a></p>
             """,
 
+        },
+        "performanta-excelenta": {
+            "titlu": "Performanță și excelență",
+            "subtitlu": "O nouă ediție a podcastului „Banca din față” cu elevi de performanță.",
+            "descriere": """
+            <p>Performanța înseamnă talent, dar și un mediu care încurajează evoluția și excelența.</p>
+            <p>În această ediție a podcastului „Banca din față”, îi avem invitați pe câțiva dintre elevii Liceului UMFST „George Emil Palade” care au participat la etapa națională a olimpiadelor de Limba și literatura română, Limba engleză, Biologie și Matematică.</p>
+            <p>Discuția își propune să ofere o imagine asupra modului în care elevii liceului își pot dezvolta abilitățile, pasiunile și dorința de performanță, într-un mediu care susține excelența academică și evoluția personală.</p>
+            """,
+
+        },
+        "stai-sigur-pe-net": {
+            "titlu": "Stai sigur pe net!",
+            "subtitlu": "Dezbatere interactivă despre siguranța în mediul online.",
+            "descriere": """
+            <p>Dezbaterea interactivă „Stai sigur pe net!” a fost organizată de Radio Târgu Mureș, cu participarea elevilor liceului UMFST și a profesorului Bogdan Rațiu.</p>
+            <p>Invităm comunitatea să discute despre subiectele problematice pe care tinerii le întâlnesc în mediul digital și să înțeleagă cum pot naviga online cu mai multă responsabilitate și încredere.</p>
+            """,
+
+        },
+        "antreprenori-fata-in-fata": {
+            "titlu": "Antreprenori față în față",
+            "subtitlu": "Întâlniri de business și antreprenoriat pentru liceeni.",
+            "descriere": """
+            <p>Elevii Liceului UMFST „George Emil Palade” au avut ocazia de a cunoaște mai mulți antreprenori și reprezentanți ai mediului de afaceri mureșean, în cadrul orelor de educație antreprenorială.</p>
+            <p>Aceștia au interacționat cu invitații și au descoperit povești reale de inițiativă, curaj și dezvoltare profesională, dar și perspective concrete asupra modului în care ideile pot deveni proiecte și afaceri.</p>
+            <p>Astfel de întâlniri îi ajută pe elevi să înțeleagă mai bine lumea antreprenoriatului și să descopere oportunitățile pe care inițiativa și implicarea le pot aduce în parcursul lor profesional.</p>
+            <p><strong>Coordonator:</strong> dna prof. Mihaela Bucur</p>
+            """,
+
+        },
+        "balul-bobocilor": {
+            "titlu": "Balul Bobocilor",
+            "subtitlu": "Prima ediție a Balului Bobocilor UMFST, februarie 2026.",
+            "descriere": """
+            <p>Balul Bobocilor al elevilor Liceului UMFST „George Emil Palade” a fost prima ediție din februarie 2026, având tema <strong>Our style. Our story.</strong></p>
+            <p>Programul evenimentului a cuprins probe atent pregătite de colegii mai mari: proba de spontaneitate, proba de cultură generală și proba tactilă, un show de talente și stand-up comedy, dar mai ales distracție și voie bună.</p>
+            <p>Bobocii au surprins membrii juriului cu energie, creativitate și autenticitate, creând o seară plină de emoție și momente memorabile.</p>
+            """,
+            "imagini": [
+                "images/HUB/bal2026afis.JPG",
+                "images/HUB/bal2026.JPG"
+            ]
+        },
+        "engineering-escape-room": {
+            "titlu": "Engineering Escape Room",
+            "subtitlu": "O experiență practică STEM pentru liceenii UMFST.",
+            "descriere": """
+            <p>Studenții organizației ESTIEM LG Târgu Mureș au organizat, în laboratoarele Facultății de Inginerie și Tehnologia Informației, UMFST G.E. Palade Târgu Mureș, o provocare practică dedicată elevilor Liceului UMFST „George Emil Palade”.</p>
+            <p>Evenimentul a fost conceput ca o experiență interactivă prin care elevii au avut ocazia să descopere ingineria într-un mod practic și atractiv.</p>
+            <p>Probele au inclus descifrarea de coduri, exerciții de logică și cultură generală, precum și asamblarea și utilizarea unui microcontroller Arduino pentru rezolvarea unui puzzle tehnic.</p>
+            <p>Succesul evenimentului deschide perspectiva continuării acestor inițiative, ca parte a implicării active a studenților ESTIEM în promovarea educației STEM.</p>
+            <p><strong>Coordonator:</strong> dna prof. Mihaela Bucur</p>
+            """,
         },
         "vis-de-iarna": {
             "titlu": "Vis de iarnă",
@@ -510,7 +574,11 @@ clase = [
         "citat": "",
         "imagine": "9B.jpeg",
         "elevi": [
-            {"nume": "Bálint Erick"},
+            {"nume": "Bálint Erick", "performante": [
+                {"titlu": "Olimpiada Națională de Franceză", "locatie": "etapa județeană", "premiu": "Locul II"},
+                {"titlu": "Concursul de Plurilingvism", "premiu": "Mențiune I"},
+                {"titlu": "Concursul Dialog Plurilingv", "premiu": "Locul IV"}
+            ]},
             {"nume": "Bereholschi Maia-Sofia"},
             {"nume": "Blaga Nadia Veronica"},
             {"nume": "Blănaru Sara",
@@ -597,7 +665,10 @@ clase = [
             {"nume": "Onisor Rares"},
             {"nume": "Ormenișan Anastasia"},
             {"nume": "Pastia Catinca"},
-            {"nume": "Pop Sara"},
+            {"nume": "Pop Sara", "performante": [
+                {"titlu": "Campioana națională la categoria U17 feminin sezonul 2025/2026"},
+                {"titlu": "Premiul «Cea mai bună coordonatoare la categoria U17 feminin sezonul 2025/2026»"}
+            ]},
             {"nume": "Sabău Raul"},
             {"nume": "Șandru Octavian"},
             {"nume": "Szasz Roberta", "performante" : [{"titlu": "Olimpiada Națională de Biologie", "locatie": "Tg. Mureș, etapa județeană", "premiu": "Mențiune II"}, {"titlu": "Olimpiada Națională de Limba și literatura română", "locatie": "etapa județeană", "premiu": "Locul I"}, {"titlu": "Olimpiada Națională de Limba și literatura română", "locatie": "Botoșani, etapa națională", "premiu": "Premiu special la nivel național"}, {"titlu": "Olimpiada Interdisciplinară „Culturalitate și spiritualitate românească“", "locatie": "Tg. Mureș, etapa județeană", "premiu": "Premiul III"}]},

@@ -7,10 +7,23 @@
 <div class="container mt-5">
   <div class="project-page-box p-5 shadow-lg rounded">
     <h2 class="text-center mb-4">{{ titlu }}</h2>
-    <div class="text-center mb-4">
-      <img src="{{ imagine }}" alt="{{ titlu }}" class="img-fluid rounded" />
-    </div>
+    {% if subtitlu %}
+    <p class="project-subtitle text-center mb-4">{{ subtitlu }}</p>
+    {% endif %}
     <div class="descriere">{{ descriere|safe }}</div>
+    {% if imagini %}
+    <div class="project-image-gallery mt-4">
+      {% for img in imagini %}
+      <div class="project-image-card">
+        <img src="{{ url_for('static', filename=img) }}" alt="{{ titlu }} image {{ loop.index }}" class="img-fluid rounded" />
+      </div>
+      {% endfor %}
+    </div>
+    {% elif imagine %}
+    <div class="text-center mt-4">
+      <img src="{{ imagine }}" alt="{{ titlu }}" class="img-fluid rounded project-single-image" />
+    </div>
+    {% endif %}
   </div>
 </div>
 
