@@ -117,6 +117,44 @@ Evenimentul a avut momente de recitări din poeziile eminesciene în limba româ
             """,
             "imagine": None
         },
+        "ziua-portilor-deschise-2026": {
+            "titlu": "Ziua Porților Deschise 2026",
+            "subtitlu": "Descoperă liceul UMFST",
+            "descriere": """
+            <p>Ziua Porților Deschise 2026 a adus în atenție misiunea liceului UMFST: o comunitate educațională deschisă, în care elevul devine participant activ în procesul său de formare.</p>
+            <div class='row gx-3 gy-4'>
+              <div class='col-md-6'>
+                <img src='/static/images/zpd1.jpg' alt='Ziua Porților Deschise 2026' class='img-fluid rounded mb-3'>
+                <p><strong>Viziunea pedagogică</strong> se sprijină pe cinci valori fundamentale: pasiunea pentru cunoaștere, excelența academică, dezvoltarea creativă și etică, perseverența și cultura colaborativă.</p>
+              </div>
+              <div class='col-md-6'>
+                <img src='/static/images/zpd2.jpg' alt='Elevi și profesori UMFST' class='img-fluid rounded mb-3'>
+                <p>Liceul construiește contexte în care cunoașterea nu este doar transmisă, ci experimentată și pusă în dialog cu întrebările reale ale elevilor.</p>
+              </div>
+            </div>
+            <div class='row gx-3 gy-4'>
+              <div class='col-md-6'>
+                <img src='/static/images/zpd3.jpg' alt='Atmosfera evenimentului' class='img-fluid rounded mb-3'>
+                <p>Educația are sens atunci când echilibrează calificarea riguroasă, socializarea autentică și formarea subiectivă a fiecărui elev.</p>
+              </div>
+              <div class='col-md-6'>
+                <img src='/static/images/zpd4.jpg' alt='Program și dialog despre școală' class='img-fluid rounded mb-3'>
+                <p>Programul a punctat dorința liceului de a crea un spațiu autentic de conversație despre educație, nevoile elevilor și felul în care construim o comunitate școlară relevantă.</p>
+              </div>
+            </div>
+            <div class='pdf-card p-4 mt-4 rounded shadow-sm bg-light'>
+              <h4 class='mb-3'>Viziunea pedagogică</h4>
+              <p>Descopera modelul educațional UMFST și valorile care susțin formarea elevului de azi și de mâine.</p>
+              <div class='ratio ratio-16x9 mb-3'>
+                <iframe src='/static/images/viziune_pedagogica.pdf#view=FitH' title='Preview Viziune pedagogică' class='rounded border'></iframe>
+              </div>
+              <a href='/static/images/viziune_pedagogica.pdf' class='btn btn-outline-primary' target='_blank' rel='noopener noreferrer'>Vizualizează PDF în filă nouă</a>
+            </div>
+            <div class='mt-4 text-center'>
+              <p class='mb-0 fst-italic small text-muted'>Mai multe fotografii de la eveniment sunt disponibile pe Instagram: <a href='https://www.instagram.com/liceul_umfst' target='_blank' rel='noopener noreferrer'>@liceul_umfst</a></p>
+            </div>
+            """,    
+        },
         "ziua-recunostintei": {
             "titlu": "Ziua Recunoștinței",
             "subtitlu": "27 noiembrie 2025",
