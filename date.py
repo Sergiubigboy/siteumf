@@ -581,7 +581,59 @@ clase = [
             {"nume": "Mureșan Alexia-Cristina"},
             {"nume": "Oltean Cristina-Nicoleta"},
             {"nume": "Petrea Luca-Alexandru"},
-            {"nume": "Popa Vlad-Ștefan"},
+            {"nume": "Popa Vlad-Ștefan",
+             "performante": [
+                {
+                    "titlu": "Concursul Internațional de informatică și gândire computațională BEBRAS",
+                    "locatie": "etapa națională și internațională",
+                    "premiu": "Al doilea punctaj la nivel național și al șaptelea la nivel internațional"
+                },
+                {
+                    "titlu": "Concursul Județean Plurilingvism",
+                    "locatie": "Limba engleză, etapa județeană",
+                    "premiu": "Locul III"
+                },
+                {
+                    "titlu": "AI FOR GOOD - concurs pe echipe",
+                    "locatie": "etapa națională",
+                    "premiu": "Locul I, calificare la etapa internațională"
+                },
+                {
+                    "titlu": "Olimpiada Națională de Informatică",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul III"
+                },
+                {
+                    "titlu": "Olimpiada Națională de Informatică Aplicată - ACADNET",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul I"
+                },
+                {
+                    "titlu": "Olimpiada Națională de Informatică Aplicată - ACADNET",
+                    "locatie": "etapa națională, București",
+                    "premiu": "Mențiune; Medalie de argint; Al 5-lea punctaj la nivel național, secțiunea calculatoare"
+                },
+                {
+                    "titlu": "Concursul Național de Procese Simulate \"Matei Cantacuzino\" - concurs pe echipe",
+                    "locatie": "etapa națională",
+                    "premiu": "Locul II"
+                },
+                {
+                    "titlu": "Olimpiada Națională de Tehnologia Informației",
+                    "locatie": "etapa județeană",
+                    "premiu": "Locul II"
+                },
+                {
+                    "titlu": "Olimpiada Națională de Tehnologia Informației",
+                    "locatie": "etapa națională, Satu Mare",
+                    "premiu": "Participare"
+                },
+                {
+                    "titlu": "Târgul Național de Știință, concurs robotică pe echipe",
+                    "locatie": "etapa națională, București - Universitatea Politehnică București",
+                    "premiu": "Locul III"
+                }
+             ]},
             {"nume": "Rus Daria-Ioana",
              "performante": [
                 {
