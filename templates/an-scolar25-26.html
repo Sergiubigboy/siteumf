@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/an-scolar24-25.css') }}">
+{% endblock %}
+{% block content %}
+<div class="an-scolar-section container py-5">
+  <h1 class="text-center text-primary mb-5 display-5 fw-bold" style="letter-spacing:1px;">
+    <span style="border-bottom: 4px solid #0056b3; padding-bottom: 6px;">FESTIVITATEA DE ÎNCHEIERE A ANULUI ȘCOLAR 2025–2026</span>
+  </h1>
+
+  <div class="row align-items-center mb-5">
+    <div class="col-lg-7">
+      <p class="lead modern-text">
+        Suntem la capătul celui de-al doilea an de existență al Liceului UMFST „George Emil Palade" – și suntem aici împreună: elevi, profesori și părinți. Această prezență comună nu este un detaliu de protocol; ea spune, mai bine decât orice cuvânt, că ceea ce construim aici este o comunitate, nu doar o instituție.
+      </p>
+      <p class="lead modern-text">
+        Doi ani înseamnă deja două generații de elevi care au ales să crească în acest spațiu. Mediile obținute, premiile și distincțiile de la concursuri și olimpiade sunt dovezi vizibile ale unui lucru mai profund: că la acest liceu excelența nu se reduce la acumularea de note, ci se construiește ca rigurozitate a gândirii, ca profunzime a înțelegerii și ca abilitate de a susține un punct de vedere fundamentat. Este o excelență care onorează unicitatea fiecărui parcurs, tocmai de aceea evaluarea pe care o practicăm nu judecă, ci îndrumă.
+      </p>
+    </div>
+    <div class="col-lg-5 text-center mt-4 mt-lg-0">
+      <img src="{{ url_for('static', filename='images/poze-festivitate2026/festivitate1.JPG') }}" alt="Festivitatea de încheiere 2025-2026" class="festivitate-img img-fluid blue-frame mb-3">
+      <blockquote class="blockquote text-secondary modern-quote mt-3">
+        <span class="quote-mark">“</span>
+        Celebrăm performanța fiecărui elev, depășirea limitelor, dorința de a încerca și de a fi mai bun. Îi felicităm pe cei care au obținut mediile cele mai mari și pe cei cu rezultate la olimpiade și concursuri școlare, dar și pe fiecare elev care are <strong>pasiunea pentru cunoaștere</strong>.
+        <footer class="blockquote-footer mt-2">Lector univ. dr. Andreea Ban, directoarea liceului</footer>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5 flex-lg-row-reverse">
+    <div class="col-lg-7">
+      <blockquote class="blockquote text-secondary modern-quote">
+        <span class="quote-mark">“</span>
+        De asemenea, celebrăm <strong>perseverența</strong> celor care au acceptat incertitudinea, au lucrat cu eșecul ca pe un instrument de creștere și au tratat dificultatea nu ca pe un motiv de renunțare, ci ca pe un semn că sunt pe drumul unei învățări autentice. Celebrăm <strong>creativitatea etică</strong>, imaginația pusă în slujba unor scopuri responsabile.
+        <footer class="blockquote-footer mt-2">Conf. univ. dr. Daniela Ștefănescu, prorector UMFST</footer>
+      </blockquote>
+    </div>
+    <div class="col-lg-5 text-center mt-4 mt-lg-0">
+      <img src="{{ url_for('static', filename='images/poze-festivitate2026/festivitate2.JPG') }}" alt="Festivitate și comunitate" class="festivitate-img img-fluid blue-frame mb-3">
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <div class="row mb-5">
+    <div class="col-12">
+      <p class="lead modern-text text-center">
+        În cadrul festivității am celebrat spiritul de comunitate, creativitatea etică și perseverenta fiecărui elev, fără a pune accent pe note sau medii. Ne bucurăm că elevii au fost susținuți de profesori și părinți într-un parcurs de învățare autentic și motivant.
+      </p>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-lg-6 mb-4">
+      <div class="extra-img-box text-center p-3 h-100">
+        <img src="{{ url_for('static', filename='images/poze-festivitate2026/festivitate5.JPG') }}" alt="Festivitate 2026 - foto 1" class="festivitate-img img-fluid blue-frame mb-2">
+      </div>
+    </div>
+    <div class="col-lg-6 mb-4">
+      <div class="extra-img-box text-center p-3 h-100">
+        <img src="{{ url_for('static', filename='images/poze-festivitate2026/festivitate6.JPG') }}" alt="Festivitate 2026 - foto 2" class="festivitate-img img-fluid blue-frame mb-2">
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <h2 class="text-center text-primary mb-4 fw-bold">Galerie festivitate</h2>
+  <div class="row g-4 justify-content-center">
+    {% for nr in range(3, 9) %}
+    <div class="col-md-3 col-sm-6">
+      <div class="gallery-image-box shadow-sm rounded">
+        <img src="{{ url_for('static', filename='images/poze-festivitate2026/festivitate' ~ nr ~ '.JPG') }}" alt="Galerie festivitate" class="img-fluid blue-frame">
+      </div>
+    </div>
+    {% endfor %}
+    <div class="col-md-3 col-sm-6">
+      <div class="gallery-image-box shadow-sm rounded">
+        <img src="{{ url_for('static', filename='images/poze-festivitate2026/profesori2026.JPG') }}" alt="Profesorii" class="img-fluid blue-frame">
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12 text-center">
+      <p class="lead modern-text">
+        Mai multe imagini sunt disponibile pe rețelele noastre sociale oficiale:
+      </p>
+      <p class="mb-1">
+        <a href="https://www.facebook.com/liceulumfst" target="_blank" rel="noopener">https://www.facebook.com/liceulumfst</a>
+      </p>
+      <p>
+        <a href="https://www.instagram.com/liceul_umfst/" target="_blank" rel="noopener">https://www.instagram.com/liceul_umfst/</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12 text-center">
+      <img src="{{ url_for('static', filename='images/poze-festivitate2026/festivitate8.JPG') }}" alt="Final 2026" class="img-fluid blue-frame shadow-lg mb-4" style="max-width:900px;">
+      <h3 class="mt-3 text-primary fw-bold">Un final de al doilea an cu emoție, bucurie și încredere. Împreună am țesut o comunitate care respiră energie și seriozitate, pregătită pentru următorul capitol.</h3>
+      <div class="mt-4">
+        <p class="mb-2">
+          Felicitări tuturor elevilor. Mulțumim profesorilor pentru implicare și părinților pentru că au ales să fie parteneri în această poveste.
+        </p>
+        <p class="mb-4">
+          Ne vedem în septembrie! Să aveți o vară frumoasă și o vacanță cu zâmbete!
+        </p>
+        <a href="https://www.youtube.com/watch?v=9F4bA25GPu8" target="_blank" rel="noopener" class="btn btn-primary btn-lg fw-bold" style="background-color:#ff4d4d; color:white; border:none;">
+          Transmisiune live a festivității
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

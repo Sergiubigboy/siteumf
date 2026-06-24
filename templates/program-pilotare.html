@@ -1,0 +1,399 @@
+{% extends "layout.html" %} {% block extra_css %}
+<style>
+  .pilotare-content {
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+  .pilotare-content h3 {
+    color: #0d6efd;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  .pilotare-content ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .pilotare-content ul li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  .pilotare-content ul li:before {
+    content: "•";
+    color: #0d6efd;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  .pilotare-image {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .pilotare-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  .value-card {
+    padding: 1.5rem;
+    border-left: 4px solid #0d6efd;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+  .value-card strong {
+    color: #0d6efd;
+    font-size: 1.1rem;
+  }
+</style>
+{% endblock %} {% block content %}
+<div class="container my-5 pilotare-content">
+  <div class="pilotare-image">
+    <img
+      src="{{ url_for('static', filename='images/liceupilot.png') }}"
+      alt="Program Național de Pilotare"
+      style="max-width: 600px"
+    />
+  </div>
+
+  <p>
+    <strong>Din anul școlar 2026–2027,</strong> elevii de la Liceul UMFST
+    „George Emil Palade" din Târgu Mureș vor avea acces la noi abordări
+    curriculare, într-un demers care își propune să redefinească experiența
+    liceală.
+  </p>
+
+  <p>
+    Liceul nostru a optat pentru participarea în Programul Național de pilotare
+    a planurilor-cadru alternative pentru învățământul liceal, fiind o decizie
+    care reflectă viziunea educațională și răspunde profilului elevilor noștri:
+    tineri performanți, motivați de excelență, dar care au nevoie și de
+    contexte autentice de învățare pentru a-și dezvolta gândirea critică,
+    autonomia, reflexivitatea și capacitatea de a construi legături între
+    domenii diferite ale cunoașterii.
+  </p>
+
+  <h3>Care sunt valorile centrale ale liceului?</h3>
+
+  <p>
+    Liceul UMFST „George Emil Palade" își construiește identitatea educațională
+    în jurul a cinci valori fundamentale: <strong
+      >pasiunea pentru cunoaștere, excelența academică, dezvoltarea creativă și
+      etică, perseverența, cultura colaborativă.</strong
+    >
+  </p>
+
+  <p>
+    Aceste valori nu se tratează ca niște sloganuri decorative, ele dau
+    substanța relației dintre profesori și elevi, dintre ce se întâmplă în
+    clasă și ce se întâmplă dincolo de ea.
+  </p>
+
+  <div class="values-grid">
+    <div class="value-card">
+      <p>
+        <strong>Pasiunea pentru cunoaștere</strong> se naște acolo unde elevul
+        descoperă sensul informațiilor și ideilor pe care le învață. Liceul
+        creează contexte în care cunoașterea nu este doar transmisă, ci
+        experimentată, pusă în dialog cu întrebările reale ale elevilor și
+        ancorată în probleme autentice. Prin seminarii socratice, proiecte de
+        cercetare, chestionare metacognitive și ateliere interdisciplinare,
+        elevii sunt invitați să descopere că a ști înseamnă, înainte de toate,
+        a înțelege de ce contează ceea ce știi.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <p>
+        <strong>Excelența academică</strong> nu este redusă la performanța
+        cantitativă sau la acumularea de note. Liceul o definește ca rigurozitate
+        a gândirii, profunzime a înțelegerii și capacitate de a articula un punct
+        de vedere fundamentat în corelație cu adevărul științific. Este o
+        excelență care se construiește prin efort susținut, prin feedback formativ
+        și prin raportare la standarde înalte, dar care nu pierde din vedere
+        unicitatea fiecărui parcurs educațional, de aceea pentru noi e esențială
+        evaluarea în sprijinul învățării, dar și o pregătire constantă pentru
+        concursurile și olimpiadele la care elevii doresc să participe.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <p>
+        <strong>Dezvoltarea creativă și etică</strong> presupune formarea unor
+        elevi care nu doar dobândesc cunoaștere, ci o interoghează, o
+        recontextualizează și o pun în slujba unor scopuri responsabile.
+        Creativitatea fără discernământ etic rămâne un exercițiu steril și, de
+        aceea, fiecare demers didactic urmărește cultivarea deopotrivă a
+        imaginației și a conștiinței morale, astfel încât elevii să fie capabili
+        nu doar să inoveze, ci și să evalueze consecințele propriilor alegeri și
+        să trăiască în concordanță cu un set de valori asumat.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <p>
+        <strong>Perseverența</strong> este cultivată ca dispoziție intelectuală.
+        Elevii sunt îndrumați să accepte incertitudinea, să lucreze cu eșecul
+        constructiv și să trateze dificultatea ca pe un semn al învățării
+        autentice, nu ca pe un motiv de renunțare. Într-un mediu educațional
+        care valorizează procesul, perseverența devine o condiție esențială în
+        vederea unei formări profunde și complexe.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <p>
+        <strong>Cultura colaborativă</strong> reflectă convingerea că învățarea
+        cea mai valoroasă se produce în relație – între elevi, între elevi și
+        profesori, între școală și comunitatea în care funcționează, în acord cu
+        pedagogiile interactive și cu studiile de neuroștiințe. În acest mod,
+        elevii învață să asculte, să negocieze perspective și să contribuie la
+        un rezultat comun.
+      </p>
+    </div>
+  </div>
+
+  <h3>Care este viziunea pedagogică a liceului?</h3>
+
+  <p>
+    Aceste cinci valori sunt întărite de două axe pedagogice pe care liceul le
+    consideră esențiale: <strong>gândirea critică și reflexivitatea.</strong>
+  </p>
+
+  <p>
+    Pe de o parte, <strong>gândirea critică</strong> este înțeleasă ca proces
+    activ de evaluare a ideilor, a surselor și a argumentelor, un proces prin
+    care elevul depășește stadiul de reproducere a informației și devine capabil
+    să formuleze judecăți proprii, fundamentate și nuanțate. Pe de altă parte,
+    <strong>reflexivitatea</strong> presupune capacitatea elevului de a se
+    raporta conștient la propriul proces de învățare, de a-și examina
+    convingerile, de a-și recunoaște limitele și de a-și ajusta strategiile.
+    Împreună, aceste două competențe transformă elevul dintr-un receptor pasiv
+    într-un subiect activ al propriei formări.
+  </p>
+
+  <p>
+    Cadrul teoretic care fundamentează această viziune este oferit de filosoful
+    educației <strong>Gert Biesta</strong>. Acesta propune trei dimensiuni
+    interdependente, fără de care educația rămâne incompletă.
+  </p>
+
+  <ul>
+    <li>
+      <strong>Calificarea</strong> – vizează dotarea elevilor cu cunoștințe,
+      abilități și competențe necesare atât pentru reușita la examene, cât și
+      pentru participarea efectivă la viața profesională și socială. Este
+      dimensiunea instrumentală a educației, dar una pe care liceul o tratează
+      cu rigoare, conștient că fără o bază solidă de cunoaștere nu se poate
+      construi nimic durabil.
+    </li>
+    <li>
+      <strong>Socializarea</strong> – privește integrarea elevului într-o
+      comunitate de valori, norme și referințe culturale. Prin socializare,
+      elevul nu doar că își descoperă locul într-un spațiu colectiv, ci învață
+      să se raporteze la ceilalți cu respect, empatie și responsabilitate –
+      competențe pe care cultura colaborativă a liceului le cultivă sistematic.
+    </li>
+    <li>
+      <strong>Subiectivarea</strong> – este poate cea mai profundă: ea urmărește
+      formarea elevului ca subiect autonom, capabil de gândire critică și de
+      acțiune morală, un individ care acționează din convingere, nu din
+      conformism. Este dimensiunea prin care educația depășește simpla instrucție
+      și devine, în sens propriu, formare a persoanei.
+    </li>
+  </ul>
+
+  <p>
+    Mizăm pe dezvoltarea unui <strong>caracter intelectual</strong>, în sensul
+    oferit de Ron Ritchhart. În cadrul orelor de curs se va concretiza prin
+    proiectarea unor lecții care să ia în considerare structuri cognitive
+    transferabile – o învățare conceptuală menită să formeze elevi capabili să
+    depășească granițele disciplinelor tradiționale, să formuleze întrebări
+    fundamentale și să gândească în sisteme, prin cooperare și co-creare.
+    Dorința liceului este de a investi în fiecare elev, nu doar în cei care îşi
+    propun să exceleze la concursuri și olimpiade și nu doar în anumite
+    discipline. Ne interesează dezvoltarea holistică a elevului – formarea unui
+    om care îmbină reușita profesională cu un set de valori profunde, capabil
+    să-și găsească drumul și sensul indiferent de transformările prin care trece
+    societatea.
+  </p>
+
+  <h3>Cum va arăta noul parcurs curricular?</h3>
+
+  <p>
+    Principiul de bază al constructului curricular propus este acoperirea
+    componentelor obligatorii ale curriculumului național în acord cu
+    <em>Profilul absoleventului</em> în vigoare începând din anul școlar
+    2025-2026, dar și creșterea exponențială a gradului de libertate a elevului
+    de alegere a traseului educațional, prin creșterea numărului de ore din
+    CDEOȘ, în funcție de interesele sale de dezvoltare academică pe termen mediu
+    și lung, insistând însă și pe dezvoltarea integrată a personalității prin
+    expunere la experiențe de învățare din arii curriculare cât mai diverse,
+    indiferent de profil.
+  </p>
+
+  <h4 style="color: #0d6efd; margin-top: 1.5rem; margin-bottom: 1rem">
+    <strong>Obiectivele operaționale ale proiectului:</strong>
+  </h4>
+
+  <ul>
+    <li>
+      Implementarea planului-cadru pilot pe o logică progresivă: clasa a IX-a —
+      etapă de fundamentare a abilităților necesare inserției sociale și
+      academice; clasa a X-a — etapă de transfer către domenii ale culturii
+      generale; clasa a XI-a — etapă de integrare a disciplinelor de specialitate;
+      clasa a XII-a — etapă de aprofundare și creștere în complexitate a
+      disciplinelor de examen și de admitere.
+    </li>
+    <li>
+      Alocarea unui timp suplimentar disciplinelor de Bacalaureat și celor de
+      profil, cu pregătire diferențiată în clasele a XI-a și a XII-a.
+    </li>
+    <li>
+      Adaptarea și suplimentarea numărului de ore la discipline cu examene
+      anterior clasei a XII-a.
+    </li>
+    <li>
+      Dezvoltarea competențelor transversale la toate disciplinele, nu doar la
+      cele de examen: literație, diverse forme de comunicare, gândire critică,
+      competențe digitale și de utilizare a inteligenței artificiale, autonomie
+      în învățare și metacompetențe.
+    </li>
+    <li>
+      Monitorizare continuă bazată pe date (rezultate școlare, simulări, feedback
+      din partea elevilor și a cadrelor didactice), cu ajustări anuale ale
+      planului.
+    </li>
+    <li>
+      Garantarea drepturilor elevilor: parcurgerea integrală a programei, evaluare
+      corectă și transparentă, acces neîngrădit la examenele naționale și
+      posibilitate de transfer.
+    </li>
+    <li>
+      Documentarea și diseminarea rezultatelor, a bunelor practici și a exemplelor
+      de lucru, în beneficiul altor instituții de învățământ.
+    </li>
+  </ul>
+
+  <p>
+    Schimbarea principală constă în organizarea curriculumului pe două etape și
+    în reducerea fragmentării disciplinare:
+  </p>
+
+  <h4
+    style="color: #0d6efd; margin-top: 1.5rem; margin-bottom: 1rem; font-size: 1.1rem"
+  >
+    Clasele a IX-a și a X-a — etapa de fundamentare și transfer
+  </h4>
+
+  <p>
+    <strong>Clasa a IX-a</strong> este orientată spre trei categorii de
+    discipline opționale:
+  </p>
+  <ul>
+    <li>
+      <strong>Discipline de fundamentare a abilităților necesare inserției
+        sociale și academice</strong>, concepute în acord cu evoluția domeniilor
+      de cunoaștere și ca răspuns la carențele identificate în societate.
+    </li>
+    <li>
+      <strong>Discipline de formare a abilităților transversale în limba
+        engleză</strong>, menite să cultive o atitudine proactivă față de
+      cunoaștere și să consolideze competențele lingvistice.
+    </li>
+    <li>
+      <strong>Discipline de aprofundare conceptuală</strong>, integrate în noul
+      cadru curricular, cu scopul de a consolida bazele în domenii fundamentale.
+    </li>
+  </ul>
+
+  <p>
+    <strong>Clasa a X-a</strong> este orientată, la rândul ei, spre trei
+    categorii de discipline opționale:
+  </p>
+  <ul>
+    <li>
+      <strong>Discipline de transfer către domenii ale culturii generale</strong>
+    </li>
+    <li>
+      <strong>Discipline de formare a gândirii critice și reflexive prin studiul
+        limbii engleze</strong>
+    </li>
+    <li>
+      <strong>Discipline de aprofundare diferențiată</strong>, stabilite în
+      funcție de carențele identificate prin testele de la sfârșitul sau începutul
+      anului școlar.
+    </li>
+  </ul>
+
+  <h4
+    style="color: #0d6efd; margin-top: 1.5rem; margin-bottom: 1rem; font-size: 1.1rem"
+  >
+    Clasele a XI-a și a XII-a — etapa de specializare și aprofundare
+  </h4>
+
+  <p>
+    <strong>Clasa a XI-a</strong> reprezintă etapa de integrare și aprofundare a
+    disciplinelor de specialitate beneficiind totodată de un număr mai mare de
+    ore alocate limbii engleze.
+  </p>
+
+  <p>
+    <strong>Clasa a XII-a</strong> reprezintă etapa de creștere în complexitate și
+    profunzime a studiului, prin reducerea numărului de discipline, reorganizarea
+    activității de predare-învățare-evaluare și focalizarea pe disciplinele de
+    Bacalaureat și pe cele de admitere.
+  </p>
+
+  <h4 style="color: #0d6efd; margin-top: 1.5rem; margin-bottom: 1rem">
+    <strong>Discipline inovatoare introduse:</strong>
+  </h4>
+
+  <ul>
+    <li>Literație AI</li>
+    <li>Literație pentru sănătate</li>
+    <li>Robotică</li>
+    <li>Habits of Mind: The Art of Thinking Well</li>
+    <li>Dezbatere și argumentare</li>
+    <li>Cursuri interdisciplinare dezvoltate împreună cu specialiști ai
+      universității</li>
+  </ul>
+
+  <hr class="my-5" />
+
+  <p style="font-size: 1.1rem">
+    <strong>Prin această pilotare, Liceul UMFST își asumă rolul de laborator
+      educațional</strong>, un spațiu în care profesorii proiectează, testează și
+    evaluează noi modele de învățare, dezvoltă discipline integrate și
+    documentează impactul acestora asupra rezultatelor elevilor.
+  </p>
+
+  <p style="font-size: 1.1rem">
+    <strong>Ne dorim ca bunele practici și datele rezultate din acest proces să
+      contribuie la viitorul educației din România.</strong>
+  </p>
+
+  <div class="text-center mt-5 p-4 bg-light rounded">
+    <p class="font-weight-bold" style="font-size: 1.05rem">
+      Ab juventute ad sidera!<br />
+      <br />
+      Director,<br />
+      Lector univ. dr. Andreea-Romana Ban
+    </p>
+  </div>
+
+  <div class="text-center mt-4 mb-5">
+    <a href="{{ url_for('static', filename='images/Prezentare_promovarea_Liceul_UMFST.pdf') }}" class="btn btn-outline-primary btn-lg" target="_blank" rel="noopener">
+      Deschide prezentarea PDF a liceului
+    </a>
+  </div>
+</div>
+
+{% endblock %}

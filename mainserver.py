@@ -42,6 +42,11 @@ def an_scolar_24_25():
     return render_template('an-scolar24-25.html', title="An școlar 2024-2025")
 
 
+@app.route('/elevi/an-scolar25-26')
+def an_scolar_25_26():
+    return render_template('an-scolar25-26.html', title="An școlar 2025-2026")
+
+
 @app.route('/elevi/<int:clasa>/<litera>')
 def elevi_clasa(clasa, litera):
     clasa_filtrata = next(
@@ -219,6 +224,15 @@ def echo_reactor():
         title="Echo Reactor",
         subtitlu="Echo Reactor",
         no_hero=True
+    )
+
+@app.route('/program-pilotare')
+def program_pilotare():
+    return render_template(
+        'program-pilotare.html',
+        title="Program Național de Pilotare",
+        subtitlu="Program Național de Pilotare a Planurilor Cadru Alternative",
+        background="static/images/poze-hero/bgmain.png"
     )
 
 if __name__ == "__main__":
