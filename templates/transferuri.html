@@ -2,6 +2,19 @@
 {% block content %}
 <div class="container mt-4">
   <h1 class="text-center">Transferuri</h1>
-  <p class="text-center">Informații despre transferuri vor fi afișate aici.</p>
+  <p class="text-center mb-4">Documentul de mai jos conține informații despre transferuri.</p>
+
+  <div class="text-center mb-3">
+    <a href="{{ url_for('static', filename='images/transfer_elevi.pdf') }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+      Deschide PDF în fereastră nouă
+    </a>
+  </div>
+
+  <embed src="{{ url_for('static', filename='images/transfer_elevi.pdf') }}"
+         type="application/pdf"
+         width="100%"
+         height="800px"
+         class="border rounded shadow-sm">
+  </embed>
 </div>
-{% endblock %}
+{% endblock %} 
