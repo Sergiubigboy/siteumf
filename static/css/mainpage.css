@@ -391,3 +391,92 @@ video {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Enrollment section styles (matching provided mockup) */
+.enrollment-card {
+  background: transparent;
+  padding: 0;
+}
+.enrollment-card .text-center p.small {
+  letter-spacing: 3px;
+}
+.enrollment-card .display-5 {
+  font-size: 3.2rem;
+  color: #14345b;
+  margin-bottom: 18px;
+  font-weight: 800;
+}
+.enrollment-card .rounded-4 {
+  border-radius: 14px !important;
+}
+.enrollment-card .date-boxes {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; /* keep dates in a single line */
+}
+.enrollment-card .date-boxes .col-6 {
+  flex: 0 0 auto;
+  width: 120px; /* fixed width to avoid Bootstrap's 50% rule */
+  max-width: 120px;
+}
+.enrollment-card .date-boxes .rounded-4 {
+  width: 120px;
+  height: 120px;
+}
+.enrollment-card .date-boxes .rounded-4 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e9f3fb;
+  border-radius: 16px;
+}
+.enrollment-card .date-boxes .fs-1 {
+  color: #14345b;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.enrollment-card .date-boxes .text-uppercase {
+  font-size: 0.75rem;
+  color: #7b98b7;
+  margin-top: 6px;
+  letter-spacing: 1px;
+}
+.enrollment-card .row.align-items-center p {
+  color: #14345b;
+  font-weight: 700;
+}
+.enrollment-card .bg-white.p-4 {
+  background: #eef6fc !important;
+}
+.enrollment-card .bg-white.p-4 h3 {
+  color: #14345b;
+  font-weight: 800;
+}
+.enrollment-card .list-unstyled li {
+  margin-bottom: 10px;
+  color: #174169;
+}
+
+@media (max-width: 768px) {
+  .enrollment-card .display-5 {
+    font-size: 2.4rem;
+  }
+  .enrollment-card .date-boxes {
+    gap: 18px;
+    overflow-x: auto; /* allow horizontal scroll on small screens */
+    padding-bottom: 8px;
+  }
+  .enrollment-card .date-boxes .col-6 {
+    width: 96px;
+    max-width: 96px;
+  }
+  .enrollment-card .date-boxes .rounded-4 {
+    width: 96px;
+    height: 96px;
+  }
+}
